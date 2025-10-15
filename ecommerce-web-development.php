@@ -53,6 +53,46 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do hours & SLAs work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer flexible retainer packages with monthly hour allocations and clearly defined SLAs for different priority levels. Critical issues receive immediate attention while feature requests follow sprint planning cycles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are typical monthly deliverables?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Monthly deliverables typically include bug fixes, performance improvements, feature enhancements, content updates, SEO optimizations, and CRO testing based on your retainer plan and priority backlog."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tooling and workflows do you use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use shared project management tools for backlogs, conduct regular sprint demos, provide staging URLs for review, and maintain version control for all code changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle reporting and performance metrics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide regular reports covering site performance, uptime metrics, conversion rates, and completed tasks. Custom dashboards can be set up to track KPIs most important to your business."
+        }
+      }]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -68,10 +108,25 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
                         <div class="service-details-wrap">
-                            <img src="img/slider-img-2.jpg" alt="services" class="img-fluid rounded shadow-sm" />
+                            <!-- Breadcrumb Navigation -->
+                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px;">
+                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0;">
+                                    <li style="display: inline;"><a href="index.php">Home</a> &gt; </li>
+                                    <li style="display: inline;"><a href="index.php#services">Services</a> &gt; </li>
+                                    <li style="display: inline;">E-Commerce Web Development</li>
+                                </ol>
+                            </nav>
+
+                            <img src="img/slider-img-2.jpg" alt="E-commerce support and maintenance dashboard showing site performance metrics" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
                                 <h1 style="font-size: 2.2rem;">Reliable eCommerce Support & Maintenance That Keeps You Shipping</h1>
                                 <h2 style="font-size: 1.2rem;">Flexible retainer or on-demand support covering design, development, SEO, CRO, and integrations—prioritized by impact and protected by process</h2>
+
+                                <!-- SEO Intro Content Block -->
+                                <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 20px;">
+                                    <strong>eCommerce support and maintenance services from Ocean DigiTech deliver reliable, ongoing technical assistance to keep your online store running smoothly.</strong> Our expert team provides comprehensive support covering backlog grooming, bug fixes, feature releases, performance tuning, analytics, QA, and version control—ensuring your eCommerce site stays competitive and profitable.
+                                </p>
+
                                 <p>Brief intro text summarizing the scope: backlog grooming, bug fixes, feature releases, performance tuning, analytics, QA, and version control.
                                 <ul class="list-unstyled tech-feature-list">
                                             <li class="py-1"><span
@@ -179,6 +234,28 @@
                                     </div>
                                 </div>
 
+                                <!-- Support Philosophy Section -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Our Support Philosophy</h2>
+                                        <p>We believe that great eCommerce support combines proactive monitoring, rapid response, and strategic optimization. Our team works as an extension of your business, prioritizing issues by impact and protecting your revenue through careful testing and deployment processes. Every ticket is handled with urgency and expertise to keep your store running at peak performance.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Industries We Serve Section -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Industries We Serve</h2>
+                                        <ul class="list-unstyled tech-feature-list">
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Fashion & Apparel</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Health & Beauty</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Home & Garden</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Electronics & Tech</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Food & Beverage</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                                 <div id="accordion-1" class="accordion accordion-faq mt-5">
                                     <!-- Accordion card 1 -->
                                     <div class="card">
@@ -237,6 +314,43 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Trust Indicators / Stats Ribbon -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Client Testimonials -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
+                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -310,8 +424,8 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
-                                            Send Message
+                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
+                                            Start Your Support Engagement
                                         </button>
                                     </div>
                                 </div>

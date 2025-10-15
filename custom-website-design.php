@@ -53,6 +53,62 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What's included in your custom website design service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We deliver a fully custom-designed, responsive, and SEO-friendly website from wireframe to launch, including post-launch support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to complete a typical website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most projects take 8-12 weeks from initial consultation to launch, depending on scope and complexity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you redesign my existing website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely, we can refresh your current design or rebuild completely to improve performance and aesthetics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your websites mobile-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all our designs are mobile-first and ensure smooth user experiences on any device."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which platforms do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in Shopify, WooCommerce, BigCommerce, and custom CMS solutions tailored to your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide ongoing website maintenance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer support retainers and ad-hoc maintenance to keep your site updated and secure."
+        }
+      }]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -68,10 +124,25 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
                         <div class="service-details-wrap">
-                            <img src="img/slider-img-2.jpg" alt="services" class="img-fluid rounded shadow-sm" />
+                            <!-- Breadcrumb Navigation -->
+                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px;">
+                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0;">
+                                    <li style="display: inline;"><a href="index.php">Home</a> &gt; </li>
+                                    <li style="display: inline;"><a href="index.php#services">Services</a> &gt; </li>
+                                    <li style="display: inline;">Custom Website Design</li>
+                                </ol>
+                            </nav>
+
+                            <img src="img/slider-img-2.jpg" alt="Custom website design dashboard mockup showing responsive web design for business growth" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
                                 <h1 style="font-size: 2.2rem;">Custom Website Design That Converts</h1>
                                 <h2 style="font-size: 1.2rem;">Unique, responsive, and conversion-optimized designs tailored to your brand and business goals</h2>
+
+                                <!-- SEO Intro Content Block -->
+                                <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 20px;">
+                                    <strong>Custom website design services from Ocean DigiTech deliver conversion-optimized, mobile-first websites tailored for business growth.</strong> Our expert team combines UX/UI design, advanced technology, and transparent processes to drive leads, improve rankings, and elevate your online presence.
+                                </p>
+
                                 <p>We deliver beautiful, effective websites that embody your brand and enhance customer engagement. Our focus is on creating bespoke digital experiences that drive action and grow businesses.
                                 <<ul class="list-unstyled tech-feature-list">
                                             <li class="py-1"><span
@@ -178,6 +249,28 @@
                                     </div>
                                 </div>
 
+                                <!-- Design Philosophy Section -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Our Design Philosophy</h2>
+                                        <p>We believe that great design merges brand identity, simplicity, and deep user empathy. Our team constantly tests modern UI/UX trends, ensuring every site is not just beautiful, but also converts visitors into customers.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Industries We Serve Section -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Industries We Serve</h2>
+                                        <ul class="list-unstyled tech-feature-list">
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Healthcare & Dental</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>eCommerce & Retail</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Professional Services</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Startups & SaaS</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Legal & Consulting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                                 <div id="accordion-1" class="accordion accordion-faq mt-5">
                                     <!-- Accordion card 1 -->
                                     <div class="card">
@@ -268,6 +361,43 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Trust Indicators / Stats Ribbon -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Client Testimonials -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
+                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -341,8 +471,8 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
-                                            Send Message
+                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
+                                            Request My Free Web Design Consultation
                                         </button>
                                     </div>
                                 </div>

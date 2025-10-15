@@ -53,6 +53,54 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Why invest in custom development instead of templates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Custom development ensures your UI, flows, and integrations perfectly match your business needs without the bloat or constraints of off-the-shelf options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does custom development improve SEO and conversions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With semantic structure, optimized code, and testable components, your site performs faster and delivers an optimal user journey that converts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the development roadmap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From discovery to ongoing optimization: planning IA, building design systems, coding, QA, launch prep, and testing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a typical custom website project take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually 10-16 weeks depending on scope and integrations required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer ongoing support after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide post-launch monitoring, optimizations, and maintenance options."
+        }
+      }]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -68,10 +116,25 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-8">
                         <div class="service-details-wrap">
-                            <img src="img/slider-img-2.jpg" alt="services" class="img-fluid rounded shadow-sm" />
+                            <!-- Breadcrumb Navigation -->
+                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px;">
+                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0;">
+                                    <li style="display: inline;"><a href="index.php">Home</a> &gt; </li>
+                                    <li style="display: inline;"><a href="index.php#services">Services</a> &gt; </li>
+                                    <li style="display: inline;">Custom Website Development</li>
+                                </ol>
+                            </nav>
+
+                            <img src="img/slider-img-2.jpg" alt="Custom website development code editor showing modern web development practices" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
                                 <h1 style="font-size: 2.2rem;">Custom Website Development That Powers Your Business Growth</h1>
                                 <h2 style="font-size: 1.2rem;">Fast, scalable, and purpose-built websites designed for performance and your unique business model</h2>
+
+                                <!-- SEO Intro Content Block -->
+                                <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 20px;">
+                                    <strong>Custom website development services from Ocean DigiTech deliver high-performance, scalable solutions engineered for business growth.</strong> Our expert development team combines clean code, advanced integrations, and performance optimization to create websites that drive results and support your evolving business needs.
+                                </p>
+
                                 <p>We build custom websites tailored to your brand and business with focus on speed, scalability, and seamless integrations.
                                 <ul class="list-unstyled tech-feature-list">
                                             <li class="py-1"><span
@@ -174,6 +237,28 @@
                                     </div>
                                 </div>
 
+                                <!-- Design Philosophy Section -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Our Development Philosophy</h2>
+                                        <p>We believe that great development merges technical excellence, scalability, and performance optimization. Our team follows industry best practices and modern development standards, ensuring every website is not just functional, but also fast, secure, and built to scale with your business.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Industries We Serve Section -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Industries We Serve</h2>
+                                        <ul class="list-unstyled tech-feature-list">
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Healthcare & Dental</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>eCommerce & Retail</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Professional Services</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Startups & SaaS</li>
+                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Legal & Consulting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                                 <div id="accordion-1" class="accordion accordion-faq mt-5">
                                     <!-- Accordion card 1 -->
                                     <div class="card">
@@ -246,6 +331,43 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Trust Indicators / Stats Ribbon -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
+                                                </div>
+                                                <div style="padding: 10px; min-width: 150px;">
+                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Client Testimonials -->
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
+                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -319,8 +441,8 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
-                                            Send Message
+                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
+                                            Request My Free Development Consultation
                                         </button>
                                     </div>
                                 </div>
