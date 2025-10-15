@@ -277,7 +277,7 @@
                                         <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-1" aria-expanded="false"
                                             aria-controls="collapse-1-1">
-                                            <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Whats included in your custom website design service?</h6>
+                                            <h6 class="mb-0">Whats included in your custom website design service?</h6>
                                         </div>
                                         <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
                                             data-parent="#accordion-1" >
@@ -292,7 +292,7 @@
                                         <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-2" aria-expanded="false"
                                             aria-controls="collapse-1-2">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How long does it take to complete 
+                                            <h6 class="mb-0">How long does it take to complete
                                             a typical website?</h6>
                                         </div>
                                         <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
@@ -308,7 +308,7 @@
                                         <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-3" aria-expanded="false"
                                             aria-controls="collapse-1-3">
-                                            <h6 class="mb-0"><span class="ti-wallet mr-3"></span> Can you redesign my existing website?</h6>
+                                            <h6 class="mb-0">Can you redesign my existing website?</h6>
                                         </div>
                                         <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
                                             data-parent="#accordion-1">
@@ -318,12 +318,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                     <!-- Accordion card 4 -->   
+                                     <!-- Accordion card 4 -->
                                     <div class="card">
                                         <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-4" aria-expanded="false"
                                             aria-controls="collapse-1-4">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> Are your websites mobile-friendly?</h6>
+                                            <h6 class="mb-0">Are your websites mobile-friendly?</h6>
                                         </div>
                                         <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
                                             data-parent="#accordion-1">
@@ -332,12 +332,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Accordion card 5 -->   
+                                    <!-- Accordion card 5 -->
                                     <div class="card">
                                         <div class="card-header py-3" id="heading-1-5" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-5" aria-expanded="false"
                                             aria-controls="collapse-1-5">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> Which platforms do you work with?</h6>
+                                            <h6 class="mb-0">Which platforms do you work with?</h6>
                                         </div>
                                         <div id="collapse-1-5" class="collapse" aria-labelledby="heading-1-5"
                                             data-parent="#accordion-1">
@@ -346,12 +346,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Accordion card 6 -->   
+                                    <!-- Accordion card 6 -->
                                     <div class="card">
                                         <div class="card-header py-3" id="heading-1-6" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-6" aria-expanded="false"
                                             aria-controls="collapse-1-6">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span>Do you provide ongoing website maintenance?</h6>
+                                            <h6 class="mb-0">Do you provide ongoing website maintenance?</h6>
                                         </div>
                                         <div id="collapse-1-6" class="collapse" aria-labelledby="heading-1-6"
                                             data-parent="#accordion-1">

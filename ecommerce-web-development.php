@@ -262,7 +262,7 @@
                                         <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-1" aria-expanded="false"
                                             aria-controls="collapse-1-1">
-                                            <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How do hours & SLAs work?</h6>
+                                            <h6 class="mb-0">How do hours & SLAs work?</h6>
                                         </div>
                                         <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
                                             data-parent="#accordion-1" >
@@ -276,7 +276,7 @@
                                         <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-2" aria-expanded="false"
                                             aria-controls="collapse-1-2">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> What are typical monthly deliverables?</h6>
+                                            <h6 class="mb-0">What are typical monthly deliverables?</h6>
                                         </div>
                                         <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
                                             data-parent="#accordion-1">
@@ -290,7 +290,7 @@
                                         <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-3" aria-expanded="false"
                                             aria-controls="collapse-1-3">
-                                            <h6 class="mb-0"><span class="ti-wallet mr-3"></span> What tooling and workflows do you use?</h6>
+                                            <h6 class="mb-0">What tooling and workflows do you use?</h6>
                                         </div>
                                         <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
                                             data-parent="#accordion-1">
@@ -304,7 +304,7 @@
                                         <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-4" aria-expanded="false"
                                             aria-controls="collapse-1-4">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How do you handle reporting and performance metrics?</h6>
+                                            <h6 class="mb-0">How do you handle reporting and performance metrics?</h6>
                                         </div>
                                         <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
                                             data-parent="#accordion-1">

@@ -265,7 +265,7 @@
                                         <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-1" aria-expanded="false"
                                             aria-controls="collapse-1-1">
-                                            <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Why invest in custom development instead of templates?</h6>
+                                            <h6 class="mb-0">Why invest in custom development instead of templates?</h6>
                                         </div>
                                         <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
                                             data-parent="#accordion-1" >
@@ -279,7 +279,7 @@
                                         <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-2" aria-expanded="false"
                                             aria-controls="collapse-1-2">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How does custom development improve SEO and conversions?</h6>
+                                            <h6 class="mb-0">How does custom development improve SEO and conversions?</h6>
                                         </div>
                                         <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
                                             data-parent="#accordion-1">
@@ -293,7 +293,7 @@
                                         <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-3" aria-expanded="false"
                                             aria-controls="collapse-1-3">
-                                            <h6 class="mb-0"><span class="ti-wallet mr-3"></span> What is included in the development roadmap?</h6>
+                                            <h6 class="mb-0">What is included in the development roadmap?</h6>
                                         </div>
                                         <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
                                             data-parent="#accordion-1">
@@ -307,7 +307,7 @@
                                         <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-4" aria-expanded="false"
                                             aria-controls="collapse-1-4">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How long does a typical custom website project take?</h6>
+                                            <h6 class="mb-0">How long does a typical custom website project take?</h6>
                                         </div>
                                         <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
                                             data-parent="#accordion-1">
@@ -321,7 +321,7 @@
                                         <div class="card-header py-3" id="heading-1-5" data-toggle="collapse"
                                             role="button" data-target="#collapse-1-5" aria-expanded="false"
                                             aria-controls="collapse-1-5">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> Do you offer ongoing support after launch?</h6>
+                                            <h6 class="mb-0">Do you offer ongoing support after launch?</h6>
                                         </div>
                                         <div id="collapse-1-5" class="collapse" aria-labelledby="heading-1-5"
                                             data-parent="#accordion-1">
