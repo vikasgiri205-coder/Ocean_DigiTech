@@ -68,7 +68,7 @@
     margin-top: 0 !important;
   }
 
-  /* Breadcrumb Navigation Mobile Fix - Ensure Visibility */
+  /* Breadcrumb Navigation Mobile Fix - Enhanced Visibility without Background */
   .breadcrumb {
     display: block !important; /* Ensure breadcrumb is visible */
     font-size: 1rem !important; /* Increased for readability */
@@ -76,11 +76,12 @@
     word-wrap: break-word;
     white-space: normal !important;
     color: #333 !important; /* Better contrast */
-    margin-top: 10px !important; /* Add spacing after header */
+    margin-top: 15px !important; /* Increased spacing after header */
     margin-bottom: 15px !important;
-    padding: 10px 0 !important; /* Add padding for visibility */
+    padding: 12px 0 !important; /* Increased padding for visibility */
     font-weight: 500 !important;
-    background-color: #f8f9fa !important; /* Light background for contrast */
+    z-index: 1000 !important; /* Prevent overlap by other elements */
+    position: relative; /* Ensure proper layering */
   }
 
   .breadcrumb li {
@@ -269,7 +270,7 @@
     height: auto !important;
   }
 
-  /* Breadcrumb Navigation Mobile Fix */
+  /* Breadcrumb Navigation Mobile Fix - Enhanced Visibility without Background */
   .breadcrumb {
     display: block !important; /* Ensure breadcrumb is visible */
     font-size: 1rem !important; /* Increased for readability */
@@ -277,11 +278,12 @@
     word-wrap: break-word;
     white-space: normal !important;
     color: #333 !important; /* Better contrast */
-    margin-top: 10px !important; /* Add spacing after header */
+    margin-top: 15px !important; /* Increased spacing after header */
     margin-bottom: 15px !important;
-    padding: 10px 0 !important; /* Add padding for visibility */
+    padding: 12px 0 !important; /* Increased padding for visibility */
     font-weight: 500 !important;
-    background-color: #f8f9fa !important; /* Light background for contrast */
+    z-index: 1000 !important; /* Prevent overlap by other elements */
+    position: relative; /* Ensure proper layering */
   }
 
   .breadcrumb li {
