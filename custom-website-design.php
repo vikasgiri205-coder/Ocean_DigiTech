@@ -125,10 +125,10 @@
                     <div class="col-lg-8 col-md-8">
                         <div class="service-details-wrap">
                             <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0;">
-                                    <li style="display: inline;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline;"><a href="index.php#services">Services</a> &gt; </li>
+                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
+                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
+                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
+                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
                                     <li style="display: inline;">Custom Website Design</li>
                                 </ol>
                             </nav>
