@@ -201,39 +201,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="    margin-left: 35px;">
-                     
-                       <div class="col-md-2 col-lg-2">
-                           
-                          <img src="img/cluch.jpg" alt="Logo 1" style="display:block; width:120px; height:auto;">
-                          
+                <div class="row justify-content-center">
+
+                    <div class="col-md-3 col-lg-3 text-center">
+                        <img src="img/cluch.jpg" alt="Clutch Badge" style="display:inline-block; width:120px; height:auto;">
                     </div>
-                    <div class="col-md-2 col-lg-2">
-                       
-                          <img src="img/tech-behemoths.png" alt="Logo 2" style="display:block; width:120px; height:auto;">
-                       
+
+                    <div class="col-md-3 col-lg-3 text-center">
+                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Badge" style="display:inline-block; width:120px; height:auto;">
                     </div>
-                    <div class="col-md-2 col-lg-2">
-                        
-                          <img src="img/top-developers.png" alt="Logo 3" style="display:block; width:120px; height:auto;">
-                        
+
+                    <div class="col-md-3 col-lg-3 text-center">
+                        <img src="img/top-developers.png" alt="Top Developers Badge" style="display:inline-block; width:120px; height:auto;">
                     </div>
-                    <div class="col-md-2 col-lg-2">
-                       
-                          <img src="img/cluch.jpg" alt="Logo 4" style="display:block; width:120px; height:auto;">
-                       
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                           
-                          <img src="img/cluch.jpg" alt="Logo 1" style="display:block; width:120px; height:auto;">
-                          
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                           
-                          <img src="img/cluch.jpg" alt="Logo 1" style="display:block; width:120px; height:auto;">
-                          
-                    </div>
-                  </div>
+
+                </div>
                 </div>
            <!--<div class="logos-row" style="display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">-->
         </section>
