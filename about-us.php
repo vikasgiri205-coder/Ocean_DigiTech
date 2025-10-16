@@ -8,8 +8,8 @@
 
     <!-- SEO Meta description -->
     <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+        content="Learn about Ocean DigiTech - A global web development and digital marketing agency from India to the USA, delivering AI-powered solutions and measurable results.">
+    <meta name="author" content="Ocean DigiTech">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -21,7 +21,7 @@
     <meta property="og:type" content="article" />
 
     <!--title-->
-    <title>Ocean Digitech Pvt. Ltd. | Global Web Development & Digital Marketing Agency</title>
+    <title>About Us - Ocean DigiTech Pvt. Ltd. | Global Web Development & Digital Marketing Agency</title>
 
     <!--favicon icon-->
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
@@ -62,142 +62,106 @@
     <!--body content wrap start-->
     <div class="main">
 
-        <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
+        <!--hero section start-->
+        <section class="hero-section ptb-100 gradient-overlay full-screen d-flex align-items-center"
+            style="background: url('img/about-hero-placeholder.jpg')no-repeat center center / cover; min-height: 100vh;">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">About Us</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">About Us</li>
-                                </ol>
-                            </div>
+                    <div class="col-md-10 col-lg-9">
+                        <div class="page-header-content text-white text-center">
+                            <h1 class="text-white mb-3 display-4">About Ocean DigiTech</h1>
+                            <p class="lead text-white">A Global Story from India to the USA</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--header section end-->
-
-        <!--promo section start-->
-        <section class="promo-section pt-100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="promo-single-wrap p-5 text-center border rounded">
-                            <div class="promo-icon mb-4">
-                                <img src="img/search-engine.svg" alt="promo" width="65">
-                                <span class="number-bg">01</span>
-                            </div>
-                            <div class="promo-info">
-                                <strong class="color-secondary">Discuss with Users</strong>
-                                <h4>Site Optimisation</h4>
-                                <p>What is business contents insurance? Business contents insurance is a type of
-                                    business.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="promo-single-wrap p-5 text-center border rounded">
-                            <div class="promo-icon mb-4">
-                                <img src="img/increase.svg" alt="promo" width="65">
-                                <span class="number-bg">02</span>
-                            </div>
-                            <div class="promo-info">
-                                <strong class="color-secondary">Discuss with Users</strong>
-                                <h4>Increased Traffic</h4>
-                                <p>What is business contents insurance? Business contents insurance is a type of
-                                    business.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="promo-single-wrap p-5 text-center border rounded">
-                            <div class="promo-icon mb-4">
-                                <img src="img/bullhorn.svg" alt="promo" width="65">
-                                <span class="number-bg">03</span>
-                            </div>
-                            <div class="promo-info">
-                                <strong class="color-secondary">Discuss with Users</strong>
-                                <h4>Digital Marketing</h4>
-                                <p>What is business contents insurance? Business contents insurance is a type of
-                                    business.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--promo section end-->
+        <!--hero section end-->
 
         <!--about us section start-->
         <section class="about-us-section ptb-100">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-12 col-lg-5">
-                        <div class="about-us-content-wrap">
-                            <strong class="color-secondary">About Us</strong>
-                            <h3>Grow Your Business With Experienced SEO Experts</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-content-wrap">
+                            <h2 class="mb-4">About Us</h2>
                             <span class="animate-border mb-4"></span>
-                            <p>Globally transition proactive niches without progressive processes. Objectively syndicate
-                                enterprise-wide services through timely metrics. </p>
-                            <ul class="list-unstyled tech-feature-list">
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Creative</strong>
-                                    Websites Design
-                                </li>
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Accounting</strong>
-                                    Procedures Guidebook
-                                </li>
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Cost</strong>
-                                    Accounting Fundamentals
-                                </li>
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Corporate</strong>
-                                    Cash Management
-                                </li>
-                            </ul>
-                            <div class="row mt-4">
-                                <div class="col-4">
+                            <p class="lead">Ocean DigiTech started as a spark between two kindred spirits—a developer obsessed with clean, scalable code and a marketer driven by data and creativity. In 2023, over chai in a Bengaluru startup hub, they found common ground in a vision: build an agency where innovation meets impact, especially for brands eyeing international growth.</p>
+
+                            <p>From their first client in Austin—an ambitious eCommerce store needing tech, traffic, and trust—they shaped Ocean DigiTech into a partner known for practical solutions rooted in Indian ingenuity and tuned to US market needs.</p>
+
+                            <div class="action-btns mt-4 mb-5">
+                                <a href="contact-us.php" class="btn secondary-solid-btn">Contact Us</a>
+                            </div>
+
+                            <!-- Statistics Grid -->
+                            <div class="row text-center mt-5">
+                                <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">4566</h2>
-                                        <strong>Total Project</strong>
+                                        <h2 class="mb-2 display-4 font-weight-bold">45</h2>
+                                        <strong>Total Projects</strong>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">25002</h2>
+                                        <h2 class="mb-2 display-4 font-weight-bold">250</h2>
                                         <strong>Total Customer</strong>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">4566</h2>
-                                        <strong>Total Project</strong>
+                                        <h2 class="mb-2 display-4 font-weight-bold">07</h2>
+                                        <strong>Countries</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-4">
+                                    <div class="counter-single">
+                                        <h2 class="mb-2 display-4 font-weight-bold">50+</h2>
+                                        <strong>eCommerce Businesses</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-4">
+                                    <div class="counter-single">
+                                        <h2 class="mb-2 display-4 font-weight-bold">2+</h2>
+                                        <strong>Years of Experience</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-4">
+                                    <div class="counter-single">
+                                        <h2 class="mb-2 display-4 font-weight-bold">100%</h2>
+                                        <strong>Client Satisfaction</strong>
                                     </div>
                                 </div>
                             </div>
-                            <div class="action-btns mt-4">
-                                <a href="#" class="btn secondary-solid-btn mr-3">Start Now</a>
-                                <a href="#" class="btn secondary-outline-btn">Learn More</a>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6">
-                        <div class="card border-0 text-white">
-                            <img src="img/why-choose-us.png" alt="video" class="img-fluid">
-                            <div class="card-img-overlay text-center">
-                                <a href="https://www.youtube.com/watch?v=9No-FiEInLA"
-                                    class="popup-youtube video-play-icon color-bip shadow"><span
-                                        class="ti-control-play"></span> </a>
-                            </div>
+                </div>
+
+                <!-- Additional Content Sections -->
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="mb-4">
+                            <h4 class="mb-3">Our Journey</h4>
+                            <ul class="list-unstyled tech-feature-list">
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2023:</strong> The beginning, small office, big dreams.</li>
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2024:</strong> First US retail brand, first AI-powered SEO campaign.</li>
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2025:</strong> Became trusted by 50+ eCommerce businesses in US and India, delivering results-focused PPC, content, and design.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="mb-3">What Drives Us</h4>
+                            <p><strong>Mission:</strong> Empower brands worldwide using cutting-edge AI, measurable marketing, and seamless user experiences.</p>
+                            <p><strong>Values:</strong> Openness, innovation, empathy, and relentless pursuit of ROI.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="mb-3">What Makes Us Different</h4>
+                            <ul class="list-unstyled tech-feature-list">
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Proven capability in AI, web, and digital marketing, optimized for eCommerce.</li>
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Transparent client relationships, always personalized.</li>
+                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Continuous learning from each campaign and market trend.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -205,199 +169,8 @@
         </section>
         <!--about us section end-->
 
-        <!--work process section start-->
-        <section class="work-process-section ptb-100 gray-light-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-heading text-center">
-                            <strong class="color-secondary">Work Process</strong>
-                            <h2>We follow Few Steps</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Globally reinvent cross-unit human capital whereas virtual catalysts for
-                                change. Assertively
-                                network accurate methods of empowerment rather than client-centered improvements.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============ step 1 =========== -->
-                <div class="row mt-5">
-                    <div class="col-md-12 col-lg-5 process-width">
-                        <div class="process-box process-left">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="process-step-number">
-                                        <strong>Step</strong>
-                                        <h2 class="m-0">01</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h5>Technical Audit</h5>
-                                    <p>Monotonectally optimize granular quality vectors vis-a-vis interdependent.</p>
-                                </div>
-                            </div>
-                            <div class="process-line-l"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 process-none"></div>
-                    <div class="col-md-5 col-md-5 col-lg-5 process-none">
-                        <div class="process-point-right"></div>
-                    </div>
-                </div>
-                <!-- ============ step 2 =========== -->
-                <div class="row">
-                    <div class="col-md-5 col-lg-5 process-none">
-                        <div class="process-point-left"></div>
-                    </div>
-                    <div class="col-md-2 process-none"></div>
-                    <div class="col-md-12 col-lg-5 process-width">
-                        <div class="process-box process-right">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="process-step-number">
-                                        <strong>Step</strong>
-                                        <h2 class="m-0">02</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h5>Technical SEO</h5>
-                                    <p>Completely synthesize one-to-one interfaces vis-a-vis client-focused alignments.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="process-line-r"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ============ step 3 =========== -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-5 process-width">
-                        <div class="process-box process-left">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="process-step-number">
-                                        <strong>Step</strong>
-                                        <h2 class="m-0">03</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h5>Select Keywords</h5>
-                                    <p>Progressively streamline cooperative sources whereas stand-alone channels.</p>
-                                </div>
-                            </div>
-                            <div class="process-line-l"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 process-none"></div>
-                    <div class="col-md-5 col-lg-5 process-none">
-                        <div class="process-point-right"></div>
-                    </div>
-                </div>
-                <!-- ============ step 4 =========== -->
-                <div class="row">
-                    <div class="col-md-5 col-lg-5 process-none">
-                        <div class="process-point-left"></div>
-                    </div>
-                    <div class="col-md-2 process-none"></div>
-                    <div class="col-md-12 col-lg-5 process-width">
-                        <div class="process-box process-right">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="process-step-number">
-                                        <strong>Step</strong>
-                                        <h2 class="m-0">04</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h5>Demographics</h5>
-                                    <p>Objectively underwhelm one-to-one deliverables whereas impactful solutions. </p>
-                                </div>
-                            </div>
-                            <div class="process-line-r"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- ============ step 3 =========== -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-5 process-width">
-                        <div class="process-box process-left">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="process-step-number">
-                                        <strong>Step</strong>
-                                        <h2 class="m-0">05</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <h5>Engine Ranking</h5>
-                                    <p>Interactively seize innovative platforms vis-a-vis ubiquitous portals.</p>
-                                </div>
-                            </div>
-                            <div class="process-line-l"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 custom-none"></div>
-                    <div class="col-md-5 col-lg-5 custom-none">
-                        <div class="process-point-right process-last"></div>
-                    </div>
-                </div>
-                <!-- ============ -->
-            </div>
-        </section>
-        <!--work process section end-->
-
-        <!--call to action progressbar start-->
-        <section class="call-to-action ptb-100"
-            style="background: url('img/ctg-bg-2.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="70"><span>70%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Keywords Results</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="75"><span>75%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Google Analytics</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="80"><span>80%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Competition Metrics</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="65"><span>65%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">SEO & Marketing</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--call to action progressbar end-->
-
-
         <!--team two section start-->
-        <section class="team-two-section ptb-100">
+        <section class="team-two-section ptb-100 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8">
@@ -582,59 +355,6 @@
             </div>
         </section>
         <!--team two section end-->
-
-        <!--client section start-->
-        <div class="client-section ptb-100" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-heading-wrap">
-                            <h3>Who are Happy With Services and Work</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-para">
-                            <p>Seamlessly administrate synergistic growth strategies and collaborative markets. Globally
-                                empower inexpensive infomediaries after sustainable mindshare. Phosfluorescently brand
-                                professional collaboration and idea-sharing without principle-centered interfaces. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo start-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator client-logo-wrap">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo end-->
-            </div>
-        </div>
-        <!--client section end-->
 
     </div>
     <!--body content wrap end-->

@@ -27,25 +27,35 @@
     margin-bottom: 15px;
   }
 
-  /* Header Mobile Height Reduction */
+  /* Header Mobile Height to Match Logo */
   #header-top-bar {
-    padding: 5px 0 !important;
+    padding: 2px 0 !important;
     font-size: 0.75rem !important;
   }
 
   .navbar {
-    padding: 8px 0 !important;
-    min-height: 50px !important;
+    padding: 2px 0 !important;
+    min-height: 50px !important; /* Slightly larger to accommodate logo */
   }
 
   .navbar .container {
     padding: 0 15px;
   }
 
+  /* Logo sizing to match original header.php (width: 15%) with visibility fix */
+  .hide-on-desktop {
+    width: 15% !important;
+    max-height: 50px !important;
+    min-width: 60px !important; /* Prevent logo from becoming too small */
+    height: auto !important;
+  }
+
   .navbar-brand img,
   .navbar img {
-    max-height: 35px !important;
-    width: auto !important;
+    width: 15% !important;
+    max-height: 50px !important;
+    min-width: 60px !important;
+    height: auto !important;
   }
 
   /* Remove excess body padding */
@@ -58,23 +68,25 @@
     margin-top: 0 !important;
   }
 
-  /* Breadcrumb Navigation Mobile Fix */
+  /* Breadcrumb Navigation Mobile Fix - Ensure Visibility */
   .breadcrumb {
-    font-size: 0.95rem !important;
+    display: block !important; /* Ensure breadcrumb is visible */
+    font-size: 1rem !important; /* Increased for readability */
     line-height: 1.6 !important;
     word-wrap: break-word;
     white-space: normal !important;
-    color: #000 !important;
+    color: #333 !important; /* Better contrast */
+    margin-top: 10px !important; /* Add spacing after header */
     margin-bottom: 15px !important;
-    margin-top: 10px !important;
-    padding: 8px 0 !important;
+    padding: 10px 0 !important; /* Add padding for visibility */
     font-weight: 500 !important;
+    background-color: #f8f9fa !important; /* Light background for contrast */
   }
 
   .breadcrumb li {
     display: inline !important;
-    font-size: 0.95rem !important;
-    color: #000 !important;
+    font-size: 1rem !important;
+    color: #333 !important;
   }
 
   .breadcrumb li a {
@@ -231,21 +243,61 @@
     margin-bottom: 15px;
   }
 
+  /* Header Small Device Height to Match Logo */
+  #header-top-bar {
+    padding: 2px 0 !important;
+  }
+
+  .navbar {
+    padding: 3px 0 !important;
+    min-height: 55px !important; /* Slightly larger to accommodate logo */
+  }
+
+  /* Logo sizing to match original header.php (width: 15%) */
+  .hide-on-desktop {
+    width: 15% !important;
+    max-height: 55px !important;
+    min-width: 70px !important; /* Prevent logo from becoming too small */
+    height: auto !important;
+  }
+
+  .navbar-brand img,
+  .navbar img {
+    width: 15% !important;
+    max-height: 55px !important;
+    min-width: 70px !important;
+    height: auto !important;
+  }
+
   /* Breadcrumb Navigation Mobile Fix */
   .breadcrumb {
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-    color: #333 !important;
+    display: block !important; /* Ensure breadcrumb is visible */
+    font-size: 1rem !important; /* Increased for readability */
+    line-height: 1.6 !important;
+    word-wrap: break-word;
+    white-space: normal !important;
+    color: #333 !important; /* Better contrast */
+    margin-top: 10px !important; /* Add spacing after header */
+    margin-bottom: 15px !important;
+    padding: 10px 0 !important; /* Add padding for visibility */
+    font-weight: 500 !important;
+    background-color: #f8f9fa !important; /* Light background for contrast */
   }
 
   .breadcrumb li {
+    display: inline !important;
+    font-size: 1rem !important;
     color: #333 !important;
   }
 
   .breadcrumb li a {
     color: #007bff !important;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600 !important;
+  }
+
+  .breadcrumb li a:hover {
+    text-decoration: underline;
   }
 
   /* Service Details Mobile Responsiveness */
@@ -344,6 +396,32 @@
     margin-bottom: 15px;
   }
 
+  /* Header Tablet Height to Match Logo */
+  #header-top-bar {
+    padding: 3px 0 !important;
+  }
+
+  .navbar {
+    padding: 4px 0 !important;
+    min-height: 65px !important; /* Matches logo max-height */
+  }
+
+  /* Logo sizing to match original header.php (width: 17%) */
+  .hide-on-mobile {
+    width: 17% !important;
+    max-height: 65px !important;
+    min-width: 80px !important; /* Prevent logo from becoming too small */
+    height: auto !important;
+  }
+
+  .navbar-brand img,
+  .navbar img {
+    width: 17% !important;
+    max-height: 65px !important;
+    min-width: 80px !important;
+    height: auto !important;
+  }
+
   /* Breadcrumb Navigation Tablet Fix */
   .breadcrumb {
     font-size: 0.95rem !important;
@@ -378,10 +456,52 @@
   }
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {
+/*Large devices (desktops, 992px and up) - Height reduction for web/desktop*/
+@media (min-width: 992px) {
+  /* Header Desktop Height to Match Logo */
+  #header-top-bar {
+    padding: 3px 0 !important;
+  }
+
+  .navbar {
+    padding: 4px 0 !important;
+    min-height: 70px !important; /* Matches logo max-height */
+  }
+
+  /* Logo sizing to match original header.php (width: 17%) */
+  .hide-on-mobile {
+    width: 17% !important;
+    max-height: 70px !important;
+    min-width: 90px !important; /* Prevent logo from becoming too small */
+    height: auto !important;
+  }
+
+  .navbar-brand img,
+  .navbar img {
+    width: 17% !important;
+    max-height: 70px !important;
+    min-width: 90px !important;
+    height: auto !important;
+  }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  /* Maintain reduced height for larger desktops */
+  #header-top-bar {
+    padding: 3px 0 !important;
+  }
+
+  .navbar {
+    padding: 4px 0 !important;
+    min-height: 70px !important; /* Matches logo max-height */
+  }
+
+  /* Logo sizing to match original header.php (width: 17%) */
+  .hide-on-mobile {
+    width: 17% !important;
+    max-height: 70px !important;
+    min-width: 90px !important;
+    height: auto !important;
+  }
 }

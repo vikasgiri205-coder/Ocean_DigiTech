@@ -63,13 +63,13 @@
                                             <a class="nav-link" href="#">Legal Information</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Privacy Policy</a>
+                                            <a class="nav-link" href="privacy-policy.php">Privacy Policy</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Report Abuse</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Terms of Service</a>
+                                            <a class="nav-link" href="terms-and-conditions.php">Terms of Service</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -118,8 +118,8 @@
                     </div>
                     <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
                         <ul class="list-inline policy-nav text-right social-list">
-                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                            <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+                            <li class="list-inline-item"><a href="privacy-policy.php">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="terms-and-conditions.php">Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
