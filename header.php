@@ -117,10 +117,15 @@
                                     <ul class="sub-menu">
                                         <li><a href="team.php">PPC Services</a></li>
                                         <li><a href="team-single.php">E-Commerce PPC</a></li>
+                                        <li><a href="google-ads-management.php">Google Ads Management</a></li>
+                                        <li><a href="paid-social-advertising.php">Paid Social Advertising</a></li>
+                                        <li><a href="amazon-ppc-management.php">Amazon PPC Management</a></li>
+                                        <li><a href="amazon-dsp-advertising.php">Amazon DSP Advertising</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#" class="dropdown-toggle-inner">SEO</a>
                                     <ul class="sub-menu">
+                                        <li><a href="seo-services.php">SEO Services</a></li>
                                         <li><a href="local-seo-services.php">Local SEO</a></li>
                                         <li><a href="ecommerce-seo-services.php">E-Commerce SEO</a></li>
                                         <li><a href="team-single.php">AI SEO</a></li>
