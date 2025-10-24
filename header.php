@@ -104,6 +104,7 @@
                                         <li><a href="custom-website-design.php">Custom Website Design</a></li>
                                         <li><a href="custom-website-development.php">Custom Website Development</a></li>
                                         <li><a href="ecommerce-web-development.php">E-Commerce Web Development</a></li>
+                                        <li><a href="mobile-app-development.php">Mobile App Development</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#" class="dropdown-toggle-inner">Social Media</a>
@@ -120,8 +121,8 @@
                                 </li>
                                 <li><a href="#" class="dropdown-toggle-inner">SEO</a>
                                     <ul class="sub-menu">
-                                        <li><a href="team.php">Local SEO</a></li>
-                                        <li><a href="team-single.php">E-Commerce SEO</a></li>
+                                        <li><a href="local-seo-services.php">Local SEO</a></li>
+                                        <li><a href="ecommerce-seo-services.php">E-Commerce SEO</a></li>
                                         <li><a href="team-single.php">AI SEO</a></li>
                                     </ul>
                                 </li>
