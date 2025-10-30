@@ -37,19 +37,28 @@
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">COMPANY</h4>
+                                    <h4 class="text-white">SERVICES</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">About Our Services</a>
+                                            <a class="nav-link" href="custom-website-design.php">Custom Website Design</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Our Affiliates Program</a>
+                                            <a class="nav-link" href="ecommerce-web-development.php">E-Commerce Development</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">View Our Blog</a>
+                                            <a class="nav-link" href="mobile-app-development.php">Mobile App Development</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Check Our Careers</a>
+                                            <a class="nav-link" href="seo-services.php">SEO Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="local-seo-services.php">Local SEO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="social-media-management.php">Social Media Management</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="google-ads-management.php">Google Ads Management</a>
                                         </li>
                                     </ul>
 
@@ -57,19 +66,19 @@
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <div class="footer-nav-wrap text-white">
-                                    <h4 class="text-white">LEGAL</h4>
+                                    <h4 class="text-white">COMPANY</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Legal Information</a>
+                                            <a class="nav-link" href="about-us.php">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact-us.php">Contact</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="privacy-policy.php">Privacy Policy</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Report Abuse</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="terms-and-conditions.php">Terms of Service</a>
+                                            <a class="nav-link" href="terms-and-conditions.php">Terms & Conditions</a>
                                         </li>
                                     </ul>
                                 </div>
