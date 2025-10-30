@@ -109,8 +109,8 @@
                                 </li>
                                 <li><a href="#" class="dropdown-toggle-inner">Social Media</a>
                                     <ul class="sub-menu">
-                                         <li><a href="download.php">Social media management</a></li> 
-                                        <li><a href="review.php">Social Media Advertising</a></li>
+                                         <li><a href="social-media-management.php">Social Media Management</a></li>
+                                        <li><a href="social-media-advertising.php">Social Media Advertising</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#" class="dropdown-toggle-inner">PPC</a>
