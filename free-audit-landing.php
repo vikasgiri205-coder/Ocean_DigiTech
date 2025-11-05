@@ -516,6 +516,15 @@
             width: 20px;
             height: 20px;
             cursor: pointer;
+            accent-color: var(--primary-color);
+        }
+
+        .checkbox-item label {
+            cursor: pointer;
+            color: var(--dark-color);
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0;
         }
 
         .submit-button {
@@ -924,31 +933,39 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">What's your main focus area? *</label>
+                        <label class="form-label">Which services are you interested in? * (Select all that apply)</label>
                         <div class="checkbox-group">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_dev" name="focusArea[]" value="development">
-                                <label for="focus_dev">Website or App Development</label>
+                                <input type="checkbox" id="service_web_design" name="services[]" value="Custom Website Design">
+                                <label for="service_web_design">Custom Website Design</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_seo" name="focusArea[]" value="seo">
-                                <label for="focus_seo">SEO & Content Marketing</label>
+                                <input type="checkbox" id="service_web_dev" name="services[]" value="Custom Website Development">
+                                <label for="service_web_dev">Custom Website Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_ppc" name="focusArea[]" value="ppc">
-                                <label for="focus_ppc">Paid Ads / PPC</label>
+                                <input type="checkbox" id="service_ecommerce" name="services[]" value="E-Commerce Web Development">
+                                <label for="service_ecommerce">E-Commerce Web Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_social" name="focusArea[]" value="social">
-                                <label for="focus_social">Social Media Growth</label>
+                                <input type="checkbox" id="service_mobile" name="services[]" value="Mobile App Development">
+                                <label for="service_mobile">Mobile App Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_cloud" name="focusArea[]" value="cloud">
-                                <label for="focus_cloud">Cloud & Technology Consulting</label>
+                                <input type="checkbox" id="service_seo" name="services[]" value="SEO Services">
+                                <label for="service_seo">SEO Services</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="focus_full" name="focusArea[]" value="full_audit">
-                                <label for="focus_full">Not sure — I want a full audit</label>
+                                <input type="checkbox" id="service_social" name="services[]" value="Social Media Management">
+                                <label for="service_social">Social Media Management</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_ppc" name="services[]" value="PPC Services">
+                                <label for="service_ppc">PPC Services</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_google_ads" name="services[]" value="Google Ads Management">
+                                <label for="service_google_ads">Google Ads Management</label>
                             </div>
                         </div>
                     </div>
@@ -1038,6 +1055,13 @@
         // Form submission handling
         document.getElementById('leadCaptureForm').addEventListener('submit', function(e) {
             e.preventDefault();
+
+            // Validate that at least one service checkbox is selected
+            const serviceCheckboxes = document.querySelectorAll('input[name="services[]"]:checked');
+            if (serviceCheckboxes.length === 0) {
+                alert('Please select at least one service you are interested in.');
+                return false;
+            }
 
             // Track conversion event
             if (typeof gtag !== 'undefined') {
