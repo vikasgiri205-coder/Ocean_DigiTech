@@ -482,6 +482,8 @@
             font-size: 15px;
             transition: all 0.3s ease;
             font-family: inherit;
+            background-color: #ffffff !important;
+            color: #1a1a1a !important;
         }
 
         .form-control:focus {
@@ -492,6 +494,20 @@
 
         select.form-control {
             cursor: pointer;
+            appearance: auto;
+            -webkit-appearance: menulist;
+            -moz-appearance: menulist;
+            color: #1a1a1a !important;
+            background-color: #ffffff !important;
+        }
+
+        select.form-control option {
+            color: #1a1a1a !important;
+            background-color: #ffffff !important;
+        }
+
+        select.form-control:invalid {
+            color: #6b7280;
         }
 
         textarea.form-control {
@@ -936,35 +952,35 @@
                         <label class="form-label">Which services are you interested in? * (Select all that apply)</label>
                         <div class="checkbox-group">
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_web_design" name="services[]" value="Custom Website Design">
+                                <input type="checkbox" id="service_web_design" name="focusArea[]" value="Custom Website Design">
                                 <label for="service_web_design">Custom Website Design</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_web_dev" name="services[]" value="Custom Website Development">
+                                <input type="checkbox" id="service_web_dev" name="focusArea[]" value="Custom Website Development">
                                 <label for="service_web_dev">Custom Website Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_ecommerce" name="services[]" value="E-Commerce Web Development">
+                                <input type="checkbox" id="service_ecommerce" name="focusArea[]" value="E-Commerce Web Development">
                                 <label for="service_ecommerce">E-Commerce Web Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_mobile" name="services[]" value="Mobile App Development">
+                                <input type="checkbox" id="service_mobile" name="focusArea[]" value="Mobile App Development">
                                 <label for="service_mobile">Mobile App Development</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_seo" name="services[]" value="SEO Services">
+                                <input type="checkbox" id="service_seo" name="focusArea[]" value="SEO Services">
                                 <label for="service_seo">SEO Services</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_social" name="services[]" value="Social Media Management">
+                                <input type="checkbox" id="service_social" name="focusArea[]" value="Social Media Management">
                                 <label for="service_social">Social Media Management</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_ppc" name="services[]" value="PPC Services">
+                                <input type="checkbox" id="service_ppc" name="focusArea[]" value="PPC Services">
                                 <label for="service_ppc">PPC Services</label>
                             </div>
                             <div class="checkbox-item">
-                                <input type="checkbox" id="service_google_ads" name="services[]" value="Google Ads Management">
+                                <input type="checkbox" id="service_google_ads" name="focusArea[]" value="Google Ads Management">
                                 <label for="service_google_ads">Google Ads Management</label>
                             </div>
                         </div>
@@ -972,14 +988,14 @@
 
                     <div class="form-group">
                         <label class="form-label" for="budget">Your Monthly Ad or Tech Budget *</label>
-                        <select id="budget" name="budget" class="form-control" required>
-                            <option value="">Select budget range</option>
-                            <option value="under_1k">Under $1,000</option>
-                            <option value="1k_2k">$1,000 - $2,000</option>
-                            <option value="2k_5k">$2,000 - $5,000</option>
-                            <option value="5k_10k">$5,000 - $10,000</option>
-                            <option value="10k_25k">$10,000 - $25,000</option>
-                            <option value="over_25k">Over $25,000</option>
+                        <select id="budget" name="budget" class="form-control" required style="color: #000000 !important; background-color: #ffffff !important; height: 52px !important; line-height: 52px !important; font-size: 16px !important; padding: 14px 18px !important;">
+                            <option value="" style="color: #999999;">Select budget range</option>
+                            <option value="under_1k" style="color: #000000;">Under $1,000</option>
+                            <option value="1k_2k" style="color: #000000;">$1,000 - $2,000</option>
+                            <option value="2k_5k" style="color: #000000;">$2,000 - $5,000</option>
+                            <option value="5k_10k" style="color: #000000;">$5,000 - $10,000</option>
+                            <option value="10k_25k" style="color: #000000;">$10,000 - $25,000</option>
+                            <option value="over_25k" style="color: #000000;">Over $25,000</option>
                         </select>
                     </div>
 
@@ -1057,7 +1073,7 @@
             e.preventDefault();
 
             // Validate that at least one service checkbox is selected
-            const serviceCheckboxes = document.querySelectorAll('input[name="services[]"]:checked');
+            const serviceCheckboxes = document.querySelectorAll('input[name="focusArea[]"]:checked');
             if (serviceCheckboxes.length === 0) {
                 alert('Please select at least one service you are interested in.');
                 return false;
