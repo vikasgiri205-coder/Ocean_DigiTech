@@ -262,7 +262,8 @@ try {
             <div class='footer'>
                 <p style='font-size: 12px; color: #666;'>
                     <strong>Ocean DigiTech</strong><br>
-                    Based in India | Serving Businesses Across the USA<br>
+                    530 Main St, Ste 3A, Chester, NJ 07930, United States<br>
+                    Phone: +1 (862) 285-5275<br>
                     <a href='https://oceandigitech.com'>www.oceandigitech.com</a>
                 </p>
                 <div style='margin-top: 15px;'>

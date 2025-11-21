@@ -1041,8 +1041,8 @@
                 </div>
 
                 <div style="font-size: 14px; color: #999; margin-top: 20px;">
-                    <p>© 2025 Ocean DigiTech | Based in India | Serving Businesses Across the USA</p>
-                    <p>📍 Virtual Consultations via Calendly (EST & PST Time Slots Available)</p>
+                    <p>© 2025 Ocean DigiTech | 530 Main St, Ste 3A, Chester, NJ 07930, United States</p>
+                    <p>📍 Virtual Consultations via Calendly (EST & PST Time Slots Available) | 📞 +1 (862) 285-5275</p>
                 </div>
             </div>
         </div>

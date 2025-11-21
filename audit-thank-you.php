@@ -519,8 +519,8 @@
             </div>
 
             <div style="font-size: 14px; color: #999; margin-top: 20px;">
-                <p>© 2025 Ocean DigiTech | Based in India | Serving Businesses Across the USA</p>
-                <p>Your Growth Partner in Digital Success</p>
+                <p>© 2025 Ocean DigiTech | 530 Main St, Ste 3A, Chester, NJ 07930, United States</p>
+                <p>Phone: +1 (862) 285-5275 | Your Growth Partner in Digital Success</p>
             </div>
         </div>
     </footer>

@@ -92,12 +92,12 @@
                                     <h4 class="text-white">GET IN TOUCH</h4>
                                     <ul class="get-in-touch-list">
                                         <li class="d-flex align-items-center py-2"><span
-                                                class="fas fa-map-marker-alt mr-2"></span> A-7,sector-10,noida,Uttarpradesh
+                                                class="fas fa-map-marker-alt mr-2"></span> 530 Main St, Ste 3A<br>Chester, NJ 07930<br>United States
                                         </li>
                                         <li class="d-flex align-items-center py-2"><span
                                                 class="fas fa-envelope mr-2"></span> Contact@oceandigitech.com
                                         </li>
-                                        <!--<li class="d-flex align-items-center py-2"><span class="fas fa-phone-alt mr-2"></span> (123) 456-7890 - (123) 456-7890</li>-->
+                                        <li class="d-flex align-items-center py-2"><span class="fas fa-phone-alt mr-2"></span> +1 (862) 285-5275</li>
                                     </ul>
                                     <form class="newsletter-form mt-3">
                                         <input type="text" class="input-newsletter" placeholder="Enter your email"

@@ -256,7 +256,7 @@
 
         <!--google map block start-->
         <div class="google-map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.422552994917!2d77.32852847619637!3d28.587097786141136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce45541bf1229%3A0xd0bc365e615e101c!2s7%2C%20A%20Block%20Rd%2C%20A%20Block%2C%20Sector%2010%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1758957624593!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.8857779486777!2d-74.70089492388076!3d40.87216167136726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a7f5e7e7e7e7%3A0x7e7e7e7e7e7e7e7e!2s530%20Main%20St%20%233A%2C%20Chester%2C%20NJ%2007930%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--google map block end-->
 

@@ -42,9 +42,9 @@
                     <div class="col-md-7 col-lg-7 d-none d-md-block d-lg-block">
                         <div class="topbar-text text-white">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><!--<span class="fas fa-headphones-alt mr-1">--></span> Ocean Digitech Pvt Ltd.
+                                <li class="list-inline-item"><span class="fas fa-map-marker-alt mr-1"></span> 530 Main St, Ste 3A, Chester, NJ 07930
                                     </li>
-                                <li class="list-inline-item"><span class="fas fa-phone-alt mr-1"></span> +91 83840012989
+                                <li class="list-inline-item"><span class="fas fa-phone-alt mr-1"></span> +1 (862) 285-5275
                                 </li>
                             </ul>
                         </div>
