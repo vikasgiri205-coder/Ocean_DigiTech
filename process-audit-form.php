@@ -348,7 +348,7 @@ try {
     // Success response
     $response['success'] = true;
     $response['message'] = 'Thank you! Your audit request has been submitted successfully.';
-    $response['redirect'] = 'audit-thank-you.php';
+    $response['redirect'] = 'booking-landing.php';
 
 } catch (Exception $e) {
     $response['success'] = false;

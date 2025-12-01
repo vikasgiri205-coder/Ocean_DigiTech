@@ -44,9 +44,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Calendly CSS -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
     <style>
         :root {
             --primary-color: #e80566;
@@ -338,6 +335,30 @@
             color: white;
         }
 
+        .book-now-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #e80566, #ff1493);
+            color: white;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(232, 5, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background: linear-gradient(135deg, #ff1493, #e80566);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(232, 5, 102, 0.4);
+            color: white;
+        }
+
+        .book-now-btn i {
+            margin-right: 10px;
+        }
+
         /* Responsive */
         @media (max-width: 992px) {
             .next-steps-grid {
@@ -411,10 +432,12 @@
                     Book a free 30-minute strategy session with one of our digital growth experts. We'll walk through your audit and answer any questions you have.
                 </p>
 
-                <!-- Calendly Inline Widget -->
-                <div class="calendly-inline-widget"
-                     data-url="https://calendly.com/your-account/strategy-session?hide_gdpr_banner=1"
-                     style="min-width:320px;height:700px;"></div>
+                <!-- Book Now Button -->
+                <div style="text-align: center; margin: 40px 0;">
+                    <a href="booking-landing.php" class="book-now-btn">
+                        <i class="fas fa-calendar-check"></i> Book Your Free Consultation Now
+                    </a>
+                </div>
 
                 <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 10px;">
                     <p style="font-size: 14px; color: #666; margin: 0;">
@@ -525,9 +548,6 @@
         </div>
     </footer>
 
-    <!-- Calendly Widget Script -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
     <script>
         // Track page view
         if (typeof gtag !== 'undefined') {
@@ -536,30 +556,6 @@
                 page_location: window.location.href
             });
         }
-
-        // Track Calendly events
-        function isCalendlyEvent(e) {
-            return e.data.event && e.data.event.indexOf('calendly') === 0;
-        }
-
-        window.addEventListener('message', function(e) {
-            if (isCalendlyEvent(e)) {
-                if (e.data.event === 'calendly.event_scheduled') {
-                    // Track booking conversion
-                    if (typeof gtag !== 'undefined') {
-                        gtag('event', 'conversion', {
-                            'send_to': 'AW-XXXXXXXXX/YYYYYY' // Replace with booking conversion ID
-                        });
-                    }
-
-                    if (typeof fbq !== 'undefined') {
-                        fbq('track', 'Schedule');
-                    }
-
-                    console.log('Calendly event scheduled!');
-                }
-            }
-        });
 
         // Smooth animations on scroll
         const observerOptions = {
