@@ -956,6 +956,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
                         <label class="form-label" for="website">Website URL *</label>
                         <input type="url" id="website" name="website" class="form-control" required placeholder="https://yourwebsite.com">
                     </div>

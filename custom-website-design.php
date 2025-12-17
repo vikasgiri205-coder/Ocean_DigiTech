@@ -460,8 +460,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input type="phone number" class="form-control" name="phone number"
-                                                placeholder="phone number" required="required">
+                                            <input type="tel" class="form-control" name="phone"
+                                                placeholder="Phone Number" required="required">
                                         </div>
                                     </div>
                                     <div class="col-12">

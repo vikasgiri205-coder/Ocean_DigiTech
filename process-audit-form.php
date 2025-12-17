@@ -25,13 +25,14 @@ try {
     $fullName = filter_input(INPUT_POST, 'fullName', FILTER_SANITIZE_STRING);
     $company = filter_input(INPUT_POST, 'company', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
     $website = filter_input(INPUT_POST, 'website', FILTER_SANITIZE_URL);
     $focusAreas = isset($_POST['focusArea']) ? $_POST['focusArea'] : array();
     $budget = filter_input(INPUT_POST, 'budget', FILTER_SANITIZE_STRING);
     $challenge = filter_input(INPUT_POST, 'challenge', FILTER_SANITIZE_STRING);
 
     // Validate required fields
-    if (empty($fullName) || empty($company) || empty($email) || empty($website) || empty($budget) || empty($challenge)) {
+    if (empty($fullName) || empty($company) || empty($email) || empty($phone) || empty($website) || empty($budget) || empty($challenge)) {
         throw new Exception('Please fill in all required fields');
     }
 
@@ -121,6 +122,11 @@ try {
                 <div class='field'>
                     <div class='label'>Email:</div>
                     <div class='value'><a href='mailto:$email'>$email</a></div>
+                </div>
+
+                <div class='field'>
+                    <div class='label'>Phone:</div>
+                    <div class='value'><a href='tel:$phone'>$phone</a></div>
                 </div>
 
                 <div class='field'>
@@ -311,11 +317,11 @@ try {
 
     if (!$csvExists) {
         // Write header row
-        fputcsv($csvHandle, array('Timestamp', 'Name', 'Company', 'Email', 'Website', 'Focus Areas', 'Budget', 'Challenge', 'Segment', 'IP', 'Referrer'));
+        fputcsv($csvHandle, array('Timestamp', 'Name', 'Company', 'Email', 'Phone', 'Website', 'Focus Areas', 'Budget', 'Challenge', 'Segment', 'IP', 'Referrer'));
     }
 
     // Write data row
-    fputcsv($csvHandle, array($timestamp, $fullName, $company, $email, $website, $focusAreasText, $budget, $challenge, $segment, $ipAddress, $referrer));
+    fputcsv($csvHandle, array($timestamp, $fullName, $company, $email, $phone, $website, $focusAreasText, $budget, $challenge, $segment, $ipAddress, $referrer));
 
     fclose($csvHandle);
 
