@@ -439,17 +439,15 @@
                     <span class="calendly-badge">⚡ FAST-TRACK YOUR RESULTS</span>
                 </div>
 
-                <h2 class="section-title">Want to Discuss Your Results Now?</h2>
+                <h2 class="section-title">Want us to walk you through the findings?</h2>
                 <p class="section-subtitle">
                     Book a free 30-minute strategy session with one of our digital growth experts. We'll walk through your audit and answer any questions you have.
                 </p>
 
-                <!-- Book Now Button -->
-                <div style="text-align: center; margin: 40px 0;">
-                    <a href="booking-landing.php" class="book-now-btn">
-                        <i class="fas fa-calendar-check"></i> Book Your Free Consultation Now
-                    </a>
-                </div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/oceandigitech" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
 
                 <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 10px;">
                     <p style="font-size: 14px; color: #666; margin: 0;">
