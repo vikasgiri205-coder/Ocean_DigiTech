@@ -642,6 +642,105 @@
             }
         }
 
+        /* Brand Slider */
+        .brand-slider-container {
+            position: relative;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .brand-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+            gap: 30px;
+        }
+
+        .brand-slide {
+            flex: 0 0 220px;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .brand-slide img {
+            height: 60px;
+            margin-bottom: 15px;
+            object-fit: contain;
+        }
+
+        .brand-slide p {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .slider-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .slider-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .slider-dots {
+            display: flex;
+            gap: 10px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .brand-slider {
+                gap: 15px;
+            }
+            .brand-slide {
+                flex: 0 0 180px;
+                padding: 20px 15px;
+            }
+            .slider-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+
         /* Sticky CTA (Mobile) */
         .sticky-cta {
             position: fixed;
@@ -696,7 +795,7 @@
                 </p>
 
                 <button class="cta-button-primary" onclick="scrollToForm()">
-                    <span>Schedule a Free Audit Call</span>
+                    <span>Schedule a Free Strategy Call</span>
                     <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
@@ -773,53 +872,61 @@
                 Trusted partners across industries who've achieved breakthrough growth with us
             </p>
 
-            <div style="max-width: 1100px; margin: 0 auto;">
-                <!-- First Row: 4 Brands -->
-                <div style="display: flex; justify-content: center; align-items: stretch; gap: 30px; margin-bottom: 30px; flex-wrap: wrap;">
+            <!-- Brand Slider -->
+            <div class="brand-slider-container">
+                <div class="brand-slider" id="brandSlider">
                     <!-- Brand 1: EatClub -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/eatclub-logo.png" alt="EatClub" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Food & Hospitality</p>
+                    <div class="brand-slide">
+                        <img src="img/eatclub-logo.png" alt="EatClub">
+                        <p>Food & Hospitality</p>
                     </div>
 
                     <!-- Brand 2: Juniper -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/juniper-logo.png" alt="Juniper" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Consumer Brand</p>
+                    <div class="brand-slide">
+                        <img src="img/juniper-logo.png" alt="Juniper">
+                        <p>Consumer Brand</p>
                     </div>
 
                     <!-- Brand 3: Padra -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/padra-logo.png" alt="Padra" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">D2C Brand</p>
+                    <div class="brand-slide">
+                        <img src="img/padra-logo.png" alt="Padra">
+                        <p>D2C Brand</p>
                     </div>
 
                     <!-- Brand 4: Sightseeing Tours -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/sightseeing-logo.png" alt="Sightseeing Tours" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Tourism & Travel</p>
+                    <div class="brand-slide">
+                        <img src="img/sightseeing-logo.png" alt="Sightseeing Tours">
+                        <p>Tourism & Travel</p>
                     </div>
-                </div>
 
-                <!-- Second Row: 3 Brands Centered -->
-                <div style="display: flex; justify-content: center; align-items: stretch; gap: 30px; flex-wrap: wrap;">
                     <!-- Brand 5: WEIR LLP LAW FIRM -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/lawfirm-logo.png" alt="WEIR LLP LAW FIRM" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Legal Services</p>
+                    <div class="brand-slide">
+                        <img src="img/lawfirm-logo.png" alt="WEIR LLP LAW FIRM">
+                        <p>Legal Services</p>
                     </div>
 
                     <!-- Brand 6: National Restoration -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/national-restoration-logo.png" alt="National Restoration" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Home Services</p>
+                    <div class="brand-slide">
+                        <img src="img/national-restoration-logo.png" alt="National Restoration">
+                        <p>Home Services</p>
                     </div>
 
                     <!-- Brand 7: Blende Dental -->
-                    <div style="background: white; padding: 30px 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); text-align: center; flex: 0 1 220px;">
-                        <img src="img/blende-dental-logo.png" alt="Blende Dental" style="height: 60px; margin-bottom: 15px; object-fit: contain;">
-                        <p style="font-size: 14px; color: #666; font-weight: 500;">Healthcare / Dental</p>
+                    <div class="brand-slide">
+                        <img src="img/blende-dental-logo.png" alt="Blende Dental">
+                        <p>Healthcare / Dental</p>
                     </div>
+                </div>
+
+                <!-- Slider Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-btn" id="prevBtn" onclick="slideBrands(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="nextBtn" onclick="slideBrands(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
 
@@ -829,11 +936,11 @@
                     <div style="display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap;">
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
                             <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
-                            <span style="font-size: 16px; font-weight: 600; line-height: 24px;">50+ audits completed</span>
+                            <span style="font-size: 16px; font-weight: 600; line-height: 24px;">50+ Audits Completed</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
                             <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
-                            <span style="font-size: 16px; font-weight: 600; line-height: 24px;">Avg 30–40% improvement opportunities identified</span>
+                            <span style="font-size: 16px; font-weight: 600; line-height: 24px;">Avg 30–40% Improvement Opportunities Identified</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
                             <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
@@ -943,7 +1050,7 @@
 
             <div style="text-align: center; margin-top: 50px;">
                 <button class="cta-button-primary" onclick="scrollToForm()">
-                    Request My Free Audit
+                    I'm Ready to Grow. Let's Go.
                 </button>
                 <p style="font-size: 14px; color: #666; margin-top: 20px;">
                     If we don't find meaningful opportunities, we'll tell you honestly.
@@ -1265,6 +1372,106 @@
             }
 
             lastScroll = currentScroll;
+        });
+
+        // Brand Slider Functionality
+        let currentSlide = 0;
+        const slider = document.getElementById('brandSlider');
+        const slides = document.querySelectorAll('.brand-slide');
+        const dotsContainer = document.getElementById('sliderDots');
+        let slidesPerView = 4;
+        let autoSlideInterval;
+
+        function updateSlidesPerView() {
+            if (window.innerWidth <= 768) {
+                slidesPerView = 2;
+            } else if (window.innerWidth <= 992) {
+                slidesPerView = 3;
+            } else {
+                slidesPerView = 4;
+            }
+        }
+
+        function getTotalPages() {
+            return Math.ceil(slides.length / slidesPerView);
+        }
+
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            const totalPages = getTotalPages();
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'slider-dot' + (i === currentSlide ? ' active' : '');
+                dot.onclick = () => goToSlide(i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateSlider() {
+            const slideWidth = slides[0].offsetWidth + 30; // width + gap
+            const offset = currentSlide * slidesPerView * slideWidth;
+            slider.style.transform = `translateX(-${offset}px)`;
+
+            // Update dots
+            document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function slideBrands(direction) {
+            const totalPages = getTotalPages();
+            currentSlide += direction;
+
+            if (currentSlide >= totalPages) {
+                currentSlide = 0;
+            } else if (currentSlide < 0) {
+                currentSlide = totalPages - 1;
+            }
+
+            updateSlider();
+            resetAutoSlide();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+            resetAutoSlide();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                slideBrands(1);
+            }, 4000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Initialize slider
+        document.addEventListener('DOMContentLoaded', function() {
+            updateSlidesPerView();
+            createDots();
+            updateSlider();
+            startAutoSlide();
+        });
+
+        // Update on resize
+        window.addEventListener('resize', function() {
+            updateSlidesPerView();
+            createDots();
+            currentSlide = 0;
+            updateSlider();
+        });
+
+        // Pause auto-slide on hover
+        document.querySelector('.brand-slider-container').addEventListener('mouseenter', function() {
+            clearInterval(autoSlideInterval);
+        });
+
+        document.querySelector('.brand-slider-container').addEventListener('mouseleave', function() {
+            startAutoSlide();
         });
     </script>
 
