@@ -31,8 +31,8 @@ try {
     $budget = filter_input(INPUT_POST, 'budget', FILTER_SANITIZE_STRING);
     $challenge = filter_input(INPUT_POST, 'challenge', FILTER_SANITIZE_STRING);
 
-    // Validate required fields
-    if (empty($fullName) || empty($company) || empty($email) || empty($phone) || empty($website) || empty($budget) || empty($challenge)) {
+    // Validate required fields (budget and challenge are optional for growth-audit form)
+    if (empty($fullName) || empty($company) || empty($email) || empty($phone) || empty($website)) {
         throw new Exception('Please fill in all required fields');
     }
 
@@ -139,15 +139,15 @@ try {
                     <div class='value'>$focusAreasText</div>
                 </div>
 
-                <div class='field'>
+                " . (!empty($budget) ? "<div class='field'>
                     <div class='label'>Monthly Budget:</div>
                     <div class='value'>" . ucwords(str_replace('_', ' ', $budget)) . "</div>
-                </div>
+                </div>" : "") . "
 
-                <div class='field'>
+                " . (!empty($challenge) ? "<div class='field'>
                     <div class='label'>Biggest Challenge:</div>
                     <div class='value'>" . nl2br(htmlspecialchars($challenge)) . "</div>
-                </div>
+                </div>" : "") . "
 
                 <div class='field'>
                     <div class='label'>Submitted:</div>
@@ -321,7 +321,7 @@ try {
     }
 
     // Write data row
-    fputcsv($csvHandle, array($timestamp, $fullName, $company, $email, $phone, $website, $focusAreasText, $budget, $challenge, $segment, $ipAddress, $referrer));
+    fputcsv($csvHandle, array($timestamp, $fullName, $company, $email, $phone, $website, $focusAreasText, $budget ?: 'N/A', $challenge ?: 'N/A', $segment, $ipAddress, $referrer));
 
     fclose($csvHandle);
 

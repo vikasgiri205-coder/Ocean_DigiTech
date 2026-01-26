@@ -1180,7 +1180,7 @@
                         "Ocean DigiTech played a key role in optimizing our campaigns and call tracking setup. Their insights helped us better understand patient acquisition across locations."
                     </p>
                     <div style="display: flex; align-items: center; gap: 15px; margin-top: 20px;">
-                        <img src="img/clients-logo-01.png" alt="Emily S." style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <img src="img/clients-logo-08.png" alt="Emily S." style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
                         <div>
                             <div class="testimonial-author">Emily S.</div>
                             <div class="testimonial-role">Marketing Manager, Healthcare / Dental (USA)</div>
@@ -1204,23 +1204,61 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="companyName">Company Name *</label>
-                        <input type="text" id="companyName" name="companyName" class="form-control" required placeholder="Your Company Name">
+                        <label class="form-label" for="company">Company Name *</label>
+                        <input type="text" id="company" name="company" class="form-control" required placeholder="Your Company Name">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="workEmail">Work Email *</label>
-                        <input type="email" id="workEmail" name="workEmail" class="form-control" required placeholder="you@company.com">
+                        <label class="form-label" for="email">Work Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="you@company.com">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="phoneNumber">Phone Number *</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required placeholder="+1 (555) 123-4567">
+                        <label class="form-label" for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="+1 (555) 123-4567">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="websiteURL">Website URL *</label>
-                        <input type="url" id="websiteURL" name="websiteURL" class="form-control" required placeholder="https://yourwebsite.com">
+                        <label class="form-label" for="website">Website URL *</label>
+                        <input type="url" id="website" name="website" class="form-control" required placeholder="https://yourwebsite.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">What services are you interested in? *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_web_design" name="focusArea[]" value="Custom Website Design">
+                                <label for="service_web_design">Custom Website Design</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_web_dev" name="focusArea[]" value="Custom Website Development">
+                                <label for="service_web_dev">Custom Website Development</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_ecommerce" name="focusArea[]" value="E-Commerce Web Development">
+                                <label for="service_ecommerce">E-Commerce Web Development</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_mobile" name="focusArea[]" value="Mobile App Development">
+                                <label for="service_mobile">Mobile App Development</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_seo" name="focusArea[]" value="SEO Services">
+                                <label for="service_seo">SEO Services</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_social" name="focusArea[]" value="Social Media Management">
+                                <label for="service_social">Social Media Management</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_ppc" name="focusArea[]" value="PPC Services">
+                                <label for="service_ppc">PPC Services</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="service_google_ads" name="focusArea[]" value="Google Ads Management">
+                                <label for="service_google_ads">Google Ads Management</label>
+                            </div>
+                        </div>
                     </div>
 
                     <button type="submit" class="submit-button">
