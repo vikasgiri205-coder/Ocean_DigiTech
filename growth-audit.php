@@ -802,6 +802,25 @@
         </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="landing-section" style="padding: 60px 0; background: #f8f9fa;">
+        <div class="container">
+            <div class="video-wrapper fadeInUp" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title" style="margin-bottom: 30px;">See How We Help Businesses Grow</h2>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                    <iframe
+                        src="https://www.youtube.com/embed/hLR38ZcucX8"
+                        title="Digital Growth Audit Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 20px;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Problem Awareness Section -->
     <section class="landing-section">
         <div class="container">
