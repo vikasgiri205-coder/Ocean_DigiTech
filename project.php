@@ -70,11 +70,11 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-7">
                         <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Case Studies</h1>
+                            <h1 class="text-white mb-0">Our Portfolio</h1>
                             <div class="custom-breadcrumb">
                                 <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Projects</li>
+                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
+                                    <li class="list-inline-item breadcrumb-item active">Our Portfolio</li>
                                 </ol>
                             </div>
                         </div>
@@ -84,148 +84,121 @@
         </section>
         <!--header section end-->
 
-
-        <!--our work or portfolio section start-->
+        <!--our portfolio section start-->
         <section class="our-portfolio-section ptb-100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-heading text-center mb-4">
-                            <strong class="color-secondary">Previous Project</strong>
-                            <h2>Our Case Studies</h2>
+                            <span class="growth-challenge-label mb-2">FEATURED PROJECTS</span>
+                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our Portfolio</h2>
                             <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process
-                                improvements.
-                                Intrinsicly
-                                develop end-to-end customer service without extensive data.</p>
-
+                            <p class="lead text-muted" style="font-size: 16px;">
+                                A curated showcase of custom web development, e-commerce platforms, and data-driven marketing campaigns delivered for growth-focused enterprises.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center pb-2">
-                            <button type="button" class="filter-btn" data-mixitup-control data-filter="all">Digital
-                                Marketing
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control
-                                data-filter=".branding">Marketing
-                                Strategy
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control
-                                data-filter=".animation">Content
-                                Marketing
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control data-filter=".other">SEO
-                                Services
-                            </button>
+                        <div class="modern-filter-tabs">
+                            <button type="button" class="modern-filter-btn active" data-mixitup-control data-filter="all">All Projects</button>
+                            <button type="button" class="modern-filter-btn" data-mixitup-control data-filter=".web-dev">Web & Software Dev</button>
+                            <button type="button" class="modern-filter-btn" data-mixitup-control data-filter=".seo-growth">SEO & Marketing</button>
+                            <button type="button" class="modern-filter-btn" data-mixitup-control data-filter=".ecommerce">E-Commerce</button>
                         </div>
-                        <div class="portfolio-container" id="MixItUp">
-                            <div class="mix portfolio-item branding" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/3.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Creative Design</h5>
-                                            <p>Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+
+                        <div class="portfolio-grid-modern" id="MixItUp">
+                            <!-- Project 1 -->
+                            <div class="mix web-dev" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/3.jpg" alt="Enterprise SaaS Web Platform" />
+                                        <span class="portfolio-tag-badge">Web Application</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item other animation" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/2.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Web UI/UX Design</h5>
-                                            <p>Web, Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Enterprise SaaS Web Platform</h3>
+                                        <p class="portfolio-card-category">Custom Software & Cloud Architecture</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="mix portfolio-item animation" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/4.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Corporate Flyer Design</h5>
-                                            <p>Flyer Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+
+                            <!-- Project 2 -->
+                            <div class="mix ecommerce" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/2.jpg" alt="Global D2C Storefront" />
+                                        <span class="portfolio-tag-badge">E-Commerce</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item branding" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/1.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Web UI/UX Design</h5>
-                                            <p>Web, Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Global D2C Storefront</h3>
+                                        <p class="portfolio-card-category">Full-stack E-Commerce & Checkout Optimization</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="mix portfolio-item animation other" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/5.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Wall Painting Design</h5>
-                                            <p>Painting Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+
+                            <!-- Project 3 -->
+                            <div class="mix seo-growth" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/4.jpg" alt="Legal Services SEO Campaign" />
+                                        <span class="portfolio-tag-badge">SEO & Marketing</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item branding " data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/6.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Corporate Identity Design</h5>
-                                            <p>Corporate Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Legal Services Organic Growth</h3>
+                                        <p class="portfolio-card-category">Technical SEO & Conversion Optimization</p>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            <div class="gap"></div>
-                            <div class="gap"></div>
-                            <div class="gap"></div>
+
+                            <!-- Project 4 -->
+                            <div class="mix web-dev" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/1.jpg" alt="Healthcare & Telehealth System" />
+                                        <span class="portfolio-tag-badge">Custom Web Dev</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Healthcare & Telehealth Portal</h3>
+                                        <p class="portfolio-card-category">Custom UI/UX & Backend Integration</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Project 5 -->
+                            <div class="mix seo-growth" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/5.jpg" alt="B2B Lead Generation Campaign" />
+                                        <span class="portfolio-tag-badge">Paid Media</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">B2B Lead Generation Campaign</h3>
+                                        <p class="portfolio-card-category">Google Ads & Funnel Optimization</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Project 6 -->
+                            <div class="mix ecommerce" data-ref="mixitup-target">
+                                <a href="project-details.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/6.jpg" alt="Food & Hospitality Platform" />
+                                        <span class="portfolio-tag-badge">Web & Mobile</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Food & Hospitality Platform</h3>
+                                        <p class="portfolio-card-category">Mobile App & Web Infrastructure</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--our work or portfolio section end-->
+        <!--our portfolio section end-->
 
 
         <!--call to action section start-->

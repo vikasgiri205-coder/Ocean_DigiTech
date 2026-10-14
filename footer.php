@@ -116,17 +116,16 @@
         <!--footer top end-->
 
         <!--footer copyright start-->
-        <div class="footer-bottom gray-light-bg py-2">
+        <div class="footer-bottom gray-light-bg py-3">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-md-5 col-lg-5">
-                        <p class="copyright-text pb-0 mb-0">Copyrights © 2020. All
-                            rights reserved by
-                            <a href="https://themeforest.net/user/themetags" target="_blank">ThemeTags</a>
+                    <div class="col-md-6 col-lg-6">
+                        <p class="copyright-text pb-0 mb-0">Copyrights © <?php echo date('Y'); ?>. All rights reserved by
+                            <a href="index.php" class="font-weight-bold color-primary">Ocean Digitech Pvt Ltd</a>.
                         </p>
                     </div>
-                    <div class="col-md-7 col-lg-6 d-none d-md-block d-lg-block">
-                        <ul class="list-inline policy-nav text-right social-list">
+                    <div class="col-md-6 col-lg-6 d-none d-md-block d-lg-block">
+                        <ul class="list-inline policy-nav text-right social-list mb-0">
                             <li class="list-inline-item"><a href="privacy-policy.php">Privacy Policy</a></li>
                             <li class="list-inline-item"><a href="terms-and-conditions.php">Terms & Conditions</a></li>
                         </ul>
@@ -143,3 +142,5 @@
         <span class="ti-angle-up"></span>
     </button>
     <!--bottom to top button end-->
+
+    <?php if (file_exists(__DIR__ . '/chatbot-widget.php')) { include(__DIR__ . '/chatbot-widget.php'); } ?>

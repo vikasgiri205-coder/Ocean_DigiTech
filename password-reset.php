@@ -170,6 +170,7 @@
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
     <script src="js/scripts.js"></script>
+    <?php include('chatbot-widget.php'); ?>
 </body>
 
 </html>

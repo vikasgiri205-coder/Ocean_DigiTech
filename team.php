@@ -1,3 +1,4 @@
+<?php $currentPage = 'team'; ?>
 <!doctype html>
 <html lang="en">
 
@@ -8,27 +9,23 @@
 
     <!-- SEO Meta description -->
     <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+        content="Meet the expert team of software engineers, digital strategists, and technology leaders behind Ocean Digitech.">
+    <meta name="author" content="Ocean Digitech">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="Ocean Digitech" />
+    <meta property="og:title" content="Our Team | Ocean Digitech" />
+    <meta property="og:description" content="Dedicated software engineers, digital strategists, and technology leaders committed to delivering digital transformation." />
+    <meta property="og:type" content="website" />
 
     <!--title-->
-    <title>DigiMark Digital Marketing and Agency HTML Template</title>
+    <title>Our Team | Ocean Digitech</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap" rel="stylesheet">
 
     <!--Bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -37,14 +34,10 @@
     <!--Themify icon css-->
     <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
-    <!--ytplayer css-->
-    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
     <!--Owl carousel css-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -65,17 +58,16 @@
 
         <!--header section start-->
         <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat top center / cover">
+            style="background: url('img/header-bg-5.jpg') no-repeat top center / cover">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-7">
                         <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Our Team Two</h1>
+                            <h1 class="text-white mb-0">Our Expert Team</h1>
                             <div class="custom-breadcrumb">
                                 <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Team Two</li>
+                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
+                                    <li class="list-inline-item breadcrumb-item active">Our Team</li>
                                 </ol>
                             </div>
                         </div>
@@ -85,398 +77,160 @@
         </section>
         <!--header section end-->
 
-        <!--team two section start-->
-        <section class="team-two-section ptb-100">
+        <!--team section start-->
+        <section class="team-two-section ptb-100 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8">
                         <div class="section-heading text-center mb-5">
-                            <strong class="color-secondary">Our Team</strong>
-                            <h2>Awesome Team Members</h2>
+                            <strong class="color-secondary">Dedicated Professionals</strong>
+                            <h2 style="font-weight: 700;">Our Team Members</h2>
                             <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Distinctively grow go forward manufactured products and optimal networks.
-                                Enthusiastically
-                                disseminate user-centric outsourcing.</p>
+                            <p class="lead">Our passionate team of software engineers, cloud architects, designers, and marketing experts bring innovation and technology excellence to every client project.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-1.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Richard Ford</h5>
-                                    <span>Instructor of Mathematics</span>
-                                    <p class="teacher-quote pt-3">Dramatically leverage existing fully researched
-                                        platforms. </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-1.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms
-                                        vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Richard Ford</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Instructor of Mathematics</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Richard Ford</h5>
+                                <div class="team-card-role">Technology Strategist</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Specializing in enterprise digital architecture and high-performance software engineering.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-2.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Kely Roy</h5>
-                                    <span>Lead Designer</span>
-                                    <p class="teacher-quote pt-3">Compellingly strategize covalent e-services rather
-                                        than </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-2.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Credibly extend high-payoff web-readiness via top-line
-                                        relationships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Kely Roy</h5>
-                                    </a><span class="teacher-field text-white">Lead Designer</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Kely Roy</h5>
+                                <div class="team-card-role">Lead UI/UX Designer</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems for digital platforms.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-3.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Credibly extend high-payoff web-readiness via
-                                        top-line.</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-3.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Gerald Nichols</h5>
+                                <div class="team-card-role">Managing Director</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Driving corporate strategy, international partnerships, and client growth initiatives.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-4.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Professionally engage clicks-and-mortar customer</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-4.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Alex Morgan</h5>
+                                <div class="team-card-role">Senior Full Stack Lead</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Expert in building scalable backend systems, APIs, and microservices architecture.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-5.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Richard Ford</h5>
-                                    <span>Instructor of Mathematics</span>
-                                    <p class="teacher-quote pt-3">Dramatically leverage existing fully researched
-                                        platforms. </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-5.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms
-                                        vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Richard Ford</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Instructor of Mathematics</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Sarah Jenkins</h5>
+                                <div class="team-card-role">Cloud Architecture Lead</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Architecting resilient AWS & GCP infrastructure and DevOps automation pipelines.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-6.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Kely Roy</h5>
-                                    <span>Lead Designer</span>
-                                    <p class="teacher-quote pt-3">Compellingly strategize covalent e-services rather
-                                        than </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-6.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Credibly extend high-payoff web-readiness via top-line
-                                        relationships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Kely Roy</h5>
-                                    </a><span class="teacher-field text-white">Lead Designer</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Marcus Vance</h5>
+                                <div class="team-card-role">Mobile App Lead</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Delivering cross-platform Flutter and native iOS/Android mobile applications.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-7.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Credibly extend high-payoff web-readiness via
-                                        top-line.</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-7.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Elena Rostova</h5>
+                                <div class="team-card-role">Digital Growth Strategist</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Optimizing SEO, conversion rates, and multi-channel performance marketing for clients.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-8.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Professionally engage clicks-and-mortar customer</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-8.png" alt="Team Member" class="img-fluid">
                             </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">David Chen</h5>
+                                <div class="team-card-role">QA & Security Lead</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Ensuring bulletproof application security, performance benchmarks, and automated testing.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--team two section end-->
+        <!--team section end-->
 
         <!--call to action progressbar start-->
         <section class="call-to-action ptb-100"
-            style="background: url('img/ctg-bg-2.jpg')no-repeat center center / cover">
+            style="background: url('img/ctg-bg-2.jpg') no-repeat center center / cover">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
                         <div class="circle-box">
-                            <div class="chart" data-percent="70"><span>70%</span></div>
+                            <div class="chart" data-percent="98"><span>98%</span></div>
                         </div>
                         <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Keywords Results</h5>
+                            <strong class="color-secondary">Quality Engineering</strong>
+                            <h5 class="text-white">Client Satisfaction</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <div class="circle-box">
+                            <div class="chart" data-percent="95"><span>95%</span></div>
+                        </div>
+                        <div class="progress-info text-center mt-3">
+                            <strong class="color-secondary">On-Time Delivery</strong>
+                            <h5 class="text-white">Milestone Completion</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                        <div class="circle-box">
+                            <div class="chart" data-percent="90"><span>90%</span></div>
+                        </div>
+                        <div class="progress-info text-center mt-3">
+                            <strong class="color-secondary">Growth Impact</strong>
+                            <h5 class="text-white">ROI Improvement</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="circle-box">
-                            <div class="chart" data-percent="75"><span>75%</span></div>
+                            <div class="chart" data-percent="100"><span>100%</span></div>
                         </div>
                         <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Google Analytics</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="80"><span>80%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">Competition Metrics</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="circle-box">
-                            <div class="chart" data-percent="65"><span>65%</span></div>
-                        </div>
-                        <div class="progress-info text-center mt-3">
-                            <strong class="color-secondary">Our Services</strong>
-                            <h5 class="text-white">SEO & Marketing</h5>
+                            <strong class="color-secondary">Support Commitment</strong>
+                            <h5 class="text-white">Post-Launch Support</h5>
                         </div>
                     </div>
                 </div>
@@ -489,57 +243,54 @@
             <div class="container">
                 <div class="row justify-content-around">
                     <div class="col-md-6">
-                        <div class="contact-us-form gray-light-bg rounded p-5">
-                            <h4>Ready to get started?</h4>
-                            <form action="#" method="POST" id="contactForm1" class="contact-us-form"
-                                novalidate="novalidate">
+                        <div class="contact-us-form gray-light-bg rounded p-4 p-md-5">
+                            <h4>Ready to work with our team?</h4>
+                            <p class="text-muted mb-4">Send us a message and our technical leaders will get back to you within 24 hours.</p>
+                            <form action="send_proposal.php" method="POST" id="teamContactForm" class="contact-us-form p-0">
                                 <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name"
-                                                required="required">
+                                    <div class="col-12 mb-3">
+                                        <div class="form-group mb-0">
+                                            <input type="text" class="form-control" name="name" placeholder="Your Full Name *" required="required">
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Enter email" required="required">
+                                    <div class="col-12 mb-3">
+                                        <div class="form-group mb-0">
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email Address *" required="required">
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="7"
-                                                cols="25" placeholder="Message"></textarea>
+                                    <div class="col-12 mb-3">
+                                        <div class="form-group mb-0">
+                                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
                                         </div>
                                     </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn" id="btnContactUs">
-                                            Send Message
+                                    <div class="col-12 mb-3">
+                                        <div class="form-group mb-0">
+                                            <textarea name="message" id="team_message" class="form-control" rows="4" placeholder="How can our team help your business?"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <button type="submit" class="btn secondary-solid-btn w-100" style="padding: 14px;">
+                                            Get in Touch with Our Team
                                         </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 mt-4 mt-md-0">
                         <div class="contact-us-content">
-                            <h2>Looking for a excellent Business idea?</h2>
-                            <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
+                            <h2>Partner with Ocean Digitech</h2>
+                            <p class="lead">Accelerate your business with expert software engineering and digital transformation strategies.</p>
 
-                            <a href="#" class="btn outline-btn align-items-center">Get Directions <span
-                                    class="ti-arrow-right pl-2"></span></a>
+                            <a href="contact-us.php" class="btn outline-btn align-items-center mb-4">Contact Our Offices <span class="ti-arrow-right pl-2"></span></a>
 
-                            <hr class="my-5">
+                            <hr class="my-4">
 
-                            <h5>Our Headquarters</h5>
-                            <address>
-                                100 yellow house, Mn <br>
-                                Factory, United State, 13420
-                            </address>
-                            <br>
-                            <span>Phone: +1234567890123</span> <br>
-                            <span>Email: <a href="mailto:email@yourdomain.com"
-                                    class="link-color">email@yourdomain.com</a></span>
+                            <h5>Global Operations & Offices</h5>
+                            <p class="mb-2"><strong>India Headquarters:</strong> Noida, Uttar Pradesh, India</p>
+                            <p class="mb-2"><strong>USA Contact:</strong> Delaware, USA</p>
+                            <p class="mb-2"><strong>Direct Line:</strong> +91 8384012989</p>
+                            <p class="mb-0"><strong>Email:</strong> <a href="mailto:oceandigitech205@gmail.com" class="link-color">oceandigitech205@gmail.com</a></p>
 
                         </div>
                     </div>
@@ -548,66 +299,12 @@
         </section>
         <!--contact us section end-->
 
-        <!--client section start-->
-        <div class="client-section ptb-100" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-heading-wrap">
-                            <h3>Who are Happy With Services and Work</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-para">
-                            <p>Seamlessly administrate synergistic growth strategies and collaborative markets. Globally
-                                empower inexpensive infomediaries after sustainable mindshare. Phosfluorescently brand
-                                professional collaboration and idea-sharing without principle-centered interfaces. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo start-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator client-logo-wrap">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo end-->
-            </div>
-        </div>
-        <!--client section end-->
-
     </div>
     <!--body content wrap end-->
 
-   
-   <!--footer section start-->
-   <?php include('footer.php');?>
-   <!--footer section end-->
+    <!--footer section start-->
+    <?php include('footer.php');?>
+    <!--footer section end-->
 
     <!--jQuery-->
     <script src="js/jquery-3.5.0.min.js"></script>
@@ -619,16 +316,10 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!--jquery easing js-->
     <script src="js/jquery.easing.min.js"></script>
-    <!--jquery ytplayer js-->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!--Isotope filter js-->
-    <script src="js/mixitup.min.js"></script>
     <!--wow js-->
     <script src="js/wow.min.js"></script>
     <!--owl carousel js-->
     <script src="js/owl.carousel.min.js"></script>
-    <!--countdown js-->
-    <script src="js/jquery.countdown.min.js"></script>
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->

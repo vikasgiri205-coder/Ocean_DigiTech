@@ -1,3 +1,4 @@
+<?php $currentPage = 'contact'; ?>
 <!doctype html>
 <html lang="en">
 
@@ -8,20 +9,17 @@
 
     <!-- SEO Meta description -->
     <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+        content="Contact Ocean Digitech for web development, mobile apps, cloud services, and digital growth consulting.">
+    <meta name="author" content="Ocean Digitech">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="Ocean Digitech" />
+    <meta property="og:title" content="Contact Us | Ocean Digitech" />
+    <meta property="og:description" content="Get in touch with Ocean Digitech experts for project inquiries, technical consulting, and digital solutions." />
+    <meta property="og:type" content="website" />
 
     <!--title-->
-    <title>OceanDigiTech</title>
+    <title>Contact Us | Ocean Digitech</title>
 
     <!--favicon icon-->
     <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
@@ -43,8 +41,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
-    <!--ytplayer css-->
-    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
     <!--Owl carousel css-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -74,78 +70,76 @@
 
     <?php include("header.php") ;?>
 
-
-
     <!--body content wrap start-->
     <div class="main">
 
         <!--header section start-->
-        <!--<section class="hero-section ptb-100 gradient-overlay"-->
-        <!--    style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">-->
-        <!--    <div class="container">-->
-        <!--        <div class="row justify-content-center">-->
-        <!--            <div class="col-md-8 col-lg-7">-->
-        <!--                <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">-->
-        <!--                    <h1 class="text-white mb-0">Contact Us</h1>-->
-        <!--                    <div class="custom-breadcrumb">-->
-        <!--                        <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">-->
-        <!--                            <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>-->
-        <!--                            <li class="list-inline-item breadcrumb-item active">Contact Us</li>-->
-        <!--                        </ol>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</section>-->
+        <section class="hero-section ptb-100 gradient-overlay"
+            style="background: url('img/header-bg-5.jpg') no-repeat center center / cover">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-7">
+                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                            <h1 class="text-white mb-0">Contact Us</h1>
+                            <div class="custom-breadcrumb">
+                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
+                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
+                                    <li class="list-inline-item breadcrumb-item active">Contact Us</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--header section end-->
 
         <!--contact us promo start-->
-        <!--<section class="contact-us-promo pt-100">-->
-        <!--    <div class="container">-->
-        <!--        <div class="row">-->
-        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
-        <!--                <div class="card single-promo-card single-promo-hover text-center shadow-sm">-->
-        <!--                    <div class="card-body py-5">-->
-        <!--                        <div class="pb-2">-->
-        <!--                            <span class="ti-mobile icon-sm color-secondary"></span>-->
-        <!--                        </div>-->
-        <!--                        <div>-->
-        <!--                            <h5 class="mb-0" style="font-size: 1rem;">Call Us</h5>-->
-        <!--                            <p class="text-muted mb-0" style="font-size: 14px;">+91 8384012989</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
-        <!--                <div class="card single-promo-card single-promo-hover text-center shadow-sm">-->
-        <!--                    <div class="card-body py-5">-->
-        <!--                        <div class="pb-2">-->
-        <!--                            <span class="ti-location-pin icon-sm color-secondary"></span>-->
-        <!--                        </div>-->
-        <!--                        <div>-->
-        <!--                            <h5 class="mb-0" style="font-size: 1rem;">Visit Us</h5>-->
-        <!--                            <p class="text-muted mb-0" style="font-size: 14px;">noida,India</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
-        <!--                <div class="card single-promo-card single-promo-hover text-center shadow-sm">-->
-        <!--                    <div class="card-body py-5">-->
-        <!--                        <div class="pb-2">-->
-        <!--                            <span class="ti-email icon-sm color-secondary"></span>-->
-        <!--                        </div>-->
-        <!--                        <div>-->
-        <!--                            <h5 class="mb-0" style="font-size: 1rem;">Mail Us</h5>-->
-        <!--                            <p class="text-muted mb-0" style="font-size: 14px;">oceandigitech205@gmail.com</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--         </div>-->
-        <!--    </div>-->
-        <!--</section>-->
+        <section class="contact-us-promo pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
+                            <div class="card-body py-4">
+                                <div class="pb-2">
+                                    <span class="ti-mobile icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1" style="font-size: 1rem;">Call Us Directly</h5>
+                                    <p class="text-muted mb-0" style="font-size: 14px;">+91 8384012989</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
+                            <div class="card-body py-4">
+                                <div class="pb-2">
+                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1" style="font-size: 1rem;">Our Headquarters</h5>
+                                    <p class="text-muted mb-0" style="font-size: 14px;">Noida, India / Delaware, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
+                            <div class="card-body py-4">
+                                <div class="pb-2">
+                                    <span class="ti-email icon-sm color-secondary"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1" style="font-size: 1rem;">Mail Us</h5>
+                                    <p class="text-muted mb-0" style="font-size: 14px;">oceandigitech205@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
         <!--contact us promo end-->
 
         <!--contact us section start-->

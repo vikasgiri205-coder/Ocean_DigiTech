@@ -12,6 +12,30 @@
   gtag('config', 'G-KN6QBYZNZN');
 </script>
 <!-- Google tag end (gtag.js) -->
+<!-- Fungrow Analytics -->
+<script>
+    window.FUNGROW_CONFIG = {
+        analytics: {
+            debug: false,
+            enableSuperTracking: true,
+            enableVideoTracking: true,
+            enablePixelPerfectHeatmap: true,
+            enableAutoEntityDetect: true,
+            requireConsent: true,
+            showConsentBanner: true,
+            privacyPolicyUrl: "/privacy-policy",
+            
+            // Custom Hooks (Optional but very powerful)
+            hooks: {
+                onAfterEvent: function(event) {
+                  
+                }
+            }
+        }
+    };
+</script>
+
+<script async src="http://marketing.fungrow.in/fungrow/app.js" data-client-code="FUNGROW-PC8KBBLD"></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -146,141 +170,200 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="ptb-70 gradient-bg">
+        <section class="hero-modern-wrap">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-12 col-lg-5">
-                        <div class="hero-slider-content text-white pt-5">
-                            <strong style="color:#e80566;">Digital, Done Right!</strong>
-                            <h1 class="text-white" style="font-size: 28px;     margin-top: 8px;">Custom Software Development & Digital Marketing for Startups to Enterprises</h1>
-                            <p class="lead" style="font-size: 1rem;">Partner with Ocean DigiTech to accelerate growth, define your brand, and turn ideas into high-impact digital experiences.</p>
-                            <p class="lead" style="font-size: 1rem;">We craft custom software, web and app development, and results-driven marketing campaigns for startups, SMEs, and enterprises—all built for resilience, scalability, and creativity in the digital age. </p>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="hero-slider-content text-white">
+                            <div class="hero-pill-badge">
+                                <span class="fas fa-sparkles"></span> AI-POWERED DIGITAL TRANSFORMATION
+                            </div>
+                            <h1 class="hero-heading-title">
+                                Scalable Software Engineering & Modern Digital Growth
+                            </h1>
+                            <p class="hero-lead-desc">
+                                We engineer high-performing web apps, custom software platforms, and data-driven digital growth strategies for B2B enterprises and ambitious startups.
+                            </p>
 
                             <div class="action-btns mt-4">
-                                 <!-- Baseline: sirf ek line ka form (Business Name + Button) -->
-                                  <div class="quick-proposal" aria-label="Proposal quick form">
-                                    <input type="text" id="businessName" placeholder="Enter Your email" required />
-                                    <button type="button" onclick="sendProposal()">Send me a Proposal</button>
-                                 </div>
+                                <div class="quick-proposal d-flex align-items-center flex-wrap" style="gap:10px;">
+                                    <input type="text" id="businessName" placeholder="Enter your email or domain" required style="padding:14px 18px; border-radius:8px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.95); min-width:260px; color:#1e293b;" />
+                                    <button type="button" onclick="sendProposal()" class="btn-primary-od">
+                                        Get Free Proposal <span class="fas fa-arrow-right ml-1"></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-7">
-                        <div class="image-wrap pt-5">
-                            <img src="img/t1-hero-img.svg" class="img-fluid custom-width" alt="hero" />
+                    <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                        <div class="hero-visual-card text-center p-3">
+                            <img src="img/t1-hero-img.svg" class="img-fluid" alt="Digital Engineering & Growth" style="max-height: 420px; width: auto;" />
+                            <div class="hero-floating-badge d-none d-sm-flex">
+                                <span class="fas fa-check-circle text-success" style="font-size: 24px;"></span>
+                                <div class="text-left">
+                                    <div style="font-size: 15px; font-weight: 700; color: #ffffff;">98% Client Retention</div>
+                                    <div style="font-size: 12px; color: #94a3b8;">Proven B2B Results</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--hero section end-->
-        
-        
-          <!--promo section start-->
-        <!--<section class="promo-section ptb-100">-->
-        <!--    <div class="container">-->
-        <!--        <div class="row">-->
-                    
-                    
-                
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</section>-->
-        <!--promo section end-->
 
-        <!--promo section start-->
-        <section class="promo-section ptb-100">
+        <!--trust bar section start-->
+        <section class="trust-bar-section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="section-heading text-center mb-5">
-                            <!--<strong class="color-secondary">Our Services</strong>-->
-                            <h2>Quick Stats & Trust Signals</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">| 40+ Clients Served | 98% Client Retention Rate | 100+ Projects Completed | 3+ Industry Awards | 4.9/5 Review Average |</p>
+                <div class="row align-items-center justify-content-between text-center">
+                    <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0">
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <h3 class="mb-0 font-weight-bold color-primary">40+</h3>
+                            <span class="text-muted text-left font-weight-bold" style="font-size: 13px; line-height: 1.2;">Global<br>Clients</span>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-
-                    <div class="col-md-3 col-lg-3 text-center">
-                        <img src="img/cluch.jpg" alt="Clutch Badge" style="display:inline-block; width:120px; height:auto;">
+                    <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0 text-center">
+                        <img src="img/cluch.jpg" alt="Clutch Verified Agency" class="trust-badge-img">
                     </div>
-
-                    <div class="col-md-3 col-lg-3 text-center">
-                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Badge" style="display:inline-block; width:120px; height:auto;">
+                    <div class="col-lg-3 col-md-6 col-6 text-center">
+                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Top Agency" class="trust-badge-img">
                     </div>
-
-                    <div class="col-md-3 col-lg-3 text-center">
-                        <img src="img/top-developers.png" alt="Top Developers Badge" style="display:inline-block; width:120px; height:auto;">
+                    <div class="col-lg-3 col-md-6 col-6 text-center">
+                        <img src="img/top-developers.png" alt="Top Developers Award" class="trust-badge-img">
                     </div>
-
                 </div>
-                </div>
-           <!--<div class="logos-row" style="display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">-->
+            </div>
         </section>
-        <!--promo section end-->
+        <!--trust bar section end-->
 
-        <!--about us section start-->
-        <section class="about-us-section ptb-100 gray-light-bg">
+        <!--about us / boutique expertise section start-->
+        <section class="boutique-section">
+            <div class="boutique-bg-glow"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="about-us-img">
-                            <img src="img/about-us-img.svg" alt="about us" class="img-fluid about-single-img">
-                            <img src="img/about-us-img-bg.svg" alt="about bg" class="about-us-bg">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="about-us-content-wrap">
-                            <!--<strong class="color-secondary">"Why Ocean DigiTech?" Agency Introduction</strong>-->
-                            <h3>Boutique Expertise, Global Results</h3>
-                            <span class="animate-border mb-4"></span>
-                            <p>Ocean DigiTech blends creative strategy and technical mastery to deliver measurable business results. Our cross-functional teams don’t just deliver digital—we collaborate, innovate, and empower your journey. With offices spanning two continents, our experts help clients launch, grow, and evolve, no matter their starting point.</p>
-                            <ul class="list-unstyled tech-feature-list">
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Guided by Creativity.</strong> 
-                                    Propelled by Data.
-                                </li>
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Masters in Craft.</strong> 
-                                   Obsessed With Outcomes.
-                                </li>
-                                <li class="py-1"><span
-                                        class="ti-control-forward mr-2 color-secondary"></span><strong>Trusted by Fortune 500s</strong> 
-                                   & Bold Startups Alike.
-                                </li>
-                            </ul>
-                            <div class="row mt-4">
-                                <div class="col-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">45</h2>
-                                        <strong>Total Project</strong>
-                                    </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="boutique-visual-container">
+                            <!-- Floating Top Badge -->
+                            <div class="boutique-float-badge badge-top">
+                                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(0, 210, 255, 0.15); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 18px;">
+                                    <span class="ti-rocket"></span>
                                 </div>
-                                <div class="col-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">250</h2>
-                                        <strong>Total Customer</strong>
-                                    </div>
+                                <div>
+                                    <h6 class="mb-0" style="font-size: 14px; font-weight: 700; color: #0b132b;">99.8% On-Time</h6>
+                                    <small style="color: #64748b; font-size: 11px;">Milestone Delivery</small>
                                 </div>
-                                <div class="col-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-0 color-secondary">07</h2>
-                                        <strong>Countries</strong>
+                            </div>
+
+                            <!-- Center Holographic Interactive Card -->
+                            <div class="boutique-card-center">
+                                <div class="boutique-icon-sphere">
+                                    <span class="ti-world"></span>
+                                </div>
+                                <span class="badge badge-pill px-3 py-1 mb-3" style="background: rgba(0, 210, 255, 0.2); color: #00d2ff; font-size: 12px; font-weight: 600;">CROSS-CONTINENTAL HUBS</span>
+                                <h4 class="text-white mb-2" style="font-weight: 700;">Global Digital Engine</h4>
+                                <p style="color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 24px;">
+                                    Dual engineering hubs in the United States and India driving agile development, 24/7 coverage, and unmatched ROI.
+                                </p>
+                                
+                                <div class="d-flex justify-content-between align-items-center pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                                    <div class="text-left">
+                                        <small style="color: #64748b; font-size: 11px; text-transform: uppercase;">Engineered For</small>
+                                        <div class="text-white font-weight-bold" style="font-size: 13px;">High-Growth Scale</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <small style="color: #64748b; font-size: 11px; text-transform: uppercase;">Methodology</small>
+                                        <div style="color: #00d2ff; font-weight: 700; font-size: 13px;">Agile + Data-First</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="action-btns mt-4">
-                                <a href="#" class="btn secondary-solid-btn mr-3">Start Now</a>
-                                <a href="#" class="btn secondary-outline-btn">Learn More</a>
+
+                            <!-- Floating Bottom Badge -->
+                            <div class="boutique-float-badge badge-bottom">
+                                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(232, 5, 102, 0.15); display: flex; align-items: center; justify-content: center; color: #e80566; font-size: 18px;">
+                                    <span class="ti-shield"></span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0" style="font-size: 14px; font-weight: 700; color: #0b132b;">Enterprise Grade</h6>
+                                    <small style="color: #64748b; font-size: 11px;">Security & Architecture</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="pl-lg-4">
+                            <span class="badge badge-pill px-3 py-2 text-uppercase font-weight-bold mb-3" style="background: rgba(232, 5, 102, 0.1); color: #e80566; letter-spacing: 1px; font-size: 11px;">Why Ocean DigiTech</span>
+                            <h2 style="font-weight: 800; font-size: 2.3rem; color: #0b132b; line-height: 1.25; margin-bottom: 18px;">
+                                Boutique Expertise,<br>
+                                <span style="background: linear-gradient(135deg, #00d2ff 0%, #0066ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Global Results.</span>
+                            </h2>
+                            <p style="font-size: 15px; color: #475569; line-height: 1.7; margin-bottom: 24px;">
+                                Ocean DigiTech blends creative strategy and technical mastery to deliver measurable business results. Our cross-functional teams collaborate, innovate, and empower your digital journey with speed and precision.
+                            </p>
+
+                            <!-- Interactive Pillar Cards -->
+                            <div class="boutique-pillar-card">
+                                <div class="boutique-pillar-icon">
+                                    <span class="ti-light-bulb"></span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Guided by Creativity. Propelled by Data.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">Every product and campaign is backed by user analytics and rigorous conversion data.</p>
+                                </div>
+                            </div>
+
+                            <div class="boutique-pillar-card">
+                                <div class="boutique-pillar-icon">
+                                    <span class="ti-bolt"></span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Masters in Craft. Obsessed With Outcomes.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">From pixel-perfect UI to scalable microservices, our engineering delivers high-ROI results.</p>
+                                </div>
+                            </div>
+
+                            <div class="boutique-pillar-card">
+                                <div class="boutique-pillar-icon">
+                                    <span class="ti-medall"></span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Trusted by Fortune 500s & Bold Startups.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">Flexible engagement models built for ambitious brands wanting rapid digital transformation.</p>
+                                </div>
+                            </div>
+
+                            <!-- Animated Stat Counters -->
+                            <div class="row mt-4 pt-2">
+                                <div class="col-4">
+                                    <div class="boutique-stat-card">
+                                        <div class="boutique-stat-number">45+</div>
+                                        <div class="boutique-stat-label">Projects</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="boutique-stat-card">
+                                        <div class="boutique-stat-number">250+</div>
+                                        <div class="boutique-stat-label">Clients</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="boutique-stat-card">
+                                        <div class="boutique-stat-number">07+</div>
+                                        <div class="boutique-stat-label">Countries</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-4 pt-2">
+                                <a href="contact-us.php" class="btn secondary-solid-btn mr-3" style="padding: 13px 28px; border-radius: 8px; font-weight: 600;">Start Your Project</a>
+                                <a href="project.php" class="btn secondary-outline-btn" style="padding: 13px 28px; border-radius: 8px; font-weight: 600;">Explore Portfolio</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--about us section end-->
+        <!--about us / boutique expertise section end-->
 
 
         <!--call to action section start-->
@@ -452,90 +535,114 @@
         </section>
         <!--services section end-->
 
-        <!--why choose us section start-->
-        <section class="why-choose-us ptb-100">
+        <!--solving digital growth section start-->
+        <section class="growth-section-modern">
             <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-md-6 col-lg-5">
-                        <div class="why-choose-us-wrap">
-                            <!--<strong class="color-secondary">Why Choose Us</strong>-->
-                            <h3>Solving Your Digital Growth Bottlenecks</h3>
-                            <span class="animate-border mb-4"></span>
-                            <p>Identify visitor pains and offer solutions:</p>
-
-                            <div class="skill-content-wrap">
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>Outdated systems holding you back? See Software Modernization. <a href="#" class="detail-link">Learn More<span class="ti-arrow-right"></span></a>
-                                        <!--<span class="float-right"><span class="progress-number">80</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:80%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>Losing leads on Google? Power up with SEO & local optimization. <a href="#" class="detail-link">Learn More <span class="ti-arrow-right"></span></a> 
-                                        <!--<span class="float-right"><span class="progress-number">85</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:85%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>Manual work draining your team? Automate with tailored workflows. <a href="#" class="detail-link">Learn More <span class="ti-arrow-right"></span></a>
-                                        <!--<span class="float-right"><span class="progress-number">85</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:85%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>Ads not performing? Launch targeted campaigns. <a href="#" class="detail-link">Learn More <span class="ti-arrow-right"></span></a>
-                                        <!--<span class="float-right"><span class="progress-number">80</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:80%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>Cloud migration headaches? Transition with ease. <a href="#" class="detail-link">Learn More <span class="ti-arrow-right"></span></a>
-                                        <!--<span class="float-right"><span class="progress-number">80</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:80%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="progress-item" style="margin-bottom: 20px; margin-top: 20px;">
-                                    <div class="progress-title">
-                                        <p>New venture or product idea? Startup and tech consulting solutions. <a href="#" class="detail-link">Learn More <span class="ti-arrow-right"></span></a>
-                                        <!--<span class="float-right"><span class="progress-number">80</span>%</span>-->
-                                        </p>
-                                    </div>
-                                    <!--<div class="progress">-->
-                                    <!--    <span style="width:80%;"><span class="progress-line"></span></span>-->
-                                    <!--</div>-->
-                                </div>
-                            </div>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 text-center">
+                        <span class="growth-challenge-label mb-2">VALUE PROPOSITION</span>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Solving Your Digital Growth Bottlenecks</h2>
+                        <span class="animate-border mr-auto ml-auto mb-3"></span>
+                        <p class="lead text-muted" style="font-size: 16px;">
+                            We transform common technical friction points and marketing inefficiencies into competitive growth advantages for your enterprise.
+                        </p>
                     </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="image-wrap">
-                            <img src="img/why-choose-us.png" alt="why choose us" class="img-fluid">
+                </div>
+
+                <div class="growth-grid">
+                    <!-- Card 1 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-layer-group"></span>
                         </div>
+                        <span class="growth-challenge-label">CHALLENGE: OUTDATED TECH</span>
+                        <h3 class="growth-card-title">Legacy Systems Holding You Back?</h3>
+                        <p class="growth-card-desc">
+                            Modernize your architecture with clean, scalable web apps and cloud-native backend infrastructure designed for performance.
+                        </p>
+                        <a href="custom-website-development.php" class="growth-card-link">
+                            Explore Custom Development <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-search-dollar"></span>
+                        </div>
+                        <span class="growth-challenge-label">CHALLENGE: LOW TRAFFIC</span>
+                        <h3 class="growth-card-title">Losing High-Intent Leads on Search?</h3>
+                        <p class="growth-card-desc">
+                            Capture market share with technical SEO audits, keyword targeting, and local search dominance engineered for ROI.
+                        </p>
+                        <a href="seo-services.php" class="growth-card-link">
+                            Explore SEO Solutions <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-cogs"></span>
+                        </div>
+                        <span class="growth-challenge-label">CHALLENGE: MANUAL PROCESSES</span>
+                        <h3 class="growth-card-title">Manual Tasks Draining Resources?</h3>
+                        <p class="growth-card-desc">
+                            Automate internal workflows, customer touchpoints, and integrations with tailored AI-assisted software solutions.
+                        </p>
+                        <a href="custom-website-design.php" class="growth-card-link">
+                            Explore Workflow Automation <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-bullseye"></span>
+                        </div>
+                        <span class="growth-challenge-label">CHALLENGE: AD WASTAGE</span>
+                        <h3 class="growth-card-title">Paid Ads Not Delivering Target ROI?</h3>
+                        <p class="growth-card-desc">
+                            Eliminate ad spend waste with hyper-targeted Google Ads, Amazon PPC, and paid social campaigns backed by conversion tracking.
+                        </p>
+                        <a href="google-ads-management.php" class="growth-card-link">
+                            Explore PPC Management <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-shopping-cart"></span>
+                        </div>
+                        <span class="growth-challenge-label">CHALLENGE: ECOMMERCE DROP-OFF</span>
+                        <h3 class="growth-card-title">Cart Abandonment & Friction?</h3>
+                        <p class="growth-card-desc">
+                            Optimize storefront UX, checkout speed, and product discoverability to turn shoppers into repeat buyers.
+                        </p>
+                        <a href="ecommerce-web-development.php" class="growth-card-link">
+                            Explore E-Commerce Growth <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="growth-card">
+                        <div class="growth-card-icon">
+                            <span class="fas fa-chart-line"></span>
+                        </div>
+                        <span class="growth-challenge-label">CHALLENGE: ROADMAP UNCLEAR</span>
+                        <h3 class="growth-card-title">Launching a Venture or Scaling?</h3>
+                        <p class="growth-card-desc">
+                            Partner with senior technology consultants to define product roadmaps, tech stacks, and scalable growth strategies.
+                        </p>
+                        <a href="contact-us.php" class="growth-card-link">
+                            Schedule Tech Consultation <span class="fas fa-arrow-right"></span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!--why choose us section end-->
+        <!--solving digital growth section end-->
 
         <!--work process section start-->
         <!--<section class="work-process-section ptb-100 gray-light-bg">-->
@@ -985,147 +1092,79 @@
         <!--</section>-->
         <!--outstanding section end-->
 
-        <!--our work or portfolio section start-->
-        <section class="our-portfolio-section pb-100">
+        <!--our portfolio section start-->
+        <section class="our-portfolio-section pb-100 pt-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-heading text-center mb-4">
-                            <!--<strong class="color-secondary">Previous Project</strong>-->
-                            <h2>Our Case Studies</h2>
+                            <span class="growth-challenge-label mb-2">FEATURED WORK</span>
+                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our Portfolio</h2>
                             <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process
-                                improvements.
-                                Intrinsicly
-                                develop end-to-end customer service without extensive data.</p>
-
+                            <p class="lead text-muted" style="font-size: 16px;">
+                                Explore our curated showcase of custom web development, digital growth campaigns, and enterprise technology solutions built for performance.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center pb-2">
-                            <button type="button" class="filter-btn" data-mixitup-control data-filter="all">Digital
-                                Marketing
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control
-                                data-filter=".branding">Marketing
-                                Strategy
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control
-                                data-filter=".animation">Content
-                                Marketing
-                            </button>
-                            <button type="button" class="filter-btn" data-mixitup-control data-filter=".other">SEO
-                                Services
-                            </button>
+                        <div class="portfolio-grid-modern">
+                            <!-- Project 1 -->
+                            <div>
+                                <a href="project.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/3.jpg" alt="Enterprise SaaS Web App" />
+                                        <span class="portfolio-tag-badge">Web Application</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Enterprise SaaS Web Platform</h3>
+                                        <p class="portfolio-card-category">Custom Software & Cloud Architecture</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div>
+                                <a href="project.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/2.jpg" alt="E-Commerce D2C Brand Store" />
+                                        <span class="portfolio-tag-badge">E-Commerce</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Global D2C Storefront</h3>
+                                        <p class="portfolio-card-category">Full-stack E-Commerce & Checkout Optimization</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div>
+                                <a href="project.php" class="portfolio-card-modern">
+                                    <div class="portfolio-img-container">
+                                        <img src="img/portfolios/4.jpg" alt="Local Services SEO Campaign" />
+                                        <span class="portfolio-tag-badge">SEO & Marketing</span>
+                                    </div>
+                                    <div class="portfolio-card-body">
+                                        <h3 class="portfolio-card-title">Legal Services Organic Growth</h3>
+                                        <p class="portfolio-card-category">Technical SEO & Conversion Optimization</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="portfolio-container" id="MixItUp">
-                            <div class="mix portfolio-item branding" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/3.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Creative Design</h5>
-                                            <p>Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item other animation" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/2.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Web UI/UX Design</h5>
-                                            <p>Web, Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item animation" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/4.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Corporate Flyer Design</h5>
-                                            <p>Flyer Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item branding" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/1.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Web UI/UX Design</h5>
-                                            <p>Web, Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item animation other" data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/5.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Wall Painting Design</h5>
-                                            <p>Painting Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mix portfolio-item branding " data-ref="mixitup-target">
-                                <div class="portfolio-wrapper">
-                                    <a href="project-details.php" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="img-fluid" src="img/portfolios/6.jpg" alt="portfolio" />
-                                        <div class="content-details fadeIn-bottom text-white">
-                                            <h5 class="text-white mb-1">Corporate Identity Design</h5>
-                                            <p>Corporate Design</p>
-                                        </div>
-                                    </a>
-                                    <div class="text-center p-4">
-                                        <h5 class="mb-1">Market Research Analysis</h5>
-                                        <span>Sales, SEO, Marketing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gap"></div>
-                            <div class="gap"></div>
-                            <div class="gap"></div>
+
+                        <!-- Button to View Full Portfolio Page -->
+                        <div class="text-center mt-5">
+                            <a href="project.php" class="btn secondary-solid-btn px-4 py-3" style="border-radius: 8px; font-weight: 600; font-size: 15px;">
+                                View All Projects in Our Portfolio <span class="ti-arrow-right ml-2"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--our work or portfolio section end-->
+        <!--our portfolio section end-->
 
         <!--pricing with switch section start-->
        <!-- <section class="pricing-section ptb-100 gray-light-bg">
@@ -1363,92 +1402,288 @@
         </section>
         <!--testimonial section end-->
 
-        <!--blog section start-->
-        <section class="our-blog-section ptb-100">
+        <!-- Client Testimonials Grid Section -->
+        <style>
+            .hp-testimonials {
+                padding: 60px 0;
+                background: #f8f9fa;
+            }
+            .hp-testimonials .hp-section-title {
+                font-size: 42px;
+                font-weight: 800;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #1a1a1a;
+            }
+            .hp-testimonials .hp-section-subtitle {
+                text-align: center;
+                font-size: 18px;
+                color: #666;
+                max-width: 700px;
+                margin: 0 auto 50px;
+                line-height: 1.6;
+            }
+            .hp-testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                margin-top: 50px;
+            }
+            .hp-testimonial-card {
+                background: white;
+                padding: 35px;
+                border-radius: 20px;
+                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+                position: relative;
+            }
+            .hp-testimonial-card .hp-testimonial-text {
+                font-size: 16px;
+                line-height: 1.7;
+                color: #333;
+                margin-bottom: 25px;
+                font-style: italic;
+            }
+            .hp-testimonial-card .hp-testimonial-author {
+                font-weight: 700;
+                color: #1a1a1a;
+                margin-bottom: 5px;
+            }
+            .hp-testimonial-card .hp-testimonial-role {
+                font-size: 14px;
+                color: #666;
+            }
+            @media (max-width: 768px) {
+                .hp-testimonials-grid {
+                    grid-template-columns: 1fr;
+                }
+                .hp-testimonials .hp-section-title {
+                    font-size: 28px;
+                }
+            }
+        </style>
+        <section class="hp-testimonials">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-heading text-center mb-5">
-                            <strong class="color-secondary">New and Blog</strong>
-                            <h2>Our Latest News</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">
-                                Enthusiastically drive revolutionary opportunities before emerging leadership.
-                                Distinctively
-                                transform tactical methods of empowerment via resource.
+                    <div class="col-lg-8 col-md-10 text-center">
+                        <span class="growth-challenge-label mb-2">TESTIMONIALS</span>
+                        <h2 class="hp-section-title">Who Are Happy With Our Services</h2>
+                        <p class="hp-section-subtitle">
+                            See how we've helped companies across North America, Australia, and Asia achieve measurable digital growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hp-testimonials-grid">
+                    <!-- Testimonial 1: EatClub -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">EatClub</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us improve lead quality within weeks."
                             </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-1.jpg" alt="Sarah L." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">Sarah L.</div>
+                                <div class="testimonial-author-role">Marketing Lead, Food & Hospitality (Australia)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Juniper -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">Juniper</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
+                            </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-2.jpg" alt="Daniel R." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">Daniel R.</div>
+                                <div class="testimonial-author-role">Growth Manager, Consumer Brand (USA)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: Padra -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">Padra</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
+                            </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-3.jpg" alt="Ayesha K." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">Ayesha K.</div>
+                                <div class="testimonial-author-role">Founder, D2C Brand (USA)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4: Sightseeing Tours Australia -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">Sightseeing Tours Australia</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
+                            </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-4.jpg" alt="Mark T." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">Mark T.</div>
+                                <div class="testimonial-author-role">Operations Manager, Tourism & Travel (Australia)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5: WEIR LLP LAW FIRM -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">WEIR LLP LAW FIRM</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "Ocean DigiTech helped us uncover technical and marketing gaps that were impacting lead quality. The audit was structured, insightful, and highly actionable."
+                            </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-5.jpg" alt="James W." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">James W.</div>
+                                <div class="testimonial-author-role">Managing Partner, Legal Services (USA)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6: National Restoration -->
+                    <div class="hp-testimonial-card-modern">
+                        <div>
+                            <div class="testimonial-company-header">
+                                <span class="testimonial-company-name">National Restoration</span>
+                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            </div>
+                            <p class="hp-testimonial-text">
+                                "The audit revealed funnel and tracking issues affecting our paid campaigns. After applying the recommendations, lead quality and cost efficiency improved noticeably."
+                            </p>
+                        </div>
+                        <div class="testimonial-author-row">
+                            <img src="img/client-1.jpg" alt="Chris M." class="testimonial-author-avatar">
+                            <div>
+                                <div class="testimonial-author-name">Chris M.</div>
+                                <div class="testimonial-author-role">Marketing Director, Home Services (USA)</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Client Testimonials Grid Section End -->
+
+        <!--blog section start-->
+        <section class="our-blog-section ptb-100 gray-light-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 text-center">
+                        <span class="growth-challenge-label mb-2">INSIGHTS & STRATEGY</span>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our Latest Blog</h2>
+                        <span class="animate-border mr-auto ml-auto mb-4"></span>
+                        <p class="lead text-muted" style="font-size: 16px;">
+                            Stay updated with expert perspectives on AI-driven software architecture, technical SEO, digital marketing strategies, and B2B growth.
+                        </p>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/1.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="blog-card-modern">
+                            <div class="blog-card-img-wrap">
+                                <img src="img/blog/1.jpg" alt="AI in Modern Web Architecture">
+                                <span class="portfolio-tag-badge">Web Architecture</span>
                             </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i
-                                                class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <span><i class="far fa-calendar-alt mr-1"></i> October 2026</span>
+                                    <span><i class="far fa-clock mr-1"></i> 5 min read</span>
                                 </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Appropriately productize fully</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                                <h3 class="blog-card-title">
+                                    <a href="blog.php">Building Resilient & Scalable Web Architectures for B2B Growth</a>
+                                </h3>
+                                <p class="blog-card-excerpt">
+                                    Discover how modern decoupled systems, clean API integration, and cloud-native backends drive speed and security.
+                                </p>
+                                <a href="blog.php" class="growth-card-link">
+                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="blog-card-modern">
+                            <div class="blog-card-img-wrap">
+                                <img src="img/blog/2.jpg" alt="Technical SEO Strategies">
+                                <span class="portfolio-tag-badge">SEO & Growth</span>
+                            </div>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <span><i class="far fa-calendar-alt mr-1"></i> September 2026</span>
+                                    <span><i class="far fa-clock mr-1"></i> 7 min read</span>
+                                </div>
+                                <h3 class="blog-card-title">
+                                    <a href="blog.php">Technical SEO Checklist to Maximize Organic Lead Generation</a>
+                                </h3>
+                                <p class="blog-card-excerpt">
+                                    Learn key audit parameters, structured data strategies, and site speed optimizations that convert search traffic into real pipeline.
+                                </p>
+                                <a href="blog.php" class="growth-card-link">
+                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/2.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
+                        <div class="blog-card-modern">
+                            <div class="blog-card-img-wrap">
+                                <img src="img/blog/3.jpg" alt="Paid Ads ROI">
+                                <span class="portfolio-tag-badge">Paid Media</span>
                             </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i
-                                                class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
+                            <div class="blog-card-content">
+                                <div class="blog-card-meta">
+                                    <span><i class="far fa-calendar-alt mr-1"></i> September 2026</span>
+                                    <span><i class="far fa-clock mr-1"></i> 4 min read</span>
                                 </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Quickly formulate backend</a></h3>
-                                <p class="card-text">Synergistically engage effective ROI after customer directed
-                                    partnerships.</p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                                <h3 class="blog-card-title">
+                                    <a href="blog.php">Eliminating Ad Spend Waste in Google & Amazon PPC Campaigns</a>
+                                </h3>
+                                <p class="blog-card-excerpt">
+                                    Actionable tactics to optimize bidding algorithms, negative keywords, and landing page funnels for maximum ROAS.
+                                </p>
+                                <a href="blog.php" class="growth-card-link">
+                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="single-blog-card card border-0 shadow-sm">
-                            <div class="blog-img position-relative">
-                                <img src="img/blog/3.jpg" class="card-img-top" alt="blog">
-                                <div class="meta-date">
-                                    <strong>24</strong>
-                                    <small>Apr</small>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="post-meta mb-2">
-                                    <ul class="list-inline meta-list">
+                </div>
+            </div>
+        </section>
                                         <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
                                             Comments
                                         </li>
@@ -1470,260 +1705,19 @@
         </section>
         <!--blog section end-->
 
-        <!--client section start-->
-        <div class="client-section ptb-100" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-heading-wrap">
-                            <h3>Who are Happy With Services and Work</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-para">
-                            <p>Seamlessly administrate synergistic growth strategies and collaborative markets. Globally
-                                empower inexpensive infomediaries after sustainable mindshare. Phosfluorescently brand
-                                professional collaboration and idea-sharing without principle-centered interfaces. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo start-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator client-logo-wrap">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo end-->
-            </div>
-        </div>
-        <!--client section end-->
-
-
-        <!--team two section start-->
-        <section class="team-two-section ptb-100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-8">
-                        <div class="section-heading text-center mb-5">
-                            <strong class="color-secondary">Our Team</strong>
-                            <h2>Awesome Team Members</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Distinctively grow go forward manufactured products and optimal networks.
-                                Enthusiastically
-                                disseminate user-centric outsourcing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-1.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Richard Ford</h5>
-                                    <span>Instructor of Mathematics</span>
-                                    <p class="teacher-quote pt-3">Dramatically leverage existing fully researched
-                                        platforms. </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Dramatically leverage existing fully researched platforms
-                                        vis-a-vis viral." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Richard Ford</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Instructor of Mathematics</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-2.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Kely Roy</h5>
-                                    <span>Lead Designer</span>
-                                    <p class="teacher-quote pt-3">Compellingly strategize covalent e-services rather
-                                        than </p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Credibly extend high-payoff web-readiness via top-line
-                                        relationships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Kely Roy</h5>
-                                    </a><span class="teacher-field text-white">Lead Designer</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-3.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Credibly extend high-payoff web-readiness via
-                                        top-line.</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="staff-member my-md-3 my-lg-3 my-sm-0">
-                            <div class="card text-center">
-                                <img src="img/team-member-4.png" alt="team image" width="120"
-                                    class="img-fluid m-auto pt-4">
-                                <div class="card-body">
-                                    <h5 class="teacher mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="teacher-quote pt-3">Professionally engage clicks-and-mortar customer</p>
-                                    <ul class="list-inline pt-2 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay d-flex align-items-center justify-content-center">
-                                <div class="overlay-inner">
-                                    <p class="teacher-quote">"Authoritatively evolve stand-alone e-tailers whereas
-                                        prospective partnerships." </p><a href="#" class="teacher-name">
-                                        <h5 class="mb-0 teacher text-white">Gerald Nichols</h5>
-                                    </a>
-                                    <span class="teacher-field text-white">Managing Director</span>
-                                    <ul class="list-inline py-4 social">
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-facebook"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-linkedin"></span></a></li>
-                                        <li class="list-inline-item"><a href="" target="_blank"><span
-                                                    class="ti-dribbble"></span></a></li>
-                                    </ul>
-                                    <p class="teacher-see-profile">
-                                        <a href="#" class="btn outline-white-btn">View my profile</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--team two section end-->
-
         <!--call to action section start-->
-        <section class="call-to-action py-5 gray-light-bg">
+        <section class="call-to-action py-5" style="background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);">
             <div class="container">
                 <div class="row justify-content-around align-items-center">
-                    <div class="col-md-7">
+                    <div class="col-md-7 text-white">
                         <div class="subscribe-content">
-                            <h3 class="mb-1">Consulting Agency for Your Business</h3>
-                            <p>Rapidiously engage fully tested e-commerce with progressive architectures.</p>
+                            <h3 class="mb-2 text-white font-weight-bold">Ready to Scale Your Digital Growth?</h3>
+                            <p class="mb-0" style="color: #cbd5e1;">Partner with Ocean Digitech for enterprise web applications, mobile engineering, and data-backed performance marketing.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mt-3 mt-md-0">
                         <div class="action-btn text-lg-right text-sm-left">
-                            <a href="#" class="btn secondary-solid-btn">Contact With Us</a>
+                            <a href="contact-us.php" class="btn secondary-solid-btn" style="padding: 14px 28px; font-weight: 600; border-radius: 8px;">Request Free Consultation</a>
                         </div>
                     </div>
                 </div>

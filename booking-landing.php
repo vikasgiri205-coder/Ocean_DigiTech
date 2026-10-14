@@ -171,5 +171,6 @@
         });
     </script>
 
+    <?php include('chatbot-widget.php'); ?>
 </body>
 </html>
