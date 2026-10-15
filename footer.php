@@ -49,16 +49,16 @@
                                             <a class="nav-link" href="mobile-app-development.php">Mobile App Development</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="seo-services.php">SEO Services</a>
+                                            <a class="nav-link" href="seo-services">SEO Services</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="local-seo-services.php">Local SEO</a>
+                                            <a class="nav-link" href="local-seo-services">Local SEO</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="social-media-management.php">Social Media Management</a>
+                                            <a class="nav-link" href="social-media-management">Social Media Management</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="google-ads-management.php">Google Ads Management</a>
+                                            <a class="nav-link" href="google-ads-management">Google Ads Management</a>
                                         </li>
                                     </ul>
 
@@ -69,16 +69,16 @@
                                     <h4 class="text-white">COMPANY</h4>
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="about-us.php">About</a>
+                                            <a class="nav-link" href="about-us">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="contact-us.php">Contact</a>
+                                            <a class="nav-link" href="contact-us">Contact</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="privacy-policy.php">Privacy Policy</a>
+                                            <a class="nav-link" href="privacy-policy">Privacy Policy</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="terms-and-conditions.php">Terms & Conditions</a>
+                                            <a class="nav-link" href="terms-and-conditions">Terms & Conditions</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,8 +126,8 @@
                     </div>
                     <div class="col-md-6 col-lg-6 d-none d-md-block d-lg-block">
                         <ul class="list-inline policy-nav text-right social-list mb-0">
-                            <li class="list-inline-item"><a href="privacy-policy.php">Privacy Policy</a></li>
-                            <li class="list-inline-item"><a href="terms-and-conditions.php">Terms & Conditions</a></li>
+                            <li class="list-inline-item"><a href="privacy-policy">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="terms-and-conditions">Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -137,10 +137,6 @@
     </footer>
     <!--footer section end-->
 
-      <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
-    </button>
-    <!--bottom to top button end-->
+
 
     <?php if (file_exists(__DIR__ . '/chatbot-widget.php')) { include(__DIR__ . '/chatbot-widget.php'); } ?>

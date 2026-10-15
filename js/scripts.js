@@ -30,22 +30,38 @@ jQuery(function ($) {
     $("#preloader").delay(200).fadeOut("fade");
   });
 
-  // 2. fixed navbar
+  // 2. smart hide-on-scroll-down, show-on-scroll-up navbar
+  var lastScrollTop = 0;
+  var scrollDelta = 6;
+  var navbar = $(".navbar.fixed-top");
+
   $(window).on("scroll", function () {
-    // checks if window is scrolled more than 500px, adds/removes solid class
-    if ($(this).scrollTop() > 0) {
-      $(".navbar").addClass("affix");
-      $(".scroll-to-target").addClass("open");
+    var st = $(this).scrollTop();
+
+    // Check if scrolled past delta threshold
+    if (Math.abs(lastScrollTop - st) <= scrollDelta) return;
+
+    if (st > 0) {
+      navbar.addClass("affix");
     } else {
-      $(".navbar").removeClass("affix");
-      $(".scroll-to-target").removeClass("open");
+      navbar.removeClass("affix");
     }
-    // checks if window is scrolled more than 500px, adds/removes top to target class
-    if ($(this).scrollTop() > 500) {
-      $(".scroll-to-target").addClass("open");
-    } else {
-      $(".scroll-to-target").removeClass("open");
+
+    // Scroll Down -> Hide Navbar (unless mobile dropdown is open)
+    if (st > lastScrollTop && st > 80) {
+      if (!$(".navbar-collapse").hasClass("show")) {
+        navbar.addClass("navbar-hidden").removeClass("navbar-visible");
+      }
+    } else if (st < lastScrollTop) {
+      // Scroll Up -> Show Navbar
+      navbar.removeClass("navbar-hidden").addClass("navbar-visible");
     }
+
+    if (st <= 40) {
+      navbar.removeClass("navbar-hidden navbar-visible");
+    }
+
+    lastScrollTop = st;
   });
 
   // 3. back to top
@@ -568,4 +584,18 @@ jQuery(function ($) {
         .text("Found error in the form. Please check again.");
     }
   }
+
+  // 16. Services interactive category filter
+  $(".service-filter-btn").on("click", function () {
+    var filter = $(this).data("filter");
+    $(".service-filter-btn").removeClass("active");
+    $(this).addClass("active");
+
+    if (filter === "all") {
+      $(".service-card-col").stop(true, true).fadeIn(300);
+    } else {
+      $(".service-card-col").stop(true, true).hide();
+      $('.service-card-col[data-category="' + filter + '"]').fadeIn(300);
+    }
+  });
 }); // JQuery end

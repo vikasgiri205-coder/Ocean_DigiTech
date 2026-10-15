@@ -179,31 +179,37 @@
                                 <span class="fas fa-sparkles"></span> AI-POWERED DIGITAL TRANSFORMATION
                             </div>
                             <h1 class="hero-heading-title">
-                                Scalable Software Engineering & Modern Digital Growth
+                                Scalable Software Engineering & <span class="hero-gradient-text">Modern Digital Growth</span>
                             </h1>
                             <p class="hero-lead-desc">
                                 We engineer high-performing web apps, custom software platforms, and data-driven digital growth strategies for B2B enterprises and ambitious startups.
                             </p>
 
                             <div class="action-btns mt-4">
-                                <div class="quick-proposal d-flex align-items-center flex-wrap" style="gap:10px;">
-                                    <input type="text" id="businessName" placeholder="Enter your email or domain" required style="padding:14px 18px; border-radius:8px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.95); min-width:260px; color:#1e293b;" />
-                                    <button type="button" onclick="sendProposal()" class="btn-primary-od">
-                                        Get Free Proposal <span class="fas fa-arrow-right ml-1"></span>
-                                    </button>
+                                <div class="quick-proposal-wrap">
+                                    <div class="quick-proposal">
+                                        <div class="input-with-icon">
+                                            <span class="fas fa-globe input-icon"></span>
+                                            <input type="text" id="businessName" placeholder="Enter your business domain or email" required class="hero-input-field" />
+                                        </div>
+                                        <button type="button" onclick="sendProposal()" class="btn-primary-od">
+                                            <span>Get Free Proposal</span>
+                                            <span class="fas fa-arrow-right ml-1"></span>
+                                        </button>
+                                    </div>
+                                    <div class="hero-micro-trust mt-3">
+                                        <span><i class="fas fa-bolt text-warning mr-1"></i> Free 48-Hour Growth Audit</span>
+                                        <span class="mx-2">•</span>
+                                        <span><i class="fas fa-shield-alt text-success mr-1"></i> 100% Confidential</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                        <div class="hero-visual-card text-center p-3">
-                            <img src="img/t1-hero-img.svg" class="img-fluid" alt="Digital Engineering & Growth" style="max-height: 420px; width: auto;" />
-                            <div class="hero-floating-badge d-none d-sm-flex">
-                                <span class="fas fa-check-circle text-success" style="font-size: 24px;"></span>
-                                <div class="text-left">
-                                    <div style="font-size: 15px; font-weight: 700; color: #ffffff;">98% Client Retention</div>
-                                    <div style="font-size: 12px; color: #94a3b8;">Proven B2B Results</div>
-                                </div>
+                        <div class="hero-visual-card-glow">
+                            <div class="hero-visual-card">
+                                <img src="img/hero-tech-isometric.jpg" class="hero-visual-img" alt="Scalable Software Engineering & Modern Digital Growth" />
                             </div>
                         </div>
                     </div>
@@ -241,63 +247,22 @@
             <div class="boutique-bg-glow"></div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div class="boutique-visual-container">
-                            <!-- Floating Top Badge -->
-                            <div class="boutique-float-badge badge-top">
-                                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(0, 210, 255, 0.15); display: flex; align-items: center; justify-content: center; color: #00d2ff; font-size: 18px;">
-                                    <span class="ti-rocket"></span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0" style="font-size: 14px; font-weight: 700; color: #0b132b;">99.8% On-Time</h6>
-                                    <small style="color: #64748b; font-size: 11px;">Milestone Delivery</small>
-                                </div>
-                            </div>
-
-                            <!-- Center Holographic Interactive Card -->
-                            <div class="boutique-card-center">
-                                <div class="boutique-icon-sphere">
-                                    <span class="ti-world"></span>
-                                </div>
-                                <span class="badge badge-pill px-3 py-1 mb-3" style="background: rgba(0, 210, 255, 0.2); color: #00d2ff; font-size: 12px; font-weight: 600;">CROSS-CONTINENTAL HUBS</span>
-                                <h4 class="text-white mb-2" style="font-weight: 700;">Global Digital Engine</h4>
-                                <p style="color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 24px;">
-                                    Dual engineering hubs in the United States and India driving agile development, 24/7 coverage, and unmatched ROI.
-                                </p>
-                                
-                                <div class="d-flex justify-content-between align-items-center pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
-                                    <div class="text-left">
-                                        <small style="color: #64748b; font-size: 11px; text-transform: uppercase;">Engineered For</small>
-                                        <div class="text-white font-weight-bold" style="font-size: 13px;">High-Growth Scale</div>
-                                    </div>
-                                    <div class="text-right">
-                                        <small style="color: #64748b; font-size: 11px; text-transform: uppercase;">Methodology</small>
-                                        <div style="color: #00d2ff; font-weight: 700; font-size: 13px;">Agile + Data-First</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Floating Bottom Badge -->
-                            <div class="boutique-float-badge badge-bottom">
-                                <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(232, 5, 102, 0.15); display: flex; align-items: center; justify-content: center; color: #e80566; font-size: 18px;">
-                                    <span class="ti-shield"></span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0" style="font-size: 14px; font-weight: 700; color: #0b132b;">Enterprise Grade</h6>
-                                    <small style="color: #64748b; font-size: 11px;">Security & Architecture</small>
-                                </div>
+                    <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                        <div class="boutique-image-glow-wrap">
+                            <div class="boutique-image-card">
+                                <img src="img/boutique-global-engine.jpg" alt="Global Digital Engine - Ocean Digitech" class="img-fluid boutique-img" />
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="pl-lg-4">
-                            <span class="badge badge-pill px-3 py-2 text-uppercase font-weight-bold mb-3" style="background: rgba(232, 5, 102, 0.1); color: #e80566; letter-spacing: 1px; font-size: 11px;">Why Ocean DigiTech</span>
-                            <h2 style="font-weight: 800; font-size: 2.3rem; color: #0b132b; line-height: 1.25; margin-bottom: 18px;">
+                            <span class="badge badge-pill px-3 py-2 text-uppercase font-weight-bold mb-2" style="background: rgba(232, 5, 102, 0.1); color: #e80566; letter-spacing: 1px; font-size: 11px;">Why Ocean DigiTech</span>
+                            <h2 style="font-weight: 800; font-size: 2.15rem; color: #0b132b; line-height: 1.25; margin-bottom: 12px;">
                                 Boutique Expertise,<br>
                                 <span style="background: linear-gradient(135deg, #00d2ff 0%, #0066ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Global Results.</span>
                             </h2>
-                            <p style="font-size: 15px; color: #475569; line-height: 1.7; margin-bottom: 24px;">
+                            <p style="font-size: 14.5px; color: #475569; line-height: 1.6; margin-bottom: 16px;">
                                 Ocean DigiTech blends creative strategy and technical mastery to deliver measurable business results. Our cross-functional teams collaborate, innovate, and empower your digital journey with speed and precision.
                             </p>
 
@@ -307,8 +272,8 @@
                                     <span class="ti-light-bulb"></span>
                                 </div>
                                 <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Guided by Creativity. Propelled by Data.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">Every product and campaign is backed by user analytics and rigorous conversion data.</p>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Guided by Creativity. Propelled by Data.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">Every product and campaign is backed by user analytics and rigorous conversion data.</p>
                                 </div>
                             </div>
 
@@ -317,8 +282,8 @@
                                     <span class="ti-bolt"></span>
                                 </div>
                                 <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Masters in Craft. Obsessed With Outcomes.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">From pixel-perfect UI to scalable microservices, our engineering delivers high-ROI results.</p>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Masters in Craft. Obsessed With Outcomes.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">From pixel-perfect UI to scalable microservices, our engineering delivers high-ROI results.</p>
                                 </div>
                             </div>
 
@@ -327,36 +292,36 @@
                                     <span class="ti-medall"></span>
                                 </div>
                                 <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 15px;">Trusted by Fortune 500s & Bold Startups.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 13px; line-height: 1.5;">Flexible engagement models built for ambitious brands wanting rapid digital transformation.</p>
+                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Trusted by Fortune 500s & Bold Startups.</h6>
+                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">Flexible engagement models built for ambitious brands wanting rapid digital transformation.</p>
                                 </div>
                             </div>
 
                             <!-- Animated Stat Counters -->
-                            <div class="row mt-4 pt-2">
+                            <div class="row mt-3 pt-1">
                                 <div class="col-4">
                                     <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">45+</div>
+                                        <div class="boutique-stat-number">350+</div>
                                         <div class="boutique-stat-label">Projects</div>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">250+</div>
+                                        <div class="boutique-stat-number">500+</div>
                                         <div class="boutique-stat-label">Clients</div>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">07+</div>
+                                        <div class="boutique-stat-number">18+</div>
                                         <div class="boutique-stat-label">Countries</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="d-flex align-items-center mt-4 pt-2">
-                                <a href="contact-us.php" class="btn secondary-solid-btn mr-3" style="padding: 13px 28px; border-radius: 8px; font-weight: 600;">Start Your Project</a>
-                                <a href="project.php" class="btn secondary-outline-btn" style="padding: 13px 28px; border-radius: 8px; font-weight: 600;">Explore Portfolio</a>
+                            <div class="d-flex align-items-center mt-3 pt-1">
+                                <a href="contact-us" class="btn secondary-solid-btn mr-3" style="padding: 11px 24px; border-radius: 8px; font-weight: 600; font-size: 14px;">Start Your Project</a>
+                                <a href="project" class="btn secondary-outline-btn" style="padding: 11px 24px; border-radius: 8px; font-weight: 600; font-size: 14px;">Explore Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -415,119 +380,194 @@
         <!--call to action section end-->
 
         <!--services section start-->
-        <section class="services-section ptb-80 gray-light-bg">
+        <section class="services-section ptb-80 gray-light-bg" id="services-overview">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="section-heading text-center mb-5">
-                            <!--<strong class="color-secondary">Services Overview</strong>-->
-                            <h2>What We Do</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Efficiently aggregate end-to-end core competencies without maintainable
-                                ideas.
-                                Dynamically
-                                foster tactical solutions without enabled value.</p>
+                    <div class="col-lg-8 col-md-10">
+                        <div class="section-heading text-center mb-4">
+                            <span class="boutique-badge text-uppercase mb-2" style="letter-spacing: 1px;"><i class="ti-layers-alt mr-1"></i> Full-Spectrum Digital Solutions</span>
+                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Engineering High-Impact Digital Growth</h2>
+                            <span class="animate-border mr-auto ml-auto mb-3"></span>
+                            <p class="lead text-muted" style="font-size: 16px; max-width: 680px; margin: 0 auto;">
+                                From bespoke software architecture and high-converting e-commerce to revenue-driving SEO and programmatic ad campaigns, we turn complex digital challenges into scalable enterprise success.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-announcement icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">SEO Services</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                <!-- Animated Tech & Capability Live Ticker -->
+                <div class="service-ticker-wrap">
+                    <div class="service-ticker-track">
+                        <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO & Search Dominance</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
+                        <div class="service-ticker-item"><span class="dot"></span> High-ROI Google & Meta Ads</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure & DevOps</div>
+                        <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
+                        <div class="service-ticker-item"><span class="dot"></span> AI Automation & Data Analytics</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
+                        <!-- Continuous Duplicate Track -->
+                        <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO & Search Dominance</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
+                        <div class="service-ticker-item"><span class="dot"></span> High-ROI Google & Meta Ads</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure & DevOps</div>
+                        <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
+                        <div class="service-ticker-item"><span class="dot"></span> AI Automation & Data Analytics</div>
+                        <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
+                    </div>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="services-filter-tabs">
+                    <button type="button" class="service-filter-btn active" data-filter="all">All Capabilities</button>
+                    <button type="button" class="service-filter-btn" data-filter="dev">Software & Web</button>
+                    <button type="button" class="service-filter-btn" data-filter="seo">SEO & Organic Search</button>
+                    <button type="button" class="service-filter-btn" data-filter="marketing">Paid Ads & Performance</button>
+                </div>
+
+                <div class="row services-cards-grid">
+                    <!-- Service 1: Custom Software -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-desktop"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">Full-Stack</span>
+                                </div>
+                                <h4 class="service-card-pro-title">Custom Software & Web Apps</h4>
+                                <p class="service-card-pro-desc">
+                                    Scalable cloud-native architectures, enterprise SaaS portals, and secure API integrations built with modern reactive technologies.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-bolt"></i> 99.9% Uptime</span>
+                                <a href="custom-website-development" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-light-bulb icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">Custom Software Development</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                    <!-- Service 2: Enterprise SEO -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="seo">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-search"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">Organic Growth</span>
+                                </div>
+                                <h4 class="service-card-pro-title">Enterprise SEO & Authority</h4>
+                                <p class="service-card-pro-desc">
+                                    Data-backed technical indexing audits, content authority clustering, and algorithmic ranking tactics that dominate high-intent keywords.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-arrow-up"></i> +140% Traffic Lift</span>
+                                <a href="seo-services" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-headphone-alt icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size: 1.1em;">Website Design & Development</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                    <!-- Service 3: Custom Website Design -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-palette"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">UI / UX</span>
+                                </div>
+                                <h4 class="service-card-pro-title">Modern Web Design & UI/UX</h4>
+                                <p class="service-card-pro-desc">
+                                    Aesthetic, human-centered digital experiences with interactive micro-animations, accessible design systems, and seamless brand storytelling.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-check"></i> Sub-Second Speed</span>
+                                <a href="custom-website-design" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-bell icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">eCommerce Development & SEO</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                    <!-- Service 4: E-Commerce -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-shopping-cart"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">E-Commerce</span>
+                                </div>
+                                <h4 class="service-card-pro-title">E-Commerce Architecture</h4>
+                                <p class="service-card-pro-desc">
+                                    High-throughput storefronts engineered on Shopify, WooCommerce, and headless stacks with streamlined checkouts and high conversion rates.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-stats-up"></i> 3.2x Conversion</span>
+                                <a href="ecommerce-web-development" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-briefcase icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">Local SEO</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                    <!-- Service 5: Local SEO -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="seo">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-location-pin"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">Geo Authority</span>
+                                </div>
+                                <h4 class="service-card-pro-title">Local SEO & Map Pack</h4>
+                                <p class="service-card-pro-desc">
+                                    Geotargeted search domination, Google Business Profile optimization, and local review funnels turning local searches into paying customers.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-target"></i> Top 3 Google Map</span>
+                                <a href="local-seo-services" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-vector icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">PPC & Online Advertising</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-vector icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">Technology Consulting</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-vector icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">Maintenance & Support</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="services-single text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                            <span class="ti-vector icon-lg color-secondary d-block mb-4"></span>
-                            <h5 style="font-size:1.1em;">AI Consulting & Automation</h5>
-                            <p class="mb-0">Progressively empower business "outside the box" thinking with
-                                resource-leveling
-                                partnerships.</p>
-                            <a href="services-details.php" target="_blank" class="detail-link mt-4">Learn More <span
-                                    class="ti-arrow-right"></span></a>
+
+                    <!-- Service 6: PPC & Paid Ads -->
+                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="marketing">
+                        <div class="service-card-pro">
+                            <div>
+                                <div class="service-card-pro-header">
+                                    <div class="service-card-pro-icon">
+                                        <span class="ti-bar-chart"></span>
+                                    </div>
+                                    <span class="service-card-pro-tag">Paid Media</span>
+                                </div>
+                                <h4 class="service-card-pro-title">PPC & Google Ads Scale</h4>
+                                <p class="service-card-pro-desc">
+                                    High-performance search, display, and social ad campaigns laser-targeted on bottom-of-funnel conversions, optimal CPA, and maximum ROAS.
+                                </p>
+                            </div>
+                            <div class="service-card-pro-footer">
+                                <span class="service-metric-pill"><i class="ti-pie-chart"></i> 4.8x Avg ROAS</span>
+                                <a href="google-ads-management" class="service-pro-link">
+                                    Explore Service <span class="ti-arrow-right"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1113,7 +1153,7 @@
                         <div class="portfolio-grid-modern">
                             <!-- Project 1 -->
                             <div>
-                                <a href="project.php" class="portfolio-card-modern">
+                                <a href="project" class="portfolio-card-modern">
                                     <div class="portfolio-img-container">
                                         <img src="img/portfolios/3.jpg" alt="Enterprise SaaS Web App" />
                                         <span class="portfolio-tag-badge">Web Application</span>
@@ -1127,7 +1167,7 @@
 
                             <!-- Project 2 -->
                             <div>
-                                <a href="project.php" class="portfolio-card-modern">
+                                <a href="project" class="portfolio-card-modern">
                                     <div class="portfolio-img-container">
                                         <img src="img/portfolios/2.jpg" alt="E-Commerce D2C Brand Store" />
                                         <span class="portfolio-tag-badge">E-Commerce</span>
@@ -1141,7 +1181,7 @@
 
                             <!-- Project 3 -->
                             <div>
-                                <a href="project.php" class="portfolio-card-modern">
+                                <a href="project" class="portfolio-card-modern">
                                     <div class="portfolio-img-container">
                                         <img src="img/portfolios/4.jpg" alt="Local Services SEO Campaign" />
                                         <span class="portfolio-tag-badge">SEO & Marketing</span>
@@ -1156,7 +1196,7 @@
 
                         <!-- Button to View Full Portfolio Page -->
                         <div class="text-center mt-5">
-                            <a href="project.php" class="btn secondary-solid-btn px-4 py-3" style="border-radius: 8px; font-weight: 600; font-size: 15px;">
+                            <a href="project" class="btn secondary-solid-btn px-4 py-3" style="border-radius: 8px; font-weight: 600; font-size: 15px;">
                                 View All Projects in Our Portfolio <span class="ti-arrow-right ml-2"></span>
                             </a>
                         </div>
@@ -1598,6 +1638,73 @@
         </section>
         <!-- Client Testimonials Grid Section End -->
 
+        <!--team section start-->
+        <section class="team-two-section ptb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 text-center mb-5">
+                        <span class="growth-challenge-label mb-2">EXPERIENCED LEADERSHIP</span>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Awesome Team Members</h2>
+                        <span class="animate-border mr-auto ml-auto mb-4"></span>
+                        <p class="lead text-muted" style="font-size: 16px;">
+                            Meet the digital architects, designers, and growth strategists driving innovative enterprise digital transformations.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-1.png" alt="Richard Ford" class="img-fluid">
+                            </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Richard Ford</h5>
+                                <div class="team-card-role">Technology Strategist</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Enterprise digital architecture and high-performance software engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-2.png" alt="Kely Roy" class="img-fluid">
+                            </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Kely Roy</h5>
+                                <div class="team-card-role">Lead UI/UX Designer</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-3.png" alt="Gerald Nichols" class="img-fluid">
+                            </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Gerald Nichols</h5>
+                                <div class="team-card-role">Managing Director</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Driving corporate strategy, global partnerships, and client growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <div class="team-card-modern">
+                            <div class="team-img-modern-wrap">
+                                <img src="img/team-member-4.png" alt="Alex Morgan" class="img-fluid">
+                            </div>
+                            <div class="team-card-body-modern">
+                                <h5 class="team-card-name">Alex Morgan</h5>
+                                <div class="team-card-role">Senior Full Stack Lead</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Building resilient cloud backends, clean APIs, and modern web apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--team section end-->
+
         <!--blog section start-->
         <section class="our-blog-section ptb-100 gray-light-bg">
             <div class="container">
@@ -1678,25 +1785,6 @@
                                 <a href="blog.php" class="growth-card-link">
                                     Read Full Article <span class="fas fa-arrow-right"></span>
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                                        <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                            Comments
-                                        </li>
-                                        <li class="list-inline-item"><i
-                                                class="fas fa-share-alt mr-2"></i><span>10</span>
-                                            Share
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                    users. </p>
-                                <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
