@@ -83,9 +83,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!--custom css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo file_exists("css/style.css") ? filemtime("css/style.css") : "2.1"; ?>">
     <!--responsive css-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists("css/responsive.css") ? filemtime("css/responsive.css") : "2.1"; ?>">
 
 </head>
 
@@ -170,7 +170,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-modern-wrap">
+        <section class="hero-modern-wrap" style="background: linear-gradient(135deg, #0b0f19 0%, #171e31 50%, #1e1035 100%); color: #ffffff;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="hero-micro-trust mt-3">
                                         <span><i class="fas fa-bolt text-warning mr-1"></i> Free 48-Hour Growth Audit</span>
-                                        <span class="mx-2">•</span>
+                                        <span class="mx-2" style="opacity: 0.5;">&bull;</span>
                                         <span><i class="fas fa-shield-alt text-success mr-1"></i> 100% Confidential</span>
                                     </div>
                                 </div>
@@ -229,13 +229,13 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0 text-center">
-                        <img src="img/cluch.jpg" alt="Clutch Verified Agency" class="trust-badge-img">
+                        <img src="img/cluch.jpg" alt="Clutch Verified Agency" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
                     </div>
                     <div class="col-lg-3 col-md-6 col-6 text-center">
-                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Top Agency" class="trust-badge-img">
+                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Top Agency" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
                     </div>
                     <div class="col-lg-3 col-md-6 col-6 text-center">
-                        <img src="img/top-developers.png" alt="Top Developers Award" class="trust-badge-img">
+                        <img src="img/top-developers.png" alt="Top Developers Award" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
                     </div>
                 </div>
             </div>

@@ -42,16 +42,19 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     align-items: center !important;
   }
   .brand-logo {
-    height: 32px !important;
+    height: 42px !important;
     width: auto !important;
-    max-height: 32px !important;
+    max-height: 42px !important;
+    max-width: 220px !important;
     object-fit: contain !important;
+    display: block !important;
     transition: all 0.3s ease;
   }
   @media (max-width: 768px) {
     .brand-logo {
-      height: 28px !important;
-      max-height: 28px !important;
+      height: 34px !important;
+      max-height: 34px !important;
+      max-width: 170px !important;
     }
   }
 

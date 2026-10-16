@@ -44,18 +44,21 @@
 
   /* Logo sizing to match original header.php (width: 15%) with visibility fix */
   .hide-on-desktop {
-    width: 15% !important;
-    max-height: 50px !important;
-    min-width: 60px !important; /* Prevent logo from becoming too small */
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 200px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
   .navbar-brand img,
-  .navbar img {
-    width: 15% !important;
-    max-height: 50px !important;
-    min-width: 60px !important;
+  .navbar img,
+  .brand-logo {
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 220px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
   /* Remove excess body padding */
@@ -256,18 +259,21 @@
 
   /* Logo sizing to match original header.php (width: 15%) */
   .hide-on-desktop {
-    width: 15% !important;
-    max-height: 55px !important;
-    min-width: 70px !important; /* Prevent logo from becoming too small */
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 200px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
   .navbar-brand img,
-  .navbar img {
-    width: 15% !important;
-    max-height: 55px !important;
-    min-width: 70px !important;
+  .navbar img,
+  .brand-logo {
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 220px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
   /* Breadcrumb Navigation Mobile Fix - Enhanced Visibility without Background */
@@ -417,11 +423,13 @@
   }
 
   .navbar-brand img,
-  .navbar img {
-    width: 17% !important;
-    max-height: 65px !important;
-    min-width: 80px !important;
+  .navbar img,
+  .brand-logo {
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 220px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 
   /* Breadcrumb Navigation Tablet Fix */
@@ -479,11 +487,13 @@
   }
 
   .navbar-brand img,
-  .navbar img {
-    width: 17% !important;
-    max-height: 70px !important;
-    min-width: 90px !important;
+  .navbar img,
+  .brand-logo {
+    width: auto !important;
+    max-height: 40px !important;
+    max-width: 220px !important;
     height: auto !important;
+    object-fit: contain !important;
   }
 }
 

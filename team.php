@@ -42,9 +42,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!--custom css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo file_exists('css/style.css') ? filemtime('css/style.css') : '2.2'; ?>">
     <!--responsive css-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
 </head>
 
@@ -97,8 +97,8 @@
                                 <img src="img/team-member-1.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Richard Ford</h5>
-                                <div class="team-card-role">Technology Strategist</div>
+                                <h5 class="team-card-name">Enterprise Architecture Pod</h5>
+                                <div class="team-card-role">Software Engineering</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Specializing in enterprise digital architecture and high-performance software engineering.</p>
                             </div>
                         </div>
@@ -109,8 +109,8 @@
                                 <img src="img/team-member-2.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Kely Roy</h5>
-                                <div class="team-card-role">Lead UI/UX Designer</div>
+                                <h5 class="team-card-name">UI/UX & Design Systems</h5>
+                                <div class="team-card-role">Product Design</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems for digital platforms.</p>
                             </div>
                         </div>
@@ -121,8 +121,8 @@
                                 <img src="img/team-member-3.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Gerald Nichols</h5>
-                                <div class="team-card-role">Managing Director</div>
+                                <h5 class="team-card-name">Technology & Strategy</h5>
+                                <div class="team-card-role">Executive Leadership</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Driving corporate strategy, international partnerships, and client growth initiatives.</p>
                             </div>
                         </div>
@@ -133,8 +133,8 @@
                                 <img src="img/team-member-4.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Alex Morgan</h5>
-                                <div class="team-card-role">Senior Full Stack Lead</div>
+                                <h5 class="team-card-name">Full-Stack Development Pod</h5>
+                                <div class="team-card-role">Web & API Engineering</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Expert in building scalable backend systems, APIs, and microservices architecture.</p>
                             </div>
                         </div>
@@ -145,8 +145,8 @@
                                 <img src="img/team-member-5.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Sarah Jenkins</h5>
-                                <div class="team-card-role">Cloud Architecture Lead</div>
+                                <h5 class="team-card-name">Cloud Infrastructure & DevOps</h5>
+                                <div class="team-card-role">AWS, GCP & Kubernetes</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Architecting resilient AWS & GCP infrastructure and DevOps automation pipelines.</p>
                             </div>
                         </div>
@@ -157,8 +157,8 @@
                                 <img src="img/team-member-6.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Marcus Vance</h5>
-                                <div class="team-card-role">Mobile App Lead</div>
+                                <h5 class="team-card-name">Mobile Engineering Pod</h5>
+                                <div class="team-card-role">iOS, Android & Flutter</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Delivering cross-platform Flutter and native iOS/Android mobile applications.</p>
                             </div>
                         </div>
@@ -169,8 +169,8 @@
                                 <img src="img/team-member-7.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Elena Rostova</h5>
-                                <div class="team-card-role">Digital Growth Strategist</div>
+                                <h5 class="team-card-name">Growth & Search Intelligence</h5>
+                                <div class="team-card-role">SEO & Performance Marketing</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Optimizing SEO, conversion rates, and multi-channel performance marketing for clients.</p>
                             </div>
                         </div>
@@ -181,8 +181,8 @@
                                 <img src="img/team-member-8.png" alt="Team Member" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">David Chen</h5>
-                                <div class="team-card-role">QA & Security Lead</div>
+                                <h5 class="team-card-name">Quality Assurance & Security</h5>
+                                <div class="team-card-role">Automated Testing & SecOps</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Ensuring bulletproof application security, performance benchmarks, and automated testing.</p>
                             </div>
                         </div>

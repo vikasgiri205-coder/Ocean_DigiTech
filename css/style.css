@@ -5756,8 +5756,8 @@ small {
   color: #94a3b8;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .btn-primary-od {
@@ -6000,8 +6000,8 @@ small {
 }
 
 .portfolio-card-modern:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 22px 48px rgba(11, 19, 43, 0.12), 0 0 25px rgba(232, 5, 102, 0.12);
+  transform: none;
+  box-shadow: var(--od-shadow-sm);
   border-color: rgba(232, 5, 102, 0.4);
 }
 
@@ -6021,7 +6021,7 @@ small {
 }
 
 .portfolio-card-modern:hover .portfolio-img-container img {
-  transform: scale(1.04);
+  transform: none;
 }
 
 .portfolio-tag-badge {
@@ -6165,9 +6165,9 @@ small {
 }
 
 .team-card-modern:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(11, 19, 43, 0.1), 0 0 20px rgba(0, 210, 255, 0.1);
-  border-color: rgba(0, 210, 255, 0.4);
+  transform: none;
+  box-shadow: var(--od-shadow-sm);
+  border-color: var(--od-card-border);
 }
 
 .team-img-modern-wrap {
@@ -6188,7 +6188,7 @@ small {
 }
 
 .team-card-modern:hover .team-img-modern-wrap img {
-  transform: scale(1.05);
+  transform: none;
 }
 
 .team-card-body-modern {
@@ -6435,3 +6435,16 @@ small {
 }
 
 
+
+/* img-resilience-safety */
+img {
+  max-width: 100%;
+}
+.trust-badge-img {
+  height: 48px !important;
+  max-height: 48px !important;
+  width: auto !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+}
