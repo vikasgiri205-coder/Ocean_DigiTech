@@ -62,21 +62,46 @@
     <!--body content wrap start-->
     <div class="main">
 
-        <!--hero section start-->
-        <section class="hero-section ptb-100 gradient-overlay full-screen d-flex align-items-center"
-            style="background: url('img/about-hero-placeholder.jpg')no-repeat center center / cover; min-height: 100vh;">
+        <!--about modern compact banner start-->
+        <section class="about-hero-modern">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="page-header-content text-white text-center">
-                            <h1 class="text-white mb-3 display-4">About Ocean DigiTech</h1>
-                            <p class="lead text-white">A Global Story from India to the USA</p>
+                    <div class="col-lg-9 col-md-11 text-center">
+                        <!-- Breadcrumbs -->
+                        <nav aria-label="breadcrumb" class="mb-3">
+                            <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+                                <li class="breadcrumb-item"><a href="index.php" style="color: #94a3b8; text-decoration: none;"><i class="ti-home mr-1"></i> Home</a></li>
+                                <li class="breadcrumb-item active" style="color: #cbd5e1; font-weight: 600;" aria-current="page">About Us</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Eyebrow Pill Badge -->
+                        <div class="about-pill-badge mb-3">
+                            <span class="pulsing-dot"></span>
+                            <span>Global Digital Agency &bull; India &amp; USA</span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="about-hero-title">About Ocean DigiTech</h1>
+
+                        <!-- Subtitle -->
+                        <p class="about-hero-subtitle">
+                            A Global Story from India to the USA &mdash; Delivering Bespoke Software Architecture, Scalable E-Commerce &amp; Data-Driven Growth Marketing.
+                        </p>
+
+                        <!-- Highlights -->
+                        <div class="about-hero-highlights">
+                            <span class="highlight-item"><i class="ti-shield mr-2" style="color: #00d2ff;"></i> Enterprise Standards</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-stats-up mr-2" style="color: #eb0074;"></i> High-ROI Strategy</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-world mr-2" style="color: #10b981;"></i> 18+ Countries Reached</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--hero section end-->
+        <!--about modern compact banner end-->
 
         <!--about us section start-->
         <section class="about-us-section ptb-100">
@@ -97,39 +122,57 @@
                             <!-- Statistics Grid -->
                             <div class="row text-center mt-5">
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">45</h2>
-                                        <strong>Total Projects</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-check-box" style="color: #00d2ff;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">350+</h2>
+                                        <strong class="counter-label">Total Projects Completed</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">250</h2>
-                                        <strong>Total Customer</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-user" style="color: #eb0074;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">500+</h2>
+                                        <strong class="counter-label">Global Clients Served</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">07</h2>
-                                        <strong>Countries</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-world" style="color: #10b981;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">18+</h2>
+                                        <strong class="counter-label">Countries Reached</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">50+</h2>
-                                        <strong>eCommerce Businesses</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-shopping-cart" style="color: #f59e0b;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">120+</h2>
+                                        <strong class="counter-label">eCommerce Brands Scaled</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">2+</h2>
-                                        <strong>Years of Experience</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-time" style="color: #8b5cf6;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">8+</h2>
+                                        <strong class="counter-label">Years Industry Experience</strong>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-6 mb-4">
-                                    <div class="counter-single">
-                                        <h2 class="mb-2 display-4 font-weight-bold">100%</h2>
-                                        <strong>Client Satisfaction</strong>
+                                    <div class="counter-single counter-modern-box">
+                                        <div class="counter-icon-wrap mb-2">
+                                            <i class="ti-heart" style="color: #ec4899;"></i>
+                                        </div>
+                                        <h2 class="mb-1 display-4 font-weight-bold counter-value">99.2%</h2>
+                                        <strong class="counter-label">Client Satisfaction Rate</strong>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +239,7 @@
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>
 
 </html>

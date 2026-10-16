@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta description -->
-    <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+    <meta name="description" content="The page you are looking for does not exist. Explore Ocean DigiTech's web development and digital marketing solutions.">
+    <meta name="author" content="Ocean DigiTech">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -21,7 +20,7 @@
     <meta property="og:type" content="article" />
 
     <!--title-->
-    <title>DigiMark Digital Marketing and Agency HTML Template</title>
+    <title>404 - Page Not Found | Ocean DigiTech</title>
 
     <!--favicon icon-->
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
@@ -125,7 +124,7 @@
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
     <?php if (file_exists(__DIR__ . '/chatbot-widget.php')) { include(__DIR__ . '/chatbot-widget.php'); } ?>
 </body>
 

@@ -42,9 +42,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta description -->
-    <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+    <meta name="description" content="Ocean DigiTech Pvt. Ltd. - Global Web Development & Digital Marketing Agency delivering high-impact solutions from India to the USA.">
+    <meta name="author" content="Ocean DigiTech">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -170,7 +169,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-modern-wrap" style="background: linear-gradient(135deg, #0b0f19 0%, #171e31 50%, #1e1035 100%); color: #ffffff;">
+        <section class="hero-modern-wrap" style="background: linear-gradient(135deg, #0b0f19 0%, #171e31 50%, #1e1035 100%); color: #ffffff; padding-top: 130px; padding-bottom: 60px;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
@@ -418,17 +417,10 @@
                     </div>
                 </div>
 
-                <!-- Interactive Filter Tabs -->
-                <div class="services-filter-tabs">
-                    <button type="button" class="service-filter-btn active" data-filter="all">All Capabilities</button>
-                    <button type="button" class="service-filter-btn" data-filter="dev">Software & Web</button>
-                    <button type="button" class="service-filter-btn" data-filter="seo">SEO & Organic Search</button>
-                    <button type="button" class="service-filter-btn" data-filter="marketing">Paid Ads & Performance</button>
-                </div>
-
-                <div class="row services-cards-grid">
+                <!-- Services Single-Row Animated Carousel -->
+                <div class="owl-carousel owl-theme services-carousel modern-slider-single-row">
                     <!-- Service 1: Custom Software -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -437,7 +429,7 @@
                                     </div>
                                     <span class="service-card-pro-tag">Full-Stack</span>
                                 </div>
-                                <h4 class="service-card-pro-title">Custom Software & Web Apps</h4>
+                                <h4 class="service-card-pro-title">Custom Software &amp; Web Apps</h4>
                                 <p class="service-card-pro-desc">
                                     Scalable cloud-native architectures, enterprise SaaS portals, and secure API integrations built with modern reactive technologies.
                                 </p>
@@ -452,7 +444,7 @@
                     </div>
 
                     <!-- Service 2: Enterprise SEO -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="seo">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -461,7 +453,7 @@
                                     </div>
                                     <span class="service-card-pro-tag">Organic Growth</span>
                                 </div>
-                                <h4 class="service-card-pro-title">Enterprise SEO & Authority</h4>
+                                <h4 class="service-card-pro-title">Enterprise SEO &amp; Authority</h4>
                                 <p class="service-card-pro-desc">
                                     Data-backed technical indexing audits, content authority clustering, and algorithmic ranking tactics that dominate high-intent keywords.
                                 </p>
@@ -476,7 +468,7 @@
                     </div>
 
                     <!-- Service 3: Custom Website Design -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -485,7 +477,7 @@
                                     </div>
                                     <span class="service-card-pro-tag">UI / UX</span>
                                 </div>
-                                <h4 class="service-card-pro-title">Modern Web Design & UI/UX</h4>
+                                <h4 class="service-card-pro-title">Modern Web Design &amp; UI/UX</h4>
                                 <p class="service-card-pro-desc">
                                     Aesthetic, human-centered digital experiences with interactive micro-animations, accessible design systems, and seamless brand storytelling.
                                 </p>
@@ -500,7 +492,7 @@
                     </div>
 
                     <!-- Service 4: E-Commerce -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="dev">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -524,7 +516,7 @@
                     </div>
 
                     <!-- Service 5: Local SEO -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="seo">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -533,7 +525,7 @@
                                     </div>
                                     <span class="service-card-pro-tag">Geo Authority</span>
                                 </div>
-                                <h4 class="service-card-pro-title">Local SEO & Map Pack</h4>
+                                <h4 class="service-card-pro-title">Local SEO &amp; Map Pack</h4>
                                 <p class="service-card-pro-desc">
                                     Geotargeted search domination, Google Business Profile optimization, and local review funnels turning local searches into paying customers.
                                 </p>
@@ -548,7 +540,7 @@
                     </div>
 
                     <!-- Service 6: PPC & Paid Ads -->
-                    <div class="col-lg-4 col-md-6 mb-4 service-card-col" data-category="marketing">
+                    <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
@@ -557,7 +549,7 @@
                                     </div>
                                     <span class="service-card-pro-tag">Paid Media</span>
                                 </div>
-                                <h4 class="service-card-pro-title">PPC & Google Ads Scale</h4>
+                                <h4 class="service-card-pro-title">PPC &amp; Google Ads Scale</h4>
                                 <p class="service-card-pro-desc">
                                     High-performance search, display, and social ad campaigns laser-targeted on bottom-of-funnel conversions, optimal CPA, and maximum ROAS.
                                 </p>
@@ -571,6 +563,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <!--services section end-->
@@ -589,97 +582,110 @@
                     </div>
                 </div>
 
-                <div class="growth-grid">
+                <div class="owl-carousel owl-theme bottlenecks-carousel modern-slider-single-row">
                     <!-- Card 1 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-layer-group"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-layer-group"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: OUTDATED TECH</span>
+                            <h3 class="growth-card-title">Legacy Systems Holding You Back?</h3>
+                            <p class="growth-card-desc">
+                                Modernize your architecture with clean, scalable web apps and cloud-native backend infrastructure designed for performance.
+                            </p>
+                            <a href="custom-website-development.php" class="growth-card-link">
+                                Explore Custom Development <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: OUTDATED TECH</span>
-                        <h3 class="growth-card-title">Legacy Systems Holding You Back?</h3>
-                        <p class="growth-card-desc">
-                            Modernize your architecture with clean, scalable web apps and cloud-native backend infrastructure designed for performance.
-                        </p>
-                        <a href="custom-website-development.php" class="growth-card-link">
-                            Explore Custom Development <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-search-dollar"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-search-dollar"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: LOW TRAFFIC</span>
+                            <h3 class="growth-card-title">Losing High-Intent Leads on Search?</h3>
+                            <p class="growth-card-desc">
+                                Capture market share with technical SEO audits, keyword targeting, and local search dominance engineered for ROI.
+                            </p>
+                            <a href="seo-services.php" class="growth-card-link">
+                                Explore SEO Solutions <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: LOW TRAFFIC</span>
-                        <h3 class="growth-card-title">Losing High-Intent Leads on Search?</h3>
-                        <p class="growth-card-desc">
-                            Capture market share with technical SEO audits, keyword targeting, and local search dominance engineered for ROI.
-                        </p>
-                        <a href="seo-services.php" class="growth-card-link">
-                            Explore SEO Solutions <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-cogs"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-cogs"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: MANUAL PROCESSES</span>
+                            <h3 class="growth-card-title">Manual Tasks Draining Resources?</h3>
+                            <p class="growth-card-desc">
+                                Automate internal workflows, customer touchpoints, and integrations with tailored AI-assisted software solutions.
+                            </p>
+                            <a href="custom-website-design.php" class="growth-card-link">
+                                Explore Workflow Automation <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: MANUAL PROCESSES</span>
-                        <h3 class="growth-card-title">Manual Tasks Draining Resources?</h3>
-                        <p class="growth-card-desc">
-                            Automate internal workflows, customer touchpoints, and integrations with tailored AI-assisted software solutions.
-                        </p>
-                        <a href="custom-website-design.php" class="growth-card-link">
-                            Explore Workflow Automation <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-bullseye"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-bullseye"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: AD WASTAGE</span>
+                            <h3 class="growth-card-title">Paid Ads Not Delivering Target ROI?</h3>
+                            <p class="growth-card-desc">
+                                Eliminate ad spend waste with hyper-targeted Google Ads, Amazon PPC, and paid social campaigns backed by conversion tracking.
+                            </p>
+                            <a href="google-ads-management.php" class="growth-card-link">
+                                Explore PPC Management <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: AD WASTAGE</span>
-                        <h3 class="growth-card-title">Paid Ads Not Delivering Target ROI?</h3>
-                        <p class="growth-card-desc">
-                            Eliminate ad spend waste with hyper-targeted Google Ads, Amazon PPC, and paid social campaigns backed by conversion tracking.
-                        </p>
-                        <a href="google-ads-management.php" class="growth-card-link">
-                            Explore PPC Management <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-shopping-cart"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-shopping-cart"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: ECOMMERCE DROP-OFF</span>
+                            <h3 class="growth-card-title">Cart Abandonment &amp; Friction?</h3>
+                            <p class="growth-card-desc">
+                                Optimize storefront UX, checkout speed, and product discoverability to turn shoppers into repeat buyers.
+                            </p>
+                            <a href="ecommerce-web-development.php" class="growth-card-link">
+                                Explore E-Commerce Growth <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: ECOMMERCE DROP-OFF</span>
-                        <h3 class="growth-card-title">Cart Abandonment & Friction?</h3>
-                        <p class="growth-card-desc">
-                            Optimize storefront UX, checkout speed, and product discoverability to turn shoppers into repeat buyers.
-                        </p>
-                        <a href="ecommerce-web-development.php" class="growth-card-link">
-                            Explore E-Commerce Growth <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="growth-card">
-                        <div class="growth-card-icon">
-                            <span class="fas fa-chart-line"></span>
+                    <div class="item">
+                        <div class="growth-card">
+                            <div class="growth-card-icon">
+                                <span class="fas fa-chart-line"></span>
+                            </div>
+                            <span class="growth-challenge-label">CHALLENGE: ROADMAP UNCLEAR</span>
+                            <h3 class="growth-card-title">Launching a Venture or Scaling?</h3>
+                            <p class="growth-card-desc">
+                                Partner with senior technology consultants to define product roadmaps, tech stacks, and scalable growth strategies.
+                            </p>
+                            <a href="contact-us.php" class="growth-card-link">
+                                Schedule Tech Consultation <span class="fas fa-arrow-right"></span>
+                            </a>
                         </div>
-                        <span class="growth-challenge-label">CHALLENGE: ROADMAP UNCLEAR</span>
-                        <h3 class="growth-card-title">Launching a Venture or Scaling?</h3>
-                        <p class="growth-card-desc">
-                            Partner with senior technology consultants to define product roadmaps, tech stacks, and scalable growth strategies.
-                        </p>
-                        <a href="contact-us.php" class="growth-card-link">
-                            Schedule Tech Consultation <span class="fas fa-arrow-right"></span>
-                        </a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <!--solving digital growth section end-->
@@ -1442,200 +1448,160 @@
         </section>
         <!--testimonial section end-->
 
-        <!-- Client Testimonials Grid Section -->
-        <style>
-            .hp-testimonials {
-                padding: 60px 0;
-                background: #f8f9fa;
-            }
-            .hp-testimonials .hp-section-title {
-                font-size: 42px;
-                font-weight: 800;
-                text-align: center;
-                margin-bottom: 20px;
-                color: #1a1a1a;
-            }
-            .hp-testimonials .hp-section-subtitle {
-                text-align: center;
-                font-size: 18px;
-                color: #666;
-                max-width: 700px;
-                margin: 0 auto 50px;
-                line-height: 1.6;
-            }
-            .hp-testimonials-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
-                margin-top: 50px;
-            }
-            .hp-testimonial-card {
-                background: white;
-                padding: 35px;
-                border-radius: 20px;
-                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
-                position: relative;
-            }
-            .hp-testimonial-card .hp-testimonial-text {
-                font-size: 16px;
-                line-height: 1.7;
-                color: #333;
-                margin-bottom: 25px;
-                font-style: italic;
-            }
-            .hp-testimonial-card .hp-testimonial-author {
-                font-weight: 700;
-                color: #1a1a1a;
-                margin-bottom: 5px;
-            }
-            .hp-testimonial-card .hp-testimonial-role {
-                font-size: 14px;
-                color: #666;
-            }
-            @media (max-width: 768px) {
-                .hp-testimonials-grid {
-                    grid-template-columns: 1fr;
-                }
-                .hp-testimonials .hp-section-title {
-                    font-size: 28px;
-                }
-            }
-        </style>
-        <section class="hp-testimonials">
+                        <!-- Client Testimonials Section (Moving Left to Right Carousel) -->
+        <section class="hp-testimonials ptb-100 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 text-center">
+                    <div class="col-lg-8 col-md-10 text-center mb-5">
                         <span class="growth-challenge-label mb-2">TESTIMONIALS</span>
-                        <h2 class="hp-section-title">Who Are Happy With Our Services</h2>
-                        <p class="hp-section-subtitle">
+                        <h2 class="hp-section-title font-weight-bold" style="font-size: 36px; color: #0f172a;">Who Are Happy With Our Services</h2>
+                        <span class="animate-border mr-auto ml-auto mb-4"></span>
+                        <p class="hp-section-subtitle text-muted" style="font-size: 16px;">
                             See how we've helped companies across North America, Australia, and Asia achieve measurable digital growth.
                         </p>
                     </div>
                 </div>
 
-                <div class="hp-testimonials-grid">
-                    <!-- Testimonial 1: EatClub -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">EatClub</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme client-testimonial custom-dot">
+                            <!-- Testimonial 1: EatClub -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">EatClub</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us improve lead quality within weeks."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-1.jpg" alt="Sarah L." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Sarah L.</div>
+                                            <div class="testimonial-author-role">Marketing Lead, Food & Hospitality (Australia)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="hp-testimonial-text">
-                                "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us improve lead quality within weeks."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-1.jpg" alt="Sarah L." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">Sarah L.</div>
-                                <div class="testimonial-author-role">Marketing Lead, Food & Hospitality (Australia)</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Testimonial 2: Juniper -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">Juniper</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            <!-- Testimonial 2: Juniper -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Juniper</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-2.jpg" alt="Daniel R." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Daniel R.</div>
+                                            <div class="testimonial-author-role">Growth Manager, Consumer Brand (USA)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="hp-testimonial-text">
-                                "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-2.jpg" alt="Daniel R." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">Daniel R.</div>
-                                <div class="testimonial-author-role">Growth Manager, Consumer Brand (USA)</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Testimonial 3: Padra -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">Padra</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            <!-- Testimonial 3: Padra -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Padra</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-3.jpg" alt="Ayesha K." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Ayesha K.</div>
+                                            <div class="testimonial-author-role">Founder, D2C Brand (USA)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="hp-testimonial-text">
-                                "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-3.jpg" alt="Ayesha K." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">Ayesha K.</div>
-                                <div class="testimonial-author-role">Founder, D2C Brand (USA)</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Testimonial 4: Sightseeing Tours Australia -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">Sightseeing Tours Australia</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            <!-- Testimonial 4: Sightseeing Tours -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Sightseeing Tours</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-4.jpg" alt="Mark T." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Mark T.</div>
+                                            <div class="testimonial-author-role">Operations Director (Australia)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="hp-testimonial-text">
-                                "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-4.jpg" alt="Mark T." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">Mark T.</div>
-                                <div class="testimonial-author-role">Operations Manager, Tourism & Travel (Australia)</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Testimonial 5: WEIR LLP LAW FIRM -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">WEIR LLP LAW FIRM</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
+                            <!-- Testimonial 5: Blende Dental -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Blende Dental</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Their healthcare digital strategy and patient journey optimization drove a noticeable increase in qualified appointment requests across our multi-location clinics."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-1.jpg" alt="Dr. Marcus B." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Dr. Marcus B.</div>
+                                            <div class="testimonial-author-role">Clinical Director (USA)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="hp-testimonial-text">
-                                "Ocean DigiTech helped us uncover technical and marketing gaps that were impacting lead quality. The audit was structured, insightful, and highly actionable."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-5.jpg" alt="James W." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">James W.</div>
-                                <div class="testimonial-author-role">Managing Partner, Legal Services (USA)</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Testimonial 6: National Restoration -->
-                    <div class="hp-testimonial-card-modern">
-                        <div>
-                            <div class="testimonial-company-header">
-                                <span class="testimonial-company-name">National Restoration</span>
-                                <span class="fas fa-quote-right color-primary" style="font-size: 20px; opacity: 0.4;"></span>
-                            </div>
-                            <p class="hp-testimonial-text">
-                                "The audit revealed funnel and tracking issues affecting our paid campaigns. After applying the recommendations, lead quality and cost efficiency improved noticeably."
-                            </p>
-                        </div>
-                        <div class="testimonial-author-row">
-                            <img src="img/client-1.jpg" alt="Chris M." class="testimonial-author-avatar">
-                            <div>
-                                <div class="testimonial-author-name">Chris M.</div>
-                                <div class="testimonial-author-role">Marketing Director, Home Services (USA)</div>
+                            <!-- Testimonial 6: Pacific Legal -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Pacific Legal</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech's team revamped our digital architecture and SEO structure. Our high-intent legal inquiries grew by 85% within four months."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-3.jpg" alt="Elena K." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Elena K.</div>
+                                            <div class="testimonial-author-role">Partner (USA)</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Client Testimonials Section End -->
         <!-- Client Testimonials Grid Section End -->
 
         <!--team section start-->
@@ -1655,10 +1621,10 @@
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <div class="team-card-modern">
                             <div class="team-img-modern-wrap">
-                                <img src="img/team-member-1.png" alt="Richard Ford" class="img-fluid">
+                                <img src="img/team-member-1.png" alt="Vikas Giri" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Richard Ford</h5>
+                                <h5 class="team-card-name">Vikas Giri</h5>
                                 <div class="team-card-role">Technology Strategist</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Enterprise digital architecture and high-performance software engineering.</p>
                             </div>
@@ -1845,7 +1811,7 @@
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>
 
 </html>

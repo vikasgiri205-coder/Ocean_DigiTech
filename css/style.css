@@ -6000,9 +6000,9 @@ small {
 }
 
 .portfolio-card-modern:hover {
-  transform: none;
-  box-shadow: var(--od-shadow-sm);
-  border-color: rgba(232, 5, 102, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1), 0 0 20px rgba(0, 210, 255, 0.08);
+  border-color: rgba(0, 210, 255, 0.5);
 }
 
 .portfolio-img-container {
@@ -6021,7 +6021,7 @@ small {
 }
 
 .portfolio-card-modern:hover .portfolio-img-container img {
-  transform: none;
+  transform: scale(1.05);
 }
 
 .portfolio-tag-badge {
@@ -6156,12 +6156,17 @@ small {
 /* --- TEAM MEMBER CARDS CLEAN & MODERN --- */
 .team-card-modern {
   background: #ffffff;
-  border-radius: var(--od-radius-md);
-  overflow: hidden;
-  border: 1px solid var(--od-card-border);
-  box-shadow: var(--od-shadow-sm);
-  transition: var(--od-transition);
+  border-radius: 20px;
+  overflow: visible !important; /* PREVENT ANY CUTTING */
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 8px 25px rgba(11, 19, 43, 0.05);
   text-align: center;
+  padding: 24px 18px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .team-card-modern:hover {
@@ -6172,23 +6177,32 @@ small {
 
 .team-img-modern-wrap {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #f8fafc;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: visible !important; /* PREVENT CIRCLE CUT DOWN */
 }
 
 .team-img-modern-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transform: none !important; /* NO ZOOM SCALING THAT CUTS THE CIRCLE */
 }
 
 .team-card-modern:hover .team-img-modern-wrap img {
-  transform: none;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transform: none !important; /* NO ZOOM SCALING THAT CUTS THE CIRCLE */
 }
 
 .team-card-body-modern {
@@ -6447,4 +6461,640 @@ img {
   max-width: 140px !important;
   object-fit: contain !important;
   display: inline-block !important;
+}
+
+
+
+/* --- HERO SECTION REFINED SPACING (EXACT EQUAL TOP & BOTTOM SPACE, CENTER ALIGNED) --- */
+.hero-modern-wrap {
+  position: relative;
+  background: linear-gradient(135deg, #0b0f19 0%, #171e31 50%, #1e1035 100%);
+  padding-top: 130px !important;  /* 70px navbar offset + 60px visible top space */
+  padding-bottom: 60px !important; /* 60px visible bottom space -> EXACT SAME EQUAL SPACE */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-modern-wrap .container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-modern-wrap .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fbbf24;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.hero-heading-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .hero-modern-wrap {
+    padding-top: 105px !important;
+    padding-bottom: 50px !important;
+  }
+  .hero-heading-title {
+    font-size: 32px;
+  }
+  .hero-slider-content {
+    text-align: center;
+    align-items: center;
+  }
+  .hero-pill-badge {
+    align-self: center;
+  }
+  .hero-micro-trust {
+    justify-content: center;
+  }
+}
+
+.hero-lead-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin-bottom: 22px;
+  max-width: 530px;
+}
+
+.quick-proposal-wrap {
+  width: 100%;
+  max-width: 530px;
+}
+
+.quick-proposal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.input-with-icon {
+  position: relative;
+  flex: 1;
+}
+
+.hero-input-field,
+.quick-proposal input[type="text"] {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid transparent;
+  color: #0b132b;
+  padding: 12px 14px 12px 38px;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+}
+
+.btn-primary-od {
+  background: linear-gradient(135deg, #e80566 0%, #c40454 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 9px;
+  border: none;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.hero-micro-trust {
+  font-size: 12.5px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.hero-visual-card-glow {
+  position: relative;
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.hero-visual-card {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 210, 255, 0.15);
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  background: #0d121f;
+}
+
+/* --- ZOOMED-IN TEAM CARDS (LARGER BOX, ZOOMED IMAGE, COMPLETE CIRCLE INSIDE BOX) --- */
+.team-two-section .container {
+  max-width: 1260px;
+}
+
+.team-card-modern {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: visible !important; /* PREVENT ANY CUTTING */
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 8px 25px rgba(11, 19, 43, 0.05);
+  text-align: center;
+  padding: 24px 18px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.team-card-modern:hover {
+  transform: translateY(-4px);
+  border-color: rgba(232, 5, 102, 0.3);
+  box-shadow: 0 16px 40px rgba(11, 19, 43, 0.09);
+}
+
+.team-img-modern-wrap {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible !important; /* PREVENT CIRCLE CUT DOWN */
+}
+
+.team-img-modern-wrap img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transform: none !important; /* NO ZOOM SCALING THAT CUTS THE CIRCLE */
+}
+
+.team-card-body-modern {
+  padding: 0;
+}
+
+.team-card-name {
+  font-size: 19px;
+  font-weight: 700;
+  color: #0b132b;
+  margin-bottom: 4px;
+}
+
+.team-card-role {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #e80566;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.team-card-body-modern p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+
+/* --- OWL CAROUSEL TESTIMONIALS (MOVING LEFT TO RIGHT) --- */
+.client-testimonial .item {
+  padding: 12px 6px 20px;
+}
+
+.hp-testimonial-card-modern {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 6px 20px rgba(11, 19, 43, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hp-testimonial-card-modern:hover {
+  border-color: rgba(232, 5, 102, 0.35);
+  box-shadow: 0 12px 30px rgba(11, 19, 43, 0.08);
+}
+
+.testimonial-company-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.testimonial-company-badge {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0b132b;
+}
+
+.testimonial-stars {
+  color: #f59e0b;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hp-testimonial-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.testimonial-author-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+.testimonial-author-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0b132b;
+  line-height: 1.2;
+}
+
+.testimonial-author-role {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.client-testimonial .owl-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.client-testimonial .owl-nav button.owl-prev,
+.client-testimonial .owl-nav button.owl-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  color: #0b132b !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #e2e8f0 !important;
+  margin: 0 6px;
+  font-size: 18px !important;
+  line-height: 42px !important;
+  transition: all 0.3s ease;
+}
+
+.client-testimonial .owl-nav button.owl-prev:hover,
+.client-testimonial .owl-nav button.owl-next:hover {
+  background: #e80566 !important;
+  color: #ffffff !important;
+  border-color: #e80566 !important;
+}
+
+
+/* ========================================================
+   ENHANCED SINGLE-ROW CAROUSELS & ABOUT SECTION STYLING
+   ======================================================== */
+
+/* Single-Row Carousel Adjustments */
+.modern-slider-single-row {
+  margin-top: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.services-carousel .owl-stage,
+.bottlenecks-carousel .owl-stage {
+  display: flex !important;
+  padding: 12px 0 16px 0 !important;
+}
+
+.services-carousel .owl-item,
+.bottlenecks-carousel .owl-item {
+  display: flex !important;
+  flex: 1 0 auto;
+  height: auto !important;
+}
+
+.services-carousel .item,
+.bottlenecks-carousel .item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.services-carousel .service-card-pro,
+.bottlenecks-carousel .growth-card {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0 !important;
+}
+
+/* Custom Dots for Services and Bottlenecks Carousel */
+.services-carousel.owl-theme .owl-dots,
+.bottlenecks-carousel.owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 25px !important;
+}
+
+.services-carousel.owl-theme .owl-dots .owl-dot span,
+.bottlenecks-carousel.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 6px;
+  background: #cbd5e1;
+  display: inline-block;
+  border-radius: 30px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.services-carousel.owl-theme .owl-dots .owl-dot.active span,
+.bottlenecks-carousel.owl-theme .owl-dots .owl-dot.active span {
+  background: linear-gradient(135deg, #00d2ff, #eb0074);
+  width: 32px;
+}
+
+/* Modern Compact About Hero Banner */
+.about-hero-modern {
+  position: relative;
+  padding: 135px 0 60px 0;
+  background: linear-gradient(135deg, #0b0f19 0%, #151d30 50%, #201138 100%);
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.about-hero-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 15% 25%, rgba(0, 210, 255, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(235, 0, 116, 0.14) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  pointer-events: none;
+}
+
+.about-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: rgba(235, 0, 116, 0.12);
+  border: 1px solid rgba(235, 0, 116, 0.3);
+  border-radius: 50px;
+  color: #ff3385;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.about-pill-badge .pulsing-dot {
+  width: 8px;
+  height: 8px;
+  background: #eb0074;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #eb0074;
+  display: inline-block;
+}
+
+.about-hero-title {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.about-hero-subtitle {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 20px auto;
+}
+
+.about-hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.about-hero-highlights .highlight-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-hero-highlights .highlight-sep {
+  color: #475569;
+}
+
+/* Modern Counter Box for About Section */
+.counter-modern-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 18px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-modern-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(235, 0, 116, 0.35);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08), 0 0 20px rgba(235, 0, 116, 0.06);
+}
+
+.counter-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.counter-modern-box .counter-value {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -1px;
+}
+
+.counter-modern-box .counter-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+
+/* Equal height flex for .client-testimonial carousel */
+.client-testimonial .owl-stage {
+  display: flex !important;
+  padding: 12px 0 16px 0 !important;
+}
+
+.client-testimonial .owl-item {
+  display: flex !important;
+  flex: 1 0 auto;
+  height: auto !important;
+}
+
+.client-testimonial .item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.client-testimonial .hp-testimonial-card-modern {
+  width: 100%;
+  height: 100%;
+}
+
+.client-testimonial.owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 30px !important;
+}
+
+.client-testimonial.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 6px;
+  background: #cbd5e1;
+  display: inline-block;
+  border-radius: 30px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.client-testimonial.owl-theme .owl-dots .owl-dot.active span {
+  background: linear-gradient(135deg, #00d2ff, #eb0074);
+  width: 32px;
+}
+
+
+/* ========================================================
+   GLOBAL POLISH, SMOOTHNESS & RESPONSIVENESS UPGRADES
+   ======================================================== */
+
+/* Prevent horizontal scroll on all devices */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+/* Ensure smooth image rendering */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global Card Smooth Transitions */
+.service-card-pro,
+.growth-card,
+.hp-testimonial-card-modern,
+.portfolio-card-modern,
+.counter-modern-box {
+  will-change: transform, box-shadow;
+  backface-visibility: hidden;
+}
+
+/* Smooth Owl Carousel Drag & Swipe */
+.owl-carousel .owl-stage {
+  cursor: grab;
+}
+.owl-carousel .owl-stage:active {
+  cursor: grabbing;
+}
+
+/* Mobile & Tablet Refinements for Single-Row Carousels */
+@media (max-width: 767px) {
+  .about-hero-title {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+  .about-hero-subtitle {
+    font-size: 14px !important;
+  }
+  .about-hero-highlights {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .about-hero-highlights .highlight-sep {
+    display: none !important;
+  }
+  .counter-modern-box {
+    padding: 20px 14px !important;
+  }
+  .counter-modern-box .counter-value {
+    font-size: 32px !important;
+  }
+  .counter-modern-box .counter-label {
+    font-size: 11px !important;
+  }
 }

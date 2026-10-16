@@ -16,13 +16,13 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     margin-top: 5px;
     font-weight: 400;
   }
-  /* Ultra-Sleek & Low-Profile Navbar */
+  /* Ultra-Sleek, Balanced Navbar with Centered Alignment */
   .header nav.navbar.mega-menu {
-    padding: 2px 1rem !important;
-    min-height: 50px !important;
+    padding: 6px 1.5rem !important;
+    min-height: 70px !important;
     background: #ffffff !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
     display: flex !important;
     align-items: center !important;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, box-shadow 0.3s ease !important;
@@ -37,33 +37,62 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
   }
   .navbar-brand {
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0 20px 0 0 !important;
     display: flex !important;
     align-items: center !important;
   }
   .brand-logo {
-    height: 42px !important;
+    height: 52px !important;
     width: auto !important;
-    max-height: 42px !important;
-    max-width: 220px !important;
+    max-height: 54px !important;
+    max-width: 240px !important;
     object-fit: contain !important;
     display: block !important;
     transition: all 0.3s ease;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
+    .header nav.navbar.mega-menu {
+      min-height: 64px !important;
+      padding: 6px 1rem !important;
+    }
     .brand-logo {
-      height: 34px !important;
-      max-height: 34px !important;
+      height: 44px !important;
+      max-height: 46px !important;
+      max-width: 190px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .header nav.navbar.mega-menu {
+      min-height: 60px !important;
+      padding: 5px 0.75rem !important;
+    }
+    .brand-logo {
+      height: 40px !important;
+      max-height: 42px !important;
       max-width: 170px !important;
     }
   }
 
-  /* Compact Navigation Links */
+  /* Compact Navigation Links Aligned with Logo */
+  .menu,
+  .navbar-nav.menu {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
+  }
+  .menu li,
+  .navbar-nav.menu li {
+    display: flex !important;
+    align-items: center !important;
+  }
   .menu li a,
   .navbar-nav.menu li a {
-    padding: 6px 11px !important;
-    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 8px 12px !important;
+    font-size: 13.5px !important;
     line-height: 1.3 !important;
+    color: #1e293b !important;
   }
 
   /* Active & Highlighted Navigation Link */
@@ -81,8 +110,8 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     content: '';
     position: absolute;
     bottom: -2px;
-    left: 11px;
-    right: 11px;
+    left: 12px;
+    right: 12px;
     height: 2.5px;
     background: #e80566;
     border-radius: 3px;
@@ -96,11 +125,14 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
   /* Consultation Button inside Navbar */
   .check-btn,
   .btn.secondary-solid-btn.check-btn {
-    padding: 6px 16px !important;
-    margin-left: 8px;
-    font-size: 12.5px !important;
-    border-radius: 6px !important;
+    padding: 8px 18px !important;
+    margin-left: 12px;
+    font-size: 13px !important;
+    border-radius: 8px !important;
     line-height: 1.3 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
   }
 </style>
 

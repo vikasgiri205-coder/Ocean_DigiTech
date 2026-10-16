@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta description -->
-    <meta name="description"
-        content="BizBite corporate business template or agency and marketing template helps you easily create websites for your business.">
-    <meta name="author" content="ThemeTags">
+    <meta name="description" content="Explore Ocean DigiTech's proven portfolio of custom web applications, scalable eCommerce storefronts, and ROI-driven SEO campaigns.">
+    <meta name="author" content="Ocean DigiTech">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -21,7 +20,7 @@
     <meta property="og:type" content="article" />
 
     <!--title-->
-    <title>DigiMark Digital Marketing and Agency HTML Template</title>
+    <title>Our Portfolio - Ocean DigiTech Pvt. Ltd. | Global Web Development & Digital Marketing Agency</title>
 
     <!--favicon icon-->
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
@@ -63,26 +62,46 @@
     <!--body content wrap start-->
     <div class="main">
 
-        <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
+        <!--compact modern portfolio banner start-->
+        <section class="about-hero-modern">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Our Portfolio</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Our Portfolio</li>
-                                </ol>
-                            </div>
+                    <div class="col-lg-9 col-md-11 text-center">
+                        <!-- Breadcrumbs -->
+                        <nav aria-label="breadcrumb" class="mb-3">
+                            <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+                                <li class="breadcrumb-item"><a href="index.php" style="color: #94a3b8; text-decoration: none;"><i class="ti-home mr-1"></i> Home</a></li>
+                                <li class="breadcrumb-item active" style="color: #cbd5e1; font-weight: 600;" aria-current="page">Our Portfolio</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Eyebrow Pill Badge -->
+                        <div class="about-pill-badge mb-3">
+                            <span class="pulsing-dot"></span>
+                            <span>Enterprise Case Studies &bull; Verified Client Outcomes</span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="about-hero-title">Our Work &amp; Case Studies</h1>
+
+                        <!-- Subtitle -->
+                        <p class="about-hero-subtitle">
+                            A curated showcase of bespoke software architectures, high-converting eCommerce storefronts, and algorithmic search growth engineered for global brands.
+                        </p>
+
+                        <!-- Highlights -->
+                        <div class="about-hero-highlights">
+                            <span class="highlight-item"><i class="ti-check-box mr-2" style="color: #00d2ff;"></i> 100+ Live Deployments</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-stats-up mr-2" style="color: #eb0074;"></i> 3.2x Avg Conversion Lift</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-shield mr-2" style="color: #10b981;"></i> 99.9% Production Reliability</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--header section end-->
+        <!--compact modern portfolio banner end-->
 
         <!--our portfolio section start-->
         <section class="our-portfolio-section ptb-100">
@@ -345,164 +364,151 @@
         </section>
         <!--pricing with switch section end-->
 
-        <!--testimonial section start-->
-        <section class="testimonial-section ptb-100">
+        <!--testimonial section start (Identical to Home Page)-->
+        <section class="hp-testimonials ptb-100 gray-light-bg">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-9 col-lg-8">
-                        <div class="section-heading mb-5 text-center">
-                            <strong class="color-secondary">Testimonials</strong>
-                            <h2>What Clients Say About Us</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">
-                                Rapidiously morph transparent internal or "organic" sources whereas resource sucking
-                                e-business. Conveniently innovate compelling internal.
-                            </p>
-                        </div>
+                    <div class="col-lg-8 col-md-10 text-center mb-5">
+                        <span class="growth-challenge-label mb-2">TESTIMONIALS</span>
+                        <h2 class="hp-section-title font-weight-bold" style="font-size: 36px; color: #0f172a;">Who Are Happy With Our Services</h2>
+                        <span class="animate-border mr-auto ml-auto mb-4"></span>
+                        <p class="hp-section-subtitle text-muted" style="font-size: 16px;">
+                            See how we've helped companies across North America, Australia, and Asia achieve measurable digital growth.
+                        </p>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="owl-carousel owl-theme client-testimonial custom-arrow mb-5">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme client-testimonial custom-dot">
+                            <!-- Testimonial 1: EatClub -->
                             <div class="item">
-                                <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                    <blockquote>
-                                        Assertively procrastinate distributed relationships whereas equity invested
-                                        intellectual capital everything energistically underwhelm proactive.
-                                    </blockquote>
-                                    <div class="client-ratting mt-2">
-                                        <ul class="list-inline client-ratting-list">
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item rating"> (5.0)</li>
-                                        </ul>
-                                        <h6 class="font-weight-bold"><small class="font-weight-lighter">BizBite</small>
-                                        </h6>
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">EatClub</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us scale."
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="client-info-wrap d-flex align-items-center mt-5">
-                                    <div class="client-img mr-3">
-                                        <img src="img/client-1.jpg" alt="client" width="60"
-                                            class="img-fluid rounded-circle shadow-sm" />
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="mb-0">Austin Cesar</h5>
-                                        <p class="mb-0">ThemeTags</p>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-1.jpg" alt="Sarah M." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Sarah M.</div>
+                                            <div class="testimonial-author-role">VP of Marketing (USA)</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Testimonial 2: Juniper -->
                             <div class="item">
-                                <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                    <blockquote>
-                                        Intrinsicly facilitate functional imperatives without next-generation
-                                        meta-services. Compellingly revolutionize worldwide users vis-a-vis enterprise
-                                        best practices.
-                                    </blockquote>
-                                    <div class="client-ratting mt-2">
-                                        <ul class="list-inline client-ratting-list">
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item rating"> (5.0)</li>
-                                        </ul>
-                                        <h6 class="font-weight-bold"><small class="font-weight-lighter">Prolex</small>
-                                        </h6>
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Juniper</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="client-info-wrap d-flex align-items-center mt-5">
-                                    <div class="client-img mr-3">
-                                        <img src="img/client-2.jpg" alt="client" width="60"
-                                            class="img-fluid rounded-circle shadow-sm" />
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="mb-0">Pirtle Karol</h5>
-                                        <p class="mb-0">ThemeTags</p>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-2.jpg" alt="Daniel R." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Daniel R.</div>
+                                            <div class="testimonial-author-role">Growth Manager, Consumer Brand (USA)</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Testimonial 3: Padra -->
                             <div class="item">
-                                <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                    <blockquote>
-                                        Interactively grow backend scenarios through one paradigms. Distinctively and
-                                        communicate efficient information without effective meta-services.
-                                    </blockquote>
-                                    <div class="client-ratting mt-2">
-                                        <ul class="list-inline client-ratting-list">
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item rating"> (5.0)</li>
-                                        </ul>
-                                        <h6 class="font-weight-bold"><small class="font-weight-lighter">AppCo</small>
-                                        </h6>
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Padra</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="client-info-wrap d-flex align-items-center mt-5">
-                                    <div class="client-img mr-3">
-                                        <img src="img/client-3.jpg" alt="client" width="60"
-                                            class="img-fluid rounded-circle shadow-sm" />
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="mb-0">Aminul Islam</h5>
-                                        <p class="mb-0">ThemeTags</p>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-3.jpg" alt="Ayesha K." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Ayesha K.</div>
+                                            <div class="testimonial-author-role">Founder, D2C Brand (USA)</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Testimonial 4: Sightseeing Tours -->
                             <div class="item">
-                                <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
-                                    <blockquote>
-                                        Intrinsicly facilitate functional imperatives without next-generation
-                                        meta-services. Compellingly revolutionize worldwide users vis-a-vis enterprise
-                                        best practices.
-                                    </blockquote>
-                                    <div class="client-ratting mt-2">
-                                        <ul class="list-inline client-ratting-list">
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item"><span class="fas fa-star ratting-color"></span>
-                                            </li>
-                                            <li class="list-inline-item rating"> (5.0)</li>
-                                        </ul>
-                                        <h6 class="font-weight-bold"><small class="font-weight-lighter">Datrics</small>
-                                        </h6>
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Sightseeing Tours</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-4.jpg" alt="Mark T." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Mark T.</div>
+                                            <div class="testimonial-author-role">Operations Director (Australia)</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="client-info-wrap d-flex align-items-center mt-5">
-                                    <div class="client-img mr-3">
-                                        <img src="img/client-4.jpg" alt="client" width="60"
-                                            class="img-fluid rounded-circle shadow-sm" />
+                            </div>
+
+                            <!-- Testimonial 5: Blende Dental -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Blende Dental</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Their healthcare digital strategy and patient journey optimization drove a noticeable increase in qualified appointment requests across our multi-location clinics."
+                                        </p>
                                     </div>
-                                    <div class="client-info">
-                                        <h5 class="mb-0">Pirtle Karol</h5>
-                                        <p class="mb-0">ThemeTags</p>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-1.jpg" alt="Dr. Marcus B." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Dr. Marcus B.</div>
+                                            <div class="testimonial-author-role">Clinical Director (USA)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 6: Pacific Legal -->
+                            <div class="item">
+                                <div class="hp-testimonial-card-modern">
+                                    <div>
+                                        <div class="testimonial-company-header">
+                                            <span class="testimonial-company-badge">Pacific Legal</span>
+                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="hp-testimonial-text">
+                                            "Ocean DigiTech's team revamped our digital architecture and SEO structure. Our high-intent legal inquiries grew by 85% within four months."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author-row">
+                                        <img src="img/client-3.jpg" alt="Elena K." class="testimonial-author-avatar">
+                                        <div>
+                                            <div class="testimonial-author-name">Elena K.</div>
+                                            <div class="testimonial-author-role">Partner (USA)</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -513,63 +519,7 @@
         </section>
         <!--testimonial section end-->
 
-
-        <!--client section start-->
-        <div class="client-section ptb-100" style="background: url('img/client-bg.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-heading-wrap">
-                            <h3>Who are Happy With Services and Work</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-para">
-                            <p>Seamlessly administrate synergistic growth strategies and collaborative markets. Globally
-                                empower inexpensive infomediaries after sustainable mindshare. Phosfluorescently brand
-                                professional collaboration and idea-sharing without principle-centered interfaces. </p>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo start-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator client-logo-wrap">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--clients logo end-->
-            </div>
-        </div>
-        <!--client section end-->
-
-
-    </div>
-    <!--body content wrap end-->
+<!--body content wrap end-->
 
     <!--footer section start-->
     <?php include('footer.php');?>
@@ -598,7 +548,7 @@
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>
 
 </html>

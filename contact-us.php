@@ -345,7 +345,7 @@ function showErrorPopup(message) {
     <!--validator js-->
     <script src="js/validator.min.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>
 
 </html>

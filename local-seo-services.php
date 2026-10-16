@@ -9,7 +9,7 @@
     <!-- SEO Meta description -->
     <meta name="description"
         content="Expert Local SEO services that increase local search rankings, drive foot traffic, and build trust. Ocean DigiTech specializes in Google Business Profile optimization, citation building, and local content strategy.">
-    <meta name="author" content="ThemeTags">
+    <meta name="author" content="Ocean DigiTech">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="" /> <!-- website name -->
@@ -506,7 +506,7 @@
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>
 
 </html>

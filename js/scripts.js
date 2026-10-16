@@ -266,14 +266,54 @@ jQuery(function ($) {
     items: 1,
   });
 
+  // Services Single-Row Carousel
+  $(".services-carousel").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayHoverPause: true,
+    smartSpeed: 700,
+    responsiveClass: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 },
+      1280: { items: 3 }
+    }
+  });
+
+  // Bottlenecks Single-Row Carousel
+  $(".bottlenecks-carousel").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 4200,
+    autoplayHoverPause: true,
+    smartSpeed: 800,
+    responsiveClass: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 },
+      1280: { items: 3 }
+    }
+  });
+
   $(".client-testimonial").owlCarousel({
     loop: true,
     margin: 30,
-    nav: true,
-    dots: false,
+    nav: false,
+    dots: true,
     responsiveClass: true,
     autoplay: true,
+    autoplayTimeout: 3500,
     autoplayHoverPause: true,
+    smartSpeed: 800,
     lazyLoad: true,
     responsive: {
       0: {

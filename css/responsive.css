@@ -78,7 +78,7 @@
     line-height: 1.6 !important;
     word-wrap: break-word;
     white-space: normal !important;
-    color: #333 !important; /* Better contrast */
+    color: inherit;
     margin-top: 15px !important; /* Increased spacing after header */
     margin-bottom: 15px !important;
     padding: 12px 0 !important; /* Increased padding for visibility */
@@ -90,7 +90,6 @@
   .breadcrumb li {
     display: inline !important;
     font-size: 1rem !important;
-    color: #333 !important;
   }
 
   .breadcrumb li a {
