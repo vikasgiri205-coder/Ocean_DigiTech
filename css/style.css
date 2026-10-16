@@ -5586,12 +5586,15 @@ small {
 }
 
 /* --- LOGO & NAVIGATION STYLES --- */
-.brand-logo {
-  height: 44px !important;
+.navbar-brand img,
+.brand-logo,
+.header-logo-main {
+  height: 56px !important;
   width: auto !important;
-  max-height: 44px !important;
+  max-height: 58px !important;
+  max-width: 260px !important;
   object-fit: contain !important;
-  display: block;
+  display: block !important;
 }
 
 .mega-menu {

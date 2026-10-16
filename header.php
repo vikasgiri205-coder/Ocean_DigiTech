@@ -18,8 +18,8 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
   }
   /* Ultra-Sleek, Balanced Navbar with Centered Alignment */
   .header nav.navbar.mega-menu {
-    padding: 6px 1.5rem !important;
-    min-height: 70px !important;
+    padding: 8px 1.5rem !important;
+    min-height: 76px !important;
     background: #ffffff !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
@@ -41,11 +41,13 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     display: flex !important;
     align-items: center !important;
   }
-  .brand-logo {
-    height: 52px !important;
+  .navbar-brand img,
+  .brand-logo,
+  .header-logo-main {
+    height: 56px !important;
     width: auto !important;
-    max-height: 54px !important;
-    max-width: 240px !important;
+    max-height: 58px !important;
+    max-width: 260px !important;
     object-fit: contain !important;
     display: block !important;
     transition: all 0.3s ease;
@@ -142,7 +144,7 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     <nav class="navbar navbar-expand-lg fixed-top white-bg mega-menu">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="./">
-                <img src="img/logo-main.png" alt="Ocean Digitech Logo" class="brand-logo" />
+                <img src="img/logo-main.png?v=<?php echo file_exists('img/logo-main.png') ? filemtime('img/logo-main.png') : '3.5'; ?>" alt="Ocean Digitech Logo" class="brand-logo header-logo-main" style="height: 56px !important; max-height: 58px !important; width: auto !important; max-width: 260px !important; object-fit: contain !important; display: block !important;" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
