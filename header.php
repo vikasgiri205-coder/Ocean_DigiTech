@@ -136,6 +136,24 @@ $isHome = ($pageSlug === 'index' || empty($pageSlug) || $pageSlug === 'Ocean_Dig
     align-items: center !important;
     white-space: nowrap !important;
   }
+
+  /* Dropdown opens downwards below navbar */
+  .menu > li.dropdown-nav {
+    position: relative !important;
+  }
+  .menu > li.dropdown-nav > ul.sub-menu {
+    top: 100% !important;
+    left: 0 !important;
+    margin-top: 12px !important;
+    transform: translateY(10px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .menu > li.dropdown-nav:hover > ul.sub-menu {
+    transform: translateY(0) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
 </style>
 
 <!--header section start-->

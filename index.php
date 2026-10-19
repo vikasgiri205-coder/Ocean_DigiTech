@@ -188,8 +188,7 @@
                                 <div class="quick-proposal-wrap">
                                     <div class="quick-proposal">
                                         <div class="input-with-icon">
-                                            <span class="fas fa-globe input-icon"></span>
-                                            <input type="text" id="businessName" placeholder="Enter your business domain or email" required class="hero-input-field" />
+                                            <input type="text" id="businessName" placeholder="Enter your business domain or email" required class="hero-input-field" style="padding-left: 20px !important;" />
                                         </div>
                                         <button type="button" onclick="sendProposal()" class="btn-primary-od">
                                             <span>Get Free Proposal</span>
@@ -223,7 +222,7 @@
                 <div class="row align-items-center justify-content-between text-center">
                     <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0">
                         <div class="d-flex align-items-center justify-content-center gap-2">
-                            <h3 class="mb-0 font-weight-bold color-primary">40+</h3>
+                            <h3 class="mb-0 font-weight-bold color-primary">500+</h3>
                             <span class="text-muted text-left font-weight-bold" style="font-size: 13px; line-height: 1.2;">Global<br>Clients</span>
                         </div>
                     </div>
@@ -393,30 +392,41 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Animated Tech & Capability Live Ticker -->
-                <div class="service-ticker-wrap">
-                    <div class="service-ticker-track">
-                        <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO & Search Dominance</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
-                        <div class="service-ticker-item"><span class="dot"></span> High-ROI Google & Meta Ads</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure & DevOps</div>
-                        <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
-                        <div class="service-ticker-item"><span class="dot"></span> AI Automation & Data Analytics</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
-                        <!-- Continuous Duplicate Track -->
-                        <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO & Search Dominance</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
-                        <div class="service-ticker-item"><span class="dot"></span> High-ROI Google & Meta Ads</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure & DevOps</div>
-                        <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
-                        <div class="service-ticker-item"><span class="dot"></span> AI Automation & Data Analytics</div>
-                        <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
-                    </div>
-                </div>
+            <!-- Animated Tech & Capability Live Ticker (Full Width on Desktop) -->
+    <div class="service-ticker-wrap service-ticker-full-width">
+        <div class="service-ticker-track">
+            <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
+            <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO &amp; Search Dominance</div>
+            <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
+            <div class="service-ticker-item"><span class="dot"></span> High-ROI Google &amp; Meta Ads</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure &amp; DevOps</div>
+            <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
+            <div class="service-ticker-item"><span class="dot"></span> AI Automation &amp; Data Analytics</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
+            <!-- Duplicate for Seamless Continuous Loop -->
+            <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
+            <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO &amp; Search Dominance</div>
+            <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
+            <div class="service-ticker-item"><span class="dot"></span> High-ROI Google &amp; Meta Ads</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure &amp; DevOps</div>
+            <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
+            <div class="service-ticker-item"><span class="dot"></span> AI Automation &amp; Data Analytics</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
+            <!-- Triplicate for Ultra-Wide / 4K Screens -->
+            <div class="service-ticker-item"><span class="dot"></span> Custom Web Applications</div>
+            <div class="service-ticker-item"><span class="dot"></span> Enterprise SEO &amp; Search Dominance</div>
+            <div class="service-ticker-item"><span class="dot"></span> Headless E-Commerce Solutions</div>
+            <div class="service-ticker-item"><span class="dot"></span> High-ROI Google &amp; Meta Ads</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cloud Infrastructure &amp; DevOps</div>
+            <div class="service-ticker-item"><span class="dot"></span> UI/UX Design Systems</div>
+            <div class="service-ticker-item"><span class="dot"></span> AI Automation &amp; Data Analytics</div>
+            <div class="service-ticker-item"><span class="dot"></span> Cross-Platform Mobile Apps</div>
+        </div>
+    </div>
 
+            <div class="container">
                 <!-- Services Single-Row Animated Carousel -->
                 <div class="owl-carousel owl-theme services-carousel modern-slider-single-row">
                     <!-- Service 1: Custom Software -->
@@ -1251,8 +1261,8 @@
                                 <img src="img/priching-img-1.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$19<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$69<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$499</div>
+                                <div class="price text-center mb-0 yearly-price">$449</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Standard</h5>
@@ -1275,8 +1285,8 @@
                                 <img src="img/priching-img-2.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$49<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$159<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$799</div>
+                                <div class="price text-center mb-0 yearly-price">$719</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Premium</h5>
@@ -1299,8 +1309,8 @@
                                 <img src="img/priching-img-3.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$69<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$259<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$999</div>
+                                <div class="price text-center mb-0 yearly-price">$899</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Unlimited</h5>

@@ -308,7 +308,7 @@ jQuery(function ($) {
     loop: true,
     margin: 30,
     nav: false,
-    dots: true,
+    dots: false,
     responsiveClass: true,
     autoplay: true,
     autoplayTimeout: 3500,

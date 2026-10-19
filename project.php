@@ -283,8 +283,8 @@
                                 <img src="img/priching-img-1.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$19<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$69<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$499</div>
+                                <div class="price text-center mb-0 yearly-price">$449</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Standard</h5>
@@ -307,8 +307,8 @@
                                 <img src="img/priching-img-2.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$49<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$159<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$799</div>
+                                <div class="price text-center mb-0 yearly-price">$719</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Premium</h5>
@@ -331,8 +331,8 @@
                                 <img src="img/priching-img-3.png" alt="price" width="120" class="img-fluid">
                             </div>
                             <div class="card-header py-4 border-0 pricing-header">
-                                <div class="price text-center mb-0 monthly-price">$69<span>.99</span></div>
-                                <div class="price text-center mb-0 yearly-price">$259<span>.99</span></div>
+                                <div class="price text-center mb-0 monthly-price">$999</div>
+                                <div class="price text-center mb-0 yearly-price">$899</div>
                             </div>
                             <div class="price-name">
                                 <h5 class="mb-0">Unlimited</h5>

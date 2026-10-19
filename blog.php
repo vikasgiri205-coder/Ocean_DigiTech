@@ -10,26 +10,46 @@
     <!--body content wrap start-->
     <div class="main">
 
-        <!--hero section start-->
-        <section class="hero-section ptb-100 gradient-overlay" style="background: url('img/header-bg-5.jpg') no-repeat center center / cover">
+        <!--compact modern blog hero banner start-->
+        <section class="about-hero-modern">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-2">Our Latest Blog</h1>
-                            <p class="lead text-white-50">Insights, Architecture & Digital Growth Strategies</p>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Blog</li>
-                                </ol>
-                            </div>
+                    <div class="col-lg-9 col-md-11 text-center">
+                        <!-- Breadcrumbs -->
+                        <nav aria-label="breadcrumb" class="mb-3">
+                            <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
+                                <li class="breadcrumb-item"><a href="index.php" style="color: #94a3b8; text-decoration: none;"><i class="ti-home mr-1"></i> Home</a></li>
+                                <li class="breadcrumb-item active" style="color: #cbd5e1; font-weight: 600;" aria-current="page">Blog</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Eyebrow Pill Badge -->
+                        <div class="about-pill-badge mb-3">
+                            <span class="pulsing-dot"></span>
+                            <span>Articles &amp; Perspectives &bull; Digital Engineering &amp; Growth</span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="about-hero-title">Our Latest Blog &amp; Insights</h1>
+
+                        <!-- Subtitle -->
+                        <p class="about-hero-subtitle">
+                            Engineering deep dives, technical SEO strategies, and high-converting performance marketing playbooks from our digital specialists.
+                        </p>
+
+                        <!-- Highlights -->
+                        <div class="about-hero-highlights">
+                            <span class="highlight-item"><i class="ti-check-box mr-2" style="color: #00d2ff;"></i> Software Architecture</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-stats-up mr-2" style="color: #eb0074;"></i> Enterprise SEO</span>
+                            <span class="highlight-sep">&bull;</span>
+                            <span class="highlight-item"><i class="ti-rocket mr-2" style="color: #10b981;"></i> Conversion Optimization</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--hero section end-->
+        <!--compact modern blog hero banner end-->
 
         <!--blog section start-->
         <section class="our-blog-section ptb-100">

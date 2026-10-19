@@ -45,7 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Get Your FREE Digital Growth & Performance Audit. Trusted by 40+ US Businesses. Discover what's holding your business back and get actionable insights.">
+    <meta name="description" content="Get Your FREE Digital Growth & Performance Audit. Trusted by 500+ Global Businesses. Discover what's holding your business back and get actionable insights.">
     <meta name="author" content="Ocean DigiTech">
     <meta name="robots" content="noindex, nofollow"> <!-- Landing page - prevent indexing -->
 
@@ -672,7 +672,7 @@
         <div class="container">
             <div class="hero-content fadeInUp">
                 <div class="trusted-badge">
-                    ⭐ Trusted by 40+ US Businesses
+                    ⭐ Trusted by 500+ Global Businesses
                 </div>
 
                 <h1 class="hero-heading">
