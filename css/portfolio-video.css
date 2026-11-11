@@ -16,3 +16,9 @@
 @media (max-width: 575px) {
     .showcase-card .portfolio-video { height: 300px; }
 }
+
+.home-portfolio .showcase-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.home-portfolio .portfolio-video { height:420px; object-fit:contain; background:#191720; }
+.home-portfolio-action { margin-top:32px; text-align:center; }
+@media(max-width:991px) { .home-portfolio .showcase-grid { gap:18px; }.home-portfolio .portfolio-video { height:340px; } }
+@media(max-width:767px) { .home-portfolio .showcase-grid { grid-template-columns:1fr; max-width:440px; margin:0 auto; gap:30px; }.home-portfolio .portfolio-video { height:420px; }.home-portfolio-action .btn { width:100%; max-width:440px; } }

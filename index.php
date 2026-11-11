@@ -86,6 +86,8 @@
     <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
     <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
     <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
+<link rel="stylesheet" href="css/portfolio-video.css?v=<?= filemtime(__DIR__ . '/css/portfolio-video.css') ?>">
+<script src="js/portfolio-video.js?v=<?= filemtime(__DIR__ . '/js/portfolio-video.js') ?>" defer></script>
 </head>
 
 <body>
@@ -446,125 +448,13 @@
         <!--services section end-->
 
         <!--solving digital growth section start-->
-        <section class="growth-section-modern">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 text-center">
-                        <span class="growth-challenge-label mb-2">VALUE PROPOSITION</span>
-                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">A clearer path to your next stage.</h2>
-                        <span class="animate-border mr-auto ml-auto mb-3"></span>
-                        <p class="lead text-muted" style="font-size: 16px;">
-                            We transform common technical friction points and marketing inefficiencies into competitive growth advantages for your enterprise.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="growth-grid">
-                    <!-- Card 1 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#layers" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: OUTDATED TECH</span>
-                            <h3 class="growth-card-title">Legacy Systems Holding You Back?</h3>
-                            <p class="growth-card-desc">
-                                Modernize your architecture with clean, scalable web apps and cloud-native backend infrastructure designed for performance.
-                            </p>
-                            <a href="custom-website-development.php" class="growth-card-link">
-                                Explore Custom Development <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#search-check" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: LOW TRAFFIC</span>
-                            <h3 class="growth-card-title">Losing High-Intent Leads on Search?</h3>
-                            <p class="growth-card-desc">
-                                Capture market share with technical SEO audits, keyword targeting, and local search dominance engineered for ROI.
-                            </p>
-                            <a href="seo-services.php" class="growth-card-link">
-                                Explore SEO Solutions <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#settings-2" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: MANUAL PROCESSES</span>
-                            <h3 class="growth-card-title">Manual Tasks Draining Resources?</h3>
-                            <p class="growth-card-desc">
-                                Automate internal workflows, customer touchpoints, and integrations with tailored AI-assisted software solutions.
-                            </p>
-                            <a href="custom-website-design.php" class="growth-card-link">
-                                Explore Workflow Automation <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#target" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: AD WASTAGE</span>
-                            <h3 class="growth-card-title">Paid Ads Not Delivering Target ROI?</h3>
-                            <p class="growth-card-desc">
-                                Eliminate ad spend waste with hyper-targeted Google Ads, Amazon PPC, and paid social campaigns backed by conversion tracking.
-                            </p>
-                            <a href="google-ads-management.php" class="growth-card-link">
-                                Explore PPC Management <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#shopping-cart" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: ECOMMERCE DROP-OFF</span>
-                            <h3 class="growth-card-title">Cart Abandonment &amp; Friction?</h3>
-                            <p class="growth-card-desc">
-                                Optimize storefront UX, checkout speed, and product discoverability to turn shoppers into repeat buyers.
-                            </p>
-                            <a href="ecommerce-web-development.php" class="growth-card-link">
-                                Explore E-Commerce Growth <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="item">
-                        <div class="growth-card">
-                            <div class="growth-card-icon">
-                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg>
-                            </div>
-                            <span class="growth-challenge-label">CHALLENGE: ROADMAP UNCLEAR</span>
-                            <h3 class="growth-card-title">Launching a Venture or Scaling?</h3>
-                            <p class="growth-card-desc">
-                                Partner with senior technology consultants to define product roadmaps, tech stacks, and scalable growth strategies.
-                            </p>
-                            <a href="contact-us.php" class="growth-card-link">
-                                Schedule Tech Consultation <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+        <section class="showcase-section home-portfolio" aria-labelledby="home-portfolio-title">
+ <div class="container">
+  <div class="showcase-heading"><small>Our portfolio</small><h2 id="home-portfolio-title">Our work, in motion.</h2><p>Explore website walkthroughs and see our digital experiences in action.</p></div>
+  <div class="showcase-grid"><?php include __DIR__ . '/portfolio-video-cards.php'; ?></div>
+  <div class="home-portfolio-action"><a href="project.php" class="btn secondary-solid-btn">Explore our portfolio <span aria-hidden="true">&#8599;</span></a></div>
+ </div>
+</section>
         <!--solving digital growth section end-->
 
         <!--work process section start-->
@@ -1015,7 +905,7 @@
         <!--</section>-->
         <!--outstanding section end-->
 
-        <section class="showcase-section"><div class="container"><div class="showcase-heading"><small>Featured creative designs</small><h2>Digital experiences, thoughtfully crafted.</h2><p>Explore website design concepts across technology, retail, professional services, and more.</p></div><div class="showcase-grid"><a class="showcase-card" href="case-study.php?slug=saas-platform"><img loading="lazy" src="img/portfolios/concept-1.svg" alt="Enterprise SaaS Web Platform illustrative website design"><div><h3>Enterprise SaaS Web Platform</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=d2c-storefront"><img loading="lazy" src="img/portfolios/concept-2.svg" alt="Global D2C Storefront illustrative website design"><div><h3>Global D2C Storefront</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=legal-search"><img loading="lazy" src="img/portfolios/concept-3.svg" alt="Legal Services Organic Growth illustrative website design"><div><h3>Legal Services Organic Growth</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=healthcare-portal"><img loading="lazy" src="img/portfolios/concept-4.svg" alt="Healthcare & Telehealth Portal illustrative website design"><div><h3>Healthcare & Telehealth Portal</h3><p>Explore the design &amp; approach →</p></div></a></div><p class="concept-note">Illustrative portfolio concepts. These previews do not represent verified client work.</p><p class="text-center mt-4"><a class="btn secondary-solid-btn" href="case-studies.php">Explore case studies <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></p></div></section>
+        
 
         <!--pricing with switch section start-->
        <!-- <section class="pricing-section ptb-100 gray-light-bg">
