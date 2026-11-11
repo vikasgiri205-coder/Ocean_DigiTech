@@ -1,8 +1,1 @@
-
-
-<?php include('main-header.php');?>
-
-<body>
-
- <?php include('header.php');?>
- 
+<?php header('Location: project.php', true, 302); exit;

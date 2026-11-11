@@ -32,10 +32,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--Owl carousel css-->
@@ -46,6 +43,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -57,24 +57,7 @@
     <div class="main">
 
         <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg') no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Our Enterprise Services</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Services</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'The right expertise. All in one place.'; $heroDescription = 'From thoughtful websites and custom software to search and paid media, find the support your next stage needs.'; $heroCategory = 'Our services'; $heroImage = 'img/editorial/code.jpg'; $heroImageAlt = 'Code being developed for a digital product'; include __DIR__.'/inner-hero.php'; ?>
         <!--header section end-->
 
         <!--promo section start-->
@@ -84,7 +67,7 @@
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                         <div class="promo-single-wrap p-5 text-center custom-shadow rounded white-bg">
                             <div class="promo-icon mb-4">
-                                <i class="ti-desktop color-primary icon-lg"></i>
+                                <svg class="od-icon color-primary icon-lg" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#monitor" width="100%" height="100%"></use></svg>
                                 <span class="number-bg">01</span>
                             </div>
                             <div class="promo-info">
@@ -97,7 +80,7 @@
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                         <div class="promo-single-wrap p-5 text-center custom-shadow rounded white-bg">
                             <div class="promo-icon mb-4">
-                                <i class="ti-mobile color-primary icon-lg"></i>
+                                <svg class="od-icon color-primary icon-lg" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg>
                                 <span class="number-bg">02</span>
                             </div>
                             <div class="promo-info">
@@ -110,7 +93,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="promo-single-wrap p-5 text-center custom-shadow rounded white-bg">
                             <div class="promo-icon mb-4">
-                                <i class="ti-cloud color-primary icon-lg"></i>
+                                <svg class="od-icon color-primary icon-lg" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#cloud" width="100%" height="100%"></use></svg>
                                 <span class="number-bg">03</span>
                             </div>
                             <div class="promo-info">
@@ -141,50 +124,50 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-announcement icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#megaphone" width="100%" height="100%"></use></svg>
                             <h5>Web App Development</h5>
                             <p class="mb-3">Modern single-page applications, cloud backends, microservices, and custom web portals built for security and performance.</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-mobile icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg>
                             <h5>Mobile Application Development</h5>
                             <p class="mb-3">High-performance native and cross-platform apps with smooth UI/UX and seamless offline data synchronization.</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-cloud icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#cloud" width="100%" height="100%"></use></svg>
                             <h5>Cloud-Based Services & DevOps</h5>
                             <p class="mb-3">AWS and GCP cloud architecture, infrastructure as code, serverless computing, and database optimization.</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-bar-chart icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg>
                             <h5>SEO & Organic Traffic Growth</h5>
                             <p class="mb-3">Technical SEO audits, keyword strategy, schema architecture, and content optimization to drive targeted search revenue.</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-light-bulb icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg>
                             <h5>Startup Tech Consulting</h5>
                             <p class="mb-3">MVP development strategies, technology stack selection, system architecture reviews, and scalable product roadmaps.</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
                         <div class="services-single p-5 shadow-sm rounded white-bg h-100">
-                            <span class="ti-target icon-lg color-primary d-block mb-4"></span>
+                            <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#target" width="100%" height="100%"></use></svg>
                             <h5>Paid Search & Performance PPC</h5>
                             <p class="mb-3">Data-driven Google Ads, LinkedIn Ads, and remarketing campaigns structured for maximum return on ad spend (ROAS).</p>
-                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <span class="ti-arrow-right"></span></a>
+                            <a href="contact-us.php" class="detail-link mt-auto">Discuss Project <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
                         </div>
                     </div>
                 </div>
@@ -281,14 +264,14 @@
                             <h2>Looking for custom technology solutions?</h2>
                             <p class="lead">Partner with Ocean Digitech for scalable software, web apps, and digital growth strategies tailored to your enterprise.</p>
 
-                            <a href="contact-us.php" class="btn outline-btn align-items-center mb-4">Contact Our Team <span class="ti-arrow-right pl-2"></span></a>
+                            <a href="contact-us.php" class="btn outline-btn align-items-center mb-4">Contact Our Team <svg class="od-icon pl-2" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
 
                             <hr class="my-4">
 
                             <h5>Ocean Digitech Offices</h5>
                             <p class="mb-2"><strong>India Headquarters:</strong> Noida, Uttar Pradesh, India</p>
                             <p class="mb-2"><strong>USA Contact:</strong> Delaware, USA</p>
-                            <p class="mb-2"><strong>Phone:</strong> +91 8384012989</p>
+                            <p class="mb-2"><strong>Phone:</strong> +44 7460 672819</p>
                             <p class="mb-0"><strong>Email:</strong> <a href="mailto:oceandigitech205@gmail.com" class="link-color">oceandigitech205@gmail.com</a></p>
 
                         </div>

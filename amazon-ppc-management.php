@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -101,6 +96,9 @@
     }
     </script>
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -110,24 +108,18 @@
 
 
 <div class="main">
+<?php $heroTitle = 'Help your products get discovered.'; $heroDescription = 'Manage Amazon search advertising with a considered approach to keywords, product visibility, and campaign efficiency.'; $heroCategory = 'Amazon PPC management'; $heroImage = 'img/editorial/analytics.jpg'; $heroImageAlt = 'Digital performance dashboards'; include __DIR__.'/inner-hero.php'; ?>
         <!--services details start-->
         <section class="service-details-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="service-details-wrap">
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
-                                    <li style="display: inline;">Amazon PPC Management</li>
-                                </ol>
-                            </nav>
+                            
 
                             <img src="img/slider-img-2.jpg" alt="Amazon PPC Management showing Sponsored Products, Sponsored Brands campaigns with ACoS and RoAS metrics" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
-                                <h1 style="font-size: 2.2rem;">Amazon PPC That Drives Profit</h1>
+                                
                                 <h2 style="font-size: 1.2rem;">Expert Amazon PPC management for US and global marketplaces—Sponsored Products, Brands, Display, and advanced optimization</h2>
 
                                 <!-- SEO Intro Content Block -->
@@ -137,26 +129,26 @@
 
                                 <p>We deliver strategic Amazon advertising solutions that maximize visibility, conversions, and profitability. Our focus is on data-driven optimization that reduces ACoS while scaling revenue and market share.
                                 <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Comprehensive Campaign Management</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Comprehensive Campaign Management</strong>
                                                  Sponsored Products, Sponsored Brands, and Sponsored Display
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Advanced Keyword Strategy</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Advanced Keyword Strategy</strong>
                                                 Competitor analysis and conversion-driven long-tail targeting
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Daily Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Daily Optimization</strong>
                                                 Bid adjustments, negative keywords, and performance monitoring</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Account Audits</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Account Audits</strong>
                                                 Identify wasted spend and optimization opportunities</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Custom Reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Custom Reporting</strong>
                                                   ACoS, RoAS, new-to-brand metrics, and growth tracking
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>US & Global Marketplace Expertise</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>US & Global Marketplace Expertise</strong>
                                                 Country-level reporting and localized strategies
                                             </li>
                                         </ul>
@@ -182,34 +174,34 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Sponsored Products Management</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Sponsored Products Management</strong>
                                                Set up and ongoing management split by match type (exact, phrase, broad) and performance tier for full catalog visibility
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Sponsored Brands/Video Campaigns</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Sponsored Brands/Video Campaigns</strong>
                                                Brand-store traffic and upper-funnel visibility targeting competitive US search terms
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Sponsored Display Campaigns</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Sponsored Display Campaigns</strong>
                                                 Retargeting, audience targeting, competitor conquesting, and product defense</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Advanced Keyword Research</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Advanced Keyword Research</strong>
                                                  Competitor analysis, conversion-driven long-tail targeting, monthly keyword reviews</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Product Listing Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Product Listing Optimization</strong>
                                                 Align listings (images, copy, bullets) for maximum Quality Score and relevance
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>PPC Account Audits</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>PPC Account Audits</strong>
                                                 Review wasted spend, campaign structure, bid strategy, and reporting workflow
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Daily Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Daily Optimization</strong>
                                                 Automatic/Manual campaign integration, negative keyword rules, bid adjustments by product, dayparting, seasonal boosts
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Custom Reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Custom Reporting</strong>
                                                 US ACoS, RoAS, new-to-brand metrics, basket analysis, share of voice, and growth tracking
                                             </li>
                                         </ul>
@@ -222,21 +214,21 @@
                                      </div>
                                     <div class="col-md-12">
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Extract high-converting keywords from auto-campaigns and transfer to high-control manual campaigns
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Extract high-converting keywords from auto-campaigns and transfer to high-control manual campaigns
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Aggressively build negative keyword lists to preserve profitability
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Aggressively build negative keyword lists to preserve profitability
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Blend broad, phrase, and exact match ad groups and monitor for bid wastage</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Use Seller Central reports, Helium10/Cerebro, Brand Analytics for exact search intent coverage</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Split test at every tier: Ad text, image, and landing page for conversion lift
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Blend broad, phrase, and exact match ad groups and monitor for bid wastage</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Use Seller Central reports, Helium10/Cerebro, Brand Analytics for exact search intent coverage</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Split test at every tier: Ad text, image, and landing page for conversion lift
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span>Schedule dayparted bidding and budget adjustments for US retail peak windows
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Schedule dayparted bidding and budget adjustments for US retail peak windows
                                             </li>
                                         </ul>
                                     </div>
@@ -247,126 +239,25 @@
                                     <div class="col-md-12">
                                         <h2 style="font-size: 1.8rem; margin-bottom: 15px;">US PPC Case Outcomes</h2>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Doubled conversion rates</strong> for a California health brand by combining deep negative targeting with exact match buildouts</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Lowered total ACoS from 32% to 17%</strong> for a multi-state home goods seller with weekly bid/placement adjustments</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Achieved 400% YoY PPC revenue growth</strong> for a private label seller through seasonal keyword scale and competitive conquesting</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Doubled conversion rates</strong> for a California health brand by combining deep negative targeting with exact match buildouts</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Lowered total ACoS from 32% to 17%</strong> for a multi-state home goods seller with weekly bid/placement adjustments</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Achieved 400% YoY PPC revenue growth</strong> for a private label seller through seasonal keyword scale and competitive conquesting</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0">What do you optimize in my account?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>We restructure campaigns, fix keyword targeting, implement tiered bidding, and improve product-listing relevance.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0">How do I know my spend is working?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We provide direct, keyword-level attribution—ACoS, RoAS improvement overlays, and written strategic notes every month.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0">How quickly will I see results?</h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>You can expect more efficient ad spend and improved sales velocity within 30-45 days.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- Accordion card 4 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-4" aria-expanded="false"
-                                            aria-controls="collapse-1-4">
-                                            <h6 class="mb-0">Do you use third-party automation tools?</h6>
-                                        </div>
-                                        <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We use a blend of manual and automated optimization tailored for your account's size and goals.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 5 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-5" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-5" aria-expanded="false"
-                                            aria-controls="collapse-1-5">
-                                            <h6 class="mb-0">Can you support large catalogs and multiple Amazon markets?</h6>
-                                        </div>
-                                        <div id="collapse-1-5" class="collapse" aria-labelledby="heading-1-5"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Yes—our team manages PPC portfolios for entire US and international accounts, with country-level reporting and strategy.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Trust Indicators / Stats Ribbon -->
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
-                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Client Testimonials -->
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
-                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
-                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
-                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="sidebar-right pl-4">
 
                             <!--all services list-->
@@ -374,17 +265,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">E-Commerce Web Development</a></li>
-                                    <li><a href="#">Custom Web Development</a></li>
-                                    <li><a href="#">Social Media Managment</a></li>
-                                    <li><a href="#">Social Media Adverting</a></li>
-                                    <li><a href="#">PPC Aervices</a></li>
-                                    <li><a href="#">E-Commerce PPC</a></li>
-                                    <li><a href="#">E-Commerce SEO</a></li>
-                                    <li><a href="#">Local SEO </a></li>
-                                    <li><a href="#">AI SEO</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -394,60 +275,16 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span>A-7 Sector-10 Noida INDIA</li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> +91 8384012989</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> contact@oceandigitech.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>A-7 Sector-10 Noida INDIA</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> +44 7460 672819</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> contact@oceandigitech.com</li>
                                 </ul>
                             </aside>
 
                             <!-- Contact form-->
                             <div class="contact-us-form gray-light-bg rounded p-3">
                             <h4>Grow Profit with US Amazon PPC Experts</h4>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="website" class="form-control" name="website"
-                                                placeholder="Brand URL" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" name="phone"
-                                                placeholder="Phone Number" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="ad_budget"
-                                                placeholder="Monthly Ad Budget" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="product_category"
-                                                placeholder="Product Category" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
-                                            Get My Full Account Review
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p>Tell us about your goals and we’ll help you find the right next step.</p><a class="btn secondary-solid-btn" href="contact-us.php#contact-form">Discuss your project <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a>
                         </div>
 
                 </div>
@@ -502,10 +339,18 @@
                 </div>
                 <!--clients logo end-->
             </div>
-            </div>
-            </div>
         </section>
         <!--services details end-->
+<section class="od-proof-section service-proof-band" aria-label="Agency at a glance"><div class="container"><div class="od-stat-grid" role="list"><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Clients Served</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#heart-handshake" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">98%</strong><span class="od-proof-label">Client Retention</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Projects</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#award" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">3+</strong><span class="od-proof-label">Industry Awards</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">4.9/5</strong><span class="od-proof-label">Reviews</span></div></div></div></section>
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="amazon-ppc-management-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question">What do you optimize in my account?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We restructure campaigns, fix keyword targeting, implement tiered bidding, and improve product-listing relevance.</p></div></details>
+<details class="od-faq-item" name="amazon-ppc-management-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question">How do I know my spend is working?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We provide direct, keyword-level attribution—ACoS, RoAS improvement overlays, and written strategic notes every month.</p></div></details>
+<details class="od-faq-item" name="amazon-ppc-management-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question">How quickly will I see results?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>You can expect more efficient ad spend and improved sales velocity within 30-45 days.</p></div></details>
+<details class="od-faq-item" name="amazon-ppc-management-faq"><summary><span class="od-faq-number">04</span><span class="od-faq-question">Do you use third-party automation tools?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We use a blend of manual and automated optimization tailored for your account's size and goals.</p></div></details>
+<details class="od-faq-item" name="amazon-ppc-management-faq"><summary><span class="od-faq-number">05</span><span class="od-faq-question">Can you support large catalogs and multiple Amazon markets?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes—our team manages PPC portfolios for entire US and international accounts, with country-level reporting and strategy.</p></div></details></div></div></section>
+<section class="service-review-band"><div class="container service-review-layout"><div><span class="premium-eyebrow">Client perspective</span><h2>What our clients say</h2></div><blockquote class="service-review-quote">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote></div></section>
 
         <!--call to action section start-->
         <section class="call-to-action py-5 mt-5 gray-light-bg">
@@ -535,8 +380,8 @@
     <!--footer section end-->
 
       <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+      <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->    <!--bottom to top button end-->
 

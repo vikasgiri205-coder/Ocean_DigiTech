@@ -1,0 +1,14 @@
+{
+  "name": "ocean-ui-checks",
+  "private": true,
+  "scripts": {
+    "test": "node --test ui.test.cjs",
+    "audit": "node audit.cjs",
+    "runtime": "node runtime.cjs"
+  },
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "jsdom": "26.1.0",
+    "lucide-static": "^0.468.0"
+  }
+}

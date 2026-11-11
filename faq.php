@@ -23,7 +23,7 @@
     <title>Frequently Asked Questions - Ocean DigiTech</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -34,12 +34,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -52,6 +47,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,25 +61,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-9 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">FAQ Page</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Faq</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'A little clarity goes a long way.'; $heroDescription = 'Find answers to common questions about our services, project process, and how we work together.'; $heroCategory = 'Frequently asked questions'; $heroImage = 'img/editorial/workspace.jpg'; $heroImageAlt = 'A calm modern workspace'; include __DIR__.'/inner-hero.php'; ?>
         <!--hero section end-->
 
         <!--promo section start-->
@@ -106,7 +86,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-1-1" data-toggle="collapse" role="button"
                                     data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                    <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Which license do I need?</h6>
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#receipt-text" width="100%" height="100%"></use></svg> Which license do I need?</h6>
                                 </div>
                                 <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
                                     data-parent="#accordion-1">
@@ -121,7 +101,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-1-2" data-toggle="collapse" role="button"
                                     data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                    <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How do I get access to a
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#images" width="100%" height="100%"></use></svg> How do I get access to a
                                         theme?</h6>
                                 </div>
                                 <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
@@ -137,7 +117,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-1-3" data-toggle="collapse" role="button"
                                     data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                                    <h6 class="mb-0"><span class="ti-wallet mr-3"></span> How do I see previous orders?
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#wallet" width="100%" height="100%"></use></svg> How do I see previous orders?
                                     </h6>
                                 </div>
                                 <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
@@ -157,7 +137,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-1" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
-                                    <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Which license do I need?</h6>
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#receipt-text" width="100%" height="100%"></use></svg> Which license do I need?</h6>
                                 </div>
                                 <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1"
                                     data-parent="#accordion-2">
@@ -172,7 +152,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-2" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
-                                    <h6 class="mb-0"><span class="ti-lock mr-3"></span> How do I get access to a theme?
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#lock-keyhole" width="100%" height="100%"></use></svg> How do I get access to a theme?
                                     </h6>
                                 </div>
                                 <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2"
@@ -188,7 +168,7 @@
                             <div class="card">
                                 <div class="card-header py-4" id="heading-2-3" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
-                                    <h6 class="mb-0"><span class="ti-widget mr-3"></span> How do I see previous orders?
+                                    <h6 class="mb-0"><svg class="od-icon mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#layout-dashboard" width="100%" height="100%"></use></svg> How do I see previous orders?
                                     </h6>
                                 </div>
                                 <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3"

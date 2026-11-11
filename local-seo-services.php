@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -85,6 +80,9 @@
     }
     </script>
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -94,24 +92,18 @@
 
 
 <div class="main">
+<?php $heroTitle = 'Be the business they find nearby.'; $heroDescription = 'Strengthen your local presence with clear location pages, accurate business information, and relevant search content.'; $heroCategory = 'Local SEO'; $heroImage = 'img/editorial/analytics.jpg'; $heroImageAlt = 'Digital performance dashboards'; include __DIR__.'/inner-hero.php'; ?>
         <!--services details start-->
         <section class="service-details-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="service-details-wrap">
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
-                                    <li style="display: inline;">Local SEO Services</li>
-                                </ol>
-                            </nav>
+                            
 
                             <img src="img/slider-img-2.jpg" alt="Local SEO services showing Google Business Profile optimization and map pack rankings" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
-                                <h1 style="font-size: 2.2rem;">Local SEO Services that Put Your Business on the Map</h1>
+                                
                                 <h2 style="font-size: 1.2rem;">Increase your local search rankings, drive foot traffic, and build lasting trust in your target markets with our geo-focused expertise</h2>
 
                                 <!-- SEO Intro Content Block -->
@@ -121,26 +113,26 @@
 
                                 <p>We deliver comprehensive local SEO solutions that put your business in front of customers actively searching in your area. Our data-driven approach ensures maximum visibility and tangible results.
                                 <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Google Business Profile Mastery</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Google Business Profile Mastery</strong>
                                                  Professional optimization for maximum map pack visibility
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Citation Building & Cleanup</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Citation Building & Cleanup</strong>
                                                 Consistent NAP data across all directories and platforms
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Geo-Targeted Content Strategy</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Geo-Targeted Content Strategy</strong>
                                                 Location-specific pages optimized for local intent</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Review & Reputation Management</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Review & Reputation Management</strong>
                                                 Build trust with strategic review generation campaigns</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Multi-Location Expertise</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Multi-Location Expertise</strong>
                                                   Scalable solutions for chains and franchises
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Transparent Reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Transparent Reporting</strong>
                                                 Monthly insights on rankings, traffic, and ROI
                                             </li>
                                         </ul>
@@ -157,26 +149,26 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Local Audit & Research</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Local Audit & Research</strong>
                                                 Deep review of your current rankings, listings, NAP data consistency, and search performance
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>GBP (Google Business Profile) Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>GBP (Google Business Profile) Optimization</strong>
                                                Professional setup, category selection, post updates, and multimedia enhancements
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Citation Building</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Citation Building</strong>
                                                 We build and clean local citations for improved trust and authority</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Local Content Creation</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Local Content Creation</strong>
                                                 City, service, and location pages optimized for relevance and intent</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Review & Reputation Management</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Review & Reputation Management</strong>
                                                 Review generation campaigns and proactive monitoring
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Ongoing Reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Ongoing Reporting</strong>
                                                 Monthly reports on rankings, traffic, reviews, and actions taken
                                             </li>
                                         </ul>
@@ -191,26 +183,26 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>GBP Management and Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>GBP Management and Optimization</strong>
                                                Complete profile setup, regular updates, and performance monitoring
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Directory Listings and Citation Building/Cleanup</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Directory Listings and Citation Building/Cleanup</strong>
                                                Ensure accurate, consistent business information across the web
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Custom Local Landing Page Creation</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Custom Local Landing Page Creation</strong>
                                                 Dedicated pages for each service area or location</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Location-Based Link Acquisition and PR</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Location-Based Link Acquisition and PR</strong>
                                                  Build local authority through community partnerships and press</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Review Acquisition and Monitoring</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Review Acquisition and Monitoring</strong>
                                                 Systematic campaigns to generate authentic customer reviews
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Multi-Location Rollouts for Chains/Franchises</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Multi-Location Rollouts for Chains/Franchises</strong>
                                                 Scalable strategies for businesses with multiple locations
                                             </li>
                                         </ul>
@@ -233,75 +225,10 @@
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0">How quickly can I rank in the Map Pack?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>It varies based on competition, current citations/reviews, and proximity, but improvement is often visible in 30-90 days for most businesses.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0">What locations can you target?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We can optimize for any city, region, or multi-location network. Our strategies work for local, national, and even international brands.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0">Can you manage my reviews?</h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Yes, we help solicit, manage, and respond to reviews in a compliant way, including guidance for negative review response and generation of positive feedback.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Trust Indicators / Stats Ribbon -->
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
-                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">400% Call Growth</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">500+ Citations Built</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Map Pack Visibility</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">50+ Local Markets</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.8/5 Avg. Review Score</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Why Local SEO Matters Section -->
                                 <div class="row mt-5">
@@ -315,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="sidebar-right pl-4">
 
                             <!--all services list-->
@@ -323,17 +250,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">E-Commerce Web Development</a></li>
-                                    <li><a href="#">Custom Web Development</a></li>
-                                    <li><a href="#">Social Media Managment</a></li>
-                                    <li><a href="#">Social Media Adverting</a></li>
-                                    <li><a href="#">PPC Aervices</a></li>
-                                    <li><a href="#">E-Commerce PPC</a></li>
-                                    <li><a href="#">E-Commerce SEO</a></li>
-                                    <li><a href="#">Local SEO </a></li>
-                                    <li><a href="#">AI SEO</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -343,54 +260,16 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span>A-7 Sector-10 Noida INDIA</li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> +91 8384012989</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> contact@oceandigitech.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>A-7 Sector-10 Noida INDIA</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> +44 7460 672819</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> contact@oceandigitech.com</li>
                                 </ul>
                             </aside>
 
                             <!-- Contact form-->
                             <div class="contact-us-form gray-light-bg rounded p-3">
                             <h4>Get Your Local SEO Audit</h4>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="business"
-                                                placeholder="Business name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="area"
-                                                placeholder="Target area/city" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="5"
-                                                cols="25" placeholder="Tell us about your local SEO goals"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
-                                            Boost My Local Rankings
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p>Tell us about your goals and we’ll help you find the right next step.</p><a class="btn secondary-solid-btn" href="contact-us.php#contact-form">Discuss your project <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a>
                         </div>
 
                 </div>
@@ -445,10 +324,13 @@
                 </div>
                 <!--clients logo end-->
             </div>
-            </div>
-            </div>
         </section>
         <!--services details end-->
+<section class="od-proof-section service-proof-band" aria-label="Agency at a glance"><div class="container"><div class="od-stat-grid" role="list"><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">400%</strong><span class="od-proof-label">Call Growth</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#heart-handshake" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">500+</strong><span class="od-proof-label">Citations Built</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">98%</strong><span class="od-proof-label">Map Pack Visibility</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#award" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">50+</strong><span class="od-proof-label">Local Markets</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">4.8/5</strong><span class="od-proof-label">Avg. Review Score</span></div></div></div></section>
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="local-seo-services-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question">How quickly can I rank in the Map Pack?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>It varies based on competition, current citations/reviews, and proximity, but improvement is often visible in 30-90 days for most businesses.</p></div></details>
+<details class="od-faq-item" name="local-seo-services-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question">What locations can you target?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We can optimize for any city, region, or multi-location network. Our strategies work for local, national, and even international brands.</p></div></details>
+<details class="od-faq-item" name="local-seo-services-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question">Can you manage my reviews?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes, we help solicit, manage, and respond to reviews in a compliant way, including guidance for negative review response and generation of positive feedback.</p></div></details></div></div></section>
+
 
         <!--call to action section start-->
         <section class="call-to-action py-5 mt-5 gray-light-bg">
@@ -478,8 +360,8 @@
     <!--footer section end-->
 
       <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+      <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->    <!--bottom to top button end-->
 

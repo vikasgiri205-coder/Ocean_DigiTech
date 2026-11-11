@@ -23,7 +23,7 @@
     <title>Client Portal Login | Ocean DigiTech</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -34,12 +34,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -52,6 +47,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -86,7 +84,7 @@
                                         <label class="pb-1">Email Address</label>
                                         <div class="input-group input-group-merge">
                                             <div class="input-icon">
-                                                <span class="ti-email color-primary"></span>
+                                                <svg class="od-icon color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg>
                                             </div>
                                             <input type="email" class="form-control" placeholder="name@yourdomain.com">
                                         </div>
@@ -98,14 +96,14 @@
                                                 <label class="pb-1">Password</label>
                                             </div>
                                             <div class="col-auto">
-                                                <a href="password-reset.html" class="form-text small text-muted">
+                                                <a href="password-reset.php" class="form-text small text-muted">
                                                     Forgot password?
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="input-group input-group-merge">
                                             <div class="input-icon">
-                                                <span class="ti-lock color-primary"></span>
+                                                <svg class="od-icon color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#lock-keyhole" width="100%" height="100%"></use></svg>
                                             </div>
                                             <input type="password" class="form-control"
                                                 placeholder="Enter your password">
@@ -120,7 +118,7 @@
                                 </form>
                             </div>
                             <div class="card-footer bg-transparent border-top px-md-5"><small>Not registered?</small>
-                                <a href="sign-up.html" class="small"> Create account</a>
+                                <a href="basic-sign-up.php" class="small"> Create account</a>
                             </div>
                         </div>
                     </div>
@@ -134,8 +132,8 @@
 
 
     <!--bottom to top button start-->
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+    <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->
 

@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -93,6 +88,9 @@
     }
     </script>
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -102,24 +100,18 @@
 
 
 <div class="main">
+<?php $heroTitle = 'Connect your brand with the right people.'; $heroDescription = 'Audience-led creative and considered campaign management to turn attention into useful customer conversations.'; $heroCategory = 'Social media advertising'; $heroImage = 'img/editorial/analytics.jpg'; $heroImageAlt = 'Digital performance dashboards'; include __DIR__.'/inner-hero.php'; ?>
         <!--services details start-->
         <section class="service-details-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="service-details-wrap">
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
-                                    <li style="display: inline;">Social Media Advertising</li>
-                                </ol>
-                            </nav>
+                            
 
                             <img src="img/slider-img-2.jpg" alt="Social media advertising dashboard showing Facebook Ads, Instagram campaigns, and LinkedIn sponsored content performance metrics" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
-                                <h1 style="font-size: 2.2rem;">Social Media Advertising That Actually Delivers ROI for US Businesses</h1>
+                                
                                 <h2 style="font-size: 1.2rem;">Engineered US Ad Campaigns That Cut Through the Noise</h2>
 
                                 <!-- SEO Intro Content Block -->
@@ -131,22 +123,22 @@
 
                                 <h3 style="margin-top: 20px;">Your Campaign Includes:</h3>
                                 <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>US market research and ad account restructure</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>US market research and ad account restructure</strong>
                                                  Comprehensive analysis and optimization
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Full-funnel campaigns</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Full-funnel campaigns</strong>
                                                 Awareness, retargeting, and lead generation
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Video, story, and carousel creative</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Video, story, and carousel creative</strong>
                                                 With rapid A/B testing</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Lead tracking</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Lead tracking</strong>
                                                 Pixels, UTM parameters, CRM sync, and GA4 tie-in</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Weekly/Monthly reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Weekly/Monthly reporting</strong>
                                                   Customized for US markets with call tracking and detailed spend/results breakdowns
                                             </li>
                                         </ul>
@@ -160,16 +152,16 @@
                                         <h3 style="margin-top: -20px;" >Our Social Ads Workflow</h3>
                                         <p>A proven process designed to maximize your advertising ROI across all US social platforms.</p>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>1. Discovery and Offer-Market Fit</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>1. Discovery and Offer-Market Fit</strong>
                                                 We clarify your goals, offer, and define custom US personas. Localize creative. Advise on compliance and brand safety for US CPC/CPA standards.
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>2. Build, Test, Launch</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>2. Build, Test, Launch</strong>
                                                Our team delivers the first round of US-tailored ads, builds landing pages as needed, and launches across the agreed US platforms. We use advanced analytics to track conversions at every step.
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>3. Optimization and Reporting</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>3. Optimization and Reporting</strong>
                                                 No other US social ad agency is as responsive—our experts tune live campaigns daily. Expect full-funnel reports shared weekly, focused on cost, new leads, email opt-ins, calls, purchases, and ROI.</li>
                                         </ul>
                                     </div>
@@ -180,12 +172,12 @@
                                     <div class="col-md-12">
                                         <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Platforms We Master</h2>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Facebook Ads</strong> - Precision targeting for US demographics and interests</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>Instagram Campaigns</strong> - Visual storytelling that converts</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>LinkedIn Sponsored Content</strong> - B2B lead generation</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>YouTube Ads</strong> - Video advertising at scale</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>X (Twitter) Ads</strong> - Real-time engagement campaigns</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span><strong>TikTok Ads</strong> - Reaching younger US audiences</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Facebook Ads</strong> - Precision targeting for US demographics and interests</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Instagram Campaigns</strong> - Visual storytelling that converts</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>LinkedIn Sponsored Content</strong> - B2B lead generation</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>YouTube Ads</strong> - Video advertising at scale</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>X (Twitter) Ads</strong> - Real-time engagement campaigns</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>TikTok Ads</strong> - Reaching younger US audiences</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -196,114 +188,27 @@
                                         <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Why Choose Ocean DigiTech?</h2>
                                         <p>We're not just another ad agency—we're your growth partner focused on results that matter to US businesses.</p>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Data-driven strategies tailored to US markets</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Transparent reporting with full account access</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Daily campaign optimization and monitoring</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Expert creative team for high-converting ads</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>ROI-focused approach with clear attribution</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Data-driven strategies tailored to US markets</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Transparent reporting with full account access</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Daily campaign optimization and monitoring</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Expert creative team for high-converting ads</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>ROI-focused approach with clear attribution</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0">Do you support both small and large US budgets?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>Yes. Campaigns are always sized to market opportunity. Most successful US companies invest $1,000+/month for enough data to optimize, but we deliver value at every scale.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0">Who owns the ad accounts and data?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>You do. We work transparently inside US client ad accounts with full access.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0">How fast does my campaign launch?</h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>US ad sets can be live within 2 weeks after kickoff, faster for urgent pushes.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- Accordion card 4 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-4" aria-expanded="false"
-                                            aria-controls="collapse-1-4">
-                                            <h6 class="mb-0">Do you work with US eCommerce, local service, and B2B?</h6>
-                                        </div>
-                                        <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Yes—our campaigns are tailored. From D2C eCommerce and national franchises to SaaS and financial services.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Trust Indicators / Stats Ribbon -->
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
-                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">$10M+ Ad Spend Managed</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">300% Avg. ROI</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Active Campaigns</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">50+ US Brands</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Client Testimonials -->
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
-                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
-                                            "Ocean DigiTech cut our cost per lead in half while tripling our monthly conversions. Their Facebook and Instagram campaigns are generating real revenue."
-                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— CEO, eCommerce Brand</footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="sidebar-right pl-4">
 
                             <!--all services list-->
@@ -311,17 +216,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">E-Commerce Web Development</a></li>
-                                    <li><a href="#">Custom Web Development</a></li>
-                                    <li><a href="social-media-management.php">Social Media Management</a></li>
-                                    <li><a href="social-media-advertising.php">Social Media Advertising</a></li>
-                                    <li><a href="#">PPC Services</a></li>
-                                    <li><a href="#">E-Commerce PPC</a></li>
-                                    <li><a href="#">E-Commerce SEO</a></li>
-                                    <li><a href="#">Local SEO </a></li>
-                                    <li><a href="#">AI SEO</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -331,54 +226,16 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span>A-7 Sector-10 Noida INDIA</li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> +91 8384012989</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> contact@oceandigitech.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>A-7 Sector-10 Noida INDIA</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> +44 7460 672819</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> contact@oceandigitech.com</li>
                                 </ul>
                             </aside>
 
                             <!-- Contact form-->
                             <div class="contact-us-form gray-light-bg rounded p-3">
                             <h4>Start My US Social Ad Campaign</h4>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="business" placeholder="Business name"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Email address" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="regions"
-                                                placeholder="Target US Regions" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="budget"
-                                                placeholder="Monthly Budget" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="5"
-                                                cols="25" placeholder="What are your goals?"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
-                                            Start My US Social Ad Campaign
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p>Tell us about your goals and we’ll help you find the right next step.</p><a class="btn secondary-solid-btn" href="contact-us.php#contact-form">Discuss your project <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a>
                         </div>
 
                 </div>
@@ -433,10 +290,17 @@
                 </div>
                 <!--clients logo end-->
             </div>
-            </div>
-            </div>
         </section>
         <!--services details end-->
+<section class="od-proof-section service-proof-band" aria-label="Agency at a glance"><div class="container"><div class="od-stat-grid" role="list"><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">$10M+ Ad Spend Managed</strong><span class="od-proof-label"></span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#heart-handshake" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">300%</strong><span class="od-proof-label">Avg. ROI</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Active Campaigns</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#award" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">50+</strong><span class="od-proof-label">US Brands</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">4.9/5</strong><span class="od-proof-label">Reviews</span></div></div></div></section>
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="social-media-advertising-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question">Do you support both small and large US budgets?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes. Campaigns are always sized to market opportunity. Most successful US companies invest $1,000+/month for enough data to optimize, but we deliver value at every scale.</p></div></details>
+<details class="od-faq-item" name="social-media-advertising-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question">Who owns the ad accounts and data?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>You do. We work transparently inside US client ad accounts with full access.</p></div></details>
+<details class="od-faq-item" name="social-media-advertising-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question">How fast does my campaign launch?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>US ad sets can be live within 2 weeks after kickoff, faster for urgent pushes.</p></div></details>
+<details class="od-faq-item" name="social-media-advertising-faq"><summary><span class="od-faq-number">04</span><span class="od-faq-question">Do you work with US eCommerce, local service, and B2B?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes—our campaigns are tailored. From D2C eCommerce and national franchises to SaaS and financial services.</p></div></details></div></div></section>
+<section class="service-review-band"><div class="container service-review-layout"><div><span class="premium-eyebrow">Client perspective</span><h2>What our clients say</h2></div><blockquote class="service-review-quote">
+                                            "Ocean DigiTech cut our cost per lead in half while tripling our monthly conversions. Their Facebook and Instagram campaigns are generating real revenue."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— CEO, eCommerce Brand</footer>
+                                        </blockquote></div></section>
 
         <!--call to action section start-->
         <section class="call-to-action py-5 mt-5 gray-light-bg">
@@ -466,8 +330,8 @@
     <!--footer section end-->
 
       <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+      <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->    <!--bottom to top button end-->
 

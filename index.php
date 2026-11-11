@@ -70,10 +70,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -86,6 +83,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists("css/responsive.css") ? filemtime("css/responsive.css") : "2.1"; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -139,81 +139,32 @@
     
   </style>
   
-<script>
-    function sendProposal() {
-      const nameInput = document.getElementById('businessName');
-      const name = nameInput.value.trim();
-      if(!name) { alert('Please enter your Business Name.'); return; }
 
-      fetch('send_proposal_simple.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'businessName=' + encodeURIComponent(name)
-      })
-      .then(res => res.text())
-      .then(res => {
-        if(res.trim() === 'OK'){
-          alert('Proposal request sent to email.');
-          // Clear field after successful submit
-          nameInput.value = '';
-        } else {
-          alert('Error sending proposal.');
-          // Optional: keep text for user to retry
-        }
-      })
-      .catch(() => alert('Network error.'));
-    }
-  </script>
  
      <!--body content wrap start-->
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-modern-wrap" style="background: linear-gradient(135deg, #0b0f19 0%, #171e31 50%, #1e1035 100%); color: #ffffff; padding-top: 130px; padding-bottom: 60px;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="hero-slider-content text-white">
-                            <div class="hero-pill-badge">
-                                <span class="fas fa-sparkles"></span> AI-POWERED DIGITAL TRANSFORMATION
-                            </div>
-                            <h1 class="hero-heading-title">
-                                Scalable Software Engineering & <span class="hero-gradient-text">Modern Digital Growth</span>
-                            </h1>
-                            <p class="hero-lead-desc">
-                                We engineer high-performing web apps, custom software platforms, and data-driven digital growth strategies for B2B enterprises and ambitious startups.
-                            </p>
-
-                            <div class="action-btns mt-4">
-                                <div class="quick-proposal-wrap">
-                                    <div class="quick-proposal">
-                                        <div class="input-with-icon">
-                                            <input type="text" id="businessName" placeholder="Enter your business domain or email" required class="hero-input-field" style="padding-left: 20px !important;" />
-                                        </div>
-                                        <button type="button" onclick="sendProposal()" class="btn-primary-od">
-                                            <span>Get Free Proposal</span>
-                                            <span class="fas fa-arrow-right ml-1"></span>
-                                        </button>
-                                    </div>
-                                    <div class="hero-micro-trust mt-3">
-                                        <span><i class="fas fa-bolt text-warning mr-1"></i> Free 48-Hour Growth Audit</span>
-                                        <span class="mx-2" style="opacity: 0.5;">&bull;</span>
-                                        <span><i class="fas fa-shield-alt text-success mr-1"></i> 100% Confidential</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                        <div class="hero-visual-card-glow">
-                            <div class="hero-visual-card">
-                                <img src="img/hero-tech-isometric.jpg" class="hero-visual-img" alt="Scalable Software Engineering & Modern Digital Growth" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="premium-home-hero" aria-labelledby="home-title">
+ <div class="container">
+  <div class="premium-hero-grid">
+   <div class="premium-hero-copy">
+    <span class="premium-eyebrow"><span aria-hidden="true"></span> Digital craft. Business clarity.</span>
+    <h1 id="home-title">Digital experiences.<br>Built for <em>what’s next.</em></h1>
+    <p>We bring thoughtful design, dependable engineering, and digital growth together. One connected team for your next chapter.</p>
+    <div class="premium-hero-actions"><a href="contact-us.php" class="premium-button">Start a conversation <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a><a href="project.php" class="premium-text-link">Explore our work <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a></div>
+    <div class="premium-hero-note"><svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#sparkles" width="100%" height="100%"></use></svg> From the first idea to the details that make it work.</div>
+   </div>
+   <div class="premium-hero-art">
+    <div class="premium-photo-frame technology-video-frame"><video class="hero-technology-video" muted loop playsinline preload="metadata" poster="img/editorial/code.jpg" aria-label="Software development: code on a computer screen"><source src="videos/technology-coding.mp4" type="video/mp4"></video><button class="hero-video-toggle" type="button" aria-label="Play technology video" aria-pressed="false">Play video</button></div>
+    <div class="premium-art-card"><span class="premium-art-symbol" aria-hidden="true"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#sparkles" width="100%" height="100%"></use></svg></span><div class="premium-art-copy"><span>Thoughtful by design.</span><strong>Purposeful by nature.</strong></div></div>
+    <span class="premium-vertical-note" aria-hidden="true">Ideas, made meaningful.</span>
+   </div>
+  </div>
+  <div class="premium-discipline-bar"><span>Your ambition. Our collective expertise.</span><ul aria-label="Our disciplines"><li>Strategy</li><li>Design</li><li>Engineering</li><li>Growth</li></ul></div>
+ </div>
+</section>
+<section class="premium-proposal-band" aria-labelledby="proposal-band-title"><div class="container"><div><span class="premium-eyebrow">A good place to start</span><h2 id="proposal-band-title">What’s your next big idea?</h2></div><form class="premium-proposal-form" action="send_proposal_simple.php" method="post" data-async-form="quick-proposal"><label class="sr-only" for="businessName">Your business website or email</label><input type="text" id="businessName" name="businessName" maxlength="250" autocomplete="email" placeholder="Your business website or email" required><button type="submit">Get a free proposal <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></button><p class="form-feedback" role="status" aria-live="polite" tabindex="-1"></p></form></div></section>
         <!--hero section end-->
 
         <!--trust bar section start-->
@@ -241,91 +192,7 @@
         <!--trust bar section end-->
 
         <!--about us / boutique expertise section start-->
-        <section class="boutique-section">
-            <div class="boutique-bg-glow"></div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                        <div class="boutique-image-glow-wrap">
-                            <div class="boutique-image-card">
-                                <img src="img/boutique-global-engine.jpg" alt="Global Digital Engine - Ocean Digitech" class="img-fluid boutique-img" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="pl-lg-4">
-                            <span class="badge badge-pill px-3 py-2 text-uppercase font-weight-bold mb-2" style="background: rgba(232, 5, 102, 0.1); color: #e80566; letter-spacing: 1px; font-size: 11px;">Why Ocean DigiTech</span>
-                            <h2 style="font-weight: 800; font-size: 2.15rem; color: #0b132b; line-height: 1.25; margin-bottom: 12px;">
-                                Boutique Expertise,<br>
-                                <span style="background: linear-gradient(135deg, #00d2ff 0%, #0066ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Global Results.</span>
-                            </h2>
-                            <p style="font-size: 14.5px; color: #475569; line-height: 1.6; margin-bottom: 16px;">
-                                Ocean DigiTech blends creative strategy and technical mastery to deliver measurable business results. Our cross-functional teams collaborate, innovate, and empower your digital journey with speed and precision.
-                            </p>
-
-                            <!-- Interactive Pillar Cards -->
-                            <div class="boutique-pillar-card">
-                                <div class="boutique-pillar-icon">
-                                    <span class="ti-light-bulb"></span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Guided by Creativity. Propelled by Data.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">Every product and campaign is backed by user analytics and rigorous conversion data.</p>
-                                </div>
-                            </div>
-
-                            <div class="boutique-pillar-card">
-                                <div class="boutique-pillar-icon">
-                                    <span class="ti-bolt"></span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Masters in Craft. Obsessed With Outcomes.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">From pixel-perfect UI to scalable microservices, our engineering delivers high-ROI results.</p>
-                                </div>
-                            </div>
-
-                            <div class="boutique-pillar-card">
-                                <div class="boutique-pillar-icon">
-                                    <span class="ti-medall"></span>
-                                </div>
-                                <div>
-                                    <h6 class="mb-1" style="font-weight: 700; color: #0b132b; font-size: 14px;">Trusted by Fortune 500s & Bold Startups.</h6>
-                                    <p class="mb-0 text-muted" style="font-size: 12.5px; line-height: 1.45;">Flexible engagement models built for ambitious brands wanting rapid digital transformation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Animated Stat Counters -->
-                            <div class="row mt-3 pt-1">
-                                <div class="col-4">
-                                    <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">350+</div>
-                                        <div class="boutique-stat-label">Projects</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">500+</div>
-                                        <div class="boutique-stat-label">Clients</div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="boutique-stat-card">
-                                        <div class="boutique-stat-number">18+</div>
-                                        <div class="boutique-stat-label">Countries</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center mt-3 pt-1">
-                                <a href="contact-us" class="btn secondary-solid-btn mr-3" style="padding: 11px 24px; border-radius: 8px; font-weight: 600; font-size: 14px;">Start Your Project</a>
-                                <a href="project" class="btn secondary-outline-btn" style="padding: 11px 24px; border-radius: 8px; font-weight: 600; font-size: 14px;">Explore Portfolio</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="why-section" aria-labelledby="why-title"><div class="container"><div class="why-intro"><div><span class="premium-eyebrow">Why Ocean DigiTech</span><h2 id="why-title">Boutique expertise.<br><em>A broader perspective.</em></h2></div><p>Strategy, design, engineering, and growth in one connected team. We stay close to your goals and thoughtful about every detail.</p></div><div class="why-grid"><div class="why-visual"><img loading="lazy" src="img/editorial/collaboration.jpg" alt="Our team collaborating around a table" width="700" height="700"><div class="why-photo-caption"><span>Connected by ideas.</span><strong>Working toward your next chapter.</strong></div></div><div class="why-features"><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg></span><h3>Creative thinking.</h3><p>Thoughtful design shaped by real user needs and clear business goals.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#code-xml" width="100%" height="100%"></use></svg></span><h3>Built with care.</h3><p>Clear interfaces and reliable applications, with attention to the details that matter.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users-round" width="100%" height="100%"></use></svg></span><h3>A team around you.</h3><p>Flexible collaboration, clear milestones, and a shared focus on your next step.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#messages-square" width="100%" height="100%"></use></svg></span><h3>Language is not a barrier.</h3><p>Visual walkthroughs and clear written summaries keep everyone aligned.</p></article></div></div><div class="why-bottom"><dl class="why-stats"><div><dt>Projects</dt><dd>350+</dd></div><div><dt>Clients</dt><dd>500+</dd></div><div><dt>Countries</dt><dd>18+</dd></div></dl><div class="why-actions"><a class="btn secondary-solid-btn" href="contact-us.php">Start your project <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a><a class="btn secondary-outline-btn" href="project.php">Explore portfolio <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></div></div></div></section>
         <!--about us / boutique expertise section end-->
 
 
@@ -383,8 +250,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                         <div class="section-heading text-center mb-4">
-                            <span class="boutique-badge text-uppercase mb-2" style="letter-spacing: 1px;"><i class="ti-layers-alt mr-1"></i> Full-Spectrum Digital Solutions</span>
-                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Engineering High-Impact Digital Growth</h2>
+                            <span class="boutique-badge text-uppercase mb-2" style="letter-spacing: 1px;"><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#layers" width="100%" height="100%"></use></svg> Full-Spectrum Digital Solutions</span>
+                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Considered strategy. Exceptional execution.</h2>
                             <span class="animate-border mr-auto ml-auto mb-3"></span>
                             <p class="lead text-muted" style="font-size: 16px; max-width: 680px; margin: 0 auto;">
                                 From bespoke software architecture and high-converting e-commerce to revenue-driving SEO and programmatic ad campaigns, we turn complex digital challenges into scalable enterprise success.
@@ -428,14 +295,14 @@
 
             <div class="container">
                 <!-- Services Single-Row Animated Carousel -->
-                <div class="owl-carousel owl-theme services-carousel modern-slider-single-row">
+                <div class="services-grid">
                     <!-- Service 1: Custom Software -->
                     <div class="item">
                         <div class="service-card-pro">
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-desktop"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#monitor" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">Full-Stack</span>
                                 </div>
@@ -445,9 +312,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-bolt"></i> 99.9% Uptime</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#zap" width="100%" height="100%"></use></svg> 99.9% Uptime</span>
                                 <a href="custom-website-development" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -459,7 +326,7 @@
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-search"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#search" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">Organic Growth</span>
                                 </div>
@@ -469,9 +336,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-arrow-up"></i> +140% Traffic Lift</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-up" width="100%" height="100%"></use></svg> +140% Traffic Lift</span>
                                 <a href="seo-services" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -483,7 +350,7 @@
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-palette"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#palette" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">UI / UX</span>
                                 </div>
@@ -493,9 +360,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-check"></i> Sub-Second Speed</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg> Sub-Second Speed</span>
                                 <a href="custom-website-design" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -507,7 +374,7 @@
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-shopping-cart"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#shopping-cart" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">E-Commerce</span>
                                 </div>
@@ -517,9 +384,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-stats-up"></i> 3.2x Conversion</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#trending-up" width="100%" height="100%"></use></svg> 3.2x Conversion</span>
                                 <a href="ecommerce-web-development" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -531,7 +398,7 @@
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-location-pin"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">Geo Authority</span>
                                 </div>
@@ -541,9 +408,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-target"></i> Top 3 Google Map</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#target" width="100%" height="100%"></use></svg> Top 3 Google Map</span>
                                 <a href="local-seo-services" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -555,7 +422,7 @@
                             <div>
                                 <div class="service-card-pro-header">
                                     <div class="service-card-pro-icon">
-                                        <span class="ti-bar-chart"></span>
+                                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg>
                                     </div>
                                     <span class="service-card-pro-tag">Paid Media</span>
                                 </div>
@@ -565,9 +432,9 @@
                                 </p>
                             </div>
                             <div class="service-card-pro-footer">
-                                <span class="service-metric-pill"><i class="ti-pie-chart"></i> 4.8x Avg ROAS</span>
+                                <span class="service-metric-pill"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-pie" width="100%" height="100%"></use></svg> 4.8x Avg ROAS</span>
                                 <a href="google-ads-management" class="service-pro-link">
-                                    Explore Service <span class="ti-arrow-right"></span>
+                                    Explore Service <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -584,7 +451,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 text-center">
                         <span class="growth-challenge-label mb-2">VALUE PROPOSITION</span>
-                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Solving Your Digital Growth Bottlenecks</h2>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">A clearer path to your next stage.</h2>
                         <span class="animate-border mr-auto ml-auto mb-3"></span>
                         <p class="lead text-muted" style="font-size: 16px;">
                             We transform common technical friction points and marketing inefficiencies into competitive growth advantages for your enterprise.
@@ -592,12 +459,12 @@
                     </div>
                 </div>
 
-                <div class="owl-carousel owl-theme bottlenecks-carousel modern-slider-single-row">
+                <div class="growth-grid">
                     <!-- Card 1 -->
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-layer-group"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#layers" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: OUTDATED TECH</span>
                             <h3 class="growth-card-title">Legacy Systems Holding You Back?</h3>
@@ -605,7 +472,7 @@
                                 Modernize your architecture with clean, scalable web apps and cloud-native backend infrastructure designed for performance.
                             </p>
                             <a href="custom-website-development.php" class="growth-card-link">
-                                Explore Custom Development <span class="fas fa-arrow-right"></span>
+                                Explore Custom Development <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -614,7 +481,7 @@
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-search-dollar"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#search-check" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: LOW TRAFFIC</span>
                             <h3 class="growth-card-title">Losing High-Intent Leads on Search?</h3>
@@ -622,7 +489,7 @@
                                 Capture market share with technical SEO audits, keyword targeting, and local search dominance engineered for ROI.
                             </p>
                             <a href="seo-services.php" class="growth-card-link">
-                                Explore SEO Solutions <span class="fas fa-arrow-right"></span>
+                                Explore SEO Solutions <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -631,7 +498,7 @@
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-cogs"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#settings-2" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: MANUAL PROCESSES</span>
                             <h3 class="growth-card-title">Manual Tasks Draining Resources?</h3>
@@ -639,7 +506,7 @@
                                 Automate internal workflows, customer touchpoints, and integrations with tailored AI-assisted software solutions.
                             </p>
                             <a href="custom-website-design.php" class="growth-card-link">
-                                Explore Workflow Automation <span class="fas fa-arrow-right"></span>
+                                Explore Workflow Automation <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -648,7 +515,7 @@
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-bullseye"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#target" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: AD WASTAGE</span>
                             <h3 class="growth-card-title">Paid Ads Not Delivering Target ROI?</h3>
@@ -656,7 +523,7 @@
                                 Eliminate ad spend waste with hyper-targeted Google Ads, Amazon PPC, and paid social campaigns backed by conversion tracking.
                             </p>
                             <a href="google-ads-management.php" class="growth-card-link">
-                                Explore PPC Management <span class="fas fa-arrow-right"></span>
+                                Explore PPC Management <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -665,7 +532,7 @@
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-shopping-cart"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#shopping-cart" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: ECOMMERCE DROP-OFF</span>
                             <h3 class="growth-card-title">Cart Abandonment &amp; Friction?</h3>
@@ -673,7 +540,7 @@
                                 Optimize storefront UX, checkout speed, and product discoverability to turn shoppers into repeat buyers.
                             </p>
                             <a href="ecommerce-web-development.php" class="growth-card-link">
-                                Explore E-Commerce Growth <span class="fas fa-arrow-right"></span>
+                                Explore E-Commerce Growth <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -682,7 +549,7 @@
                     <div class="item">
                         <div class="growth-card">
                             <div class="growth-card-icon">
-                                <span class="fas fa-chart-line"></span>
+                                <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg>
                             </div>
                             <span class="growth-challenge-label">CHALLENGE: ROADMAP UNCLEAR</span>
                             <h3 class="growth-card-title">Launching a Venture or Scaling?</h3>
@@ -690,7 +557,7 @@
                                 Partner with senior technology consultants to define product roadmaps, tech stacks, and scalable growth strategies.
                             </p>
                             <a href="contact-us.php" class="growth-card-link">
-                                Schedule Tech Consultation <span class="fas fa-arrow-right"></span>
+                                Schedule Tech Consultation <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                             </a>
                         </div>
                     </div>
@@ -867,31 +734,31 @@
         <!--                        data-tabs="tabs">-->
         <!--                        <li class="nav-item">-->
         <!--                            <a class="nav-link text-center" href="#feature-tab-1" data-toggle="tab">-->
-        <!--                                <span class="ti-announcement icon-sm"></span>-->
+        <!--                                <svg class="od-icon icon-sm" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#megaphone" width="100%" height="100%"></use></svg>-->
         <!--                                <h6 class="mb-0">Digital Marketing</h6>-->
         <!--                            </a>-->
         <!--                        </li>-->
         <!--                        <li class="nav-item">-->
         <!--                            <a class="nav-link text-center" href="#feature-tab-2" data-toggle="tab">-->
-        <!--                                <span class="ti-light-bulb icon-sm"></span>-->
+        <!--                                <svg class="od-icon icon-sm" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg>-->
         <!--                                <h6 class="mb-0">SEO Services</h6>-->
         <!--                            </a>-->
         <!--                        </li>-->
         <!--                        <li class="nav-item">-->
         <!--                            <a class="nav-link text-center active" href="#feature-tab-3" data-toggle="tab">-->
-        <!--                                <span class="ti-email icon-sm"></span>-->
+        <!--                                <svg class="od-icon icon-sm" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg>-->
         <!--                                <h6 class="mb-0">Email Marketing</h6>-->
         <!--                            </a>-->
         <!--                        </li>-->
         <!--                        <li class="nav-item">-->
         <!--                            <a class="nav-link text-center" href="#feature-tab-4" data-toggle="tab">-->
-        <!--                                <span class="ti-shield icon-sm"></span>-->
+        <!--                                <svg class="od-icon icon-sm" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#shield-check" width="100%" height="100%"></use></svg>-->
         <!--                                <h6 class="mb-0">Social Media</h6>-->
         <!--                            </a>-->
         <!--                        </li>-->
         <!--                        <li class="nav-item">-->
         <!--                            <a class="nav-link text-center" href="#feature-tab-5" data-toggle="tab">-->
-        <!--                                <span class="ti-vector icon-sm"></span>-->
+        <!--                                <svg class="od-icon icon-sm" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#pen-tool" width="100%" height="100%"></use></svg>-->
         <!--                                <h6 class="mb-0">Web Design</h6>-->
         <!--                            </a>-->
         <!--                        </li>-->
@@ -1056,7 +923,7 @@
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
         <!--                                    <div-->
         <!--                                        class="services-single p-5 my-md-3 my-lg-3 my-sm-0 white-bg shadow-sm rounded">-->
-        <!--                                        <span class="ti-announcement icon-lg color-primary d-block mb-4"></span>-->
+        <!--                                        <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#megaphone" width="100%" height="100%"></use></svg>-->
         <!--                                        <h5>Marketing Services</h5>-->
         <!--                                        <p class="mb-0">Progressively empower business "outside the box"-->
         <!--                                            thinking-->
@@ -1064,13 +931,13 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
         <!--                                    <div-->
         <!--                                        class="services-single p-5 my-md-3 my-lg-3 my-sm-0 white-bg shadow-sm rounded">-->
-        <!--                                        <span class="ti-light-bulb icon-lg color-primary d-block mb-4"></span>-->
+        <!--                                        <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg>-->
         <!--                                        <h5>Total SEO Services</h5>-->
         <!--                                        <p class="mb-0">Progressively empower business "outside the box"-->
         <!--                                            thinking-->
@@ -1078,7 +945,7 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
@@ -1093,13 +960,13 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
         <!--                                    <div-->
         <!--                                        class="services-single p-5 my-md-3 my-lg-3 my-sm-0 white-bg shadow-sm rounded">-->
-        <!--                                        <span class="ti-bell icon-lg color-primary d-block mb-4"></span>-->
+        <!--                                        <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#bell" width="100%" height="100%"></use></svg>-->
         <!--                                        <h5>Social Media Marketing</h5>-->
         <!--                                        <p class="mb-0">Progressively empower business "outside the box"-->
         <!--                                            thinking-->
@@ -1107,13 +974,13 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
         <!--                                    <div-->
         <!--                                        class="services-single p-5 my-md-3 my-lg-3 my-sm-0 white-bg shadow-sm rounded">-->
-        <!--                                        <span class="ti-briefcase icon-lg color-primary d-block mb-4"></span>-->
+        <!--                                        <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg>-->
         <!--                                        <h5>Corporate Business</h5>-->
         <!--                                        <p class="mb-0">Progressively empower business "outside the box"-->
         <!--                                            thinking-->
@@ -1121,13 +988,13 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                                <div class="col-lg-4 col-md-6 col-sm-6">-->
         <!--                                    <div-->
         <!--                                        class="services-single p-5 my-md-3 my-lg-3 my-sm-0 white-bg shadow-sm rounded">-->
-        <!--                                        <span class="ti-vector icon-lg color-primary d-block mb-4"></span>-->
+        <!--                                        <svg class="od-icon icon-lg color-primary d-block mb-4" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#pen-tool" width="100%" height="100%"></use></svg>-->
         <!--                                        <h5>Creative Consultancy</h5>-->
         <!--                                        <p class="mb-0">Progressively empower business "outside the box"-->
         <!--                                            thinking-->
@@ -1135,7 +1002,7 @@
         <!--                                            partnerships.</p>-->
         <!--                                        <a href="services-details.php" target="_blank"-->
         <!--                                            class="detail-link mt-4">Read-->
-        <!--                                            more <span class="ti-arrow-right"></span></a>-->
+        <!--                                            more <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>-->
         <!--                                    </div>-->
         <!--                                </div>-->
         <!--                            </div>-->
@@ -1148,79 +1015,7 @@
         <!--</section>-->
         <!--outstanding section end-->
 
-        <!--our portfolio section start-->
-        <section class="our-portfolio-section pb-100 pt-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-heading text-center mb-4">
-                            <span class="growth-challenge-label mb-2">FEATURED WORK</span>
-                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our Portfolio</h2>
-                            <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead text-muted" style="font-size: 16px;">
-                                Explore our curated showcase of custom web development, digital growth campaigns, and enterprise technology solutions built for performance.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="portfolio-grid-modern">
-                            <!-- Project 1 -->
-                            <div>
-                                <a href="project" class="portfolio-card-modern">
-                                    <div class="portfolio-img-container">
-                                        <img src="img/portfolios/3.jpg" alt="Enterprise SaaS Web App" />
-                                        <span class="portfolio-tag-badge">Web Application</span>
-                                    </div>
-                                    <div class="portfolio-card-body">
-                                        <h3 class="portfolio-card-title">Enterprise SaaS Web Platform</h3>
-                                        <p class="portfolio-card-category">Custom Software & Cloud Architecture</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Project 2 -->
-                            <div>
-                                <a href="project" class="portfolio-card-modern">
-                                    <div class="portfolio-img-container">
-                                        <img src="img/portfolios/2.jpg" alt="E-Commerce D2C Brand Store" />
-                                        <span class="portfolio-tag-badge">E-Commerce</span>
-                                    </div>
-                                    <div class="portfolio-card-body">
-                                        <h3 class="portfolio-card-title">Global D2C Storefront</h3>
-                                        <p class="portfolio-card-category">Full-stack E-Commerce & Checkout Optimization</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Project 3 -->
-                            <div>
-                                <a href="project" class="portfolio-card-modern">
-                                    <div class="portfolio-img-container">
-                                        <img src="img/portfolios/4.jpg" alt="Local Services SEO Campaign" />
-                                        <span class="portfolio-tag-badge">SEO & Marketing</span>
-                                    </div>
-                                    <div class="portfolio-card-body">
-                                        <h3 class="portfolio-card-title">Legal Services Organic Growth</h3>
-                                        <p class="portfolio-card-category">Technical SEO & Conversion Optimization</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Button to View Full Portfolio Page -->
-                        <div class="text-center mt-5">
-                            <a href="project" class="btn secondary-solid-btn px-4 py-3" style="border-radius: 8px; font-weight: 600; font-size: 15px;">
-                                View All Projects in Our Portfolio <span class="ti-arrow-right ml-2"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--our portfolio section end-->
+        <section class="showcase-section"><div class="container"><div class="showcase-heading"><small>Featured creative designs</small><h2>Digital experiences, thoughtfully crafted.</h2><p>Explore website design concepts across technology, retail, professional services, and more.</p></div><div class="showcase-grid"><a class="showcase-card" href="case-study.php?slug=saas-platform"><img loading="lazy" src="img/portfolios/concept-1.svg" alt="Enterprise SaaS Web Platform illustrative website design"><div><h3>Enterprise SaaS Web Platform</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=d2c-storefront"><img loading="lazy" src="img/portfolios/concept-2.svg" alt="Global D2C Storefront illustrative website design"><div><h3>Global D2C Storefront</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=legal-search"><img loading="lazy" src="img/portfolios/concept-3.svg" alt="Legal Services Organic Growth illustrative website design"><div><h3>Legal Services Organic Growth</h3><p>Explore the design &amp; approach →</p></div></a><a class="showcase-card" href="case-study.php?slug=healthcare-portal"><img loading="lazy" src="img/portfolios/concept-4.svg" alt="Healthcare & Telehealth Portal illustrative website design"><div><h3>Healthcare & Telehealth Portal</h3><p>Explore the design &amp; approach →</p></div></a></div><p class="concept-note">Illustrative portfolio concepts. These previews do not represent verified client work.</p><p class="text-center mt-4"><a class="btn secondary-solid-btn" href="case-studies.php">Explore case studies <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></p></div></section>
 
         <!--pricing with switch section start-->
        <!-- <section class="pricing-section ptb-100 gray-light-bg">
@@ -1329,7 +1124,7 @@
                     </div>
                     <div class="col-12">
                         <div class="support-cta text-center mt-5">
-                            <h5 class="mb-1"><span class="ti-headphone-alt color-primary mr-3"></span>We're Here to Help
+                            <h5 class="mb-1"><svg class="od-icon color-primary mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#headset" width="100%" height="100%"></use></svg>We're Here to Help
                                 You
                             </h5>
                             <p>Have some questions? <a href="#">Chat with us now</a>, or <a href="#">send us an
@@ -1370,7 +1165,7 @@
                                                 <h5 class="mb-0 text-white">John Charles</h5>
                                                 <span>BizBite</span>
                                             </div>
-                                            <span class="fas fa-quote-right icon-md text-white"></span>
+                                            <svg class="od-icon icon-md text-white" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                                         </div>
                                         <div class="client-say text-white">
                                             <p>Interactively optimize
@@ -1391,7 +1186,7 @@
                                                 <h5 class="mb-0 text-white">Arabella Ora</h5>
                                                 <span>BizBite</span>
                                             </div>
-                                            <span class="fas fa-quote-right icon-md text-white"></span>
+                                            <svg class="od-icon icon-md text-white" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                                         </div>
                                         <div class="client-say text-white">
                                             <p>Rapidiously develop user
@@ -1413,7 +1208,7 @@
                                                 <h5 class="mb-0 text-white">Jeremy Jere</h5>
                                                 <span>BizBite</span>
                                             </div>
-                                            <span class="fas fa-quote-right icon-md text-white"></span>
+                                            <svg class="od-icon icon-md text-white" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                                         </div>
                                         <div class="client-say text-white">
                                             <p>Objectively synthesize
@@ -1436,7 +1231,7 @@
                                                 <h5 class="mb-0 text-white">John Charles</h5>
                                                 <span>BizBite</span>
                                             </div>
-                                            <span class="fas fa-quote-right icon-md text-white"></span>
+                                            <svg class="od-icon icon-md text-white" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                                         </div>
                                         <div class="client-say text-white">
                                             <p>Enthusiastically innovate
@@ -1481,7 +1276,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">EatClub</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us improve lead quality within weeks."
@@ -1503,7 +1298,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">Juniper</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
@@ -1525,7 +1320,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">Padra</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
@@ -1547,7 +1342,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">Sightseeing Tours</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
@@ -1569,7 +1364,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">Blende Dental</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "Their healthcare digital strategy and patient journey optimization drove a noticeable increase in qualified appointment requests across our multi-location clinics."
@@ -1591,7 +1386,7 @@
                                     <div>
                                         <div class="testimonial-company-header">
                                             <span class="testimonial-company-badge">Pacific Legal</span>
-                                            <span class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
                                         </div>
                                         <p class="hp-testimonial-text">
                                             "Ocean DigiTech's team revamped our digital architecture and SEO structure. Our high-intent legal inquiries grew by 85% within four months."
@@ -1620,7 +1415,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 text-center mb-5">
                         <span class="growth-challenge-label mb-2">EXPERIENCED LEADERSHIP</span>
-                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Awesome Team Members</h2>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Good people. Shared ambition.</h2>
                         <span class="animate-border mr-auto ml-auto mb-4"></span>
                         <p class="lead text-muted" style="font-size: 16px;">
                             Meet the digital architects, designers, and growth strategists driving innovative enterprise digital transformations.
@@ -1628,6 +1423,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <?php include __DIR__ . '/leadership-card.php'; ?>
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <div class="team-card-modern">
                             <div class="team-img-modern-wrap">
@@ -1687,7 +1483,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 text-center">
                         <span class="growth-challenge-label mb-2">INSIGHTS & STRATEGY</span>
-                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our Latest Blog</h2>
+                        <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Ideas worth your time.</h2>
                         <span class="animate-border mr-auto ml-auto mb-4"></span>
                         <p class="lead text-muted" style="font-size: 16px;">
                             Stay updated with expert perspectives on AI-driven software architecture, technical SEO, digital marketing strategies, and B2B growth.
@@ -1698,22 +1494,22 @@
                     <div class="col-md-4 mb-4 mb-md-0">
                         <div class="blog-card-modern">
                             <div class="blog-card-img-wrap">
-                                <img src="img/blog/1.jpg" alt="AI in Modern Web Architecture">
+                                <img src="img/editorial/code.jpg" alt="AI in Modern Web Architecture">
                                 <span class="portfolio-tag-badge">Web Architecture</span>
                             </div>
                             <div class="blog-card-content">
                                 <div class="blog-card-meta">
-                                    <span><i class="far fa-calendar-alt mr-1"></i> October 2026</span>
-                                    <span><i class="far fa-clock mr-1"></i> 5 min read</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#calendar-days" width="100%" height="100%"></use></svg> October 2026</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg> 5 min read</span>
                                 </div>
                                 <h3 class="blog-card-title">
-                                    <a href="blog.php">Building Resilient & Scalable Web Architectures for B2B Growth</a>
+                                    <a href="blog-details.php?slug=scalable-web-architecture">Building Resilient & Scalable Web Architectures for B2B Growth</a>
                                 </h3>
                                 <p class="blog-card-excerpt">
                                     Discover how modern decoupled systems, clean API integration, and cloud-native backends drive speed and security.
                                 </p>
-                                <a href="blog.php" class="growth-card-link">
-                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                <a href="blog-details.php?slug=scalable-web-architecture" class="growth-card-link">
+                                    Read Full Article <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -1721,22 +1517,22 @@
                     <div class="col-md-4 mb-4 mb-md-0">
                         <div class="blog-card-modern">
                             <div class="blog-card-img-wrap">
-                                <img src="img/blog/2.jpg" alt="Technical SEO Strategies">
+                                <img src="img/editorial/analytics.jpg" alt="Technical SEO Strategies">
                                 <span class="portfolio-tag-badge">SEO & Growth</span>
                             </div>
                             <div class="blog-card-content">
                                 <div class="blog-card-meta">
-                                    <span><i class="far fa-calendar-alt mr-1"></i> September 2026</span>
-                                    <span><i class="far fa-clock mr-1"></i> 7 min read</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#calendar-days" width="100%" height="100%"></use></svg> September 2026</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg> 7 min read</span>
                                 </div>
                                 <h3 class="blog-card-title">
-                                    <a href="blog.php">Technical SEO Checklist to Maximize Organic Lead Generation</a>
+                                    <a href="blog-details.php?slug=technical-seo-checklist">Technical SEO Checklist to Maximize Organic Lead Generation</a>
                                 </h3>
                                 <p class="blog-card-excerpt">
                                     Learn key audit parameters, structured data strategies, and site speed optimizations that convert search traffic into real pipeline.
                                 </p>
-                                <a href="blog.php" class="growth-card-link">
-                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                <a href="blog-details.php?slug=technical-seo-checklist" class="growth-card-link">
+                                    Read Full Article <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -1744,22 +1540,22 @@
                     <div class="col-md-4">
                         <div class="blog-card-modern">
                             <div class="blog-card-img-wrap">
-                                <img src="img/blog/3.jpg" alt="Paid Ads ROI">
+                                <img src="img/editorial/workspace.jpg" alt="Paid Ads ROI">
                                 <span class="portfolio-tag-badge">Paid Media</span>
                             </div>
                             <div class="blog-card-content">
                                 <div class="blog-card-meta">
-                                    <span><i class="far fa-calendar-alt mr-1"></i> September 2026</span>
-                                    <span><i class="far fa-clock mr-1"></i> 4 min read</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#calendar-days" width="100%" height="100%"></use></svg> September 2026</span>
+                                    <span><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg> 4 min read</span>
                                 </div>
                                 <h3 class="blog-card-title">
-                                    <a href="blog.php">Eliminating Ad Spend Waste in Google & Amazon PPC Campaigns</a>
+                                    <a href="blog-details.php?slug=reduce-ppc-waste">Eliminating Ad Spend Waste in Google & Amazon PPC Campaigns</a>
                                 </h3>
                                 <p class="blog-card-excerpt">
                                     Actionable tactics to optimize bidding algorithms, negative keywords, and landing page funnels for maximum ROAS.
                                 </p>
-                                <a href="blog.php" class="growth-card-link">
-                                    Read Full Article <span class="fas fa-arrow-right"></span>
+                                <a href="blog-details.php?slug=reduce-ppc-waste" class="growth-card-link">
+                                    Read Full Article <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -1822,6 +1618,7 @@
     <script src="js/jquery.easy-pie-chart.js"></script>
     <!--custom js-->
     <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
+<script src="js/hero-video.js?v=1" defer></script>
 </body>
 
 </html>

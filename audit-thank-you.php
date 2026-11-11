@@ -43,7 +43,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
@@ -385,6 +384,9 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -394,7 +396,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="success-icon">
-                    <i class="fas fa-check"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                 </div>
 
                 <h1 class="thank-you-title">Thank You! 🎉</h1>
@@ -409,11 +411,11 @@
 
                     <h3 style="margin-top: 25px;">Your Audit Will Include:</h3>
                     <ul class="checklist">
-                        <li><i class="fas fa-check-circle"></i> Website Performance Analysis</li>
-                        <li><i class="fas fa-check-circle"></i> SEO & Marketing Opportunities</li>
-                        <li><i class="fas fa-check-circle"></i> Technology Stack Review</li>
-                        <li><i class="fas fa-check-circle"></i> Competitive Benchmarking</li>
-                        <li><i class="fas fa-check-circle"></i> Actionable Growth Recommendations</li>
+                        <li><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg> Website Performance Analysis</li>
+                        <li><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg> SEO & Marketing Opportunities</li>
+                        <li><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg> Technology Stack Review</li>
+                        <li><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg> Competitive Benchmarking</li>
+                        <li><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg> Actionable Growth Recommendations</li>
                     </ul>
                 </div>
             </div>
@@ -440,9 +442,9 @@
 
                 <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f0f9ff; border-radius: 10px;">
                     <p style="font-size: 14px; color: #666; margin: 0;">
-                        <i class="fas fa-clock"></i> <strong>Available Time Zones:</strong> EST & PST<br>
-                        <i class="fas fa-video"></i> Virtual consultation via Zoom or Google Meet<br>
-                        <i class="fas fa-gift"></i> 100% Free — No obligation
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg> <strong>Available Time Zones:</strong> EST & PST<br>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#video" width="100%" height="100%"></use></svg> Virtual consultation via Zoom or Google Meet<br>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#gift" width="100%" height="100%"></use></svg> 100% Free — No obligation
                     </p>
                 </div>
             </div>
@@ -461,7 +463,7 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <div class="step-icon">
-                        <i class="fas fa-search"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#search" width="100%" height="100%"></use></svg>
                     </div>
                     <h3 class="step-title">We Analyze</h3>
                     <p class="step-description">
@@ -472,7 +474,7 @@
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <div class="step-icon">
-                        <i class="fas fa-file-alt"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#file-text" width="100%" height="100%"></use></svg>
                     </div>
                     <h3 class="step-title">You Receive Report</h3>
                     <p class="step-description">
@@ -483,7 +485,7 @@
                 <div class="step-card">
                     <div class="step-number">3</div>
                     <div class="step-icon">
-                        <i class="fas fa-rocket"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#rocket" width="100%" height="100%"></use></svg>
                     </div>
                     <h3 class="step-title">We Strategize</h3>
                     <p class="step-description">
@@ -506,17 +508,17 @@
                 <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://yoursite.com/free-audit-landing.php"
                    target="_blank"
                    class="social-btn linkedin">
-                    <i class="fab fa-linkedin-in"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faLinkedinIn" width="100%" height="100%"></use></svg>
                 </a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://yoursite.com/free-audit-landing.php"
                    target="_blank"
                    class="social-btn facebook">
-                    <i class="fab fa-facebook-f"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faFacebookF" width="100%" height="100%"></use></svg>
                 </a>
                 <a href="https://twitter.com/intent/tweet?url=https://yoursite.com/free-audit-landing.php&text=Get%20a%20FREE%20Digital%20Growth%20Audit"
                    target="_blank"
                    class="social-btn twitter">
-                    <i class="fab fa-twitter"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faTwitter" width="100%" height="100%"></use></svg>
                 </a>
             </div>
         </div>
@@ -533,16 +535,12 @@
             </div>
 
             <div style="margin: 30px 0;">
-                <div style="display: flex; justify-content: center; gap: 20px; font-size: 24px;">
-                    <a href="#" style="color: #667eea;"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="color: #1877f2;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="color: #e1306c;"><i class="fab fa-instagram"></i></a>
-                </div>
+                <a href="contact-us.php">Contact Ocean DigiTech <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
             </div>
 
             <div style="font-size: 14px; color: #999; margin-top: 20px;">
                 <p>© 2025 Ocean DigiTech | 530 Main St, Ste 3A, Chester, NJ 07930, United States</p>
-                <p>Phone: +1 (862) 285-5275 | Your Growth Partner in Digital Success</p>
+                <p>Phone: +44 7460 672819 | Your Growth Partner in Digital Success</p>
             </div>
         </div>
     </footer>

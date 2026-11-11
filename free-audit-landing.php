@@ -26,7 +26,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none"
+        <img alt="" aria-hidden="true" height="1" width="1" style="display:none"
              src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Meta Pixel Code -->
@@ -70,7 +70,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
 
@@ -663,6 +662,9 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -685,25 +687,25 @@
 
                 <button class="cta-button-primary" onclick="scrollToForm()">
                     <span>Start My Free Audit</span>
-                    <i class="fas fa-arrow-right"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                 </button>
 
                 <div class="trust-strip">
                     <div class="trust-items">
                         <div class="trust-item">
-                            <i class="fas fa-check-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span>Google Partner Certified</span>
                         </div>
                         <div class="trust-item">
-                            <i class="fas fa-check-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span>Meta Business Partner</span>
                         </div>
                         <div class="trust-item">
-                            <i class="fas fa-check-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span>97% Client Retention</span>
                         </div>
                         <div class="trust-item">
-                            <i class="fas fa-check-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span>100+ Campaigns Delivered</span>
                         </div>
                     </div>
@@ -722,52 +724,52 @@
 
             <div class="pain-columns">
                 <div class="pain-column fadeInUp">
-                    <h3><i class="fas fa-chart-line"></i> Marketing Challenges</h3>
+                    <h3><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg> Marketing Challenges</h3>
                     <ul class="pain-list">
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Wasted ad spend on poor-performing campaigns</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Traffic coming in, but no conversions</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>SEO visibility dropping month after month</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Weak online brand consistency</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Poor ROI on social media efforts</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="pain-column fadeInUp">
-                    <h3><i class="fas fa-code"></i> Development Challenges</h3>
+                    <h3><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#code-xml" width="100%" height="100%"></use></svg> Development Challenges</h3>
                     <ul class="pain-list">
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Slow or outdated website hurting performance</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Mobile experience not converting</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Inefficient tech stack limiting scalability</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Missing automation or integration opportunities</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Security vulnerabilities exposing your business</span>
                         </li>
                     </ul>
@@ -832,7 +834,7 @@
             <div class="value-grid">
                 <div class="value-item fadeInUp">
                     <div class="value-icon">
-                        <i class="fas fa-bullseye"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#target" width="100%" height="100%"></use></svg>
                     </div>
                     <div class="value-text">
                         Tailored for your business — not generic templates
@@ -841,7 +843,7 @@
 
                 <div class="value-item fadeInUp">
                     <div class="value-icon">
-                        <i class="fas fa-users-cog"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#users-round" width="100%" height="100%"></use></svg>
                     </div>
                     <div class="value-text">
                         Covers both marketing and technology performance
@@ -850,7 +852,7 @@
 
                 <div class="value-item fadeInUp">
                     <div class="value-icon">
-                        <i class="fas fa-chart-bar"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-column" width="100%" height="100%"></use></svg>
                     </div>
                     <div class="value-text">
                         Benchmark your current strategy vs. competitors
@@ -859,7 +861,7 @@
 
                 <div class="value-item fadeInUp">
                     <div class="value-icon">
-                        <i class="fas fa-rocket"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#rocket" width="100%" height="100%"></use></svg>
                     </div>
                     <div class="value-text">
                         Delivered fast — 100% free, no strings attached
@@ -885,7 +887,7 @@
 
             <div class="testimonials-grid">
                 <div class="testimonial-card fadeInUp">
-                    <i class="fas fa-quote-right quote-icon"></i>
+                    <svg class="od-icon quote-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                     <p class="testimonial-text">
                         "Ocean DigiTech helped us cut our Google Ads cost-per-lead by <span class="stats-highlight">38%</span> while tripling conversions in just 60 days."
                     </p>
@@ -894,7 +896,7 @@
                 </div>
 
                 <div class="testimonial-card fadeInUp">
-                    <i class="fas fa-quote-right quote-icon"></i>
+                    <svg class="od-icon quote-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                     <p class="testimonial-text">
                         "Our new Shopify store, designed by Ocean DigiTech, increased online sales by <span class="stats-highlight">52%</span> within 90 days."
                     </p>
@@ -903,7 +905,7 @@
                 </div>
 
                 <div class="testimonial-card fadeInUp">
-                    <i class="fas fa-quote-right quote-icon"></i>
+                    <svg class="od-icon quote-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#quote" width="100%" height="100%"></use></svg>
                     <p class="testimonial-text">
                         "After their site optimization and SEO overhaul, our inbound leads grew <span class="stats-highlight">214%</span>."
                     </p>
@@ -913,11 +915,11 @@
             </div>
 
             <div class="client-logos">
-                <div class="client-logo"><i class="fab fa-shopify"></i></div>
-                <div class="client-logo"><i class="fab fa-hubspot"></i></div>
-                <div class="client-logo"><i class="fab fa-amazon"></i></div>
-                <div class="client-logo"><i class="fab fa-meta"></i></div>
-                <div class="client-logo"><i class="fab fa-google"></i></div>
+                <div class="client-logo"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faShopify" width="100%" height="100%"></use></svg></div>
+                <div class="client-logo"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faHubspot" width="100%" height="100%"></use></svg></div>
+                <div class="client-logo"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faAmazon" width="100%" height="100%"></use></svg></div>
+                <div class="client-logo"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faMeta" width="100%" height="100%"></use></svg></div>
+                <div class="client-logo"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#brand-faGoogle" width="100%" height="100%"></use></svg></div>
             </div>
         </div>
     </section>
@@ -1011,7 +1013,7 @@
                     </div>
 
                     <button type="submit" class="submit-button">
-                        <i class="fas fa-envelope"></i> Email Me My Free Audit
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> Email Me My Free Audit
                     </button>
 
                     <p class="privacy-notice">
@@ -1037,18 +1039,14 @@
                 <div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0;">
                     <img src="https://via.placeholder.com/100x40/667eea/ffffff?text=Google+Partner" alt="Google Partner" style="height: 40px; opacity: 0.8;">
                     <img src="https://via.placeholder.com/100x40/1877f2/ffffff?text=Meta+Partner" alt="Meta Partner" style="height: 40px; opacity: 0.8;">
-                    <i class="fas fa-lock" style="font-size: 32px; opacity: 0.6;"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="font-size: 32px; opacity: 0.6;"><use href="img/icons.svg?v=d285f5150a7c#lock-keyhole" width="100%" height="100%"></use></svg>
                 </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0; font-size: 24px;">
-                    <a href="#" style="color: #667eea;"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="color: #1877f2;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="color: #e1306c;"><i class="fab fa-instagram"></i></a>
-                </div>
+                <p><a href="contact-us.php">Contact Ocean DigiTech <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></p>
 
                 <div style="font-size: 14px; color: #999; margin-top: 20px;">
                     <p>© 2025 Ocean DigiTech | 530 Main St, Ste 3A, Chester, NJ 07930, United States</p>
-                    <p>📍 Virtual Consultations via Calendly (EST & PST Time Slots Available) | 📞 +1 (862) 285-5275</p>
+                    <p>📍 Virtual Consultations via Calendly (EST & PST Time Slots Available) | 📞 +44 7460 672819</p>
                 </div>
             </div>
         </div>
@@ -1057,13 +1055,14 @@
     <!-- Sticky CTA for Mobile -->
     <div class="sticky-cta">
         <button onclick="scrollToForm()">
-            <i class="fas fa-rocket"></i> Get My Free Audit Now
+            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#rocket" width="100%" height="100%"></use></svg> Get My Free Audit Now
         </button>
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script>
         // Smooth scroll to form

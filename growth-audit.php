@@ -26,7 +26,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none"
+        <img alt="" aria-hidden="true" height="1" width="1" style="display:none"
              src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Meta Pixel Code -->
@@ -70,7 +70,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
 
@@ -764,6 +763,9 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -785,7 +787,7 @@
 
                 <button class="cta-button-primary" onclick="scrollToForm()">
                     <span>Schedule a Free Strategy Call</span>
-                    <i class="fas fa-arrow-right"></i>
+                    <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg>
                 </button>
             </div>
         </div>
@@ -820,44 +822,44 @@
 
             <div class="pain-columns">
                 <div class="pain-column fadeInUp">
-                    <h3><i class="fas fa-chart-line"></i> Marketing Gaps:</h3>
+                    <h3><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chart-no-axes-combined" width="100%" height="100%"></use></svg> Marketing Gaps:</h3>
                     <ul class="pain-list">
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Ads running but leads don't convert</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>No clarity on what's actually working</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Poor attribution & tracking</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>SEO traffic declining or stagnating</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="pain-column fadeInUp">
-                    <h3><i class="fas fa-code"></i> Tech / System Gaps:</h3>
+                    <h3><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#code-xml" width="100%" height="100%"></use></svg> Tech / System Gaps:</h3>
                     <ul class="pain-list">
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Website not built to convert</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Slow or broken mobile experience</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>No automation between tools</span>
                         </li>
                         <li>
-                            <i class="fas fa-times-circle"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-x" width="100%" height="100%"></use></svg>
                             <span>Growth limited by poor tech foundations</span>
                         </li>
                     </ul>
@@ -929,11 +931,11 @@
                 <!-- Slider Navigation -->
                 <div class="slider-nav">
                     <button class="slider-btn" id="prevBtn" onclick="slideBrands(-1)">
-                        <i class="fas fa-chevron-left"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-left" width="100%" height="100%"></use></svg>
                     </button>
                     <div class="slider-dots" id="sliderDots"></div>
                     <button class="slider-btn" id="nextBtn" onclick="slideBrands(1)">
-                        <i class="fas fa-chevron-right"></i>
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-right" width="100%" height="100%"></use></svg>
                     </button>
                 </div>
             </div>
@@ -943,15 +945,15 @@
                 <div style="max-width: 1200px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px 40px; border-radius: 15px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap;">
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
-                            <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span style="font-size: 16px; font-weight: 600; line-height: 24px;">50+ Audits Completed</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
-                            <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span style="font-size: 16px; font-weight: 600; line-height: 24px;">Avg 30–40% Improvement Opportunities Identified</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px; color: white;">
-                            <i class="fas fa-check-circle" style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="font-size: 20px; color: #fbbf24; flex-shrink: 0;"><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                             <span style="font-size: 16px; font-weight: 600; line-height: 24px;">Google & Meta Partner Certified</span>
                         </div>
                     </div>
@@ -1011,7 +1013,7 @@
                 <div class="value-grid" style="grid-template-columns: 1fr;">
                     <div class="value-item fadeInUp" style="padding: 20px 10px; border-bottom: 1px solid #eee;">
                         <div class="value-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-                            <i class="fas fa-check"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                         </div>
                         <div class="value-text">
                             Clear view of what's working vs what's leaking money
@@ -1020,7 +1022,7 @@
 
                     <div class="value-item fadeInUp" style="padding: 20px 10px; border-bottom: 1px solid #eee;">
                         <div class="value-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-                            <i class="fas fa-check"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                         </div>
                         <div class="value-text">
                             Actionable recommendations (not theory)
@@ -1029,7 +1031,7 @@
 
                     <div class="value-item fadeInUp" style="padding: 20px 10px; border-bottom: 1px solid #eee;">
                         <div class="value-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-                            <i class="fas fa-check"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                         </div>
                         <div class="value-text">
                             Benchmarked insights vs competitors
@@ -1038,7 +1040,7 @@
 
                     <div class="value-item fadeInUp" style="padding: 20px 10px; border-bottom: 1px solid #eee;">
                         <div class="value-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-                            <i class="fas fa-check"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                         </div>
                         <div class="value-text">
                             Clarity on where to invest next
@@ -1047,7 +1049,7 @@
 
                     <div class="value-item fadeInUp" style="padding: 20px 10px;">
                         <div class="value-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-                            <i class="fas fa-check"></i>
+                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>
                         </div>
                         <div class="value-text">
                             No obligation, no pushy sales
@@ -1302,15 +1304,11 @@
                     </div>
                 </div>
 
-                <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0; font-size: 24px;">
-                    <a href="#" style="color: #667eea;"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" style="color: #1877f2;"><i class="fab fa-facebook"></i></a>
-                    <a href="#" style="color: #e1306c;"><i class="fab fa-instagram"></i></a>
-                </div>
+                <p><a href="contact-us.php">Contact Ocean DigiTech <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></p>
 
                 <div style="font-size: 14px; color: #999; margin-top: 20px;">
                     <p>© 2026 Ocean DigiTech | 530 Main St, Ste 3A, Chester, NJ 07930, United States</p>
-                    <p>📍 <a href="https://calendly.com/oceandigitech/30min" target="_blank" style="color: #667eea; text-decoration: none;">Virtual Consultations via Calendly</a> (EST & PST Time Slots Available) | 📞 +1 (862) 285-5275</p>
+                    <p>📍 <a href="https://calendly.com/oceandigitech/30min" target="_blank" style="color: #667eea; text-decoration: none;">Virtual Consultations via Calendly</a> (EST & PST Time Slots Available) | 📞 +44 7460 672819</p>
                 </div>
             </div>
         </div>
@@ -1319,13 +1317,14 @@
     <!-- Sticky CTA for Mobile -->
     <div class="sticky-cta">
         <button onclick="scrollToForm()">
-            <i class="fas fa-rocket"></i> Get My Free Audit Now
+            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#rocket" width="100%" height="100%"></use></svg> Get My Free Audit Now
         </button>
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <script>
         // Smooth scroll to form

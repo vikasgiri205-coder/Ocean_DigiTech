@@ -2,17 +2,17 @@
 // send_proposal.php
 
 // Enable error reporting for development (disable in production)
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 error_reporting(E_ALL);
 
 // Helper: sanitize input
 function sanitize($val) {
-    if (is_array($val)) {
-        return array_map('sanitize', $val);
-    }
+    if (!is_string($val)) return '';
     return htmlspecialchars(trim($val), ENT_QUOTES, 'UTF-8');
 }
+
+header('Content-Type: application/json; charset=utf-8');
 
 // Only allow POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode(['status' => 'error', 'message' => 'Method not allowed']);
     exit;
 }
+
+header('Content-Type: application/json; charset=utf-8');
 
 // Gather inputs
 $name    = sanitize($_POST['name'] ?? '');
@@ -38,7 +40,9 @@ $errors = [];
 if (empty($name)) $errors[] = 'Name is required';
 if (empty($phone)) $errors[] = 'Phone is required';
 if (empty($email)) $errors[] = 'Email is required';
-if (empty($not_robot)) $errors[] = 'Please confirm you are not a robot';
+if (empty($not_robot)) $errors[] = 'Please confirm your details are correct';
+
+if (!is_array($services) || !array_filter($services, static function ($service) { return is_string($service) && trim($service) !== ''; })) $errors[] = 'Please select at least one service';
 
 // Optional: very basic email format check
 if ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -56,6 +60,7 @@ if (!empty($errors)) {
 $servicesList = [];
 if (is_array($services)) {
     foreach ($services as $s) {
+        if (!is_string($s)) continue;
         $s = trim($s);
         if ($s !== '') $servicesList[] = $s;
     }

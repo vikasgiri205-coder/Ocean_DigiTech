@@ -1,3 +1,8 @@
+<?php
+// Route legacy template URLs to the current complete experience.
+header('Location: services.php', true, 302);
+exit;
+?>
 <!doctype html>
 <html lang="en">
 
@@ -23,7 +28,7 @@
     <title>Digital Growth Services - Ocean DigiTech</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -34,12 +39,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -52,6 +52,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,25 +66,7 @@
     <div class="main">
 
         <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat top center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Services Details</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item"><a href="#">Pages</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Services Details</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Digital expertise, built around you.'; $heroDescription = 'Discover how we combine strategy, design, and technology to support your business goals.'; $heroCategory = 'Service overview'; $heroImage = 'img/editorial/code.jpg'; $heroImageAlt = 'A software development screen'; include __DIR__.'/inner-hero.php'; ?>
         <!--header section end-->
 
         <!--services details start-->
@@ -128,86 +113,33 @@
                                                 Competently the enhance equity invested data with performance based
                                                 niches:
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Foreclosure</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Foreclosure</strong>
                                                 consultant Human consulting
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Corporate</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Corporate</strong>
                                                 Immigration, Information
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>SEO</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>SEO</strong>
                                                 Optimization consultant</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Rapidiously</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Rapidiously</strong>
                                                 conceptualize communities</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Consultant</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Consultant</strong>
                                                 pharmacist Creative consultant
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Monotonectally</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Monotonectally</strong>
                                                 B2B core competencies
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Which license do I
-                                                need?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>Uniquely leverage other's distinctive infomediaries rather than
-                                                    leveraged supply chains. Continually seize distributed collaboration
-                                                    and idea-sharing whereas user.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0"><span class="ti-gallery mr-3"></span> How do I get access
-                                                to a theme?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Rapidiously incentivize virtual e-commerce and exceptional e-tailers.
-                                                    Progressively network focused catalysts for change without
-                                                    orthogonal benefits. Dramatically empower.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0"><span class="ti-wallet mr-3"></span> How do I see previous
-                                                orders?
-                                            </h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Proactively monetize long-term high-impact innovation and scalable
-                                                    relationships. Dynamically mesh principle-centered functionalities
-                                                    before next-generation best practices. Distinctively empower.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -219,14 +151,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">Financial Services Consulting</a></li>
-                                    <li><a href="#">Consumer Product Consulting</a></li>
-                                    <li><a href="#">Global Consumer insights</a></li>
-                                    <li><a href="#">Independent contractor</a></li>
-                                    <li><a href="#">Creative Idea Development</a></li>
-                                    <li><a href="#">Social Media Marketing</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -236,11 +161,11 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span> 123 Yellow House, Mn
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg> 123 Yellow House, Mn
                                         9007
                                     </li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> (+123) 456-789-012</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> youname@domail.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> (+123) 456-789-012</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> youname@domail.com</li>
                                 </ul>
                             </aside>
 
@@ -265,6 +190,20 @@
             </div>
         </section>
         <!--services details end-->
+
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="services-details-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question"><span class="ti-receipt mr-3"></span> Which license do I
+                                                need?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Uniquely leverage other's distinctive infomediaries rather than
+                                                    leveraged supply chains. Continually seize distributed collaboration
+                                                    and idea-sharing whereas user.</p></div></details>
+<details class="od-faq-item" name="services-details-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question"><span class="ti-gallery mr-3"></span> How do I get access
+                                                to a theme?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Rapidiously incentivize virtual e-commerce and exceptional e-tailers.
+                                                    Progressively network focused catalysts for change without
+                                                    orthogonal benefits. Dramatically empower.</p></div></details>
+<details class="od-faq-item" name="services-details-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question"><span class="ti-wallet mr-3"></span> How do I see previous
+                                                orders?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Proactively monetize long-term high-impact innovation and scalable
+                                                    relationships. Dynamically mesh principle-centered functionalities
+                                                    before next-generation best practices. Distinctively empower.</p></div></details></div></div></section>
+
 
         <!--call to action section start-->
         <section class="call-to-action py-5 gray-light-bg">

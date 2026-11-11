@@ -1,3 +1,8 @@
+<?php
+// Route legacy template URLs to the current complete experience.
+header('Location: case-studies.php', true, 302);
+exit;
+?>
 <!doctype html>
 <html lang="en">
 
@@ -23,7 +28,7 @@
     <title>Case Study Details - Ocean DigiTech | Enterprise Growth Solutions</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -34,12 +39,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -52,6 +52,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,25 +66,7 @@
     <div class="main">
 
         <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Project Details</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item"><a href="project.php">Our Portfolio</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Project Details</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Behind the digital experience.'; $heroDescription = 'Explore the design approach, key considerations, and details behind a digital project.'; $heroCategory = 'Project details'; $heroImage = 'img/editorial/code.jpg'; $heroImageAlt = 'A development workspace'; include __DIR__.'/inner-hero.php'; ?>
         <!--header section end-->
 
         <!--project details section start-->
@@ -97,21 +82,21 @@
                         <div class="project-details-sidebar">
                             <ul class="project-info-list">
                                 <li class="d-flex align-items-center mb-3 p-4 rounded">
-                                    <span class="ti-user icon-sm color-secondary d-block mr-3"></span>
+                                    <svg class="od-icon icon-sm color-secondary d-block mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#user-round" width="100%" height="100%"></use></svg>
                                     <div class="d-block">
                                         <h5 class="mb-0">Company Name</h5>
                                         <p>ThemeTags Company Limited</p>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center mb-3 p-4 rounded">
-                                    <span class="ti-time icon-sm color-secondary d-block mr-3"></span>
+                                    <svg class="od-icon icon-sm color-secondary d-block mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg>
                                     <div class="d-block">
                                         <h5 class="mb-0">Project Duration</h5>
                                         <p>20 March 2019 - 10 June 2019</p>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center mb-3 p-4 rounded">
-                                    <span class="ti-link icon-sm color-secondary d-block mr-3"></span>
+                                    <svg class="od-icon icon-sm color-secondary d-block mr-3" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#link" width="100%" height="100%"></use></svg>
                                     <div class="d-block">
                                         <h5 class="mb-0">Project Address</h5>
                                         <a href="#">www.themetagscompany.com</a>
@@ -148,19 +133,19 @@
                     <div class="col-md-6">
                         <div class="project-details-feature">
                             <ul class="list-unstyled tech-feature-list">
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Foreclosure</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Foreclosure</strong>
                                     consultant Human resource consulting
                                 </li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Corporate</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Corporate</strong>
                                     Immigration consultant, Information consulting
                                 </li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>SEO</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>SEO</strong>
                                     Optimization Creative consultant</li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Rapidiously</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Rapidiously</strong>
                                     conceptualize strategic before communities</li>
                             </ul>
                         </div>
@@ -168,19 +153,19 @@
                     <div class="col-md-6">
                         <div class="project-details-feature">
                             <ul class="list-unstyled tech-feature-list">
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Consultant</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Consultant</strong>
                                     pharmacist Creative consultant
                                 </li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Monotonectally</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Monotonectally</strong>
                                     customize B2B core competencies
                                 </li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Immigration</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Immigration</strong>
                                     consultant, Information consulting</li>
-                                <li class="py-1"><span
-                                        class="ti-check-box mr-2 color-secondary"></span><strong>Consultant</strong>
+                                <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                        ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Consultant</strong>
                                     pharmacist Creative consultant</li>
                             </ul>
                         </div>

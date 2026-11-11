@@ -32,10 +32,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--Owl carousel css-->
@@ -46,6 +43,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -57,24 +57,7 @@
     <div class="main">
 
         <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg') no-repeat top center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Our Expert Team</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Our Team</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Meet the people behind the ideas.'; $heroDescription = 'Designers, developers, and growth specialists working together to bring clarity, care, and momentum to your project.'; $heroCategory = 'Our team'; $heroImage = 'img/editorial/collaboration.jpg'; $heroImageAlt = 'A team collaborating in an office'; include __DIR__.'/inner-hero.php'; ?>
         <!--header section end-->
 
         <!--team section start-->
@@ -91,6 +74,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <?php include __DIR__ . '/leadership-card.php'; ?>
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="team-card-modern">
                             <div class="team-img-modern-wrap">
@@ -282,14 +266,14 @@
                             <h2>Partner with Ocean Digitech</h2>
                             <p class="lead">Accelerate your business with expert software engineering and digital transformation strategies.</p>
 
-                            <a href="contact-us.php" class="btn outline-btn align-items-center mb-4">Contact Our Offices <span class="ti-arrow-right pl-2"></span></a>
+                            <a href="contact-us.php" class="btn outline-btn align-items-center mb-4">Contact Our Offices <svg class="od-icon pl-2" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a>
 
                             <hr class="my-4">
 
                             <h5>Global Operations & Offices</h5>
                             <p class="mb-2"><strong>India Headquarters:</strong> Noida, Uttar Pradesh, India</p>
                             <p class="mb-2"><strong>USA Contact:</strong> Delaware, USA</p>
-                            <p class="mb-2"><strong>Direct Line:</strong> +91 8384012989</p>
+                            <p class="mb-2"><strong>Direct Line:</strong> +44 7460 672819</p>
                             <p class="mb-0"><strong>Email:</strong> <a href="mailto:oceandigitech205@gmail.com" class="link-color">oceandigitech205@gmail.com</a></p>
 
                         </div>

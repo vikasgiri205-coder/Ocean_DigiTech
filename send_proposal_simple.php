@@ -1,5 +1,9 @@
 <?php
-$businessName = isset($_POST['businessName']) ? $_POST['businessName'] : '';
+header('Content-Type: text/plain; charset=utf-8');
+ini_set('display_errors', 0);
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') { http_response_code(405); echo 'NO'; exit; }
+$businessName = is_string($_POST['businessName'] ?? null) ? trim($_POST['businessName']) : '';
+if ($businessName === '' || strlen($businessName) > 250 || preg_match('/[\r\n]/', $businessName)) { http_response_code(400); echo 'NO'; exit; }
 $emailTo = 'contact@oceandigitech.com';
 if ($businessName) {
   $subject = "Proposal Request: " . $businessName;

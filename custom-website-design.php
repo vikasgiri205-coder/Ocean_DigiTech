@@ -34,12 +34,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -108,6 +103,9 @@
     }
     </script>
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -117,24 +115,18 @@
 
 
 <div class="main">
+<?php $heroTitle = 'Websites designed to move you forward.'; $heroDescription = 'Distinctive, accessible websites that make your offer clear and help customers take the next step.'; $heroCategory = 'Website design'; $heroImage = 'img/editorial/code.jpg'; $heroImageAlt = 'Software development screen'; include __DIR__.'/inner-hero.php'; ?>
         <!--services details start-->
         <section class="service-details-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="service-details-wrap">
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
-                                    <li style="display: inline;">Custom Website Design</li>
-                                </ol>
-                            </nav>
+                            
 
                             <img src="img/slider-img-2.jpg" alt="Custom website design dashboard mockup showing responsive web design for business growth" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
-                                <h1 style="font-size: 2.2rem;">Custom Website Design That Converts</h1>
+                                
                                 <h2 style="font-size: 1.2rem;">Unique, responsive, and conversion-optimized designs tailored to your brand and business goals</h2>
 
                                 <!-- SEO Intro Content Block -->
@@ -144,26 +136,26 @@
 
                                 <p>We deliver beautiful, effective websites that embody your brand and enhance customer engagement. Our focus is on creating bespoke digital experiences that drive action and grow businesses.
                                 <<ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Brand-Centric Custom Designs</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Brand-Centric Custom Designs</strong>
                                                  Crafted to reflect your unique identity
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>UX & UI Excellence</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>UX & UI Excellence</strong>
                                                 Optimal performance on all devices
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Mobile-First & Fully Responsive</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Mobile-First & Fully Responsive</strong>
                                                 Optimal performance on all devices</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Fast & SEO-Friendly Code</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Fast & SEO-Friendly Code</strong>
                                                 Technical best practices for speed and search visibility.</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Scalable & Future-Proof</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Scalable & Future-Proof</strong>
                                                   Websites built to grow with your business
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Dedicated Support & Iteration</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Dedicated Support & Iteration</strong>
                                                 Ongoing refinement to keep your site ahead
                                             </li>
                                         </ul>
@@ -180,30 +172,30 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Discovery</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Discovery</strong>
                                                 We learn your goals, brand story, and audience needs
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Wireframing</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Wireframing</strong>
                                                Structure and layout planning to maximize usability
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Visual Design</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Visual Design</strong>
                                                 Creation of stunning designs aligned with your brand standards</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Development</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Development</strong>
                                                 Bringing the design to life with clean, efficient code</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Quality Assurance</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Quality Assurance</strong>
                                                 Rigorous testing across devices and browsers
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Launch</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Launch</strong>
                                                 Seamless deployment with monitoring to ensure stability
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Support & Iteration</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Support & Iteration</strong>
                                                 Continuous updates and improvements as your business evolves
                                             </li>
                                         </ul>
@@ -218,30 +210,30 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Visual Appeal & Brand Consistency</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Visual Appeal & Brand Consistency</strong>
                                                Cohesive styling across all pages and elements
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>User-Friendly Navigation</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>User-Friendly Navigation</strong>
                                                Clear menus and pathways for effortless browsing
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Mobile Responsive</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Mobile Responsive</strong>
                                                 Fluid layouts adapting flawlessly from desktop to smartphone.</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Performance Optimization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Performance Optimization</strong>
                                                  Fast loading for a superior user experience and SEO benefits</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Accessibility Compliance</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Accessibility Compliance</strong>
                                                 Websites designed to be usable by all audiences
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Third-Party Integrations</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Third-Party Integrations</strong>
                                                 Seamless incorporation of payment gateways, CMS, analytics, and APIs
                                             </li>
-                                            <!-- <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Support & Iteration</strong>
+                                            <!-- <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Support & Iteration</strong>
                                                 Continuous updates and improvements as your business evolves
                                             </li> -->
                                         </ul>
@@ -261,146 +253,27 @@
                                     <div class="col-md-12">
                                         <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Industries We Serve</h2>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Healthcare & Dental</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>eCommerce & Retail</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Professional Services</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Startups & SaaS</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Legal & Consulting</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Healthcare & Dental</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>eCommerce & Retail</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Professional Services</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Startups & SaaS</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Legal & Consulting</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0">Whats included in your custom website design service?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>We deliver a fully custom-designed, responsive, and SEO-friendly website from wireframe to launch,
-                                                     including post-launch support.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0">How long does it take to complete
-                                            a typical website?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Most projects take 8-12 weeks from initial consultation to launch,
-                                                     depending on scope and complexity.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0">Can you redesign my existing website?</h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Absolutely, we can refresh your current design or rebuild completely 
-                                                    to improve performance and aesthetics.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- Accordion card 4 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-4" aria-expanded="false"
-                                            aria-controls="collapse-1-4">
-                                            <h6 class="mb-0">Are your websites mobile-friendly?</h6>
-                                        </div>
-                                        <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Yes, all our designs are mobile-first and ensure smooth user experiences on any device.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 5 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-5" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-5" aria-expanded="false"
-                                            aria-controls="collapse-1-5">
-                                            <h6 class="mb-0">Which platforms do you work with?</h6>
-                                        </div>
-                                        <div id="collapse-1-5" class="collapse" aria-labelledby="heading-1-5"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We specialize in Shopify, WooCommerce, BigCommerce, and custom CMS solutions tailored to your needs.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 6 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-6" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-6" aria-expanded="false"
-                                            aria-controls="collapse-1-6">
-                                            <h6 class="mb-0">Do you provide ongoing website maintenance?</h6>
-                                        </div>
-                                        <div id="collapse-1-6" class="collapse" aria-labelledby="heading-1-6"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Yes, we offer support retainers and ad-hoc maintenance to keep your site updated and secure.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Trust Indicators / Stats Ribbon -->
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
-                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Client Testimonials -->
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
-                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
-                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
-                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="sidebar-right pl-4">
 
                             <!--all services list-->
@@ -408,17 +281,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">E-Commerce Web Development</a></li>
-                                    <li><a href="#">Custom Web Development</a></li>
-                                    <li><a href="#">Social Media Managment</a></li>
-                                    <li><a href="#">Social Media Adverting</a></li>
-                                    <li><a href="#">PPC Aervices</a></li>
-                                    <li><a href="#">E-Commerce PPC</a></li>
-                                    <li><a href="#">E-Commerce SEO</a></li>
-                                    <li><a href="#">Local SEO </a></li>
-                                    <li><a href="#">AI SEO</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -428,112 +291,68 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span>A-7 Sector-10 Noida INDIA</li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> +91 8384012989</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> contact@oceandigitech.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>A-7 Sector-10 Noida INDIA</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> +44 7460 672819</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> contact@oceandigitech.com</li>
                                 </ul>
                             </aside>
 
                             <!-- Contact form-->
                             <div class="contact-us-form gray-light-bg rounded p-3">
                             <h4>Let's Discuss Your Project</h4>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="website" class="form-control" name="website"
-                                                placeholder="Enter your company website" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" name="phone"
-                                                placeholder="Phone Number" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="5"
-                                                cols="25" placeholder="Tell Us About Your Project"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
-                                            Request My Free Web Design Consultation
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p>Tell us about your goals and we’ll help you find the right next step.</p><a class="btn secondary-solid-btn" href="contact-us.php#contact-form">Discuss your project <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a>
                         </div>
                        
                 </div>
             </div>
         </section>
-        <section class="client-section ptb-100" style="background: url('img/client-bg.jpg')no-repeat center center / cover" style="margin-top: -10px;">
+        <section class="design-partnership" aria-labelledby="partnership-title">
             <div class="container">
-               <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-heading-wrap">
-                            <h3>Who are Happy With Services and Work</h3>
-                        </div>
+                <div class="partnership-intro">
+                    <div>
+                        <span class="premium-eyebrow"><span aria-hidden="true"></span> THE WAY WE WORK</span>
+                        <h2 id="partnership-title">Good design.<br><em>Great collaboration.</em></h2>
                     </div>
-                    <div class="col-md-6 col-lg-6">
-                        <div class="client-para">
-                            <p>Seamlessly administrate synergistic growth strategies and collaborative markets. Globally
-                                empower inexpensive infomediaries after sustainable mindshare. Phosfluorescently brand
-                                professional collaboration and idea-sharing without principle-centered interfaces. </p>
-                        </div>
+                    <div class="partnership-summary">
+                        <p>Your vision, our expertise. We keep you involved at every step, creating a website that feels like your brand and works for your customers.</p>
+                        <a href="contact-us.php" class="partnership-link">Let&#8217;s build something together <span aria-hidden="true">&#8599;</span></a>
                     </div>
                 </div>
-                <!--clients logo start-->
-                <div class="row align-items-center justify-content-center mb-4">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="owl-carousel owl-theme clients-carousel dot-indicator client-logo-wrap">
-                            <div class="item single-client">
-                                <img src="img/clients-logo-01.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-02.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-03.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-04.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-05.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-06.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-07.png" alt="client logo" class="client-img">
-                            </div>
-                            <div class="item single-client">
-                                <img src="img/clients-logo-08.png" alt="client logo" class="client-img">
-                            </div>
-                        </div>
-                    </div>
+                <div class="partnership-grid">
+                    <article class="partnership-feature">
+                        <span class="partnership-number" aria-hidden="true">01 /</span>
+                        <h3>A clear process</h3>
+                        <p>Shared milestones, honest feedback, and a direct line to the people building your website.</p>
+                    </article>
+                    <article class="partnership-feature">
+                        <span class="partnership-number" aria-hidden="true">02 /</span>
+                        <h3>Every screen considered</h3>
+                        <p>Thoughtful layouts and effortless navigation, from the smallest phone to the widest desktop.</p>
+                    </article>
+                    <article class="partnership-feature">
+                        <span class="partnership-number" aria-hidden="true">03 /</span>
+                        <h3>Built for what&#8217;s next</h3>
+                        <p>A flexible foundation with ongoing support, so your website can evolve with your business.</p>
+                    </article>
                 </div>
-                <!--clients logo end-->
-            </div>
-            </div>
             </div>
         </section>
         <!--services details end-->
+<section class="od-proof-section service-proof-band" aria-label="Agency at a glance"><div class="container"><div class="od-stat-grid" role="list"><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Clients Served</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#heart-handshake" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">98%</strong><span class="od-proof-label">Client Retention</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Projects</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#award" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">3+</strong><span class="od-proof-label">Industry Awards</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">4.9/5</strong><span class="od-proof-label">Reviews</span></div></div></div></section>
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="custom-website-design-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question">What’s included in your custom website design service?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We deliver a fully custom-designed, responsive, and SEO-friendly website from wireframe to launch,
+                                                     including post-launch support.</p></div></details>
+<details class="od-faq-item" name="custom-website-design-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question">How long does it take to complete
+                                            a typical website?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Most projects take 8-12 weeks from initial consultation to launch,
+                                                     depending on scope and complexity.</p></div></details>
+<details class="od-faq-item" name="custom-website-design-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question">Can you redesign my existing website?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Absolutely, we can refresh your current design or rebuild completely 
+                                                    to improve performance and aesthetics.</p></div></details>
+<details class="od-faq-item" name="custom-website-design-faq"><summary><span class="od-faq-number">04</span><span class="od-faq-question">Are your websites mobile-friendly?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes, all our designs are mobile-first and ensure smooth user experiences on any device.</p></div></details>
+<details class="od-faq-item" name="custom-website-design-faq"><summary><span class="od-faq-number">05</span><span class="od-faq-question">Which platforms do you work with?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We specialize in Shopify, WooCommerce, BigCommerce, and custom CMS solutions tailored to your needs.</p></div></details>
+<details class="od-faq-item" name="custom-website-design-faq"><summary><span class="od-faq-number">06</span><span class="od-faq-question">Do you provide ongoing website maintenance?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Yes, we offer support retainers and ad-hoc maintenance to keep your site updated and secure.</p></div></details></div></div></section>
+<section class="service-review-band"><div class="container service-review-layout"><div><span class="premium-eyebrow">Client perspective</span><h2>What our clients say</h2></div><blockquote class="service-review-quote">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote></div></section>
 
         <!--call to action section start-->
         <section class="call-to-action py-5 mt-5 gray-light-bg">
@@ -563,8 +382,8 @@
     <!--footer section end-->
 
       <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+      <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->    <!--bottom to top button end-->
 

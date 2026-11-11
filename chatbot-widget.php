@@ -6,13 +6,13 @@
 <!-- Floating Chatbot Widget Start -->
 <div id="od-chatbot-widget-container">
     <button id="od-chatbot-toggle-btn" aria-label="Toggle Chat" title="Chat with Ocean Digitech AI">
-        <span class="ti-comments"></span>
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#messages-square" width="100%" height="100%"></use></svg>
     </button>
 
     <div id="od-chatbot-box" class="d-none">
         <div class="od-chatbot-header">
             <div class="d-flex align-items-center">
-                <span class="ti-headphone-alt mr-2" style="font-size: 1.2rem;"></span>
+                <svg class="od-icon mr-2" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="font-size: 1.2rem;"><use href="img/icons.svg?v=d285f5150a7c#headset" width="100%" height="100%"></use></svg>
                 <div>
                     <h6 class="mb-0 text-white" style="font-size: 14px; font-weight: 600;">Ocean Digitech AI Assistant</h6>
                     <small style="color: rgba(255,255,255,0.8); font-size: 11px;">Online | Ready to help</small>
@@ -31,8 +31,8 @@
             <div class="input-group">
                 <input type="text" id="od-chatbot-input" class="form-control" placeholder="Type your message..." autocomplete="off">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit" id="od-chatbot-send-btn">
-                        <span class="ti-send"></span>
+                    <button class="btn btn-primary" type="submit" id="od-chatbot-send-btn" aria-label="Send message" aria-label="Send message">
+                        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#send" width="100%" height="100%"></use></svg>
                     </button>
                 </div>
             </div>

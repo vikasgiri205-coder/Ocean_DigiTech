@@ -33,12 +33,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--Owl carousel css-->
@@ -49,6 +44,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
     
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -74,24 +72,7 @@
     <div class="main">
 
         <!--header section start-->
-        <section class="hero-section ptb-100 gradient-overlay"
-            style="background: url('img/header-bg-5.jpg') no-repeat center center / cover">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                            <h1 class="text-white mb-0">Contact Us</h1>
-                            <div class="custom-breadcrumb">
-                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                    <li class="list-inline-item breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="list-inline-item breadcrumb-item active">Contact Us</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Let’s make your next idea happen.'; $heroDescription = 'Tell us what you have in mind. We’ll help you find a practical path from your first conversation to a considered digital solution.'; $heroCategory = 'Contact us'; $heroImage = 'img/editorial/collaboration.jpg'; $heroImageAlt = 'A team sharing ideas in a collaborative workspace'; $heroCta = 'Tell us about your project'; $heroCtaHref = '#contact-form'; include __DIR__.'/inner-hero.php'; ?>
         <!--header section end-->
 
         <!--contact us promo start-->
@@ -102,11 +83,11 @@
                         <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
                             <div class="card-body py-4">
                                 <div class="pb-2">
-                                    <span class="ti-mobile icon-sm color-secondary"></span>
+                                    <svg class="od-icon icon-sm color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg>
                                 </div>
                                 <div>
                                     <h5 class="mb-1" style="font-size: 1rem;">Call Us Directly</h5>
-                                    <p class="text-muted mb-0" style="font-size: 14px;">+91 8384012989</p>
+                                    <p class="text-muted mb-0" style="font-size: 14px;"><a href="tel:+447460672819">+44 7460 672819</a></p>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +96,7 @@
                         <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
                             <div class="card-body py-4">
                                 <div class="pb-2">
-                                    <span class="ti-location-pin icon-sm color-secondary"></span>
+                                    <svg class="od-icon icon-sm color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>
                                 </div>
                                 <div>
                                     <h5 class="mb-1" style="font-size: 1rem;">Our Headquarters</h5>
@@ -128,11 +109,11 @@
                         <div class="card single-promo-card single-promo-hover text-center shadow-sm h-100">
                             <div class="card-body py-4">
                                 <div class="pb-2">
-                                    <span class="ti-email icon-sm color-secondary"></span>
+                                    <svg class="od-icon icon-sm color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg>
                                 </div>
                                 <div>
                                     <h5 class="mb-1" style="font-size: 1rem;">Mail Us</h5>
-                                    <p class="text-muted mb-0" style="font-size: 14px;">oceandigitech205@gmail.com</p>
+                                    <p class="text-muted mb-0" style="font-size: 14px;"><a href="mailto:oceandigitech205@gmail.com">oceandigitech205@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -150,29 +131,29 @@
                 </div>
                 <div class="row justify-content-around" style="margin-top: 5%;">
                     <div class="col-md-6">
-                        <div class="contact-us-form gray-light-bg rounded">
+                        <div id="contact-form" class="contact-us-form gray-light-bg rounded">
                             
                             
                             <div class="proposal-form-container" style="max-width: 860px; margin: 0 auto; padding: 28px 20px; background:#fff; border-radius:8px;">
                                       <h2 style="text-align:center; color:#e80566; font-family:Arial, sans-serif; font-size:32px; margin:0 0 18px;">Experience Real Results</h2>
                                     
-                                      <form id="proposalForm" class="proposal-form" method="post" action="send_proposal.php" autocomplete="on" style="width:100%;">
-                                        <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:14px;">
-                                          <input type="text" name="name" placeholder="Name *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;">
-                                          <input type="tel" name="phone" placeholder="Phone *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;">
+                                      <form id="proposalForm" data-async-form="contact" class="proposal-form" method="post" action="send_proposal.php" autocomplete="on" style="width:100%;">
+                                        <div class="form-row contact-field-pair" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:14px;">
+                                          <label class="form-field" for="contact-name"><span>Name *</span><input type="text" name="name" id="contact-name" autocomplete="name" placeholder="Name *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;"></label>
+                                          <label class="form-field" for="contact-phone"><span>Phone *</span><input type="tel" name="phone" id="contact-phone" autocomplete="tel" placeholder="Phone *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;"></label>
                                         </div>
                                     
-                                        <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:14px;">
-                                          <input type="email" name="email" placeholder="Email *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;">
-                                          <input type="url" name="website" placeholder="Website" class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;">
+                                        <div class="form-row contact-field-pair" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:14px;">
+                                          <label class="form-field" for="contact-email"><span>Email *</span><input type="email" name="email" id="contact-email" autocomplete="email" placeholder="Email *" required class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;"></label>
+                                          <label class="form-field" for="contact-website"><span>Website</span><input type="url" name="website" id="contact-website" autocomplete="url" placeholder="Website" class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;"></label>
                                         </div>
                                     
                                         <div class="form-row" style="margin-bottom:14px;">
-                                          <input type="text" name="company" placeholder="test" class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;">
+                                          <label class="form-field" for="contact-company"><span>Company name</span><input type="text" name="company" id="contact-company" autocomplete="organization" placeholder="Company name" class="input-field" style="width:100%; padding:14px 12px; border:1px solid #e2e2e2; border-radius:6px; font-size:14px;"></label>
                                         </div>
                                     
-                                        <div class="section-title" style="font-weight:600; margin:18px 0 8px; color:#333;">What are you looking for? *</div>
-                                            <div class="checkbox-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; margin-bottom:14px;">
+                                        <div class="section-title" style="font-weight:600; margin:18px 0 8px; color:#333;"><span id="services-label">What are you looking for? *</span></div>
+                                            <div class="checkbox-grid" role="group" aria-labelledby="services-label" style="display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; margin-bottom:14px;">
                                               <label style="font-family:Arial, sans-serif; font-size:14px;">
                                                 <input type="checkbox" name="services[]" value="Web App Development" style="margin-right:8px;">
                                                 Web App Development
@@ -207,17 +188,13 @@
                                               </label>
                                             </div>         
                                         <div class="form-row" style="margin-bottom:14px;">
-                                          <textarea name="message" placeholder="Message" rows="2" style="width:100%; padding:14px; border:1px solid #e2e2e2; border-radius:6px; resize:vertical; font-family:Arial, sans-serif;"></textarea>
+                                          <label class="form-field" for="contact-message"><span>Message</span><textarea name="message" id="contact-message" placeholder="Message" rows="5" style="width:100%; padding:14px; border:1px solid #e2e2e2; border-radius:6px; resize:vertical; font-family:Arial, sans-serif;"></textarea></label>
                                         </div>
                                         <div class="form-row captcha-row" style="display:flex; align-items:center; gap:12px; margin:6px 0 18px;">
                                           <label style="display:flex; align-items:center; gap:8px; font-family:Arial, sans-serif;">
-                                            <input type="checkbox" name="not_robot" value="1" required> I'm not a robot
+                                            <input type="checkbox" name="not_robot" value="1" required> I confirm these details are correct.
                                           </label>
-                                          <div style="display:inline-block; width:78px; height:50px; background:#f3f3f3; border:1px solid #e0e0e0; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:12px; color:#777;">
-                                             
-                                               <img src="img/RecaptchaLogo.svg.webp" alt="Recaptcha" style="display:block; width: 65%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;">
-
-                                          </div>
+                                          
                                         </div>
                                     
                                         <div class="form-row" style="margin-top:6px;">
@@ -225,6 +202,7 @@
                                             Send me a Proposal
                                           </button>
                                         </div>
+<p class="form-feedback" role="status" aria-live="polite" tabindex="-1"></p>
                                       </form>
                                     </div>
                                
@@ -232,7 +210,7 @@
                             </div>
                       <div class="col-md-5">
                         <div class="contact-us-content">
-                            <h2 style="font-size: 2em;">Looking for a excellent Business idea?</h2>
+                            <h2 style="font-size: 2em;">Let’s build something that works for you.</h2>
                             <p >Partner With the Digital Experts Who Deliver Leave your details and let’s advance your business. Here’s how working with OceanDigiTech sets the stage for real, measurable results. </p>
                              <h5>Our Headquarters</h5>
                              <p >Our team takes the time to learn about your business, market, and unique challenges. We review your competitors, analyze your digital presence, and listen to what you really want to achieve - so we can create a custom plan that fits your growth vision. </p>
@@ -250,7 +228,7 @@
 
         <!--google map block start-->
         <div class="google-map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.8857779486777!2d-74.70089492388076!3d40.87216167136726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a7f5e7e7e7e7%3A0x7e7e7e7e7e7e7e7e!2s530%20Main%20St%20%233A%2C%20Chester%2C%20NJ%2007930%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe title="Map of the office area in Chester, New Jersey" src="https://maps.google.com/maps?q=530%20Main%20St%20Chester%20NJ%2007930&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--google map block end-->
 
@@ -263,59 +241,7 @@
     
     
     <!-- Include this script below your form or in a global script tag -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('proposalForm');
-  if (!form) return;
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent normal post
-
-    // Optional: client-side validation ya data gathering
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.status === 'success') {
-        // Popup/message
-        showSuccessPopup('Proposal submitted successfully');
-        // Option 1: page reload ke saath form reset
-        // window.location.reload(true);
-
-        // Option 2: form ko reset karna (without full page reload)
-        form.reset();
-      } else {
-        // Error handling
-        const msg = data.errors ? data.errors.join('\n') : (data.message || 'Something went wrong');
-        showErrorPopup(msg);
-      }
-    })
-    .catch(err => {
-      showErrorPopup('Network error. Please try again later.');
-      console.error(err);
-    });
-  });
-});
-
-// Helper functions for popup
-function showSuccessPopup(message) {
-  // Simple alert; ya aap custom modal bana sakte ho
-  alert(message);
-  // Agar aap chaho to better modal use karo:
-  // openModal('Success', message);
-}
-
-function showErrorPopup(message) {
-  alert('Error: ' + message);
-}
-</script>
 
     
     
@@ -342,8 +268,6 @@ function showErrorPopup(message) {
     <script src="js/jquery.countdown.min.js"></script>
     <!--jquery easypiechart-->
     <script src="js/jquery.easy-pie-chart.js"></script>
-    <!--validator js-->
-    <script src="js/validator.min.js"></script>
     <!--custom js-->
     <script src="js/scripts.js?v=<?php echo file_exists('js/scripts.js') ? filemtime('js/scripts.js') : '2.2'; ?>"></script>
 </body>

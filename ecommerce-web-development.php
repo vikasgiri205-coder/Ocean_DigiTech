@@ -34,12 +34,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -92,6 +87,9 @@
     }
     </script>
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -101,24 +99,18 @@
 
 
 <div class="main">
+<?php $heroTitle = 'A smoother shopping experience.'; $heroDescription = 'Build and maintain an online store that makes discovery, purchase, and everyday operations simpler.'; $heroCategory = 'E-commerce development'; $heroImage = 'img/editorial/code.jpg'; $heroImageAlt = 'Software development screen'; include __DIR__.'/inner-hero.php'; ?>
         <!--services details start-->
         <section class="service-details-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="service-details-wrap">
-                            <!-- Breadcrumb Navigation -->
-                            <nav aria-label="Breadcrumb" style="margin-bottom: 20px; overflow-wrap: break-word;">
-                                <ol class="breadcrumb" style="background-color: transparent; padding: 0; margin: 0; flex-wrap: wrap;">
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php">Home</a> &gt; </li>
-                                    <li style="display: inline; margin-right: 5px;"><a href="index.php#services">Services</a> &gt; </li>
-                                    <li style="display: inline;">E-Commerce Web Development</li>
-                                </ol>
-                            </nav>
+                            
 
                             <img src="img/slider-img-2.jpg" alt="E-commerce support and maintenance dashboard showing site performance metrics" class="img-fluid rounded shadow-sm" />
                             <div class="services-detail-content mt-4">
-                                <h1 style="font-size: 2.2rem;">Reliable eCommerce Support & Maintenance That Keeps You Shipping</h1>
+                                
                                 <h2 style="font-size: 1.2rem;">Flexible retainer or on-demand support covering design, development, SEO, CRO, and integrations—prioritized by impact and protected by process</h2>
 
                                 <!-- SEO Intro Content Block -->
@@ -128,30 +120,30 @@
 
                                 <p>Brief intro text summarizing the scope: backlog grooming, bug fixes, feature releases, performance tuning, analytics, QA, and version control.
                                 <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Ticket Intake & Triage</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Ticket Intake & Triage</strong>
                                                  Organized request management and priority assessment
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Small Fixes & UX Tweaks</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Small Fixes & UX Tweaks</strong>
                                                 Quick improvements for better user experience
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Feature Development & Sprints</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Feature Development & Sprints</strong>
                                                 Structured development cycles for new functionality</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Performance & Core Web Vitals (CWV) Improvements</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Performance & Core Web Vitals (CWV) Improvements</strong>
                                                 Speed optimization and performance monitoring</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Accessibility & ADA Compliance</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Accessibility & ADA Compliance</strong>
                                                   Ensuring your site is accessible to all users
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Analytics Setup & Conversion Rate Optimization (CRO)</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Analytics Setup & Conversion Rate Optimization (CRO)</strong>
                                                 Data-driven insights and conversion improvements
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Go-Live & Rollback Processes</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Go-Live & Rollback Processes</strong>
                                                 Safe deployment with backup and recovery plans
                                             </li>
                                         </ul>
@@ -168,19 +160,19 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Sprint Planning & Backlog Prioritization</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Sprint Planning & Backlog Prioritization</strong>
                                                 Strategic planning aligned with business goals
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Test Plans & Staging Environment Sign-Off</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Test Plans & Staging Environment Sign-Off</strong>
                                                Thorough testing before production deployment
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Clear Acceptance Criteria & Cross-Browser Checks</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Clear Acceptance Criteria & Cross-Browser Checks</strong>
                                                 Defined standards and compatibility testing</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Post-Release Monitoring & Error Tracking</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Post-Release Monitoring & Error Tracking</strong>
                                                 Continuous oversight and rapid issue resolution</li>
                                         </ul>
                                     </div>
@@ -194,19 +186,19 @@
                                         <ul class="list-unstyled tech-feature-list">
                                             <!-- <li class="py-1 pb-3">Our step-by-step approach ensures transparency and quality at every phase of your project.
                                             </li> -->
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Dev & Releases</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Dev & Releases</strong>
                                                Theme updates, app versions, checkout tweaks
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>UX & Content</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>UX & Content</strong>
                                                New sections, templates, copy updates
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Performance & SEO</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Performance & SEO</strong>
                                                 Speed, schema, redirects, indexing</li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Analytics & CRO</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Analytics & CRO</strong>
                                                  GA4/pixels, tracking, A/B tests, dashboards</li>
                                         </ul>
                                     </div>
@@ -218,16 +210,16 @@
                                      </div>
                                     <div class="col-md-12">
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Senior-Led Expert Team</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Senior-Led Expert Team</strong>
                                                Experienced professionals managing your project
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Proven Results Across Hundreds of Stores</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Proven Results Across Hundreds of Stores</strong>
                                                Track record of successful implementations
                                             </li>
-                                            <li class="py-1"><span
-                                                    class="ti-check-box mr-2 color-secondary"></span><strong>Transparent Communication</strong>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" 
+                                                    ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg><strong>Transparent Communication</strong>
                                                 Clear updates and rapid issue resolution</li>
                                         </ul>
                                     </div>
@@ -246,114 +238,27 @@
                                     <div class="col-md-12">
                                         <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Industries We Serve</h2>
                                         <ul class="list-unstyled tech-feature-list">
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Fashion & Apparel</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Health & Beauty</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Home & Garden</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Electronics & Tech</li>
-                                            <li class="py-1"><span class="ti-check-box mr-2 color-secondary"></span>Food & Beverage</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Fashion & Apparel</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Health & Beauty</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Home & Garden</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Electronics & Tech</li>
+                                            <li class="py-1"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>Food & Beverage</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div id="accordion-1" class="accordion accordion-faq mt-5">
-                                    <!-- Accordion card 1 -->
-                                    <div class="card">
-                                        <div class="card-header py-3 collapsed" id="heading-1-1" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-1" aria-expanded="false"
-                                            aria-controls="collapse-1-1">
-                                            <h6 class="mb-0">How do hours & SLAs work?</h6>
-                                        </div>
-                                        <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                            data-parent="#accordion-1" >
-                                            <div class="card-body">
-                                                <p>We offer flexible retainer packages with monthly hour allocations and clearly defined SLAs for different priority levels. Critical issues receive immediate attention while feature requests follow sprint planning cycles.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 2 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-2" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-2" aria-expanded="false"
-                                            aria-controls="collapse-1-2">
-                                            <h6 class="mb-0">What are typical monthly deliverables?</h6>
-                                        </div>
-                                        <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>Monthly deliverables typically include bug fixes, performance improvements, feature enhancements, content updates, SEO optimizations, and CRO testing based on your retainer plan and priority backlog.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Accordion card 3 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-3" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-3" aria-expanded="false"
-                                            aria-controls="collapse-1-3">
-                                            <h6 class="mb-0">What tooling and workflows do you use?</h6>
-                                        </div>
-                                        <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We use shared project management tools for backlogs, conduct regular sprint demos, provide staging URLs for review, and maintain version control for all code changes.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- Accordion card 4 -->
-                                    <div class="card">
-                                        <div class="card-header py-3" id="heading-1-4" data-toggle="collapse"
-                                            role="button" data-target="#collapse-1-4" aria-expanded="false"
-                                            aria-controls="collapse-1-4">
-                                            <h6 class="mb-0">How do you handle reporting and performance metrics?</h6>
-                                        </div>
-                                        <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
-                                            data-parent="#accordion-1">
-                                            <div class="card-body">
-                                                <p>We provide regular reports covering site performance, uptime metrics, conversion rates, and completed tasks. Custom dashboards can be set up to track KPIs most important to your business.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Trust Indicators / Stats Ribbon -->
-                                <div class="row mt-5">
-                                    <div class="col-md-12">
-                                        <div class="trust-ribbon" style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
-                                            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Clients Served</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">98% Client Retention</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">100+ Projects</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">3+ Industry Awards</strong>
-                                                </div>
-                                                <div style="padding: 10px; min-width: 150px;">
-                                                    <strong style="display: block; font-size: 1.2rem; color: #333;">4.9/5 Reviews</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
 
                                 <!-- Client Testimonials -->
-                                <div class="row mt-4">
-                                    <div class="col-md-12">
-                                        <h3 style="font-size: 1.5rem; margin-bottom: 15px;">What Our Clients Say</h3>
-                                        <blockquote style="border-left: 4px solid #007bff; padding-left: 20px; margin: 20px 0; font-style: italic; color: #555;">
-                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
-                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
+                                
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="sidebar-right pl-4">
 
                             <!--all services list-->
@@ -361,17 +266,7 @@
                                 <div class="widget-title">
                                     <h5>All Services</h5>
                                 </div>
-                                <ul class="all-service-list">
-                                    <li><a href="#">E-Commerce Web Development</a></li>
-                                    <li><a href="#">Custom Web Development</a></li>
-                                    <li><a href="#">Social Media Managment</a></li>
-                                    <li><a href="#">Social Media Adverting</a></li>
-                                    <li><a href="#">PPC Aervices</a></li>
-                                    <li><a href="#">E-Commerce PPC</a></li>
-                                    <li><a href="#">E-Commerce SEO</a></li>
-                                    <li><a href="#">Local SEO </a></li>
-                                    <li><a href="#">AI SEO</a></li>
-                                </ul>
+                                <?php include __DIR__.'/service-links.php'; ?>
                             </aside>
 
                             <!--need help-->
@@ -381,54 +276,16 @@
                                 </div>
                                 <p>We are available in 24/7 hours for dedicated support</p>
                                 <ul class="primary-list mt-25">
-                                    <li><span class="ti-location-pin mr-2 color-primary"></span>A-7 Sector-10 Noida INDIA</li>
-                                    <li><span class="ti-mobile mr-2 color-primary"></span> +91 8384012989</li>
-                                    <li><span class="ti-email mr-2 color-primary"></span> contact@oceandigitech.com</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#map-pin" width="100%" height="100%"></use></svg>A-7 Sector-10 Noida INDIA</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#smartphone" width="100%" height="100%"></use></svg> +44 7460 672819</li>
+                                    <li><svg class="od-icon mr-2 color-primary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#mail" width="100%" height="100%"></use></svg> contact@oceandigitech.com</li>
                                 </ul>
                             </aside>
 
                             <!-- Contact form-->
                             <div class="contact-us-form gray-light-bg rounded p-3">
                             <h4>Let's Discuss Your Project</h4>
-                            <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name"
-                                                required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="website" class="form-control" name="website"
-                                                placeholder="Enter your company website" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" name="phone"
-                                                placeholder="Phone Number" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="5"
-                                                cols="25" placeholder="Tell Us About Your Project"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn secondary-solid-btn cta" id="btnContactUs">
-                                            Start Your Support Engagement
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p>Tell us about your goals and we’ll help you find the right next step.</p><a class="btn secondary-solid-btn" href="contact-us.php#contact-form">Discuss your project <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a>
                         </div>
 
                 </div>
@@ -483,10 +340,17 @@
                 </div>
                 <!--clients logo end-->
             </div>
-            </div>
-            </div>
         </section>
         <!--services details end-->
+<section class="od-proof-section service-proof-band" aria-label="Agency at a glance"><div class="container"><div class="od-stat-grid" role="list"><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Clients Served</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#heart-handshake" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">98%</strong><span class="od-proof-label">Client Retention</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#briefcase-business" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">100+</strong><span class="od-proof-label">Projects</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#award" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">3+</strong><span class="od-proof-label">Industry Awards</span></div><div class="od-proof-stat" role="listitem"><span class="od-proof-icon"><svg class="od-icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span><strong class="od-proof-value">4.9/5</strong><span class="od-proof-label">Reviews</span></div></div></div></section>
+<section class="od-faq-section service-faq-band" aria-label="Frequently asked questions"><div class="container service-faq-layout"><div class="od-faq-heading"><span class="premium-eyebrow">A little clarity</span><h2>Frequently asked questions</h2><p>Clear answers to help you plan your project with confidence.</p><a class="btn secondary-solid-btn service-faq-contact" href="contact-us.php#contact-form">Have another question?</a></div><div class="od-faq-list"><details class="od-faq-item" name="ecommerce-web-development-faq" open><summary><span class="od-faq-number">01</span><span class="od-faq-question">How do hours &amp; SLAs work?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We offer flexible retainer packages with monthly hour allocations and clearly defined SLAs for different priority levels. Critical issues receive immediate attention while feature requests follow sprint planning cycles.</p></div></details>
+<details class="od-faq-item" name="ecommerce-web-development-faq"><summary><span class="od-faq-number">02</span><span class="od-faq-question">What are typical monthly deliverables?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>Monthly deliverables typically include bug fixes, performance improvements, feature enhancements, content updates, SEO optimizations, and CRO testing based on your retainer plan and priority backlog.</p></div></details>
+<details class="od-faq-item" name="ecommerce-web-development-faq"><summary><span class="od-faq-number">03</span><span class="od-faq-question">What tooling and workflows do you use?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We use shared project management tools for backlogs, conduct regular sprint demos, provide staging URLs for review, and maintain version control for all code changes.</p></div></details>
+<details class="od-faq-item" name="ecommerce-web-development-faq"><summary><span class="od-faq-number">04</span><span class="od-faq-question">How do you handle reporting and performance metrics?</span><span class="od-faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><div class="od-faq-answer"><p>We provide regular reports covering site performance, uptime metrics, conversion rates, and completed tasks. Custom dashboards can be set up to track KPIs most important to your business.</p></div></details></div></div></section>
+<section class="service-review-band"><div class="container service-review-layout"><div><span class="premium-eyebrow">Client perspective</span><h2>What our clients say</h2></div><blockquote class="service-review-quote">
+                                            "Ocean DigiTech brought our vision to life - a seamless launch, and measurable sales lift."
+                                            <footer style="margin-top: 10px; font-style: normal; color: #333;">— GM, <a href="https://www.petrasoap.com" target="_blank">www.petrasoap.com</a></footer>
+                                        </blockquote></div></section>
 
         <!--call to action section start-->
         <section class="call-to-action py-5 mt-5 gray-light-bg">
@@ -516,8 +380,8 @@
     <!--footer section end-->
 
       <!--bottom to top button start-->
-      <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="ti-angle-up"></span>
+      <button type="button" aria-label="Back to top" class="scroll-top scroll-to-target" data-target="html">
+        <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevron-up" width="100%" height="100%"></use></svg>
     </button>
     <!--bottom to top button end-->    <!--bottom to top button end-->
 

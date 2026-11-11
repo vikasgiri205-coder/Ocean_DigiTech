@@ -24,7 +24,7 @@
     <title>Privacy Policy - Ocean DigiTech Pvt. Ltd.</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -53,6 +48,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,18 +61,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-section ptb-100 gradient-overlay full-screen d-flex align-items-center"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover; min-height: 100vh;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="page-header-content text-white text-center">
-                            <h1 class="text-white mb-0 text-uppercase font-weight-bold display-4">PRIVACY POLICY</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Your privacy matters.'; $heroDescription = 'How Ocean DigiTech handles information when you visit our website or get in touch with us.'; $heroCategory = 'Privacy policy'; $heroImage = 'img/editorial/workspace.jpg'; $heroImageAlt = 'A bright office interior'; $heroCta = 'Back to home'; $heroCtaHref = 'index.php'; include __DIR__.'/inner-hero.php'; ?>
         <!--hero section end-->
 
         <!--privacy policy content section start-->
@@ -93,27 +80,27 @@
                             <div class="mt-5 mb-4">
                                 <h4 class="mb-3">Information We Collect</h4>
                                 <ul class="list-unstyled">
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>Personal details (name, email, company, phone) when you contact us, request a quote, or engage our services.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>Usage data (device info, browser type, IP address) for analytics, performance enhancement, and improved security.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>Cookies and tracking tools (Google Analytics, Facebook Pixel, etc.) for better user experience and campaign reporting.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>Personal details (name, email, company, phone) when you contact us, request a quote, or engage our services.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>Usage data (device info, browser type, IP address) for analytics, performance enhancement, and improved security.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>Cookies and tracking tools (Google Analytics, Facebook Pixel, etc.) for better user experience and campaign reporting.</li>
                                 </ul>
                             </div>
 
                             <div class="mb-4">
                                 <h4 class="mb-3">How We Use Your Data</h4>
                                 <ul class="list-unstyled">
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>To deliver and improve SEO, PPC, AI, and web design services.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>For customized communication, proposals, and client support.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>For legal, compliance, and security measures per GDPR, CCPA, and other international standards.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>To deliver and improve SEO, PPC, AI, and web design services.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>For customized communication, proposals, and client support.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>For legal, compliance, and security measures per GDPR, CCPA, and other international standards.</li>
                                 </ul>
                             </div>
 
                             <div class="mb-4">
                                 <h4 class="mb-3">Data Protection</h4>
                                 <ul class="list-unstyled">
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>Data is stored on secure servers with encryption and regular audits.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>Only authorized team members access client information.</li>
-                                    <li class="py-2"><span class="ti-check mr-2 color-secondary"></span>We never sell, lease, or share personal data except for essential service providers under strict confidentiality.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>Data is stored on secure servers with encryption and regular audits.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>Only authorized team members access client information.</li>
+                                    <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#check" width="100%" height="100%"></use></svg>We never sell, lease, or share personal data except for essential service providers under strict confidentiality.</li>
                                 </ul>
                             </div>
 

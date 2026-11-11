@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Best regards,<br>
             Ocean DigiTech Team<br>
             530 Main St, Ste 3A, Chester, NJ 07930<br>
-            Phone: +1 (862) 285-5275</p>
+            Phone: +44 7460 672819</p>
         </div>
     </body>
     </html>

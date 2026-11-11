@@ -24,7 +24,7 @@
     <title>About Us - Ocean DigiTech Pvt. Ltd. | Global Web Development & Digital Marketing Agency</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -53,6 +48,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,44 +61,7 @@
     <div class="main">
 
         <!--about modern compact banner start-->
-        <section class="about-hero-modern">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 col-md-11 text-center">
-                        <!-- Breadcrumbs -->
-                        <nav aria-label="breadcrumb" class="mb-3">
-                            <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
-                                <li class="breadcrumb-item"><a href="index.php" style="color: #94a3b8; text-decoration: none;"><i class="ti-home mr-1"></i> Home</a></li>
-                                <li class="breadcrumb-item active" style="color: #cbd5e1; font-weight: 600;" aria-current="page">About Us</li>
-                            </ol>
-                        </nav>
-
-                        <!-- Eyebrow Pill Badge -->
-                        <div class="about-pill-badge mb-3">
-                            <span class="pulsing-dot"></span>
-                            <span>Global Digital Agency &bull; India &amp; USA</span>
-                        </div>
-
-                        <!-- Main Title -->
-                        <h1 class="about-hero-title">About Ocean DigiTech</h1>
-
-                        <!-- Subtitle -->
-                        <p class="about-hero-subtitle">
-                            A Global Story from India to the USA &mdash; Delivering Bespoke Software Architecture, Scalable E-Commerce &amp; Data-Driven Growth Marketing.
-                        </p>
-
-                        <!-- Highlights -->
-                        <div class="about-hero-highlights">
-                            <span class="highlight-item"><i class="ti-shield mr-2" style="color: #00d2ff;"></i> Enterprise Standards</span>
-                            <span class="highlight-sep">&bull;</span>
-                            <span class="highlight-item"><i class="ti-stats-up mr-2" style="color: #eb0074;"></i> High-ROI Strategy</span>
-                            <span class="highlight-sep">&bull;</span>
-                            <span class="highlight-item"><i class="ti-world mr-2" style="color: #10b981;"></i> 18+ Countries Reached</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Good people. Thoughtful digital work.'; $heroDescription = 'We bring strategy, design, and engineering together to help ambitious businesses build a stronger digital presence.'; $heroCategory = 'About Ocean DigiTech'; $heroImage = 'img/editorial/collaboration.jpg'; $heroImageAlt = 'Our team working together on a digital project'; include __DIR__.'/inner-hero.php'; ?>
         <!--about modern compact banner end-->
 
         <!--about us section start-->
@@ -124,7 +85,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-check-box" style="color: #00d2ff;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #00d2ff;"><use href="img/icons.svg?v=d285f5150a7c#circle-check" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">350+</h2>
                                         <strong class="counter-label">Total Projects Completed</strong>
@@ -133,7 +94,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-user" style="color: #eb0074;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #eb0074;"><use href="img/icons.svg?v=d285f5150a7c#user-round" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">500+</h2>
                                         <strong class="counter-label">Global Clients Served</strong>
@@ -142,7 +103,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-world" style="color: #10b981;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #10b981;"><use href="img/icons.svg?v=d285f5150a7c#globe" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">18+</h2>
                                         <strong class="counter-label">Countries Reached</strong>
@@ -151,7 +112,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-shopping-cart" style="color: #f59e0b;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #f59e0b;"><use href="img/icons.svg?v=d285f5150a7c#shopping-cart" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">120+</h2>
                                         <strong class="counter-label">eCommerce Brands Scaled</strong>
@@ -160,7 +121,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-time" style="color: #8b5cf6;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #8b5cf6;"><use href="img/icons.svg?v=d285f5150a7c#clock-3" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">8+</h2>
                                         <strong class="counter-label">Years Industry Experience</strong>
@@ -169,7 +130,7 @@
                                 <div class="col-md-4 col-sm-6 mb-4">
                                     <div class="counter-single counter-modern-box">
                                         <div class="counter-icon-wrap mb-2">
-                                            <i class="ti-heart" style="color: #ec4899;"></i>
+                                            <svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"   style="color: #ec4899;"><use href="img/icons.svg?v=d285f5150a7c#heart" width="100%" height="100%"></use></svg>
                                         </div>
                                         <h2 class="mb-1 display-4 font-weight-bold counter-value">99.2%</h2>
                                         <strong class="counter-label">Client Satisfaction Rate</strong>
@@ -186,9 +147,9 @@
                         <div class="mb-4">
                             <h4 class="mb-3">Our Journey</h4>
                             <ul class="list-unstyled tech-feature-list">
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2023:</strong> The beginning, small office, big dreams.</li>
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2024:</strong> First US retail brand, first AI-powered SEO campaign.</li>
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span><strong>2025:</strong> Became trusted by 50+ eCommerce businesses in US and India, delivering results-focused PPC, content, and design.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg><strong>2023:</strong> The beginning, small office, big dreams.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg><strong>2024:</strong> First US retail brand, first AI-powered SEO campaign.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg><strong>2025:</strong> Became trusted by 50+ eCommerce businesses in US and India, delivering results-focused PPC, content, and design.</li>
                             </ul>
                         </div>
 
@@ -201,9 +162,9 @@
                         <div class="mb-4">
                             <h4 class="mb-3">What Makes Us Different</h4>
                             <ul class="list-unstyled tech-feature-list">
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Proven capability in AI, web, and digital marketing, optimized for eCommerce.</li>
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Transparent client relationships, always personalized.</li>
-                                <li class="py-2"><span class="ti-control-forward mr-2 color-secondary"></span>Continuous learning from each campaign and market trend.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg>Proven capability in AI, web, and digital marketing, optimized for eCommerce.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg>Transparent client relationships, always personalized.</li>
+                                <li class="py-2"><svg class="od-icon mr-2 color-secondary" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#chevrons-right" width="100%" height="100%"></use></svg>Continuous learning from each campaign and market trend.</li>
                             </ul>
                         </div>
                     </div>

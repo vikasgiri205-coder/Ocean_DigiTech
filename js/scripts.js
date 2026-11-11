@@ -49,7 +49,7 @@ jQuery(function ($) {
 
     // Scroll Down -> Hide Navbar (unless mobile dropdown is open)
     if (st > lastScrollTop && st > 80) {
-      if (!$(".navbar-collapse").hasClass("show")) {
+      if (!$(".navbar-collapse").hasClass("show") && !$('.site-menu-panel[data-open="true"]').length) {
         navbar.addClass("navbar-hidden").removeClass("navbar-visible");
       }
     } else if (st < lastScrollTop) {
@@ -130,7 +130,7 @@ jQuery(function ($) {
     nav: false,
     dots: true,
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 4500,
     autoplayHoverPause: true,
     autoplaySpeed: 3500,
@@ -140,7 +140,7 @@ jQuery(function ($) {
   // 9. hero slider one
   $(".hero-slider-one").owlCarousel({
     loop: true,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     autoplayHoverPause: true,
     items: 1,
@@ -151,7 +151,7 @@ jQuery(function ($) {
   // 10. hero slider two
   $(".hero-content-slider").owlCarousel({
     loop: false,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     autoplayHoverPause: true,
     items: 1,
@@ -260,57 +260,20 @@ jQuery(function ($) {
     nav: false,
     dots: true,
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     lazyLoad: true,
     items: 1,
   });
 
-  // Services Single-Row Carousel
-  $(".services-carousel").owlCarousel({
-    loop: true,
-    margin: 24,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3500,
-    autoplayHoverPause: true,
-    smartSpeed: 700,
-    responsiveClass: true,
-    responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
-      1024: { items: 3 },
-      1280: { items: 3 }
-    }
-  });
-
-  // Bottlenecks Single-Row Carousel
-  $(".bottlenecks-carousel").owlCarousel({
-    loop: true,
-    margin: 24,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 4200,
-    autoplayHoverPause: true,
-    smartSpeed: 800,
-    responsiveClass: true,
-    responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
-      1024: { items: 3 },
-      1280: { items: 3 }
-    }
-  });
-
   $(".client-testimonial").owlCarousel({
     loop: true,
     margin: 30,
-    nav: false,
-    dots: false,
+    nav: true,
+    navText: ['<svg class="od-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-left" width="100%" height="100%"></use></svg><span class="sr-only">Previous testimonials</span>', '<svg class="od-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg><span class="sr-only">Next testimonials</span>'],
+    dots: true,
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3500,
     autoplayHoverPause: true,
     smartSpeed: 800,
@@ -341,7 +304,7 @@ jQuery(function ($) {
     nav: false,
     dots: false,
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     lazyLoad: true,
     items: 1,
@@ -349,7 +312,7 @@ jQuery(function ($) {
 
   // 10. our clients logo carousel
   $(".clients-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     loop: true,
     margin: 15,
     dots: false,
@@ -437,7 +400,7 @@ jQuery(function ($) {
 
   // 14. gallery carousel
   $(".gallery").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     loop: true,
     margin: 15,
     nav: false,

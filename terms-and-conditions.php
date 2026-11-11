@@ -24,7 +24,7 @@
     <title>Terms & Conditions - Ocean DigiTech Pvt. Ltd.</title>
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fevicon.png" type="image/png" sizes="16x16">
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600&display=swap"
@@ -35,12 +35,7 @@
     <!--Magnific popup css-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--Themify icon css-->
-    <link rel="stylesheet" href="css/themify-icons.css">
     <!--Fontawesome icon css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
-        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/all.min.css">
     <!--animated css-->
     <link rel="stylesheet" href="css/animate.min.css">
     <!--ytplayer css-->
@@ -53,6 +48,9 @@
     <!--responsive css-->
     <link rel="stylesheet" href="css/responsive.css?v=<?php echo file_exists('css/responsive.css') ? filemtime('css/responsive.css') : '2.2'; ?>">
 
+    <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
 </head>
 
 <body>
@@ -63,18 +61,7 @@
     <div class="main">
 
         <!--hero section start-->
-        <section class="hero-section ptb-100 gradient-overlay full-screen d-flex align-items-center"
-            style="background: url('img/header-bg-5.jpg')no-repeat center center / cover; min-height: 100vh;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="page-header-content text-white text-center">
-                            <h1 class="text-white mb-0 text-uppercase font-weight-bold display-4">TERMS & CONDITIONS</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php $heroTitle = 'Clear terms for working together.'; $heroDescription = 'Please review the terms that apply when you use our website and services.'; $heroCategory = 'Terms & conditions'; $heroImage = 'img/editorial/workspace.jpg'; $heroImageAlt = 'A bright office interior'; $heroCta = 'Back to home'; $heroCtaHref = 'index.php'; include __DIR__.'/inner-hero.php'; ?>
         <!--hero section end-->
 
         <!--terms and conditions content section start-->

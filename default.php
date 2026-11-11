@@ -110,7 +110,10 @@
                 }
             }
         </style>
-    </head>
+        <link rel="stylesheet" href="css/theme.css?v=<?php echo filemtime(__DIR__ . '/css/theme.css'); ?>">
+    <link rel="stylesheet" href="css/premium.css?v=<?= substr(hash_file('sha256', __DIR__ . '/css/premium.css'), 0, 12) ?>">
+    <script src="js/animations.js?v=<?= substr(hash_file('sha256', __DIR__ . '/js/animations.js'), 0, 12) ?>" defer></script>
+</head>
     <body>
         <nav class="navigation">
             <a href="https://hpanel.hostinger.com" rel="nofollow" target="_blank">
