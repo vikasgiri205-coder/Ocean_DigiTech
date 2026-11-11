@@ -69,108 +69,12 @@
                             <strong class="color-secondary">Dedicated Professionals</strong>
                             <h2 style="font-weight: 700;">Our Team Members</h2>
                             <span class="animate-border mr-auto ml-auto mb-4"></span>
-                            <p class="lead">Our passionate team of software engineers, cloud architects, designers, and marketing experts bring innovation and technology excellence to every client project.</p>
+                            <p class="lead">Meet the people leading our strategy, technology, development, and design.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <?php include __DIR__ . '/leadership-card.php'; ?>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-1.png" alt="Vikas Giri, Chief Executive Officer" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Vikas Giri</h5>
-                                <div class="team-card-role">Chief Executive Officer (CEO)</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Leading company strategy, client partnerships, and business growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/aditya-ui-ux-designer.jpeg" alt="Aditya, UI/UX Designer" class="img-fluid" width="579" height="473" loading="lazy">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Aditya</h5>
-                                <div class="team-card-role">UI/UX Designer</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems for digital platforms.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-3.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Technology & Strategy</h5>
-                                <div class="team-card-role">Executive Leadership</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Driving corporate strategy, international partnerships, and client growth initiatives.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-4.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Full-Stack Development Pod</h5>
-                                <div class="team-card-role">Web & API Engineering</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Expert in building scalable backend systems, APIs, and microservices architecture.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-5.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Cloud Infrastructure & DevOps</h5>
-                                <div class="team-card-role">AWS, GCP & Kubernetes</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Architecting resilient AWS & GCP infrastructure and DevOps automation pipelines.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-6.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Mobile Engineering Pod</h5>
-                                <div class="team-card-role">iOS, Android & Flutter</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Delivering cross-platform Flutter and native iOS/Android mobile applications.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-7.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Growth & Search Intelligence</h5>
-                                <div class="team-card-role">SEO & Performance Marketing</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Optimizing SEO, conversion rates, and multi-channel performance marketing for clients.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-8.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Quality Assurance & Security</h5>
-                                <div class="team-card-role">Automated Testing & SecOps</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Ensuring bulletproof application security, performance benchmarks, and automated testing.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row real-team-grid">
+                    <?php include __DIR__ . '/team-members.php'; ?>
                 </div>
             </div>
         </section>

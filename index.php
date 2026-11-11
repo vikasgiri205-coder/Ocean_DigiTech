@@ -1418,60 +1418,12 @@
                         <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Good people. Shared ambition.</h2>
                         <span class="animate-border mr-auto ml-auto mb-4"></span>
                         <p class="lead text-muted" style="font-size: 16px;">
-                            Meet the digital architects, designers, and growth strategists driving innovative enterprise digital transformations.
+                            Meet the people leading our strategy, technology, development, and design.
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <?php include __DIR__ . '/leadership-card.php'; ?>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-1.png" alt="Vikas Giri" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Vikas Giri</h5>
-                                <div class="team-card-role">Chief Executive Officer (CEO)</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Leading company strategy, client partnerships, and business growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/aditya-ui-ux-designer.jpeg" alt="Aditya, UI/UX Designer" class="img-fluid" width="579" height="473" loading="lazy">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Aditya</h5>
-                                <div class="team-card-role">UI/UX Designer</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-3.png" alt="Gerald Nichols" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Gerald Nichols</h5>
-                                <div class="team-card-role">Managing Director</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Driving corporate strategy, global partnerships, and client growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <div class="team-card-modern">
-                            <div class="team-img-modern-wrap">
-                                <img src="img/team-member-4.png" alt="Alex Morgan" class="img-fluid">
-                            </div>
-                            <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Alex Morgan</h5>
-                                <div class="team-card-role">Senior Full Stack Lead</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Building resilient cloud backends, clean APIs, and modern web apps.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row real-team-grid">
+                    <?php include __DIR__ . '/team-members.php'; ?>
                 </div>
             </div>
         </section>

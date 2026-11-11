@@ -756,3 +756,8 @@ main .blog-card-excerpt,.main .blog-card-excerpt { font-size:17px!important;line
 }
 
 .team-img-modern-wrap img[src*='aditya-ui-ux-designer'],.team-card-modern:hover .team-img-modern-wrap img[src*='aditya-ui-ux-designer'] { transform:none!important; object-position:50% 20%; }
+
+.real-team-card { height:100%; text-align:center; }
+.real-team-card .team-card-body-modern p { font-size:15px!important; line-height:1.65!important; margin-bottom:0; }
+.real-team-card .team-img-modern-wrap img[src*='rk-sureria'] { transform:none!important; object-position:center 30%; }
+.real-team-card:hover .team-img-modern-wrap img[src*='rk-sureria'] { transform:none!important; }
