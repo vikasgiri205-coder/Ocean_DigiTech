@@ -1431,8 +1431,8 @@
                             </div>
                             <div class="team-card-body-modern">
                                 <h5 class="team-card-name">Vikas Giri</h5>
-                                <div class="team-card-role">Technology Strategist</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Enterprise digital architecture and high-performance software engineering.</p>
+                                <div class="team-card-role">Chief Executive Officer (CEO)</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Leading company strategy, client partnerships, and business growth.</p>
                             </div>
                         </div>
                     </div>

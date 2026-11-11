@@ -78,12 +78,12 @@
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="team-card-modern">
                             <div class="team-img-modern-wrap">
-                                <img src="img/team-member-1.png" alt="Team Member" class="img-fluid">
+                                <img src="img/team-member-1.png" alt="Vikas Giri, Chief Executive Officer" class="img-fluid">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">Enterprise Architecture Pod</h5>
-                                <div class="team-card-role">Software Engineering</div>
-                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Specializing in enterprise digital architecture and high-performance software engineering.</p>
+                                <h5 class="team-card-name">Vikas Giri</h5>
+                                <div class="team-card-role">Chief Executive Officer (CEO)</div>
+                                <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Leading company strategy, client partnerships, and business growth.</p>
                             </div>
                         </div>
                     </div>
