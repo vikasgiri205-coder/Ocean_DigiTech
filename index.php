@@ -443,11 +443,11 @@
                     </div>
                 </div>
             </div>
-            </div>
+            
         </section>
         <!--services section end-->
 
-        <!--solving digital growth section start-->
+        <!--homepage portfolio start-->
         <section class="showcase-section home-portfolio" aria-labelledby="home-portfolio-title">
  <div class="container">
   <div class="showcase-heading"><small>Our portfolio</small><h2 id="home-portfolio-title">Our work, in motion.</h2><p>Explore website walkthroughs and see our digital experiences in action.</p></div>
@@ -455,7 +455,7 @@
   <div class="home-portfolio-action"><a href="project.php" class="btn secondary-solid-btn">Explore our portfolio <span aria-hidden="true">&#8599;</span></a></div>
  </div>
 </section>
-        <!--solving digital growth section end-->
+        <!--homepage portfolio end-->
 
         <!--work process section start-->
         <!--<section class="work-process-section ptb-100 gray-light-bg">-->
