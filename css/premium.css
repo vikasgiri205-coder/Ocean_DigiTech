@@ -754,3 +754,5 @@ main .blog-card-excerpt,.main .blog-card-excerpt { font-size:17px!important;line
  #contact-form .proposal-form-container h2 { font-size:27px!important; }
  #proposalForm .form-row.contact-field-pair,#proposalForm .checkbox-grid { grid-template-columns:minmax(0,1fr)!important; }
 }
+
+.team-img-modern-wrap img[src*='aditya-ui-ux-designer'],.team-card-modern:hover .team-img-modern-wrap img[src*='aditya-ui-ux-designer'] { transform:none!important; object-position:50% 20%; }

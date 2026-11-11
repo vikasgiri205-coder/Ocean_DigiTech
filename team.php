@@ -90,11 +90,11 @@
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="team-card-modern">
                             <div class="team-img-modern-wrap">
-                                <img src="img/team-member-2.png" alt="Team Member" class="img-fluid">
+                                <img src="img/aditya-ui-ux-designer.jpeg" alt="Aditya, UI/UX Designer" class="img-fluid" width="579" height="473" loading="lazy">
                             </div>
                             <div class="team-card-body-modern">
-                                <h5 class="team-card-name">UI/UX & Design Systems</h5>
-                                <div class="team-card-role">Product Design</div>
+                                <h5 class="team-card-name">Aditya</h5>
+                                <div class="team-card-role">UI/UX Designer</div>
                                 <p class="text-muted" style="font-size: 13px; line-height: 1.5; margin-bottom: 0;">Crafting intuitive user interfaces and modern visual design systems for digital platforms.</p>
                             </div>
                         </div>
