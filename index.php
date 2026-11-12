@@ -163,38 +163,13 @@
     <span class="premium-vertical-note" aria-hidden="true">Ideas, made meaningful.</span>
    </div>
   </div>
-  <div class="premium-discipline-bar"><span>Your ambition. Our collective expertise.</span><ul aria-label="Our disciplines"><li>Strategy</li><li>Design</li><li>Engineering</li><li>Growth</li></ul></div>
  </div>
 </section>
-<section class="premium-proposal-band" aria-labelledby="proposal-band-title"><div class="container"><div><span class="premium-eyebrow">A good place to start</span><h2 id="proposal-band-title">What’s your next big idea?</h2></div><form class="premium-proposal-form" action="send_proposal_simple.php" method="post" data-async-form="quick-proposal"><label class="sr-only" for="businessName">Your business website or email</label><input type="text" id="businessName" name="businessName" maxlength="250" autocomplete="email" placeholder="Your business website or email" required><button type="submit">Get a free proposal <svg class="od-icon" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false" ><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></button><p class="form-feedback" role="status" aria-live="polite" tabindex="-1"></p></form></div></section>
         <!--hero section end-->
 
-        <!--trust bar section start-->
-        <section class="trust-bar-section">
-            <div class="container">
-                <div class="row align-items-center justify-content-between text-center">
-                    <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0">
-                        <div class="d-flex align-items-center justify-content-center gap-2">
-                            <h3 class="mb-0 font-weight-bold color-primary">500+</h3>
-                            <span class="text-muted text-left font-weight-bold" style="font-size: 13px; line-height: 1.2;">Global<br>Clients</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0 text-center">
-                        <img src="img/cluch.jpg" alt="Clutch Verified Agency" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-6 text-center">
-                        <img src="img/tech-behemoths.png" alt="Tech Behemoths Top Agency" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-6 text-center">
-                        <img src="img/top-developers.png" alt="Top Developers Award" class="trust-badge-img" style="height: 48px; max-height: 48px; max-width: 140px; width: auto; object-fit: contain; display: inline-block;">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--trust bar section end-->
 
         <!--about us / boutique expertise section start-->
-        <section class="why-section" aria-labelledby="why-title"><div class="container"><div class="why-intro"><div><span class="premium-eyebrow">Why Ocean DigiTech</span><h2 id="why-title">Boutique expertise.<br><em>A broader perspective.</em></h2></div><p>Strategy, design, engineering, and growth in one connected team. We stay close to your goals and thoughtful about every detail.</p></div><div class="why-grid"><div class="why-visual"><img loading="lazy" src="img/editorial/collaboration.jpg" alt="Our team collaborating around a table" width="700" height="700"><div class="why-photo-caption"><span>Connected by ideas.</span><strong>Working toward your next chapter.</strong></div></div><div class="why-features"><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg></span><h3>Creative thinking.</h3><p>Thoughtful design shaped by real user needs and clear business goals.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#code-xml" width="100%" height="100%"></use></svg></span><h3>Built with care.</h3><p>Clear interfaces and reliable applications, with attention to the details that matter.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users-round" width="100%" height="100%"></use></svg></span><h3>A team around you.</h3><p>Flexible collaboration, clear milestones, and a shared focus on your next step.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#messages-square" width="100%" height="100%"></use></svg></span><h3>Language is not a barrier.</h3><p>Visual walkthroughs and clear written summaries keep everyone aligned.</p></article></div></div><div class="why-bottom"><dl class="why-stats"><div><dt>Projects</dt><dd>350+</dd></div><div><dt>Clients</dt><dd>500+</dd></div><div><dt>Countries</dt><dd>18+</dd></div></dl><div class="why-actions"><a class="btn secondary-solid-btn" href="contact-us.php">Start your project <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a><a class="btn secondary-outline-btn" href="project.php">Explore portfolio <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></div></div></div></section>
+        <section class="why-section" aria-labelledby="why-title"><div class="container"><div class="why-intro"><div><span class="premium-eyebrow">Why Ocean DigiTech</span><h2 id="why-title">IT expertise.<br><em>Built for your business.</em></h2></div><p>We build websites, web applications, and custom software that help businesses work smarter. From planning and development to launch and support, our team turns your requirements into reliable digital solutions.</p></div><div class="why-grid"><div class="why-visual"><img loading="lazy" src="img/editorial/collaboration.jpg" alt="Our team collaborating around a table" width="700" height="700"><div class="why-photo-caption"><span>Your technology partner.</span><strong>From requirements to reliable software.</strong></div></div><div class="why-features"><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#lightbulb" width="100%" height="100%"></use></svg></span><h3>Web Development</h3><p>Responsive websites and web applications built for usability, speed, and your business workflows.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#code-xml" width="100%" height="100%"></use></svg></span><h3>Custom Software</h3><p>Software tailored to your operations, with API integrations that connect your tools and streamline tasks.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#users-round" width="100%" height="100%"></use></svg></span><h3>Testing & Quality</h3><p>Functional testing, responsive checks, and performance reviews help us deliver dependable applications.</p></article><article class="why-feature"><span class="why-feature-icon"><svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#messages-square" width="100%" height="100%"></use></svg></span><h3>Ongoing IT Support</h3><p>Maintenance, troubleshooting, and regular updates keep your website and applications running smoothly.</p></article></div></div><div class="why-bottom"><dl class="why-stats"><div><dt>Projects</dt><dd>350+</dd></div><div><dt>Clients</dt><dd>500+</dd></div><div><dt>Countries</dt><dd>18+</dd></div></dl><div class="why-actions"><a class="btn secondary-solid-btn" href="contact-us.php">Start your project <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-up-right" width="100%" height="100%"></use></svg></a><a class="btn secondary-outline-btn" href="project.php">Explore portfolio <svg class="od-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="img/icons.svg?v=d285f5150a7c#arrow-right" width="100%" height="100%"></use></svg></a></div></div></div></section>
         <!--about us / boutique expertise section end-->
 
 
@@ -252,12 +227,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10">
                         <div class="section-heading text-center mb-4">
-                            <span class="boutique-badge text-uppercase mb-2" style="letter-spacing: 1px;"><svg class="od-icon mr-1" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#layers" width="100%" height="100%"></use></svg> Full-Spectrum Digital Solutions</span>
-                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Considered strategy. Exceptional execution.</h2>
+                            <h2 class="font-weight-bold" style="font-size: 36px; color: #0f172a;">Our IT &amp; Digital Marketing Services</h2>
                             <span class="animate-border mr-auto ml-auto mb-3"></span>
-                            <p class="lead text-muted" style="font-size: 16px; max-width: 680px; margin: 0 auto;">
-                                From bespoke software architecture and high-converting e-commerce to revenue-driving SEO and programmatic ad campaigns, we turn complex digital challenges into scalable enterprise success.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -1143,161 +1114,6 @@
         </section>
         <!--testimonial section end-->
 
-                        <!-- Client Testimonials Section (Moving Left to Right Carousel) -->
-        <section class="hp-testimonials ptb-100 gray-light-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 text-center mb-5">
-                        <span class="growth-challenge-label mb-2">TESTIMONIALS</span>
-                        <h2 class="hp-section-title font-weight-bold" style="font-size: 36px; color: #0f172a;">Who Are Happy With Our Services</h2>
-                        <span class="animate-border mr-auto ml-auto mb-4"></span>
-                        <p class="hp-section-subtitle text-muted" style="font-size: 16px;">
-                            See how we've helped companies across North America, Australia, and Asia achieve measurable digital growth.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="owl-carousel owl-theme client-testimonial custom-dot">
-                            <!-- Testimonial 1: EatClub -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">EatClub</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "Ocean DigiTech helped us improve visibility into campaign performance and user behavior. Their technical audit clarified where we were losing efficiency and helped us improve lead quality within weeks."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-1.jpg" alt="Sarah L." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Sarah L.</div>
-                                            <div class="testimonial-author-role">Marketing Lead, Food & Hospitality (Australia)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 2: Juniper -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">Juniper</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "The audit highlighted conversion and performance gaps we had overlooked. The recommendations were clear, practical, and helped improve engagement and inbound inquiries."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-2.jpg" alt="Daniel R." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Daniel R.</div>
-                                            <div class="testimonial-author-role">Growth Manager, Consumer Brand (USA)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 3: Padra -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">Padra</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "Ocean DigiTech helped us identify inefficiencies across our website and paid campaigns. After implementing their suggestions, conversions became more consistent and predictable."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-3.jpg" alt="Ayesha K." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Ayesha K.</div>
-                                            <div class="testimonial-author-role">Founder, D2C Brand (USA)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 4: Sightseeing Tours -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">Sightseeing Tours</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "Their audit gave us a clear roadmap to fix tracking issues and improve campaign performance. The insights were easy to execute and had a direct impact on bookings."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-4.jpg" alt="Mark T." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Mark T.</div>
-                                            <div class="testimonial-author-role">Operations Director (Australia)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 5: Blende Dental -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">Blende Dental</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "Their healthcare digital strategy and patient journey optimization drove a noticeable increase in qualified appointment requests across our multi-location clinics."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-1.jpg" alt="Dr. Marcus B." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Dr. Marcus B.</div>
-                                            <div class="testimonial-author-role">Clinical Director (USA)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonial 6: Pacific Legal -->
-                            <div class="item">
-                                <div class="hp-testimonial-card-modern">
-                                    <div>
-                                        <div class="testimonial-company-header">
-                                            <span class="testimonial-company-badge">Pacific Legal</span>
-                                            <span class="testimonial-stars"><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg><svg class="od-icon " viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true" focusable="false"  ><use href="img/icons.svg?v=d285f5150a7c#star" width="100%" height="100%"></use></svg></span>
-                                        </div>
-                                        <p class="hp-testimonial-text">
-                                            "Ocean DigiTech's team revamped our digital architecture and SEO structure. Our high-intent legal inquiries grew by 85% within four months."
-                                        </p>
-                                    </div>
-                                    <div class="testimonial-author-row">
-                                        <img src="img/client-3.jpg" alt="Elena K." class="testimonial-author-avatar">
-                                        <div>
-                                            <div class="testimonial-author-name">Elena K.</div>
-                                            <div class="testimonial-author-role">Partner (USA)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Client Testimonials Section End -->
-        <!-- Client Testimonials Grid Section End -->
 
         <!--team section start-->
         <section class="team-two-section ptb-100">

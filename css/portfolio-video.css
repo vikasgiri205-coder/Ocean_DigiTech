@@ -22,3 +22,6 @@
 .home-portfolio-action { margin-top:32px; text-align:center; }
 @media(max-width:991px) { .home-portfolio .showcase-grid { gap:18px; }.home-portfolio .portfolio-video { height:340px; } }
 @media(max-width:767px) { .home-portfolio .showcase-grid { grid-template-columns:1fr; max-width:440px; margin:0 auto; gap:30px; }.home-portfolio .portfolio-video { height:420px; }.home-portfolio-action .btn { width:100%; max-width:440px; } }
+
+/* Separate the homepage portfolio from the services above. */
+.showcase-section.home-portfolio { background:#f5eff7; border-top:1px solid #e9dfec; border-bottom:1px solid #e9dfec; }
