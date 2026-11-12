@@ -774,3 +774,14 @@ main .blog-card-excerpt,.main .blog-card-excerpt { font-size:17px!important;line
 .premium-footer .footer-bottom a:hover { color:#65258a!important; }
 .premium-footer .od-footer-contact .footer-contact-link.btn { background:#fff!important; color:#65258a!important; -webkit-text-fill-color:#65258a!important; box-shadow:none; border:1px solid #fff!important; }
 .premium-footer .od-footer-contact .footer-contact-link.btn:hover { background:#f6eef9!important; text-decoration:none; }
+
+.it-process-section { padding:70px 0; background:var(--premium-paper); }
+.it-process-section h1 { font-size:clamp(28px,3.2vw,42px);line-height:1.2;max-width:900px;margin:0 auto 24px; }
+.it-process-list { display:grid;gap:32px;margin-top:42px; }
+.it-process-step { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:40px;align-items:center;padding:24px;background:#fff;border:1px solid #e9dfec;border-radius:16px; }
+.it-process-step img { width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px; }
+.it-process-step h2 { font-size:clamp(23px,2.2vw,30px);line-height:1.3;margin:0 0 18px; }
+.it-process-step p { margin:0 0 14px;line-height:1.75; }
+.it-process-step p:last-child { margin-bottom:0; }
+.it-process-motto { text-align:center;color:var(--od-brand);font-weight:600;font-size:clamp(18px,2vw,24px);margin:36px 0 0; }
+@media(max-width:767px) { .it-process-section { padding:50px 0; }.it-process-step { grid-template-columns:1fr;gap:24px;padding:18px; }.it-process-list { gap:24px; } }

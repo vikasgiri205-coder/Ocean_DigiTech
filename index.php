@@ -428,149 +428,18 @@
 </section>
         <!--homepage portfolio end-->
 
-        <!--work process section start-->
-        <!--<section class="work-process-section ptb-100 gray-light-bg">-->
-        <!--    <div class="container">-->
-        <!--        <div class="row justify-content-center">-->
-        <!--            <div class="col-md-10 col-lg-9">-->
-        <!--                <div class="section-heading text-center">-->
-        <!--                    <strong class="color-secondary">Work Process</strong>-->
-        <!--                    <h2>We follow Few Steps</h2>-->
-        <!--                    <span class="animate-border mr-auto ml-auto mb-4"></span>-->
-        <!--                    <p class="lead">Globally reinvent cross-unit human capital whereas virtual catalysts for-->
-        <!--                        change. Assertively-->
-        <!--                        network accurate methods of empowerment rather than client-centered improvements.</p>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-                <!-- ============ step 1 =========== -->
-        <!--        <div class="row mt-5">-->
-        <!--            <div class="col-md-12 col-lg-5 process-width">-->
-        <!--                <div class="process-box process-left">-->
-        <!--                    <div class="row">-->
-        <!--                        <div class="col-md-5">-->
-        <!--                            <div class="process-step-number">-->
-        <!--                                <strong>Step</strong>-->
-        <!--                                <h2 class="m-0">01</h2>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-7">-->
-        <!--                            <h5>Technical Audit</h5>-->
-        <!--                            <p>Monotonectally optimize granular quality vectors vis-a-vis interdependent.</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="process-line-l"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-md-2 process-none"></div>-->
-        <!--            <div class="col-md-5 col-md-5 col-lg-5 process-none">-->
-        <!--                <div class="process-point-right"></div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-                <!-- ============ step 2 =========== -->
-        <!--        <div class="row">-->
-        <!--            <div class="col-md-5 col-lg-5 process-none">-->
-        <!--                <div class="process-point-left"></div>-->
-        <!--            </div>-->
-        <!--            <div class="col-md-2 process-none"></div>-->
-        <!--            <div class="col-md-12 col-lg-5 process-width">-->
-        <!--                <div class="process-box process-right">-->
-        <!--                    <div class="row">-->
-        <!--                        <div class="col-md-5">-->
-        <!--                            <div class="process-step-number">-->
-        <!--                                <strong>Step</strong>-->
-        <!--                                <h2 class="m-0">02</h2>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-7">-->
-        <!--                            <h5>Technical SEO</h5>-->
-        <!--                            <p>Completely synthesize one-to-one interfaces vis-a-vis client-focused alignments.-->
-        <!--                            </p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="process-line-r"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-
-        <!--        </div>-->
-                <!-- ============ step 3 =========== -->
-        <!--        <div class="row">-->
-        <!--            <div class="col-md-12 col-lg-5 process-width">-->
-        <!--                <div class="process-box process-left">-->
-        <!--                    <div class="row">-->
-        <!--                        <div class="col-md-5">-->
-        <!--                            <div class="process-step-number">-->
-        <!--                                <strong>Step</strong>-->
-        <!--                                <h2 class="m-0">03</h2>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-7">-->
-        <!--                            <h5>Select Keywords</h5>-->
-        <!--                            <p>Progressively streamline cooperative sources whereas stand-alone channels.</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="process-line-l"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-md-2 process-none"></div>-->
-        <!--            <div class="col-md-5 col-lg-5 process-none">-->
-        <!--                <div class="process-point-right"></div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-                <!-- ============ step 4 =========== -->
-        <!--        <div class="row">-->
-        <!--            <div class="col-md-5 col-lg-5 process-none">-->
-        <!--                <div class="process-point-left"></div>-->
-        <!--            </div>-->
-        <!--            <div class="col-md-2 process-none"></div>-->
-        <!--            <div class="col-md-12 col-lg-5 process-width">-->
-        <!--                <div class="process-box process-right">-->
-        <!--                    <div class="row">-->
-        <!--                        <div class="col-md-5">-->
-        <!--                            <div class="process-step-number">-->
-        <!--                                <strong>Step</strong>-->
-        <!--                                <h2 class="m-0">04</h2>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-7">-->
-        <!--                            <h5>Demographics</h5>-->
-        <!--                            <p>Objectively underwhelm one-to-one deliverables whereas impactful solutions. </p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="process-line-r"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-
-
-        <!--        </div>-->
-                <!-- ============ step 3 =========== -->
-        <!--        <div class="row">-->
-        <!--            <div class="col-md-12 col-lg-5 process-width">-->
-        <!--                <div class="process-box process-left">-->
-        <!--                    <div class="row">-->
-        <!--                        <div class="col-md-5">-->
-        <!--                            <div class="process-step-number">-->
-        <!--                                <strong>Step</strong>-->
-        <!--                                <h2 class="m-0">05</h2>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="col-md-7">-->
-        <!--                            <h5>Engine Ranking</h5>-->
-        <!--                            <p>Interactively seize innovative platforms vis-a-vis ubiquitous portals.</p>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="process-line-l"></div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-md-2 custom-none"></div>-->
-        <!--            <div class="col-md-5 col-lg-5 custom-none">-->
-        <!--                <div class="process-point-right process-last"></div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-                <!-- ============ -->
-        <!--    </div>-->
-        <!--</section>-->
-        <!--work process section end-->
+        <section class="it-process-section" aria-labelledby="it-process-title">
+ <div class="container">
+  <header class="section-heading text-center"><h1 id="it-process-title">Our Process of IT Development &amp; Digital Marketing</h1><span class="animate-border mr-auto ml-auto"></span></header>
+  <div class="it-process-list">
+   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-1.jpg" alt="Team discussing project requirements and business goals"><div><h2>1. Discovery &amp; Requirement Analysis</h2><p>Our process begins with an initial discovery consultation. This phase helps us establish a clear understanding of your vision, technical requirements, budget, and project timelines, ensuring that every solution is aligned with your business goals.</p></div></article>
+   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-2.jpg" alt="Team planning application wireframes and solution design"><div><h2>2. Strategy, Planning &amp; Solution Design</h2><p>For IT Development, we prepare the technical architecture, technology stack, UI/UX wireframes, database structure, and development milestones.</p><p>For Digital Marketing, we conduct market research, competitor analysis, keyword research, audience segmentation, and campaign planning to identify the right channels for maximum reach and engagement.</p><p>Our objective is to build a strong foundation before moving into execution.</p></div></article>
+   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-3.jpg" alt="Software developers implementing and reviewing application code"><div><h2>3. Development, Implementation &amp; Execution</h2><p>We follow an organised execution process with regular updates, milestone tracking, and client feedback to maintain transparency and quality.</p></div></article>
+   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-4.jpg" alt="Team testing software and monitoring performance dashboards"><div><h2>4. Testing, Launch &amp; Continuous Growth</h2><p>Before delivery, our team conducts comprehensive quality checks to ensure that the solution meets the agreed requirements and performance standards.</p><p>Our relationship doesn't end with project delivery. We provide ongoing technical assistance, maintenance, performance monitoring, and marketing support to help businesses evolve with changing technologies and market demands.</p></div></article>
+  </div>
+  <p class="it-process-motto">Understand. Strategise. Develop. Optimise. Grow.</p>
+ </div>
+</section>
 
 
         <!--outstanding section start-->
