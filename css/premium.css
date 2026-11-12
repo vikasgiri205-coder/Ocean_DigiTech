@@ -806,16 +806,16 @@ main .blog-card-excerpt,.main .blog-card-excerpt { font-size:17px!important;line
 .it-process-step-marker>span:last-child:before { content:'';width:34px;height:1px;background:#cbb3d9; }
 .it-process-step h2 { color:#2e2039;font-size:clamp(25px,2.4vw,32px);font-weight:600;line-height:1.25;letter-spacing:-.7px;margin:0 0 20px; }
 .it-process-step p { color:#65596d;font-size:15px;line-height:1.85;margin:0 0 14px; }.it-process-step p:last-child { margin-bottom:0; }
-.it-process-closing { display:flex;align-items:center;justify-content:center;gap:30px;margin-top:70px;padding:38px 24px;border-top:1px solid #dfd1e7;border-bottom:1px solid #dfd1e7;background:#f0e8f5; }
-.it-process-closing-mark { display:grid;place-items:center;width:56px;height:56px;flex-shrink:0;border-radius:50%;border:1px solid #ccb4d9;color:#65258a;font-size:30px; }
-.it-process-closing .it-process-motto { color:#35233e;font-size:clamp(23px,2.5vw,32px)!important;line-height:1.4;font-weight:500;letter-spacing:-.7px;margin:0; }
-.it-process-motto em { color:#65258a;font-family:var(--premium-serif);font-weight:400; }
+/* A quiet closing statement, with one typeface and natural mobile wrapping. */
+.it-process-closing { margin-top:48px;padding:28px 0 0;border-top:1px solid #dfd1e7; }
+.it-process-closing .it-process-motto { display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;column-gap:20px;row-gap:6px;margin:0;color:#61506c;font-family:inherit;font-size:22px!important;line-height:1.6;font-weight:500;letter-spacing:-.4px; }
+.it-process-motto>span { white-space:nowrap; }.it-process-final { display:inline-flex;column-gap:inherit; }.it-process-final strong { color:#65258a;font-weight:700; }
 @media (hover:hover) and (prefers-reduced-motion:no-preference) { .it-process-visual:hover img { transform:scale(1.025); } }
 @media(max-width:991px) { .it-process-heading { gap:35px;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); }.it-process-step { gap:36px; }.it-process-step p { font-size:14px; }.it-process-image-label { left:16px;right:16px;bottom:16px;font-size:8px; }.it-process-roadmap a { padding:18px 12px;gap:8px; } }
 @media(max-width:767px) {
  .it-process-section { padding:58px 0 48px; }.it-process-heading { grid-template-columns:1fr;gap:24px;margin-bottom:30px; }.it-process-heading h1 { font-size:38px;letter-spacing:-1.4px;max-width:540px; }.it-process-eyebrow { margin-bottom:18px;font-size:10px; }.it-process-heading-note { max-width:500px;font-size:14px;line-height:1.7;padding-left:16px; }.it-process-heading-note strong { margin-bottom:4px; }
  .it-process-roadmap { margin-bottom:38px;grid-template-columns:repeat(2,minmax(0,1fr)); }.it-process-roadmap a { padding:14px 10px!important;min-height:64px; }.it-process-roadmap a:nth-child(2) { border-right:0; }.it-process-roadmap a:nth-child(-n+2) { border-bottom:1px solid #e2d6e9; }.it-process-roadmap-arrow { font-size:18px; }
  .it-process-list { gap:38px; }.it-process-step { grid-template-columns:minmax(0,1fr);gap:24px; }.it-process-step:nth-child(even) .it-process-visual,.it-process-step:nth-child(even) .it-process-copy { order:initial; }.it-process-visual img { aspect-ratio:4/3; }.it-process-copy { padding:0 2px; }.it-process-step-marker { margin-bottom:14px; }.it-process-step-marker>span:first-child { font-size:36px; }.it-process-step h2 { font-size:27px;margin-bottom:16px; }.it-process-step p { font-size:15px;line-height:1.8; }
- .it-process-closing { justify-content:flex-start;gap:18px;margin-top:40px;padding:26px 18px; }.it-process-closing-mark { width:40px;height:40px;font-size:24px; }.it-process-motto { font-size:23px;letter-spacing:-.7px; }
+ .it-process-closing { margin-top:30px;padding-top:22px; }.it-process-closing .it-process-motto { font-size:16px!important;column-gap:12px;row-gap:4px;letter-spacing:-.2px; }
 }
-@media(max-width:360px) { .it-process-heading h1 { font-size:34px; }.it-process-step h2 { font-size:25px; }.it-process-closing .it-process-motto { font-size:20px!important; }.it-process-closing { gap:12px;padding:22px 12px; } }
+@media(max-width:360px) { .it-process-heading h1 { font-size:34px; }.it-process-step h2 { font-size:25px; } }

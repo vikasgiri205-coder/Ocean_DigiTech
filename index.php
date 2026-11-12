@@ -472,7 +472,7 @@
     </div>
    </article>
   </div>
-  <div class="it-process-closing"><span class="it-process-closing-mark" aria-hidden="true">&#8599;</span><p class="it-process-motto">Understand. Strategise. Develop.<br><em>Optimise. Grow.</em></p></div>
+  <div class="it-process-closing"><p class="it-process-motto"><span>Understand.</span> <span>Strategise.</span> <span>Develop.</span> <span class="it-process-final"><span>Optimise.</span> <strong>Grow.</strong></span></p></div>
  </div>
 </section>
 
