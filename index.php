@@ -430,14 +430,49 @@
 
         <section class="it-process-section" aria-labelledby="it-process-title">
  <div class="container">
-  <header class="section-heading text-center"><h1 id="it-process-title">Our Process of IT Development &amp; Digital Marketing</h1><span class="animate-border mr-auto ml-auto"></span></header>
+  <header class="it-process-heading">
+   <div><span class="it-process-eyebrow"><span aria-hidden="true"></span> HOW WE WORK</span>
+    <h1 id="it-process-title">Our Process of <span>IT Development &amp; <em>Digital Marketing</em></span></h1>
+   </div>
+   <p class="it-process-heading-note"><strong>Thoughtful at every stage.</strong>From understanding your vision to supporting your next phase of growth.</p>
+  </header>
+  <nav class="it-process-roadmap" aria-label="Our process stages">
+   <a href="#it-process-1"><span class="it-process-roadmap-number">01</span><span>Discover</span><span class="it-process-roadmap-arrow" aria-hidden="true">&#8599;</span></a>
+   <a href="#it-process-2"><span class="it-process-roadmap-number">02</span><span>Plan</span><span class="it-process-roadmap-arrow" aria-hidden="true">&#8599;</span></a>
+   <a href="#it-process-3"><span class="it-process-roadmap-number">03</span><span>Build</span><span class="it-process-roadmap-arrow" aria-hidden="true">&#8599;</span></a>
+   <a href="#it-process-4"><span class="it-process-roadmap-number">04</span><span>Grow</span><span class="it-process-roadmap-arrow" aria-hidden="true">&#8599;</span></a>
+  </nav>
   <div class="it-process-list">
-   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-1.jpg" alt="Team discussing project requirements and business goals"><div><h2>1. Discovery &amp; Requirement Analysis</h2><p>Our process begins with an initial discovery consultation. This phase helps us establish a clear understanding of your vision, technical requirements, budget, and project timelines, ensuring that every solution is aligned with your business goals.</p></div></article>
-   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-2.jpg" alt="Team planning application wireframes and solution design"><div><h2>2. Strategy, Planning &amp; Solution Design</h2><p>For IT Development, we prepare the technical architecture, technology stack, UI/UX wireframes, database structure, and development milestones.</p><p>For Digital Marketing, we conduct market research, competitor analysis, keyword research, audience segmentation, and campaign planning to identify the right channels for maximum reach and engagement.</p><p>Our objective is to build a strong foundation before moving into execution.</p></div></article>
-   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-3.jpg" alt="Software developers implementing and reviewing application code"><div><h2>3. Development, Implementation &amp; Execution</h2><p>We follow an organised execution process with regular updates, milestone tracking, and client feedback to maintain transparency and quality.</p></div></article>
-   <article class="it-process-step"><img loading="lazy" src="img/editorial/process-4.jpg" alt="Team testing software and monitoring performance dashboards"><div><h2>4. Testing, Launch &amp; Continuous Growth</h2><p>Before delivery, our team conducts comprehensive quality checks to ensure that the solution meets the agreed requirements and performance standards.</p><p>Our relationship doesn't end with project delivery. We provide ongoing technical assistance, maintenance, performance monitoring, and marketing support to help businesses evolve with changing technologies and market demands.</p></div></article>
+   <article class="it-process-step" id="it-process-1" aria-labelledby="it-process-title-1">
+    <figure class="it-process-visual"><img width="1200" height="900" decoding="async" loading="lazy" src="img/editorial/process-1.jpg" alt="Team discussing project requirements and business goals"><span class="it-process-image-label" aria-hidden="true">OCEAN DIGITECH <span>01 / 04</span></span></figure>
+    <div class="it-process-copy"><div class="it-process-step-marker" aria-hidden="true"><span>01</span><span>Discover</span></div>
+     <h2 id="it-process-title-1"><span class="sr-only">1. </span>Discovery &amp; Requirement Analysis</h2>
+     <p>Our process begins with an initial discovery consultation. This phase helps us establish a clear understanding of your vision, technical requirements, budget, and project timelines, ensuring that every solution is aligned with your business goals.</p>
+    </div>
+   </article>
+   <article class="it-process-step" id="it-process-2" aria-labelledby="it-process-title-2">
+    <figure class="it-process-visual"><img width="1200" height="900" decoding="async" loading="lazy" src="img/editorial/process-2.jpg" alt="Team planning application wireframes and solution design"><span class="it-process-image-label" aria-hidden="true">OCEAN DIGITECH <span>02 / 04</span></span></figure>
+    <div class="it-process-copy"><div class="it-process-step-marker" aria-hidden="true"><span>02</span><span>Plan</span></div>
+     <h2 id="it-process-title-2"><span class="sr-only">2. </span>Strategy, Planning &amp; Solution Design</h2>
+     <p>For IT Development, we prepare the technical architecture, technology stack, UI/UX wireframes, database structure, and development milestones.</p><p>For Digital Marketing, we conduct market research, competitor analysis, keyword research, audience segmentation, and campaign planning to identify the right channels for maximum reach and engagement.</p><p>Our objective is to build a strong foundation before moving into execution.</p>
+    </div>
+   </article>
+   <article class="it-process-step" id="it-process-3" aria-labelledby="it-process-title-3">
+    <figure class="it-process-visual"><img width="1200" height="900" decoding="async" loading="lazy" src="img/editorial/process-3.jpg" alt="Software developers implementing and reviewing application code"><span class="it-process-image-label" aria-hidden="true">OCEAN DIGITECH <span>03 / 04</span></span></figure>
+    <div class="it-process-copy"><div class="it-process-step-marker" aria-hidden="true"><span>03</span><span>Build</span></div>
+     <h2 id="it-process-title-3"><span class="sr-only">3. </span>Development, Implementation &amp; Execution</h2>
+     <p>We follow an organised execution process with regular updates, milestone tracking, and client feedback to maintain transparency and quality.</p>
+    </div>
+   </article>
+   <article class="it-process-step" id="it-process-4" aria-labelledby="it-process-title-4">
+    <figure class="it-process-visual"><img width="1200" height="900" decoding="async" loading="lazy" src="img/editorial/process-4.jpg" alt="Team testing software and monitoring performance dashboards"><span class="it-process-image-label" aria-hidden="true">OCEAN DIGITECH <span>04 / 04</span></span></figure>
+    <div class="it-process-copy"><div class="it-process-step-marker" aria-hidden="true"><span>04</span><span>Grow</span></div>
+     <h2 id="it-process-title-4"><span class="sr-only">4. </span>Testing, Launch &amp; Continuous Growth</h2>
+     <p>Before delivery, our team conducts comprehensive quality checks to ensure that the solution meets the agreed requirements and performance standards.</p><p>Our relationship doesn't end with project delivery. We provide ongoing technical assistance, maintenance, performance monitoring, and marketing support to help businesses evolve with changing technologies and market demands.</p>
+    </div>
+   </article>
   </div>
-  <p class="it-process-motto">Understand. Strategise. Develop. Optimise. Grow.</p>
+  <div class="it-process-closing"><span class="it-process-closing-mark" aria-hidden="true">&#8599;</span><p class="it-process-motto">Understand. Strategise. Develop.<br><em>Optimise. Grow.</em></p></div>
  </div>
 </section>
 
